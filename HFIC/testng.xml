@@ -3,13 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="PEGA.Changerequest"/>
-      <class name="PEGA.Changerequest6"/>
-      <class name="PEGA.Changerequest7"/>
-      <class name="PEGA.Changerequest4"/>
-      <class name="PEGA.Changerequest5"/>
-      <class name="PEGA.Changerequest2"/>
-      <class name="PEGA.Changerequest3"/>
+      <class name="HFIC.Testcases.com.CR_UploadeDocuments"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
