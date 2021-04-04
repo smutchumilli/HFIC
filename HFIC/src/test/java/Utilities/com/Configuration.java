@@ -31,5 +31,9 @@ public class Configuration {
 		return pro.getProperty("Browser");
 
 	}
+	public String getPEGAURL() {
+		return pro.getProperty("PEGAURL");
+
+	}
 
 }

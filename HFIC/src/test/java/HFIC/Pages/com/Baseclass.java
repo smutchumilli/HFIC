@@ -40,7 +40,7 @@ public class Baseclass {
 
 	@BeforeClass
 	public void Application_Start() {
-		driver = Browserfactory.Start_Application(driver, config.getQAURL(), config.getBrowser());
+		driver = Browserfactory.Start_Application(driver, config.getPEGAURL(), config.getBrowser());
 
 	}
 
