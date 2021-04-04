@@ -11,6 +11,7 @@ import HFIC.Pages.com.HFIC_SigninPage;
 public class HFIC_SMG_ApplicationSubmission extends Baseclass {
 	@Test
 	public void HFIC_ApplicationSubmission() throws InterruptedException {
+		//This is Test
 		extent.createTest("MyFirstTest");
 	
 		HFIC_SigninPage HFIC_SigninPage=PageFactory.initElements(driver, HFIC_SigninPage.class);
