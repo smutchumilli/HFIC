@@ -30,6 +30,7 @@ public class Baseclass {
 
 	@BeforeSuite
 	public void Start_up() {
+		//Start method
 		config = new Configuration();
 		data = new TestDataProvider();
 		spark = new ExtentSparkReporter("./Reports/HFIC_Report_"+Helper.Get_CurrentTime()+".html");
