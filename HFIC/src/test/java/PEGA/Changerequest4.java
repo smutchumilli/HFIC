@@ -32,7 +32,7 @@ public class Changerequest4 {
 		driver.findElement(By.xpath("//a[contains(text(),'Change Requests')]")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//button[contains(text(),'Create Change Request')]")).click();
-		Thread.sleep(3000);
+		Thread.sleep(32000);
 
 		WebElement CRtype = driver.findElement(By.id("5c58224c"));
 		Thread.sleep(3000);
