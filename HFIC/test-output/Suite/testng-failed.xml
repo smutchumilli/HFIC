@@ -3,21 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="PEGA.Changerequest">
+      <class name="HFIC.Testcases.com.CR_UploadeDocuments">
         <methods>
-          <include name="uplod_Documents"/>
+          <include name="CR_UploadeDocument"/>
+          <include name="Tear_Down"/>
+          <include name="Application_Start"/>
+          <include name="Start_up"/>
         </methods>
-      </class> <!-- PEGA.Changerequest -->
-      <class name="PEGA.Changerequest7">
-        <methods>
-          <include name="uplod_Documents"/>
-        </methods>
-      </class> <!-- PEGA.Changerequest7 -->
-      <class name="PEGA.Changerequest3">
-        <methods>
-          <include name="uplod_Documents"/>
-        </methods>
-      </class> <!-- PEGA.Changerequest3 -->
+      </class> <!-- HFIC.Testcases.com.CR_UploadeDocuments -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
