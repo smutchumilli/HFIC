@@ -38,7 +38,7 @@ public class Changerequest2 {
 		Thread.sleep(3000);
 
 		WebElement CRtype = driver.findElement(By.id("5c58224c"));
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		Select S = new Select(CRtype);
 		S.selectByVisibleText("Document Upload");
