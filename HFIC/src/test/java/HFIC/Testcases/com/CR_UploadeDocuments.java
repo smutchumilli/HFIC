@@ -57,10 +57,20 @@ public class CR_UploadeDocuments extends Baseclass {
 		data.getstringdata("CR", 6, 1), data.getstringdata("CR", 6, 2), data.getstringdata("CR", 6, 3));
 		ChangeRequest_Uplodedocuments.Document_Purpose();
 		ChangeRequest_Uplodedocuments.DocumentType_Select(5);
-		ChangeRequest_Uplodedocuments.Rober1();
+		ChangeRequest_Uplodedocuments.tab();
 		ChangeRequest_Uplodedocuments.Doc_Title(data.getstringdata("CR", 6, 6));
 		ChangeRequest_Uplodedocuments.Rober1();
 		ChangeRequest_Uplodedocuments.Notes(data.getstringdata("CR", 6, 5));
+		// No nys 45
+		ChangeRequest_Uplodedocuments.CR_Uplodedocument_Search(data.getstringdata("CR", 7, 0),
+				data.getstringdata("CR", 7, 1), data.getstringdata("CR", 7, 2), data.getstringdata("CR", 7, 3));
+				ChangeRequest_Uplodedocuments.Document_Purpose();
+				ChangeRequest_Uplodedocuments.DocumentType_Select(4);
+				ChangeRequest_Uplodedocuments.Doc_subtype();
+				ChangeRequest_Uplodedocuments.tab();
+				ChangeRequest_Uplodedocuments.Doc_Title(data.getstringdata("CR", 7, 6));
+				ChangeRequest_Uplodedocuments.Rober1();
+				ChangeRequest_Uplodedocuments.Notes(data.getstringdata("CR", 7, 5));
 
 	}
 
