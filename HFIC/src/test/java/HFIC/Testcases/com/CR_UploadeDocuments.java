@@ -25,6 +25,7 @@ public class CR_UploadeDocuments extends Baseclass {
 	}
 
 	// Add Second doc type
+	@Test
 	public void CR_UploadeDocument1() throws InterruptedException, AWTException {
 
 		ChangeRequest_Uplodedocuments ChangeRequest_Uplodedocuments = PageFactory.initElements(driver,
@@ -38,7 +39,7 @@ public class CR_UploadeDocuments extends Baseclass {
 		test = extent.createTest("Change Request Upload Document1");
 
 	}
-
+	@Test
 	// Add Third doc type
 	public void CR_UploadeDocument2() throws InterruptedException, AWTException {
 
@@ -53,7 +54,7 @@ public class CR_UploadeDocuments extends Baseclass {
 		test = extent.createTest("Change Request Upload Document2");
 
 	}
-
+	@Test
 	// other documents
 	public void CR_UploadeDocument3() throws InterruptedException, AWTException {
 
@@ -69,7 +70,7 @@ public class CR_UploadeDocuments extends Baseclass {
 		test = extent.createTest("Change Request Upload Document3");
 
 	}
-
+	@Test
 	//
 	public void CR_UploadeDocument4() throws InterruptedException, AWTException {
 
@@ -85,7 +86,7 @@ public class CR_UploadeDocuments extends Baseclass {
 		test = extent.createTest("Change Request Upload Document4");
 
 	}
-
+	@Test
 	//
 	public void CR_UploadeDocument5() throws InterruptedException, AWTException {
 
@@ -101,7 +102,7 @@ public class CR_UploadeDocuments extends Baseclass {
 		test = extent.createTest("Change Request Upload Document5");
 
 	}
-
+	@Test
 	//
 	public void CR_UploadeDocument6() throws InterruptedException, AWTException {
 
@@ -119,7 +120,7 @@ public class CR_UploadeDocuments extends Baseclass {
 		test = extent.createTest("Change Request Upload Document6");
 
 	}
-
+	@Test
 	// No nys 45
 	public void CR_UploadeDocument7() throws InterruptedException, AWTException {
 
@@ -136,6 +137,7 @@ public class CR_UploadeDocuments extends Baseclass {
 		ChangeRequest_Uplodedocuments.Notes(data.getstringdata("CR", 7, 5));
 		ChangeRequest_Uplodedocuments.submit();
 		test = extent.createTest("Change Request Upload Document7");
+
 
 	}
 
