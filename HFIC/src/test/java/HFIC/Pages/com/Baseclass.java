@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -30,13 +31,13 @@ public class Baseclass {
 
 	@BeforeSuite
 	public void Start_up() {
-		//Start method
+		//Start method 1
 		config = new Configuration();
 		data = new TestDataProvider();
-		spark = new ExtentSparkReporter("./Reports/HFIC_Report_"+Helper.Get_CurrentTime()+".html");
+		spark = new ExtentSparkReporter(System.getProperty("user.dir")+"/Reports/PEGA_"+Helper.Get_CurrentTime()+".html");
 		extent = new ExtentReports();
 		extent.attachReporter(spark);
-	}
+	}	
 
 	@BeforeClass
 	public void Application_Start() {
@@ -62,17 +63,17 @@ public class Baseclass {
 			test.skip(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 
 		}
-		extent.flush();
-
-		 Browserfactory.Quit_Browser(driver);
+		
+		 extent.flush();
 
 
 
 	}
 
-//	 @AfterTest
-//	 public void Application_Exit() {
-//	 Browserfactory.Quit_Browser(driver);
-//	 }
+	 @AfterClass
+	 public void Application_Exit() {
+
+		 Browserfactory.Quit_Browser(driver);
+	 }
 
 }

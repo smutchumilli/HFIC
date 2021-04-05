@@ -16,7 +16,7 @@ public class Helper {
 
 public static String  Get_Screenshot(WebDriver driver) throws IOException  {
 	File Src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	String path=System.getProperty("user.dir")+"TestResults/"+Get_CurrentTime()+".png";
+	String path=System.getProperty("user.dir")+"/TestResults/PEGA_"+Get_CurrentTime()+".png";
 	FileHandler.copy(Src, new File(path));
 	return path;
 }

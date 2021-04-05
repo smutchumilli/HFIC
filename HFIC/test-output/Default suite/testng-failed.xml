@@ -7,7 +7,8 @@
         <methods>
           <include name="Tear_Down"/>
           <include name="Application_Start"/>
-          <include name="CR_HSAupdate"/>
+          <include name="Application_Exit"/>
+          <include name="CR_Member_update"/>
           <include name="Start_up"/>
         </methods>
       </class> <!-- HFIC.Testcases.com.CR_HSA -->
