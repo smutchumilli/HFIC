@@ -178,10 +178,12 @@ public class ChangeRequest_Uplodedocuments {
 		// Thread.sleep(3800);
 		OK.click();
 		Thread.sleep(2000);
-		Submit.click();
-		Thread.sleep(2000);
-		Thread.sleep(5000);
 
+	}
+
+	public void submit() throws InterruptedException {
+		Submit.click();
+		Thread.sleep(5000);
 	}
 
 	public void Document_Purpose() throws InterruptedException {
@@ -199,7 +201,7 @@ public class ChangeRequest_Uplodedocuments {
 	public void Doc_subtype() throws InterruptedException {
 		Select n = new Select(docsubtype);
 		n.selectByIndex(1);
-		 Thread.sleep(2000);
+		Thread.sleep(2000);
 
 	}
 
