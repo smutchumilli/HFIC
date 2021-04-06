@@ -1,667 +1,331 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="7" failed="1" ignored="0" total="8" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="14" passed="14">
   <reporter-output>
+    <line>
+      <![CDATA[Project set up done]]>
+    </line>
+    <line>
+      <![CDATA[Application up and running as expected]]>
+    </line>
+    <line>
+      <![CDATA[Test results are capture and report genwrated sussfully]]>
+    </line>
+    <line>
+      <![CDATA[Test results are capture and report genwrated sussfully]]>
+    </line>
+    <line>
+      <![CDATA[Test results are capture and report genwrated sussfully]]>
+    </line>
+    <line>
+      <![CDATA[Test results are capture and report genwrated sussfully]]>
+    </line>
+    <line>
+      <![CDATA[Test results are capture and report genwrated sussfully]]>
+    </line>
+    <line>
+      <![CDATA[Test results are capture and report genwrated sussfully]]>
+    </line>
+    <line>
+      <![CDATA[Test results are capture and report genwrated sussfully]]>
+    </line>
+    <line>
+      <![CDATA[Test results are capture and report genwrated sussfully]]>
+    </line>
+    <line>
+      <![CDATA[Test results are capture and report genwrated sussfully]]>
+    </line>
+    <line>
+      <![CDATA[Test results are capture and report genwrated sussfully]]>
+    </line>
+    <line>
+      <![CDATA[Test results are capture and report genwrated sussfully]]>
+    </line>
+    <line>
+      <![CDATA[Test results are capture and report genwrated sussfully]]>
+    </line>
+    <line>
+      <![CDATA[Test results are capture and report genwrated sussfully]]>
+    </line>
+    <line>
+      <![CDATA[Test results are capture and report genwrated sussfully]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36461" started-at="2021-04-05T23:34:10Z" finished-at="2021-04-05T23:34:46Z">
+  <suite name="Default suite" duration-ms="227432" started-at="2021-04-06T21:56:41Z" finished-at="2021-04-06T22:00:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36461" started-at="2021-04-05T23:34:10Z" finished-at="2021-04-05T23:34:46Z">
-      <class name="HFIC.Testcases.com.CR_UploadeDocuments">
-        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872]" name="Start_up" is-config="true" duration-ms="1118" started-at="2021-04-05T23:34:09Z" finished-at="2021-04-05T23:34:10Z">
+    <test name="Default test" duration-ms="227432" started-at="2021-04-06T21:56:41Z" finished-at="2021-04-06T22:00:28Z">
+      <class name="HFIC.Testcases.com.Enrollment_360">
+        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Start_up" is-config="true" duration-ms="933" started-at="2021-04-06T21:56:40Z" finished-at="2021-04-06T21:56:41Z">
           <reporter-output>
+            <line>
+              <![CDATA[Project set up done]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Start_up -->
-        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872]" name="Application_Start" is-config="true" duration-ms="6174" started-at="2021-04-05T23:34:10Z" finished-at="2021-04-05T23:34:16Z">
+        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Application_Start" is-config="true" duration-ms="7096" started-at="2021-04-06T21:56:41Z" finished-at="2021-04-06T21:56:48Z">
           <reporter-output>
+            <line>
+              <![CDATA[Application up and running as expected]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Application_Start -->
-        <test-method status="FAIL" signature="CR_UploadeDocument()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872]" name="CR_UploadeDocument" duration-ms="30209" started-at="2021-04-05T23:34:16Z" finished-at="2021-04-05T23:34:46Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Cannot locate an element using name=DocumentUploadUI_pyWorkPage_42
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-13', ip: '10.200.188.193', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using name=DocumentUploadUI_pyWorkPage_42
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-13', ip: '10.200.188.193', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-at org.openqa.selenium.By$ByName.findElement(By.java:284)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy13.click(Unknown Source)
-at HFIC.Pages.com.ChangeRequest_Uplodedocuments.DocumentType_Select(ChangeRequest_Uplodedocuments.java:88)
-at HFIC.Testcases.com.CR_UploadeDocuments.CR_UploadeDocument(CR_UploadeDocuments.java:19)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="HFIC_InValid_GRPnameSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HFIC_InValid_GRPnameSearch" duration-ms="12821" started-at="2021-04-06T21:56:48Z" finished-at="2021-04-06T21:57:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CR_UploadeDocument -->
-        <test-method status="FAIL" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872]" name="Tear_Down" is-config="true" duration-ms="20" started-at="2021-04-05T23:34:46Z" finished-at="2021-04-05T23:34:46Z">
+        </test-method> <!-- HFIC_InValid_GRPnameSearch -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="625" started-at="2021-04-06T21:57:00Z" finished-at="2021-04-06T21:57:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CR_UploadeDocument status=FAILURE method=CR_UploadeDocuments.CR_UploadeDocument()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=HFIC_InValid_GRPnameSearch status=SUCCESS method=Enrollment_360.HFIC_InValid_GRPnameSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-13', ip: '10.200.188.193', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a6ce9ae548e67482f23a7c1819684f93]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-13', ip: '10.200.188.193', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a6ce9ae548e67482f23a7c1819684f93
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-at Utilities.com.Helper.Get_Screenshot(Helper.java:18)
-at HFIC.Pages.com.Baseclass.Tear_Down(Baseclass.java:58)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
+            <line>
+              <![CDATA[Test results are capture and report genwrated sussfully]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="SKIP" signature="CR_UploadeDocument1()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872]" name="CR_UploadeDocument1" duration-ms="0" started-at="2021-04-05T23:34:46Z" finished-at="2021-04-05T23:34:46Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-13', ip: '10.200.188.193', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a6ce9ae548e67482f23a7c1819684f93]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-13', ip: '10.200.188.193', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a6ce9ae548e67482f23a7c1819684f93
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-at Utilities.com.Helper.Get_Screenshot(Helper.java:18)
-at HFIC.Pages.com.Baseclass.Tear_Down(Baseclass.java:58)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method status="PASS" signature="HFIC_InValid_GRPnumSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HFIC_InValid_GRPnumSearch" duration-ms="12740" started-at="2021-04-06T21:57:01Z" finished-at="2021-04-06T21:57:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CR_UploadeDocument1 -->
-        <test-method status="SKIP" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872]" name="Tear_Down" is-config="true" duration-ms="0" started-at="2021-04-05T23:34:46Z" finished-at="2021-04-05T23:34:46Z">
+        </test-method> <!-- HFIC_InValid_GRPnumSearch -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="297" started-at="2021-04-06T21:57:14Z" finished-at="2021-04-06T21:57:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HFIC_InValid_GRPnumSearch status=SUCCESS method=Enrollment_360.HFIC_InValid_GRPnumSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Test results are capture and report genwrated sussfully]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="SKIP" signature="CR_UploadeDocument2()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872]" name="CR_UploadeDocument2" duration-ms="0" started-at="2021-04-05T23:34:46Z" finished-at="2021-04-05T23:34:46Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-13', ip: '10.200.188.193', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a6ce9ae548e67482f23a7c1819684f93]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-13', ip: '10.200.188.193', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a6ce9ae548e67482f23a7c1819684f93
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-at Utilities.com.Helper.Get_Screenshot(Helper.java:18)
-at HFIC.Pages.com.Baseclass.Tear_Down(Baseclass.java:58)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method status="PASS" signature="HFIC_InValid_effdateSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HFIC_InValid_effdateSearch" duration-ms="12603" started-at="2021-04-06T21:57:14Z" finished-at="2021-04-06T21:57:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CR_UploadeDocument2 -->
-        <test-method status="SKIP" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872]" name="Tear_Down" is-config="true" duration-ms="0" started-at="2021-04-05T23:34:46Z" finished-at="2021-04-05T23:34:46Z">
+        </test-method> <!-- HFIC_InValid_effdateSearch -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="302" started-at="2021-04-06T21:57:27Z" finished-at="2021-04-06T21:57:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HFIC_InValid_effdateSearch status=SUCCESS method=Enrollment_360.HFIC_InValid_effdateSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Test results are capture and report genwrated sussfully]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="SKIP" signature="CR_UploadeDocument3()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872]" name="CR_UploadeDocument3" duration-ms="0" started-at="2021-04-05T23:34:46Z" finished-at="2021-04-05T23:34:46Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-13', ip: '10.200.188.193', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a6ce9ae548e67482f23a7c1819684f93]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-13', ip: '10.200.188.193', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a6ce9ae548e67482f23a7c1819684f93
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-at Utilities.com.Helper.Get_Screenshot(Helper.java:18)
-at HFIC.Pages.com.Baseclass.Tear_Down(Baseclass.java:58)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method status="PASS" signature="HFIC_InValid_taxSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HFIC_InValid_taxSearch" duration-ms="12763" started-at="2021-04-06T21:57:27Z" finished-at="2021-04-06T21:57:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CR_UploadeDocument3 -->
-        <test-method status="SKIP" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872]" name="Tear_Down" is-config="true" duration-ms="0" started-at="2021-04-05T23:34:46Z" finished-at="2021-04-05T23:34:46Z">
+        </test-method> <!-- HFIC_InValid_taxSearch -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="299" started-at="2021-04-06T21:57:40Z" finished-at="2021-04-06T21:57:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HFIC_InValid_taxSearch status=SUCCESS method=Enrollment_360.HFIC_InValid_taxSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Test results are capture and report genwrated sussfully]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="SKIP" signature="CR_UploadeDocument4()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872]" name="CR_UploadeDocument4" duration-ms="0" started-at="2021-04-05T23:34:46Z" finished-at="2021-04-05T23:34:46Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-13', ip: '10.200.188.193', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a6ce9ae548e67482f23a7c1819684f93]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-13', ip: '10.200.188.193', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a6ce9ae548e67482f23a7c1819684f93
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-at Utilities.com.Helper.Get_Screenshot(Helper.java:18)
-at HFIC.Pages.com.Baseclass.Tear_Down(Baseclass.java:58)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method status="PASS" signature="HFIC_Valid_GRPSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HFIC_Valid_GRPSearch" duration-ms="17733" started-at="2021-04-06T21:57:40Z" finished-at="2021-04-06T21:57:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CR_UploadeDocument4 -->
-        <test-method status="SKIP" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872]" name="Tear_Down" is-config="true" duration-ms="0" started-at="2021-04-05T23:34:46Z" finished-at="2021-04-05T23:34:46Z">
+        </test-method> <!-- HFIC_Valid_GRPSearch -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="289" started-at="2021-04-06T21:57:58Z" finished-at="2021-04-06T21:57:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HFIC_Valid_GRPSearch status=SUCCESS method=Enrollment_360.HFIC_Valid_GRPSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Test results are capture and report genwrated sussfully]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="SKIP" signature="CR_UploadeDocument5()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872]" name="CR_UploadeDocument5" duration-ms="0" started-at="2021-04-05T23:34:46Z" finished-at="2021-04-05T23:34:46Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-13', ip: '10.200.188.193', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a6ce9ae548e67482f23a7c1819684f93]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-13', ip: '10.200.188.193', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a6ce9ae548e67482f23a7c1819684f93
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-at Utilities.com.Helper.Get_Screenshot(Helper.java:18)
-at HFIC.Pages.com.Baseclass.Tear_Down(Baseclass.java:58)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method status="PASS" signature="HP_Group_Search()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HP_Group_Search" duration-ms="17703" started-at="2021-04-06T21:57:58Z" finished-at="2021-04-06T21:58:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CR_UploadeDocument5 -->
-        <test-method status="SKIP" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872]" name="Tear_Down" is-config="true" duration-ms="0" started-at="2021-04-05T23:34:46Z" finished-at="2021-04-05T23:34:46Z">
+        </test-method> <!-- HP_Group_Search -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="299" started-at="2021-04-06T21:58:16Z" finished-at="2021-04-06T21:58:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HP_Group_Search status=SUCCESS method=Enrollment_360.HP_Group_Search()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Test results are capture and report genwrated sussfully]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="SKIP" signature="CR_UploadeDocument6()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872]" name="CR_UploadeDocument6" duration-ms="0" started-at="2021-04-05T23:34:46Z" finished-at="2021-04-05T23:34:46Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-13', ip: '10.200.188.193', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a6ce9ae548e67482f23a7c1819684f93]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-13', ip: '10.200.188.193', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a6ce9ae548e67482f23a7c1819684f93
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-at Utilities.com.Helper.Get_Screenshot(Helper.java:18)
-at HFIC.Pages.com.Baseclass.Tear_Down(Baseclass.java:58)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method status="PASS" signature="HP_invalid_Group_Eff_Search()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HP_invalid_Group_Eff_Search" duration-ms="12684" started-at="2021-04-06T21:58:16Z" finished-at="2021-04-06T21:58:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CR_UploadeDocument6 -->
-        <test-method status="SKIP" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872]" name="Tear_Down" is-config="true" duration-ms="0" started-at="2021-04-05T23:34:46Z" finished-at="2021-04-05T23:34:46Z">
+        </test-method> <!-- HP_invalid_Group_Eff_Search -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="297" started-at="2021-04-06T21:58:29Z" finished-at="2021-04-06T21:58:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HP_invalid_Group_Eff_Search status=SUCCESS method=Enrollment_360.HP_invalid_Group_Eff_Search()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Test results are capture and report genwrated sussfully]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="SKIP" signature="CR_UploadeDocument7()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872]" name="CR_UploadeDocument7" duration-ms="0" started-at="2021-04-05T23:34:46Z" finished-at="2021-04-05T23:34:46Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-13', ip: '10.200.188.193', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a6ce9ae548e67482f23a7c1819684f93]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-13', ip: '10.200.188.193', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a6ce9ae548e67482f23a7c1819684f93
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-at Utilities.com.Helper.Get_Screenshot(Helper.java:18)
-at HFIC.Pages.com.Baseclass.Tear_Down(Baseclass.java:58)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method status="PASS" signature="HP_invalid_Group_Healthpass_Group_ID_Search()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HP_invalid_Group_Healthpass_Group_ID_Search" duration-ms="12662" started-at="2021-04-06T21:58:29Z" finished-at="2021-04-06T21:58:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CR_UploadeDocument7 -->
-        <test-method status="SKIP" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872]" name="Tear_Down" is-config="true" duration-ms="0" started-at="2021-04-05T23:34:46Z" finished-at="2021-04-05T23:34:46Z">
+        </test-method> <!-- HP_invalid_Group_Healthpass_Group_ID_Search -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="329" started-at="2021-04-06T21:58:42Z" finished-at="2021-04-06T21:58:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HP_invalid_Group_Healthpass_Group_ID_Search status=SUCCESS method=Enrollment_360.HP_invalid_Group_Healthpass_Group_ID_Search()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Test results are capture and report genwrated sussfully]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="SKIP" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@754ba872]" name="Application_Exit" is-config="true" duration-ms="0" started-at="2021-04-05T23:34:46Z" finished-at="2021-04-05T23:34:46Z">
+        <test-method status="PASS" signature="InvalidHFICMember360()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="InvalidHFICMember360" duration-ms="15535" started-at="2021-04-06T21:58:42Z" finished-at="2021-04-06T21:58:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidHFICMember360 -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="277" started-at="2021-04-06T21:58:58Z" finished-at="2021-04-06T21:58:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=InvalidHFICMember360 status=SUCCESS method=Enrollment_360.InvalidHFICMember360()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test results are capture and report genwrated sussfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="InvalidHFICMembereffectdate()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="InvalidHFICMembereffectdate" duration-ms="15523" started-at="2021-04-06T21:58:58Z" finished-at="2021-04-06T21:59:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidHFICMembereffectdate -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="300" started-at="2021-04-06T21:59:13Z" finished-at="2021-04-06T21:59:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=InvalidHFICMembereffectdate status=SUCCESS method=Enrollment_360.InvalidHFICMembereffectdate()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test results are capture and report genwrated sussfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="InvalidHPMember360()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="InvalidHPMember360" duration-ms="15569" started-at="2021-04-06T21:59:14Z" finished-at="2021-04-06T21:59:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidHPMember360 -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="282" started-at="2021-04-06T21:59:29Z" finished-at="2021-04-06T21:59:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=InvalidHPMember360 status=SUCCESS method=Enrollment_360.InvalidHPMember360()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test results are capture and report genwrated sussfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="InvalidHPMembereffectdate()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="InvalidHPMembereffectdate" duration-ms="15540" started-at="2021-04-06T21:59:30Z" finished-at="2021-04-06T21:59:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidHPMembereffectdate -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="287" started-at="2021-04-06T21:59:45Z" finished-at="2021-04-06T21:59:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=InvalidHPMembereffectdate status=SUCCESS method=Enrollment_360.InvalidHPMembereffectdate()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test results are capture and report genwrated sussfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="VALIDHFICMember360()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="VALIDHFICMember360" duration-ms="20563" started-at="2021-04-06T21:59:45Z" finished-at="2021-04-06T22:00:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VALIDHFICMember360 -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="309" started-at="2021-04-06T22:00:06Z" finished-at="2021-04-06T22:00:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VALIDHFICMember360 status=SUCCESS method=Enrollment_360.VALIDHFICMember360()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test results are capture and report genwrated sussfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="VALIDHPMember360()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="VALIDHPMember360" duration-ms="20639" started-at="2021-04-06T22:00:06Z" finished-at="2021-04-06T22:00:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VALIDHPMember360 -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="308" started-at="2021-04-06T22:00:27Z" finished-at="2021-04-06T22:00:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VALIDHPMember360 status=SUCCESS method=Enrollment_360.VALIDHPMember360()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test results are capture and report genwrated sussfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Application_Exit" is-config="true" duration-ms="719" started-at="2021-04-06T22:00:27Z" finished-at="2021-04-06T22:00:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Exit -->
-      </class> <!-- HFIC.Testcases.com.CR_UploadeDocuments -->
+      </class> <!-- HFIC.Testcases.com.Enrollment_360 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

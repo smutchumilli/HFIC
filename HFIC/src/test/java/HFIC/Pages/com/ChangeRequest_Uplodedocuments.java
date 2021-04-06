@@ -10,8 +10,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Reporter;
 
-public class ChangeRequest_Uplodedocuments {
+import com.aventstack.extentreports.Status;
+
+public class ChangeRequest_Uplodedocuments extends Baseclass {
 	WebDriver driver;
 	public Robot rb;
 
@@ -81,6 +84,9 @@ public class ChangeRequest_Uplodedocuments {
 		//// Thread.sleep(3800);
 		Search_result.click();
 		//// Thread.sleep(3800);
+		Reporter.log("Search completed ", true);
+
+
 	}
 
 	public void DocumentType_Select(int i) throws InterruptedException, AWTException {
@@ -94,6 +100,9 @@ public class ChangeRequest_Uplodedocuments {
 		StringSelection stringSelection = new StringSelection(myString);
 		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 		clipboard.setContents(stringSelection, null);
+		Reporter.log("Documents type selected succssfully", true);
+
+
 
 	}
 
@@ -178,6 +187,9 @@ public class ChangeRequest_Uplodedocuments {
 		// Thread.sleep(3800);
 		OK.click();
 		Thread.sleep(2000);
+
+		Reporter.log("notes  added succssfully", true);
+
 
 	}
 

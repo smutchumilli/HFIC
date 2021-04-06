@@ -14,10 +14,12 @@ public class CR_HSA extends Baseclass {
 	@Test
 	public void CR_Member_update() throws InterruptedException, AWTException {
 		
-		test = extent.createTest("Change Request HSA Member");
+		test = extent.createTest("Change Request HSA Member Update");
+
 		ChangeRequest_HSA ChangeRequest_HSA = PageFactory.initElements(driver,
 				ChangeRequest_HSA.class);
-		
+		test.info("HSA Member details are updated successfull");
+
 		ChangeRequest_HSA.HSA_MemberUpdate(data.getstringdata("HSA", 0, 0),
 				data.getstringdata("HSA", 0, 1), 
 				data.getstringdata("HSA", 0, 2), 
@@ -30,14 +32,17 @@ public class CR_HSA extends Baseclass {
 				data.getstringdata("HSA", 6, 3),
 				data.getstringdata("HSA", 7, 3),
 				data.getstringdata("HSA", 8, 3));
+		test.info("HSA Member details are updated successfully");
 	}
 		//Group details Update
 	@Test
 		public void CR_HSA_Groupupdate() throws InterruptedException, AWTException {
 			
-			test = extent.createTest("Change Request HSA Group");
+			test = extent.createTest("Change Request HSA Group Update");
 			ChangeRequest_HSA ChangeRequest_HSA = PageFactory.initElements(driver,
 					ChangeRequest_HSA.class);
+			test.info("HSA Group details are updated successfully");
+
 		ChangeRequest_HSA.HSA_GrpUpdate(data.getstringdata("HSA", 0, 7),
 				data.getstringdata("HSA", 0, 8), 
 				data.getstringdata("HSA", 0, 9), 

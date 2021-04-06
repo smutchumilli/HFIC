@@ -140,6 +140,8 @@ public class ChangeRequest_HSA extends Baseclass {
 		OK.click();
 		Thread.sleep(2000);		
 		submit.click();
+		Thread.sleep(3000);		
+
 
 		
 	}
@@ -191,6 +193,8 @@ public class ChangeRequest_HSA extends Baseclass {
 		OK.click();
 		Thread.sleep(2000);		
 		submit.click();
+		Thread.sleep(3000);		
+
 		
 	}
 	

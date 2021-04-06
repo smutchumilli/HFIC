@@ -3,22 +3,28 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HFIC.Testcases.com.CR_UploadeDocuments">
+      <class name="HFIC.Testcases.com.Enrollment_360">
         <methods>
-          <include name="CR_UploadeDocument"/>
-          <include name="CR_UploadeDocument7"/>
-          <include name="CR_UploadeDocument2"/>
+          <include name="HFIC_InValid_GRPnameSearch"/>
+          <include name="HFIC_InValid_GRPnumSearch"/>
+          <include name="VALIDHPMember360"/>
+          <include name="HFIC_Valid_GRPSearch"/>
+          <include name="HP_invalid_Group_Healthpass_Group_ID_Search"/>
+          <include name="InvalidHPMembereffectdate"/>
+          <include name="InvalidHFICMember360"/>
+          <include name="InvalidHPMember360"/>
+          <include name="Start_up"/>
+          <include name="HFIC_InValid_effdateSearch"/>
+          <include name="HP_Group_Search"/>
           <include name="Tear_Down"/>
           <include name="Application_Start"/>
-          <include name="CR_UploadeDocument6"/>
+          <include name="HFIC_InValid_taxSearch"/>
           <include name="Application_Exit"/>
-          <include name="CR_UploadeDocument1"/>
-          <include name="CR_UploadeDocument3"/>
-          <include name="CR_UploadeDocument4"/>
-          <include name="CR_UploadeDocument5"/>
-          <include name="Start_up"/>
+          <include name="HP_invalid_Group_Eff_Search"/>
+          <include name="VALIDHFICMember360"/>
+          <include name="InvalidHFICMembereffectdate"/>
         </methods>
-      </class> <!-- HFIC.Testcases.com.CR_UploadeDocuments -->
+      </class> <!-- HFIC.Testcases.com.Enrollment_360 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

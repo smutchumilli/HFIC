@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -37,11 +38,16 @@ public class Baseclass {
 		spark = new ExtentSparkReporter(System.getProperty("user.dir")+"/Reports/PEGA_"+Helper.Get_CurrentTime()+".html");
 		extent = new ExtentReports();
 		extent.attachReporter(spark);
+		Reporter.log("Project set up done", true);
+
 	}	
 
 	@BeforeClass
+	
 	public void Application_Start() {
+
 		driver = Browserfactory.Start_Application(driver, config.getPEGAURL(), config.getBrowser());
+		Reporter.log("Application up and running as expected", true);
 
 	}
 
@@ -64,9 +70,11 @@ public class Baseclass {
 
 		}
 		
+		
+
 		 extent.flush();
 
-
+			Reporter.log("Test results are capture and report genwrated sussfully", true);
 
 	}
 
