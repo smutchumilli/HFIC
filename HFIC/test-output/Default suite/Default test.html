@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>22/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 07 15:24:03 EDT 2021</td>
+<td>Started on:</td><td>Wed Apr 07 17:17:09 EDT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>222 seconds (222561 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11932 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,6 +68,93 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HFIC.Testcases.com.PEGA_Search.Tear_Down()'><b>Tear_Down</b><br>Test class: HFIC.Testcases.com.PEGA_Search<br>Parameters: [TestResult name=Application_Search_Initial status=FAILURE method=PEGA_Search.Application_Search_Initial()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe] output={null}]</td>
+<td><div><pre>java.lang.NullPointerException
+	at HFIC.Pages.com.Baseclass.Tear_Down(Baseclass.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2099932844", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2099932844'><pre>java.lang.NullPointerException
+	at HFIC.Pages.com.Baseclass.Tear_Down(Baseclass.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>HFIC.Testcases.com.PEGA_Search@e25b2fe</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HFIC.Testcases.com.PEGA_Search.Application_Exit()'><b>Application_Exit</b><br>Test class: HFIC.Testcases.com.PEGA_Search</td>
+<td></td>
+<td>0</td>
+<td>HFIC.Testcases.com.PEGA_Search@e25b2fe</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -75,13 +162,34 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='HFIC.Testcases.com.Enrollment_360.OMI_Invalid_HP_SSN()'><b>OMI_Invalid_HP_SSN</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td><div><pre>java.lang.AssertionError: Testpass expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at HFIC.Pages.com.Enrollment360.merror(Enrollment360.java:83)
-	at HFIC.Testcases.com.Enrollment_360.OMI_Invalid_HP_SSN(Enrollment_360.java:366)
+<td title='HFIC.Testcases.com.PEGA_Search.Application_Search_Initial()'><b>Application_Search_Initial</b><br>Test class: HFIC.Testcases.com.PEGA_Search</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=89.0.4389.114)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SVFL-XAADQAF-13&apos;, ip: &apos;10.200.188.193&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4688996eed62f70131f5c08db8335246
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+	at HFIC.Pages.com.Search.CEFrom(Search.java:114)
+	at HFIC.Testcases.com.PEGA_Search.Application_Search_Initial(PEGA_Search.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -107,81 +215,34 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace354071225", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace354071225'><pre>java.lang.AssertionError: Testpass expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at HFIC.Pages.com.Enrollment360.merror(Enrollment360.java:83)
-	at HFIC.Testcases.com.Enrollment_360.OMI_Invalid_HP_SSN(Enrollment_360.java:366)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1721576219", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1721576219'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=89.0.4389.114)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SVFL-XAADQAF-13&apos;, ip: &apos;10.200.188.193&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4688996eed62f70131f5c08db8335246
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>9</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.OMI_Invalid_SSN()'><b>OMI_Invalid_SSN</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td><div><pre>java.lang.AssertionError: Testpass expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at HFIC.Pages.com.Enrollment360.merror(Enrollment360.java:83)
-	at HFIC.Testcases.com.Enrollment_360.OMI_Invalid_SSN(Enrollment_360.java:288)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace884502914", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace884502914'><pre>java.lang.AssertionError: Testpass expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at HFIC.Pages.com.Enrollment360.merror(Enrollment360.java:83)
-	at HFIC.Testcases.com.Enrollment_360.OMI_Invalid_SSN(Enrollment_360.java:288)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+	at HFIC.Pages.com.Search.CEFrom(Search.java:114)
+	at HFIC.Testcases.com.PEGA_Search.Application_Search_Initial(PEGA_Search.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -208,126 +269,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>9</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.HFIC_InValid_EffdateSearch()'><b>HFIC_InValid_EffdateSearch</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>5</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.HFIC_InValid_GRPnameSearch()'><b>HFIC_InValid_GRPnameSearch</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>5</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.HFIC_InValid_GRPnumSearch()'><b>HFIC_InValid_GRPnumSearch</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>6</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.HFIC_InValid_taxSearch()'><b>HFIC_InValid_taxSearch</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>5</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.HFIC_Valid_GRPSearch()'><b>HFIC_Valid_GRPSearch</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>9</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.HP_Group_Search()'><b>HP_Group_Search</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>8</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.HP_invalid_Group_Eff_Search()'><b>HP_invalid_Group_Eff_Search</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
 <td>7</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.InvalidHFICMember360()'><b>InvalidHFICMember360</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>7</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.InvalidHFICMembereffectdate()'><b>InvalidHFICMembereffectdate</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>7</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.InvalidHPMember360()'><b>InvalidHPMember360</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>7</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.InvalidHPMembereffectdate()'><b>InvalidHPMembereffectdate</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>7</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.OMI_Invalid_DOB()'><b>OMI_Invalid_DOB</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>9</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.OMI_Invalid_Fname()'><b>OMI_Invalid_Fname</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>9</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.OMI_Invalid_HP_DOB()'><b>OMI_Invalid_HP_DOB</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>9</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.OMI_Invalid_HP_Fname()'><b>OMI_Invalid_HP_Fname</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>9</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.OMI_Invalid_HP_Lname()'><b>OMI_Invalid_HP_Lname</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>9</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.OMI_Invalid_Lname()'><b>OMI_Invalid_Lname</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>9</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.OMI_valid_HP_MemSearch()'><b>OMI_valid_HP_MemSearch</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>12</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.OMI_valid_MemberSearch()'><b>OMI_valid_MemberSearch</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>12</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.ValidHFIC_MemberSearch()'><b>ValidHFIC_MemberSearch</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>9</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.Valid_HP_MemberSearch()'><b>Valid_HP_MemberSearch</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>9</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
-<tr>
-<td title='HFIC.Testcases.com.Enrollment_360.invalid_Group_Healthpass_Group_ID_Search()'><b>invalid_Group_Healthpass_Group_ID_Search</b><br>Test class: HFIC.Testcases.com.Enrollment_360</td>
-<td></td>
-<td>7</td>
-<td>HFIC.Testcases.com.Enrollment_360@754ba872</td></tr>
+<td>HFIC.Testcases.com.PEGA_Search@e25b2fe</td></tr>
 </table><p>
 </body>
 </html>

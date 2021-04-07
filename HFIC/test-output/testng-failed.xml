@@ -3,16 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HFIC.Testcases.com.Enrollment_360">
+      <class name="HFIC.Testcases.com.PEGA_Search">
         <methods>
-          <include name="OMI_Invalid_HP_SSN"/>
           <include name="Tear_Down"/>
           <include name="Application_Start"/>
           <include name="Application_Exit"/>
-          <include name="OMI_Invalid_SSN"/>
+          <include name="Application_Search_Initial"/>
           <include name="Start_up"/>
         </methods>
-      </class> <!-- HFIC.Testcases.com.Enrollment_360 -->
+      </class> <!-- HFIC.Testcases.com.PEGA_Search -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
