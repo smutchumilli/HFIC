@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="14" passed="14">
+<testng-results skipped="0" failed="2" ignored="0" total="24" passed="22">
   <reporter-output>
     <line>
       <![CDATA[Project set up done]]>
@@ -7,321 +7,465 @@
     <line>
       <![CDATA[Application up and running as expected]]>
     </line>
-    <line>
-      <![CDATA[Test results are capture and report genwrated sussfully]]>
-    </line>
-    <line>
-      <![CDATA[Test results are capture and report genwrated sussfully]]>
-    </line>
-    <line>
-      <![CDATA[Test results are capture and report genwrated sussfully]]>
-    </line>
-    <line>
-      <![CDATA[Test results are capture and report genwrated sussfully]]>
-    </line>
-    <line>
-      <![CDATA[Test results are capture and report genwrated sussfully]]>
-    </line>
-    <line>
-      <![CDATA[Test results are capture and report genwrated sussfully]]>
-    </line>
-    <line>
-      <![CDATA[Test results are capture and report genwrated sussfully]]>
-    </line>
-    <line>
-      <![CDATA[Test results are capture and report genwrated sussfully]]>
-    </line>
-    <line>
-      <![CDATA[Test results are capture and report genwrated sussfully]]>
-    </line>
-    <line>
-      <![CDATA[Test results are capture and report genwrated sussfully]]>
-    </line>
-    <line>
-      <![CDATA[Test results are capture and report genwrated sussfully]]>
-    </line>
-    <line>
-      <![CDATA[Test results are capture and report genwrated sussfully]]>
-    </line>
-    <line>
-      <![CDATA[Test results are capture and report genwrated sussfully]]>
-    </line>
-    <line>
-      <![CDATA[Test results are capture and report genwrated sussfully]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="227432" started-at="2021-04-06T21:56:41Z" finished-at="2021-04-06T22:00:28Z">
+  <suite name="Default suite" duration-ms="222561" started-at="2021-04-07T19:24:03Z" finished-at="2021-04-07T19:27:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="227432" started-at="2021-04-06T21:56:41Z" finished-at="2021-04-06T22:00:28Z">
+    <test name="Default test" duration-ms="222561" started-at="2021-04-07T19:24:03Z" finished-at="2021-04-07T19:27:45Z">
       <class name="HFIC.Testcases.com.Enrollment_360">
-        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Start_up" is-config="true" duration-ms="933" started-at="2021-04-06T21:56:40Z" finished-at="2021-04-06T21:56:41Z">
+        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Start_up" is-config="true" duration-ms="1010" started-at="2021-04-07T19:24:02Z" finished-at="2021-04-07T19:24:03Z">
           <reporter-output>
             <line>
               <![CDATA[Project set up done]]>
             </line>
           </reporter-output>
         </test-method> <!-- Start_up -->
-        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Application_Start" is-config="true" duration-ms="7096" started-at="2021-04-06T21:56:41Z" finished-at="2021-04-06T21:56:48Z">
+        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Application_Start" is-config="true" duration-ms="8358" started-at="2021-04-07T19:24:03Z" finished-at="2021-04-07T19:24:11Z">
           <reporter-output>
             <line>
               <![CDATA[Application up and running as expected]]>
             </line>
           </reporter-output>
         </test-method> <!-- Application_Start -->
-        <test-method status="PASS" signature="HFIC_InValid_GRPnameSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HFIC_InValid_GRPnameSearch" duration-ms="12821" started-at="2021-04-06T21:56:48Z" finished-at="2021-04-06T21:57:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HFIC_InValid_GRPnameSearch -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="625" started-at="2021-04-06T21:57:00Z" finished-at="2021-04-06T21:57:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=HFIC_InValid_GRPnameSearch status=SUCCESS method=Enrollment_360.HFIC_InValid_GRPnameSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test results are capture and report genwrated sussfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="HFIC_InValid_GRPnumSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HFIC_InValid_GRPnumSearch" duration-ms="12740" started-at="2021-04-06T21:57:01Z" finished-at="2021-04-06T21:57:14Z">
+        <test-method status="PASS" signature="HFIC_InValid_GRPnumSearch()[pri:1, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HFIC_InValid_GRPnumSearch" duration-ms="6347" started-at="2021-04-07T19:24:11Z" finished-at="2021-04-07T19:24:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HFIC_InValid_GRPnumSearch -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="297" started-at="2021-04-06T21:57:14Z" finished-at="2021-04-06T21:57:14Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="711" started-at="2021-04-07T19:24:18Z" finished-at="2021-04-07T19:24:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=HFIC_InValid_GRPnumSearch status=SUCCESS method=Enrollment_360.HFIC_InValid_GRPnumSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=HFIC_InValid_GRPnumSearch status=SUCCESS method=Enrollment_360.HFIC_InValid_GRPnumSearch()[pri:1, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test results are capture and report genwrated sussfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="HFIC_InValid_effdateSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HFIC_InValid_effdateSearch" duration-ms="12603" started-at="2021-04-06T21:57:14Z" finished-at="2021-04-06T21:57:27Z">
+        <test-method status="PASS" signature="HFIC_InValid_GRPnameSearch()[pri:2, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HFIC_InValid_GRPnameSearch" duration-ms="5752" started-at="2021-04-07T19:24:18Z" finished-at="2021-04-07T19:24:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HFIC_InValid_effdateSearch -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="302" started-at="2021-04-06T21:57:27Z" finished-at="2021-04-06T21:57:27Z">
+        </test-method> <!-- HFIC_InValid_GRPnameSearch -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="316" started-at="2021-04-07T19:24:24Z" finished-at="2021-04-07T19:24:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=HFIC_InValid_effdateSearch status=SUCCESS method=Enrollment_360.HFIC_InValid_effdateSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=HFIC_InValid_GRPnameSearch status=SUCCESS method=Enrollment_360.HFIC_InValid_GRPnameSearch()[pri:2, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test results are capture and report genwrated sussfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="HFIC_InValid_taxSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HFIC_InValid_taxSearch" duration-ms="12763" started-at="2021-04-06T21:57:27Z" finished-at="2021-04-06T21:57:40Z">
+        <test-method status="PASS" signature="HFIC_InValid_EffdateSearch()[pri:3, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HFIC_InValid_EffdateSearch" duration-ms="5803" started-at="2021-04-07T19:24:24Z" finished-at="2021-04-07T19:24:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HFIC_InValid_EffdateSearch -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="320" started-at="2021-04-07T19:24:30Z" finished-at="2021-04-07T19:24:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HFIC_InValid_EffdateSearch status=SUCCESS method=Enrollment_360.HFIC_InValid_EffdateSearch()[pri:3, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="HFIC_InValid_taxSearch()[pri:4, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HFIC_InValid_taxSearch" duration-ms="5709" started-at="2021-04-07T19:24:31Z" finished-at="2021-04-07T19:24:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HFIC_InValid_taxSearch -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="299" started-at="2021-04-06T21:57:40Z" finished-at="2021-04-06T21:57:40Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="293" started-at="2021-04-07T19:24:36Z" finished-at="2021-04-07T19:24:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=HFIC_InValid_taxSearch status=SUCCESS method=Enrollment_360.HFIC_InValid_taxSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=HFIC_InValid_taxSearch status=SUCCESS method=Enrollment_360.HFIC_InValid_taxSearch()[pri:4, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test results are capture and report genwrated sussfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="HFIC_Valid_GRPSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HFIC_Valid_GRPSearch" duration-ms="17733" started-at="2021-04-06T21:57:40Z" finished-at="2021-04-06T21:57:58Z">
+        <test-method status="PASS" signature="HFIC_Valid_GRPSearch()[pri:5, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HFIC_Valid_GRPSearch" duration-ms="9076" started-at="2021-04-07T19:24:37Z" finished-at="2021-04-07T19:24:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HFIC_Valid_GRPSearch -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="289" started-at="2021-04-06T21:57:58Z" finished-at="2021-04-06T21:57:58Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="300" started-at="2021-04-07T19:24:46Z" finished-at="2021-04-07T19:24:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=HFIC_Valid_GRPSearch status=SUCCESS method=Enrollment_360.HFIC_Valid_GRPSearch()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=HFIC_Valid_GRPSearch status=SUCCESS method=Enrollment_360.HFIC_Valid_GRPSearch()[pri:5, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test results are capture and report genwrated sussfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="HP_Group_Search()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HP_Group_Search" duration-ms="17703" started-at="2021-04-06T21:57:58Z" finished-at="2021-04-06T21:58:16Z">
+        <test-method status="PASS" signature="invalid_Group_Healthpass_Group_ID_Search()[pri:5, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="invalid_Group_Healthpass_Group_ID_Search" duration-ms="7662" started-at="2021-04-07T19:24:46Z" finished-at="2021-04-07T19:24:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HP_Group_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="299" started-at="2021-04-06T21:58:16Z" finished-at="2021-04-06T21:58:16Z">
+        </test-method> <!-- invalid_Group_Healthpass_Group_ID_Search -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="337" started-at="2021-04-07T19:24:54Z" finished-at="2021-04-07T19:24:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=HP_Group_Search status=SUCCESS method=Enrollment_360.HP_Group_Search()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=invalid_Group_Healthpass_Group_ID_Search status=SUCCESS method=Enrollment_360.invalid_Group_Healthpass_Group_ID_Search()[pri:5, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test results are capture and report genwrated sussfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="HP_invalid_Group_Eff_Search()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HP_invalid_Group_Eff_Search" duration-ms="12684" started-at="2021-04-06T21:58:16Z" finished-at="2021-04-06T21:58:29Z">
+        <test-method status="PASS" signature="HP_invalid_Group_Eff_Search()[pri:6, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HP_invalid_Group_Eff_Search" duration-ms="7742" started-at="2021-04-07T19:24:54Z" finished-at="2021-04-07T19:25:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HP_invalid_Group_Eff_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="297" started-at="2021-04-06T21:58:29Z" finished-at="2021-04-06T21:58:29Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="324" started-at="2021-04-07T19:25:02Z" finished-at="2021-04-07T19:25:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=HP_invalid_Group_Eff_Search status=SUCCESS method=Enrollment_360.HP_invalid_Group_Eff_Search()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=HP_invalid_Group_Eff_Search status=SUCCESS method=Enrollment_360.HP_invalid_Group_Eff_Search()[pri:6, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test results are capture and report genwrated sussfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="HP_invalid_Group_Healthpass_Group_ID_Search()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HP_invalid_Group_Healthpass_Group_ID_Search" duration-ms="12662" started-at="2021-04-06T21:58:29Z" finished-at="2021-04-06T21:58:42Z">
+        <test-method status="PASS" signature="HP_Group_Search()[pri:7, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="HP_Group_Search" duration-ms="8785" started-at="2021-04-07T19:25:02Z" finished-at="2021-04-07T19:25:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HP_invalid_Group_Healthpass_Group_ID_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="329" started-at="2021-04-06T21:58:42Z" finished-at="2021-04-06T21:58:42Z">
+        </test-method> <!-- HP_Group_Search -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="298" started-at="2021-04-07T19:25:11Z" finished-at="2021-04-07T19:25:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=HP_invalid_Group_Healthpass_Group_ID_Search status=SUCCESS method=Enrollment_360.HP_invalid_Group_Healthpass_Group_ID_Search()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=HP_Group_Search status=SUCCESS method=Enrollment_360.HP_Group_Search()[pri:7, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test results are capture and report genwrated sussfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="InvalidHFICMember360()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="InvalidHFICMember360" duration-ms="15535" started-at="2021-04-06T21:58:42Z" finished-at="2021-04-06T21:58:58Z">
+        <test-method status="PASS" signature="InvalidHFICMember360()[pri:8, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="InvalidHFICMember360" duration-ms="7080" started-at="2021-04-07T19:25:11Z" finished-at="2021-04-07T19:25:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidHFICMember360 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="277" started-at="2021-04-06T21:58:58Z" finished-at="2021-04-06T21:58:58Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="307" started-at="2021-04-07T19:25:18Z" finished-at="2021-04-07T19:25:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=InvalidHFICMember360 status=SUCCESS method=Enrollment_360.InvalidHFICMember360()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=InvalidHFICMember360 status=SUCCESS method=Enrollment_360.InvalidHFICMember360()[pri:8, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test results are capture and report genwrated sussfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="InvalidHFICMembereffectdate()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="InvalidHFICMembereffectdate" duration-ms="15523" started-at="2021-04-06T21:58:58Z" finished-at="2021-04-06T21:59:13Z">
+        <test-method status="PASS" signature="InvalidHFICMembereffectdate()[pri:9, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="InvalidHFICMembereffectdate" duration-ms="7092" started-at="2021-04-07T19:25:18Z" finished-at="2021-04-07T19:25:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidHFICMembereffectdate -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="300" started-at="2021-04-06T21:59:13Z" finished-at="2021-04-06T21:59:14Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="293" started-at="2021-04-07T19:25:26Z" finished-at="2021-04-07T19:25:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=InvalidHFICMembereffectdate status=SUCCESS method=Enrollment_360.InvalidHFICMembereffectdate()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=InvalidHFICMembereffectdate status=SUCCESS method=Enrollment_360.InvalidHFICMembereffectdate()[pri:9, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test results are capture and report genwrated sussfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="InvalidHPMember360()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="InvalidHPMember360" duration-ms="15569" started-at="2021-04-06T21:59:14Z" finished-at="2021-04-06T21:59:29Z">
+        <test-method status="PASS" signature="ValidHFIC_MemberSearch()[pri:10, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="ValidHFIC_MemberSearch" duration-ms="9730" started-at="2021-04-07T19:25:26Z" finished-at="2021-04-07T19:25:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InvalidHPMember360 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="282" started-at="2021-04-06T21:59:29Z" finished-at="2021-04-06T21:59:30Z">
+        </test-method> <!-- ValidHFIC_MemberSearch -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="315" started-at="2021-04-07T19:25:36Z" finished-at="2021-04-07T19:25:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=InvalidHPMember360 status=SUCCESS method=Enrollment_360.InvalidHPMember360()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=ValidHFIC_MemberSearch status=SUCCESS method=Enrollment_360.ValidHFIC_MemberSearch()[pri:10, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test results are capture and report genwrated sussfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="InvalidHPMembereffectdate()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="InvalidHPMembereffectdate" duration-ms="15540" started-at="2021-04-06T21:59:30Z" finished-at="2021-04-06T21:59:45Z">
+        <test-method status="PASS" signature="InvalidHPMembereffectdate()[pri:11, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="InvalidHPMembereffectdate" duration-ms="7162" started-at="2021-04-07T19:25:36Z" finished-at="2021-04-07T19:25:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidHPMembereffectdate -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="287" started-at="2021-04-06T21:59:45Z" finished-at="2021-04-06T21:59:45Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="299" started-at="2021-04-07T19:25:43Z" finished-at="2021-04-07T19:25:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=InvalidHPMembereffectdate status=SUCCESS method=Enrollment_360.InvalidHPMembereffectdate()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=InvalidHPMembereffectdate status=SUCCESS method=Enrollment_360.InvalidHPMembereffectdate()[pri:11, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test results are capture and report genwrated sussfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="VALIDHFICMember360()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="VALIDHFICMember360" duration-ms="20563" started-at="2021-04-06T21:59:45Z" finished-at="2021-04-06T22:00:06Z">
+        <test-method status="PASS" signature="InvalidHPMember360()[pri:12, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="InvalidHPMember360" duration-ms="7095" started-at="2021-04-07T19:25:43Z" finished-at="2021-04-07T19:25:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VALIDHFICMember360 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="309" started-at="2021-04-06T22:00:06Z" finished-at="2021-04-06T22:00:06Z">
+        </test-method> <!-- InvalidHPMember360 -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="309" started-at="2021-04-07T19:25:50Z" finished-at="2021-04-07T19:25:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VALIDHFICMember360 status=SUCCESS method=Enrollment_360.VALIDHFICMember360()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=InvalidHPMember360 status=SUCCESS method=Enrollment_360.InvalidHPMember360()[pri:12, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test results are capture and report genwrated sussfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="VALIDHPMember360()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="VALIDHPMember360" duration-ms="20639" started-at="2021-04-06T22:00:06Z" finished-at="2021-04-06T22:00:27Z">
+        <test-method status="PASS" signature="Valid_HP_MemberSearch()[pri:13, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Valid_HP_MemberSearch" duration-ms="9626" started-at="2021-04-07T19:25:51Z" finished-at="2021-04-07T19:26:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VALIDHPMember360 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="308" started-at="2021-04-06T22:00:27Z" finished-at="2021-04-06T22:00:27Z">
+        </test-method> <!-- Valid_HP_MemberSearch -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="290" started-at="2021-04-07T19:26:00Z" finished-at="2021-04-07T19:26:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VALIDHPMember360 status=SUCCESS method=Enrollment_360.VALIDHPMember360()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=Valid_HP_MemberSearch status=SUCCESS method=Enrollment_360.Valid_HP_MemberSearch()[pri:13, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test results are capture and report genwrated sussfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Application_Exit" is-config="true" duration-ms="719" started-at="2021-04-06T22:00:27Z" finished-at="2021-04-06T22:00:28Z">
+        <test-method status="PASS" signature="OMI_Invalid_Fname()[pri:14, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="OMI_Invalid_Fname" duration-ms="9497" started-at="2021-04-07T19:26:01Z" finished-at="2021-04-07T19:26:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OMI_Invalid_Fname -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="312" started-at="2021-04-07T19:26:10Z" finished-at="2021-04-07T19:26:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OMI_Invalid_Fname status=SUCCESS method=Enrollment_360.OMI_Invalid_Fname()[pri:14, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="OMI_Invalid_Lname()[pri:15, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="OMI_Invalid_Lname" duration-ms="9584" started-at="2021-04-07T19:26:10Z" finished-at="2021-04-07T19:26:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OMI_Invalid_Lname -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="294" started-at="2021-04-07T19:26:20Z" finished-at="2021-04-07T19:26:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OMI_Invalid_Lname status=SUCCESS method=Enrollment_360.OMI_Invalid_Lname()[pri:15, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="OMI_Invalid_DOB()[pri:16, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="OMI_Invalid_DOB" duration-ms="9568" started-at="2021-04-07T19:26:20Z" finished-at="2021-04-07T19:26:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OMI_Invalid_DOB -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="291" started-at="2021-04-07T19:26:30Z" finished-at="2021-04-07T19:26:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OMI_Invalid_DOB status=SUCCESS method=Enrollment_360.OMI_Invalid_DOB()[pri:16, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="FAIL" signature="OMI_Invalid_SSN()[pri:17, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="OMI_Invalid_SSN" duration-ms="9626" started-at="2021-04-07T19:26:30Z" finished-at="2021-04-07T19:26:40Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Testpass expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Testpass expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at HFIC.Pages.com.Enrollment360.merror(Enrollment360.java:83)
+at HFIC.Testcases.com.Enrollment_360.OMI_Invalid_SSN(Enrollment_360.java:288)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OMI_Invalid_SSN -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="313" started-at="2021-04-07T19:26:40Z" finished-at="2021-04-07T19:26:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OMI_Invalid_SSN status=FAILURE method=Enrollment_360.OMI_Invalid_SSN()[pri:17, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="OMI_valid_MemberSearch()[pri:18, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="OMI_valid_MemberSearch" duration-ms="12148" started-at="2021-04-07T19:26:40Z" finished-at="2021-04-07T19:26:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OMI_valid_MemberSearch -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="321" started-at="2021-04-07T19:26:52Z" finished-at="2021-04-07T19:26:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OMI_valid_MemberSearch status=SUCCESS method=Enrollment_360.OMI_valid_MemberSearch()[pri:18, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="OMI_Invalid_HP_Fname()[pri:19, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="OMI_Invalid_HP_Fname" duration-ms="9628" started-at="2021-04-07T19:26:53Z" finished-at="2021-04-07T19:27:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OMI_Invalid_HP_Fname -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="291" started-at="2021-04-07T19:27:02Z" finished-at="2021-04-07T19:27:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OMI_Invalid_HP_Fname status=SUCCESS method=Enrollment_360.OMI_Invalid_HP_Fname()[pri:19, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="OMI_Invalid_HP_Lname()[pri:20, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="OMI_Invalid_HP_Lname" duration-ms="9602" started-at="2021-04-07T19:27:03Z" finished-at="2021-04-07T19:27:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OMI_Invalid_HP_Lname -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="291" started-at="2021-04-07T19:27:12Z" finished-at="2021-04-07T19:27:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OMI_Invalid_HP_Lname status=SUCCESS method=Enrollment_360.OMI_Invalid_HP_Lname()[pri:20, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="OMI_Invalid_HP_DOB()[pri:21, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="OMI_Invalid_HP_DOB" duration-ms="9660" started-at="2021-04-07T19:27:12Z" finished-at="2021-04-07T19:27:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OMI_Invalid_HP_DOB -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="318" started-at="2021-04-07T19:27:22Z" finished-at="2021-04-07T19:27:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OMI_Invalid_HP_DOB status=SUCCESS method=Enrollment_360.OMI_Invalid_HP_DOB()[pri:21, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="FAIL" signature="OMI_Invalid_HP_SSN()[pri:22, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="OMI_Invalid_HP_SSN" duration-ms="9561" started-at="2021-04-07T19:27:22Z" finished-at="2021-04-07T19:27:32Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Testpass expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Testpass expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at HFIC.Pages.com.Enrollment360.merror(Enrollment360.java:83)
+at HFIC.Testcases.com.Enrollment_360.OMI_Invalid_HP_SSN(Enrollment_360.java:366)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OMI_Invalid_HP_SSN -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="314" started-at="2021-04-07T19:27:32Z" finished-at="2021-04-07T19:27:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OMI_Invalid_HP_SSN status=FAILURE method=Enrollment_360.OMI_Invalid_HP_SSN()[pri:22, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="OMI_valid_HP_MemSearch()[pri:23, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="OMI_valid_HP_MemSearch" duration-ms="12136" started-at="2021-04-07T19:27:32Z" finished-at="2021-04-07T19:27:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OMI_valid_HP_MemSearch -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Tear_Down" is-config="true" duration-ms="296" started-at="2021-04-07T19:27:44Z" finished-at="2021-04-07T19:27:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OMI_valid_HP_MemSearch status=SUCCESS method=Enrollment_360.OMI_valid_HP_MemSearch()[pri:23, instance:HFIC.Testcases.com.Enrollment_360@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.Enrollment_360@754ba872]" name="Application_Exit" is-config="true" duration-ms="726" started-at="2021-04-07T19:27:45Z" finished-at="2021-04-07T19:27:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Exit -->

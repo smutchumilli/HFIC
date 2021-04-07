@@ -98,8 +98,11 @@ public class ChangeRequest_HSA extends Baseclass {
 	public void HSA_MemberUpdate(String mid,String fnam,
 			String lnam,String dob1,String ssn1,String addrs1,String city1,
 			String zip1,String aAddrs,String gtext) throws InterruptedException {
-		
+		Thread.sleep(2000);		
+
 		Chnagerequest_Link.click();
+		Thread.sleep(2000);		
+
 		Create_Change_Request.click();
 		Select s= new Select(CR_Type);
 		s.selectByIndex(8);
@@ -140,8 +143,10 @@ public class ChangeRequest_HSA extends Baseclass {
 		OK.click();
 		Thread.sleep(2000);		
 		submit.click();
-		Thread.sleep(3000);		
+		Thread.sleep(2000);		
+		driver.navigate().refresh();
 
+		Thread.sleep(2000);		
 
 		
 	}
@@ -150,7 +155,7 @@ public class ChangeRequest_HSA extends Baseclass {
 			String c_person,String G_addr1,String G_city1,String grp_zip,
 			String grp_Addr2,String grp_pnum,String grp_email,String GRP_Notes) throws InterruptedException
 	{	
-		Thread.sleep(7000);
+		Thread.sleep(5000);
 		Chnagerequest_Link.click();
 		Thread.sleep(2000);
 		Create_Change_Request.click();

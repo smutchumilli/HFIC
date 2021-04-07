@@ -74,7 +74,6 @@ public class Baseclass {
 
 		 extent.flush();
 
-			Reporter.log("Test results are capture and report genwrated sussfully", true);
 
 	}
 

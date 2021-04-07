@@ -3,6 +3,7 @@ package HFIC.Pages.com;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class Enrollment360 extends Baseclass {
@@ -51,10 +52,13 @@ public class Enrollment360 extends Baseclass {
 	WebElement Gender;
 	@FindBy(name = "Member360SearchResults_Member360Search.pxResults(1)_36")
 	WebElement member_Search_Result;
-	@FindBy(xpath = "//*[contains(text(),'MEMBER DETAILS IN MHS')]") WebElement MEMBER_DETAILS_IN_MHS;
-	
-@FindBy(xpath="//*[contains(text(),'Member not found, try again using a different search combination')]")
-WebElement merror;
+	@FindBy(xpath = "//*[contains(text(),'MEMBER DETAILS IN MHS')]")
+	WebElement MEMBER_DETAILS_IN_MHS;
+
+	@FindBy(xpath = "//*[contains(text(),'Member not found, try again using a different search combination')]")
+	WebElement merror;
+	@FindBy(name = "DisplayMember360Search_pyDisplayHarness_131")
+	WebElement Rest_button;
 
 	// healthpass
 
@@ -64,18 +68,29 @@ WebElement merror;
 	WebElement hp_grpid;
 	@FindBy(name = "HPGroup360SearchResults_HPGroup360Search.pxResults(1)_140")
 	WebElement HPsearchresut;
-	
-	public void merror() {
-		Assert.assertTrue(merror.isDisplayed(),"Testpass");
+
+	public void Rest_button() throws InterruptedException {
+		Rest_button.click();
+		Thread.sleep(2000);
 	}
+
+	public void Gender() {
+		Select s = new Select(Gender);
+		s.selectByIndex(1);
+	}
+
+	public void merror() {
+		Assert.assertTrue(merror.isDisplayed(), "Testpass");
+	}
+
 	public void MEMBER_DETAILS_IN_MHS() {
-Assert.assertTrue(MEMBER_DETAILS_IN_MHS.isDisplayed(),"Testpass");	
-}
+		Assert.assertTrue(MEMBER_DETAILS_IN_MHS.isDisplayed(), "Testpass");
+	}
 
 	public void member_Search_Result() throws InterruptedException {
 
 		member_Search_Result.click();
-		Thread.sleep(5000);
+		Thread.sleep(2500);
 	}
 
 	public void MHS_MEMBERID(String mid) {
@@ -88,7 +103,7 @@ Assert.assertTrue(MEMBER_DETAILS_IN_MHS.isDisplayed(),"Testpass");
 
 	public void Member_Search() throws InterruptedException {
 		Member_Search.click();
-		Thread.sleep(5000);
+		Thread.sleep(2500);
 	}
 
 	public void Member360_Search() throws InterruptedException {
@@ -96,8 +111,10 @@ Assert.assertTrue(MEMBER_DETAILS_IN_MHS.isDisplayed(),"Testpass");
 		Thread.sleep(2000);
 	}
 
-	public void Member_other_info() {
+	public void Member_other_info() throws InterruptedException {
 		other_mem_info.click();
+		Thread.sleep(2000);
+
 	}
 
 	public void SSN(String SSN1) {
@@ -112,14 +129,14 @@ Assert.assertTrue(MEMBER_DETAILS_IN_MHS.isDisplayed(),"Testpass");
 		lanme.sendKeys(lanme1);
 	}
 
-	public void fname(String fname1) {
+	public void MEM_fname(String fname1) {
 		fname.sendKeys(fname1);
 	}
 
 	public void Enrollment360_HFIC_GRP_Member_Search() throws InterruptedException {
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 		enroll360.click();
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 	}
 
 	public void groupnum(String grpnum) {
@@ -142,8 +159,9 @@ Assert.assertTrue(MEMBER_DETAILS_IN_MHS.isDisplayed(),"Testpass");
 	}
 
 	public void Search() throws InterruptedException {
+		Thread.sleep(1000);
 		Search.click();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 	}
 
 	public void verification() {
@@ -155,23 +173,31 @@ Assert.assertTrue(MEMBER_DETAILS_IN_MHS.isDisplayed(),"Testpass");
 		hp_grpid.sendKeys(hp_grp);
 	}
 
-	public void hpassradiobutton() {
+	public void hpassradiobutton() throws InterruptedException {
 		hpassradiobutton.click();
+		Thread.sleep(2000);
 
 	}
 
 	public void HP_Searchresult() throws InterruptedException {
 		HPsearchresut.click();
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		Homepage.isDisplayed();
 
 	}
 
 	public void HFIC_Searchresult() throws InterruptedException {
 		hficsearchresut.click();
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 
 		Homepage.isDisplayed();
+
+	}
+
+	public void Homepage() throws InterruptedException {
+
+		Homepage.click();
+		Thread.sleep(2000);
 
 	}
 
