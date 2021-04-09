@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
     <line>
       <![CDATA[Project set up done]]>
@@ -8,108 +8,56 @@
       <![CDATA[Application up and running as expected]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="78157" started-at="2021-04-09T05:11:44Z" finished-at="2021-04-09T05:13:02Z">
+  <suite name="Default suite" duration-ms="358788" started-at="2021-04-09T14:58:55Z" finished-at="2021-04-09T15:04:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="78157" started-at="2021-04-09T05:11:44Z" finished-at="2021-04-09T05:13:02Z">
+    <test name="Default test" duration-ms="358788" started-at="2021-04-09T14:58:55Z" finished-at="2021-04-09T15:04:54Z">
       <class name="HFIC.Testcases.com.CR_UploadeDocuments">
-        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe]" name="Start_up" is-config="true" duration-ms="1001" started-at="2021-04-09T05:11:43Z" finished-at="2021-04-09T05:11:44Z">
+        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe]" name="Start_up" is-config="true" duration-ms="1306" started-at="2021-04-09T14:58:54Z" finished-at="2021-04-09T14:58:55Z">
           <reporter-output>
             <line>
               <![CDATA[Project set up done]]>
             </line>
           </reporter-output>
         </test-method> <!-- Start_up -->
-        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe]" name="Application_Start" is-config="true" duration-ms="8944" started-at="2021-04-09T05:11:44Z" finished-at="2021-04-09T05:11:53Z">
+        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe]" name="Application_Start" is-config="true" duration-ms="9706" started-at="2021-04-09T14:58:55Z" finished-at="2021-04-09T14:59:05Z">
           <reporter-output>
             <line>
               <![CDATA[Application up and running as expected]]>
             </line>
           </reporter-output>
         </test-method> <!-- Application_Start -->
-        <test-method status="FAIL" signature="CR_Other_UploadeDocument()[pri:2, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe]" name="CR_Other_UploadeDocument" duration-ms="67330" started-at="2021-04-09T05:11:53Z" finished-at="2021-04-09T05:13:00Z">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <img data-template="" data-click="[[&quot;processAction&quot;, [&quot;HFICNotesDetails&quot;,&quot;true&quot;,&quot;:event&quot;,&quot;&quot;,&quot;Rule-HTML-Section&quot;,&quot;hfic_modal_modal&quot;,&quot;RejectReasonModalTemplate&quot;,&quot;%7B%22mobile%22%3A%7B%22reveal%22%3A%7B%22effect%22%3A%22anim-bottom%22%7D%2C%22isCustomDismiss%22%3A%22false%22%7D%7D&quot;,&quot;true&quot;,&quot;HF-Product-Enroll-Work-Maint-ChangeRequest&quot;,&quot;HF-Product-Enroll-Work-Maint-ChangeRequest&quot;,&quot;false&quot;,&quot;false&quot;,&quot;&quot;,&quot;&quot;]],[&quot;refresh&quot;, [&quot;otherSection&quot;,&quot;DocumentUploadUI&quot;, &quot;&quot;, &quot;=&quot;, &quot;&quot;, &quot;,&quot;,&quot;:event&quot;,&quot;&quot;,[&quot;pzuiactionzzz=CXt0cn17U1RBTkRBUkR9NDZkY2E2NDhiMWY1ZjE1MDlhNzZkY2U2MTY5ZGMzNzdhZWUyMzliOGMzODEyZWVjZjhiNTJhMDU4OWU5NjBkN2FlZWNhZTA4OTk3ZWY5ZmM5ZmJlNmMwYjcxYmY1MTkyNzIzMmE3ZTdhNGJhMzM0ZjA1YzNlNjM0ZTM0NTU0N2Y%3D*&quot;,{},{}],&quot;pyWorkPage&quot;]]]" data-ctl="Icon" src="webwb/hficnotes_11608496393.png!!.png" name="HFICCaseHeader_pyWorkPage_16" tabindex="0" role="link"> is not clickable at point (1095, 142). Other element would receive the click: <div class="modal-align-cell hfic_modal_reject_reason_modal">...</div>
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-31', ip: '10.200.189.38', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62335}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f8ef68dfb89ae84eb653d21d8dd55e33]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <img data-template="" data-click="[[&quot;processAction&quot;, [&quot;HFICNotesDetails&quot;,&quot;true&quot;,&quot;:event&quot;,&quot;&quot;,&quot;Rule-HTML-Section&quot;,&quot;hfic_modal_modal&quot;,&quot;RejectReasonModalTemplate&quot;,&quot;%7B%22mobile%22%3A%7B%22reveal%22%3A%7B%22effect%22%3A%22anim-bottom%22%7D%2C%22isCustomDismiss%22%3A%22false%22%7D%7D&quot;,&quot;true&quot;,&quot;HF-Product-Enroll-Work-Maint-ChangeRequest&quot;,&quot;HF-Product-Enroll-Work-Maint-ChangeRequest&quot;,&quot;false&quot;,&quot;false&quot;,&quot;&quot;,&quot;&quot;]],[&quot;refresh&quot;, [&quot;otherSection&quot;,&quot;DocumentUploadUI&quot;, &quot;&quot;, &quot;=&quot;, &quot;&quot;, &quot;,&quot;,&quot;:event&quot;,&quot;&quot;,[&quot;pzuiactionzzz=CXt0cn17U1RBTkRBUkR9NDZkY2E2NDhiMWY1ZjE1MDlhNzZkY2U2MTY5ZGMzNzdhZWUyMzliOGMzODEyZWVjZjhiNTJhMDU4OWU5NjBkN2FlZWNhZTA4OTk3ZWY5ZmM5ZmJlNmMwYjcxYmY1MTkyNzIzMmE3ZTdhNGJhMzM0ZjA1YzNlNjM0ZTM0NTU0N2Y%3D*&quot;,{},{}],&quot;pyWorkPage&quot;]]]" data-ctl="Icon" src="webwb/hficnotes_11608496393.png!!.png" name="HFICCaseHeader_pyWorkPage_16" tabindex="0" role="link"> is not clickable at point (1095, 142). Other element would receive the click: <div class="modal-align-cell hfic_modal_reject_reason_modal">...</div>
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-31', ip: '10.200.189.38', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62335}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f8ef68dfb89ae84eb653d21d8dd55e33
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy13.click(Unknown Source)
-at HFIC.Pages.com.ChangeRequest_Uplodedocuments.Notes(ChangeRequest_Uplodedocuments.java:309)
-at HFIC.Pages.com.ChangeRequest_Uplodedocuments.CR_Upload_document_Other(ChangeRequest_Uplodedocuments.java:401)
-at HFIC.Testcases.com.CR_UploadeDocuments.CR_Other_UploadeDocument(CR_UploadeDocuments.java:31)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method status="PASS" signature="CR_Audit_UploadeDocument()[pri:1, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe]" name="CR_Audit_UploadeDocument" duration-ms="126051" started-at="2021-04-09T14:59:05Z" finished-at="2021-04-09T15:01:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CR_Other_UploadeDocument -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="362" started-at="2021-04-09T05:13:00Z" finished-at="2021-04-09T05:13:00Z">
+        </test-method> <!-- CR_Audit_UploadeDocument -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="374" started-at="2021-04-09T15:01:11Z" finished-at="2021-04-09T15:01:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CR_Other_UploadeDocument status=FAILURE method=CR_UploadeDocuments.CR_Other_UploadeDocument()[pri:2, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe] output={null}]]]>
+                <![CDATA[[TestResult name=CR_Audit_UploadeDocument status=SUCCESS method=CR_UploadeDocuments.CR_Audit_UploadeDocument()[pri:1, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe]" name="Application_Exit" is-config="true" duration-ms="1497" started-at="2021-04-09T05:13:00Z" finished-at="2021-04-09T05:13:02Z">
+        <test-method status="PASS" signature="CR_Other_UploadeDocument()[pri:2, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe]" name="CR_Other_UploadeDocument" duration-ms="220872" started-at="2021-04-09T15:01:12Z" finished-at="2021-04-09T15:04:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CR_Other_UploadeDocument -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="457" started-at="2021-04-09T15:04:52Z" finished-at="2021-04-09T15:04:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CR_Other_UploadeDocument status=SUCCESS method=CR_UploadeDocuments.CR_Other_UploadeDocument()[pri:2, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe]" name="Application_Exit" is-config="true" duration-ms="1297" started-at="2021-04-09T15:04:53Z" finished-at="2021-04-09T15:04:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Exit -->

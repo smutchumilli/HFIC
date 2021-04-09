@@ -9,6 +9,7 @@
           <include name="Tear_Down"/>
           <include name="Application_Start"/>
           <include name="Application_Exit"/>
+          <include name="CR_Audit_UploadeDocument"/>
           <include name="Start_up"/>
         </methods>
       </class> <!-- HFIC.Testcases.com.CR_UploadeDocuments -->
