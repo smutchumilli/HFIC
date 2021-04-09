@@ -8,60 +8,60 @@
       <![CDATA[Application up and running as expected]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="358788" started-at="2021-04-09T14:58:55Z" finished-at="2021-04-09T15:04:54Z">
+  <suite name="Default suite" duration-ms="57723" started-at="2021-04-09T22:06:08Z" finished-at="2021-04-09T22:07:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="358788" started-at="2021-04-09T14:58:55Z" finished-at="2021-04-09T15:04:54Z">
-      <class name="HFIC.Testcases.com.CR_UploadeDocuments">
-        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe]" name="Start_up" is-config="true" duration-ms="1306" started-at="2021-04-09T14:58:54Z" finished-at="2021-04-09T14:58:55Z">
+    <test name="Default test" duration-ms="57723" started-at="2021-04-09T22:06:08Z" finished-at="2021-04-09T22:07:06Z">
+      <class name="HFIC.Testcases.com.CR_HSAnew">
+        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.CR_HSAnew@e25b2fe]" name="Start_up" is-config="true" duration-ms="1110" started-at="2021-04-09T22:06:07Z" finished-at="2021-04-09T22:06:08Z">
           <reporter-output>
             <line>
               <![CDATA[Project set up done]]>
             </line>
           </reporter-output>
         </test-method> <!-- Start_up -->
-        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe]" name="Application_Start" is-config="true" duration-ms="9706" started-at="2021-04-09T14:58:55Z" finished-at="2021-04-09T14:59:05Z">
+        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.CR_HSAnew@e25b2fe]" name="Application_Start" is-config="true" duration-ms="6112" started-at="2021-04-09T22:06:08Z" finished-at="2021-04-09T22:06:14Z">
           <reporter-output>
             <line>
               <![CDATA[Application up and running as expected]]>
             </line>
           </reporter-output>
         </test-method> <!-- Application_Start -->
-        <test-method status="PASS" signature="CR_Audit_UploadeDocument()[pri:1, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe]" name="CR_Audit_UploadeDocument" duration-ms="126051" started-at="2021-04-09T14:59:05Z" finished-at="2021-04-09T15:01:11Z">
+        <test-method status="PASS" signature="CR_HSA_Member_update()[pri:1, instance:HFIC.Testcases.com.CR_HSAnew@e25b2fe]" name="CR_HSA_Member_update" duration-ms="24342" started-at="2021-04-09T22:06:14Z" finished-at="2021-04-09T22:06:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CR_Audit_UploadeDocument -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="374" started-at="2021-04-09T15:01:11Z" finished-at="2021-04-09T15:01:12Z">
+        </test-method> <!-- CR_HSA_Member_update -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.CR_HSAnew@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="308" started-at="2021-04-09T22:06:38Z" finished-at="2021-04-09T22:06:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CR_Audit_UploadeDocument status=SUCCESS method=CR_UploadeDocuments.CR_Audit_UploadeDocument()[pri:1, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe] output={null}]]]>
+                <![CDATA[[TestResult name=CR_HSA_Member_update status=SUCCESS method=CR_HSAnew.CR_HSA_Member_update()[pri:1, instance:HFIC.Testcases.com.CR_HSAnew@e25b2fe] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="CR_Other_UploadeDocument()[pri:2, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe]" name="CR_Other_UploadeDocument" duration-ms="220872" started-at="2021-04-09T15:01:12Z" finished-at="2021-04-09T15:04:52Z">
+        <test-method status="PASS" signature="CR_HSA_Group_update()[pri:2, instance:HFIC.Testcases.com.CR_HSAnew@e25b2fe]" name="CR_HSA_Group_update" duration-ms="25529" started-at="2021-04-09T22:06:39Z" finished-at="2021-04-09T22:07:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CR_Other_UploadeDocument -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="457" started-at="2021-04-09T15:04:52Z" finished-at="2021-04-09T15:04:53Z">
+        </test-method> <!-- CR_HSA_Group_update -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.CR_HSAnew@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="297" started-at="2021-04-09T22:07:04Z" finished-at="2021-04-09T22:07:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CR_Other_UploadeDocument status=SUCCESS method=CR_UploadeDocuments.CR_Other_UploadeDocument()[pri:2, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe] output={null}]]]>
+                <![CDATA[[TestResult name=CR_HSA_Group_update status=SUCCESS method=CR_HSAnew.CR_HSA_Group_update()[pri:2, instance:HFIC.Testcases.com.CR_HSAnew@e25b2fe] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@e25b2fe]" name="Application_Exit" is-config="true" duration-ms="1297" started-at="2021-04-09T15:04:53Z" finished-at="2021-04-09T15:04:54Z">
+        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.CR_HSAnew@e25b2fe]" name="Application_Exit" is-config="true" duration-ms="1100" started-at="2021-04-09T22:07:04Z" finished-at="2021-04-09T22:07:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Exit -->
-      </class> <!-- HFIC.Testcases.com.CR_UploadeDocuments -->
+      </class> <!-- HFIC.Testcases.com.CR_HSAnew -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
