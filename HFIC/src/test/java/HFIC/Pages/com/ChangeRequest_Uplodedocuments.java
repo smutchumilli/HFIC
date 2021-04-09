@@ -66,155 +66,351 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 	@FindBy(id = "c8d78892")
 	WebElement docsubtype;
 
-	public void CR_Uplodedocument_Search(String grpid, String grpname, String effdate, String gtax)
-			throws InterruptedException, AWTException {
+	public void Chnagerequest_Link() throws InterruptedException {
+		Thread.sleep(3500);
 		Chnagerequest_Link.click();
 		Thread.sleep(2000);
-		Create_Change_Request.click();
-		//// Thread.sleep(5000);
-		Select s = new Select(CR_Type);
-		s.selectByIndex(7);
-		//// Thread.sleep(3800);
-		grp_id.sendKeys(grpid);
-		grp_name.sendKeys(grpname);
-		grp_effectivedate.sendKeys(effdate);
-		grp_effectivedate.sendKeys(gtax);
-		//// Thread.sleep(3800);
-		search_btn.click();
-		//// Thread.sleep(3800);
-		Search_result.click();
-		//// Thread.sleep(3800);
-		Reporter.log("Search completed ", true);
-
 
 	}
 
-	public void DocumentType_Select(int i) throws InterruptedException, AWTException {
-		//// Thread.sleep(3800);
-		DocumentUploadUI.click();
-		// Thread.sleep(3800);
+	public void Create_Change_Request() throws InterruptedException {
+		Thread.sleep(1500);
+		Create_Change_Request.click();
+	}
+
+	public void CR_Type() throws InterruptedException {
+		Thread.sleep(1500);
+
+		Select s = new Select(CR_Type);
+		s.selectByIndex(7);
+	}
+
+	public void grp_id(String grpid) {
+		grp_id.sendKeys(grpid);
+	}
+
+	public void grp_name(String grpname) {
+		grp_name.sendKeys(grpname);
+	}
+
+	public void grp_effectivedate(String effdate) {
+		grp_effectivedate.sendKeys(effdate);
+	}
+
+	public void grp_tax(String gtax) {
+		grp_tax.sendKeys(gtax);
+	}
+
+	public void search_btn() throws InterruptedException {
+		Thread.sleep(1500);
+
+		search_btn.click();
+		Thread.sleep(3000);
+
+	}
+
+	public void Search_result() throws InterruptedException {
+		Search_result.click();
+		Thread.sleep(1500);
+
+	}
+
+	public void Adit_DocumentType_Select(int i) throws InterruptedException, AWTException {
+		Thread.sleep(3000);
+
 		Select s1 = new Select(DOCtype);
 		s1.selectByIndex(i);
-		Thread.sleep(3800);
+		if (i != 3) {
+
+			// Robert class for Upload documents
+			rb = new Robot();
+			Thread.sleep(4000);
+			rb.keyPress(KeyEvent.VK_TAB);
+			rb.keyRelease(KeyEvent.VK_TAB);
+			rb.keyPress(KeyEvent.VK_ENTER);
+			rb.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(3000);
+			rb.keyPress(KeyEvent.VK_CONTROL);
+			rb.keyPress(KeyEvent.VK_V);
+			rb.keyRelease(KeyEvent.VK_V);
+			rb.keyRelease(KeyEvent.VK_CONTROL);
+			rb.keyPress(KeyEvent.VK_TAB);
+			rb.keyRelease(KeyEvent.VK_TAB);
+			rb.keyPress(KeyEvent.VK_TAB);
+			rb.keyRelease(KeyEvent.VK_TAB);
+			rb.keyPress(KeyEvent.VK_ENTER);
+			rb.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(3000);
+			rb.keyPress(KeyEvent.VK_TAB);
+			rb.keyRelease(KeyEvent.VK_TAB);
+			rb.keyPress(KeyEvent.VK_ENTER);
+			rb.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(4000);
+
+		} else {
+
+			// Robert class for Upload documents
+			Thread.sleep(4000);
+			rb = new Robot();
+			rb.keyPress(KeyEvent.VK_TAB);
+			rb.keyRelease(KeyEvent.VK_TAB);
+			rb.keyPress(KeyEvent.VK_TAB);
+			rb.keyRelease(KeyEvent.VK_TAB);
+			rb.keyPress(KeyEvent.VK_ENTER);
+			rb.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(3500);
+			rb.keyPress(KeyEvent.VK_CONTROL);
+			rb.keyPress(KeyEvent.VK_V);
+			rb.keyRelease(KeyEvent.VK_V);
+			rb.keyRelease(KeyEvent.VK_CONTROL);
+			rb.keyPress(KeyEvent.VK_TAB);
+			rb.keyRelease(KeyEvent.VK_TAB);
+			rb.keyPress(KeyEvent.VK_TAB);
+			rb.keyRelease(KeyEvent.VK_TAB);
+			rb.keyPress(KeyEvent.VK_ENTER);
+			rb.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(3500);
+			rb.keyPress(KeyEvent.VK_TAB);
+			rb.keyRelease(KeyEvent.VK_TAB);
+			rb.keyPress(KeyEvent.VK_ENTER);
+			rb.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(3500);
+		}
+	}
+	public void Other_DocumentType_Select(int i, String s) throws InterruptedException, AWTException {
+		copy();
+
+		Thread.sleep(2000);
+
+		Select s1 = new Select(DOCtype);
+		s1.selectByIndex(i);
+		if (i == 5)
+{			Tab();
+			Doc_Title(s);
+			Tab();
+			Enter();
+			Thread.sleep(1000);
+
+			control();
+			V();
+			Tab();
+			Tab();
+			Enter();
+			Thread.sleep(1000);
+
+			Tab();
+			Enter();
+			Thread.sleep(4000);
+
+}	else if(i!=4) {
+			Tab();
+			Tab();
+			Enter();	
+			Thread.sleep(1000);
+
+			control();
+			V();
+			
+			Tab();
+			Tab();
+			Enter();
+			Thread.sleep(1000);
+
+			Tab();
+			Enter();
+			Thread.sleep(4000);
+
+}else {
+	Tab();
+
+	Doc_subtype(1);
+	Tab();
+	Tab();
+	Enter();
+	Thread.sleep(1000);
+
+	Tab();
+	Tab();
+	Enter();
+	Thread.sleep(1000);
+
+	Tab();
+	Enter();
+	Thread.sleep(4000);
+
+	
+}
+
+		
+	}		
+	public void Enter() throws AWTException, InterruptedException {
+			rb = new Robot();
+			rb.keyPress(KeyEvent.VK_ENTER);
+			rb.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(4000);
+			
+		}
+		public void Tab() throws AWTException, InterruptedException {
+			rb = new Robot();
+			rb.keyPress(KeyEvent.VK_TAB);
+			rb.keyRelease(KeyEvent.VK_TAB);
+			Thread.sleep(4000);
+
+			
+		}
+		public void V() throws AWTException, InterruptedException {
+			rb = new Robot();
+
+		
+			rb.keyRelease(KeyEvent.VK_V);
+			rb.keyRelease(KeyEvent.VK_CONTROL);
+			Thread.sleep(4000);
+
+			}
+		public void control() throws AWTException, InterruptedException {
+			rb = new Robot();
+
+			rb.keyPress(KeyEvent.VK_CONTROL);		
+			rb.keyPress(KeyEvent.VK_V);
+			Thread.sleep(4000);
+
+		}		
+		
+			
+		
+	public void DocumentUploadUI() throws InterruptedException {
+
+		DocumentUploadUI.click();
+		Thread.sleep(2500);
+
+	}
+
+	public void copy() {
 		String myString = "Q:\\Myfile.docx";
 		StringSelection stringSelection = new StringSelection(myString);
 		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 		clipboard.setContents(stringSelection, null);
-		Reporter.log("Documents type selected succssfully", true);
-
-
-
 	}
 
-	public void Rober1() throws AWTException, InterruptedException {
-		// Robert class for Upload documents
+	public void tab() throws AWTException, InterruptedException {
 		rb = new Robot();
 		rb.keyPress(KeyEvent.VK_TAB);
 		rb.keyRelease(KeyEvent.VK_TAB);
-		rb.keyPress(KeyEvent.VK_ENTER);
-		rb.keyRelease(KeyEvent.VK_ENTER);
-		Thread.sleep(3000);
-		rb.keyPress(KeyEvent.VK_CONTROL);
-		rb.keyPress(KeyEvent.VK_V);
-		rb.keyRelease(KeyEvent.VK_V);
-		rb.keyRelease(KeyEvent.VK_CONTROL);
-		rb.keyPress(KeyEvent.VK_TAB);
-		rb.keyRelease(KeyEvent.VK_TAB);
-		rb.keyPress(KeyEvent.VK_TAB);
-		rb.keyRelease(KeyEvent.VK_TAB);
-		rb.keyPress(KeyEvent.VK_ENTER);
-		rb.keyRelease(KeyEvent.VK_ENTER);
-		Thread.sleep(3000);
-		rb.keyPress(KeyEvent.VK_TAB);
-		rb.keyRelease(KeyEvent.VK_TAB);
-		rb.keyPress(KeyEvent.VK_ENTER);
-		rb.keyRelease(KeyEvent.VK_ENTER);
-		Thread.sleep(4000);
+		
+		Thread.sleep(3500);
 
 	}
 
-	public void Rober2() throws AWTException, InterruptedException {
-		// Robert class for Upload documents
+	public void enter() throws AWTException, InterruptedException {
 		rb = new Robot();
-		rb.keyPress(KeyEvent.VK_TAB);
-		rb.keyRelease(KeyEvent.VK_TAB);
-		rb.keyPress(KeyEvent.VK_TAB);
-		rb.keyRelease(KeyEvent.VK_TAB);
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(3500);
-		rb.keyPress(KeyEvent.VK_CONTROL);
-		rb.keyPress(KeyEvent.VK_V);
-		rb.keyRelease(KeyEvent.VK_V);
-		rb.keyRelease(KeyEvent.VK_CONTROL);
-		rb.keyPress(KeyEvent.VK_TAB);
-		rb.keyRelease(KeyEvent.VK_TAB);
-		rb.keyPress(KeyEvent.VK_TAB);
-		rb.keyRelease(KeyEvent.VK_TAB);
-		rb.keyPress(KeyEvent.VK_ENTER);
-		rb.keyRelease(KeyEvent.VK_ENTER);
-		Thread.sleep(3500);
-		rb.keyPress(KeyEvent.VK_TAB);
-		rb.keyRelease(KeyEvent.VK_TAB);
-		rb.keyPress(KeyEvent.VK_ENTER);
-		rb.keyRelease(KeyEvent.VK_ENTER);
-		Thread.sleep(3500);
-	}
 
-	public void tab() throws AWTException {
-		rb = new Robot();
-		rb.keyPress(KeyEvent.VK_TAB);
-		rb.keyRelease(KeyEvent.VK_TAB);
 
 	}
 
-	public void enter() throws AWTException {
-		rb = new Robot();
-		rb.keyPress(KeyEvent.VK_ENTER);
-		rb.keyRelease(KeyEvent.VK_ENTER);
-
-	}
-
-	// Adding Notes
-	public void Notes(String gtext) throws InterruptedException {
+	public void Notes() throws InterruptedException   {
 		Notes.click();
-		Thread.sleep(3800);
+		Thread.sleep(2000);
+
+
+	}
+
+	public void General_Note() throws InterruptedException {
 		General_Note.click();
-		//// Thread.sleep(3800);
+		Thread.sleep(2000);
+
+	}
+
+	public void Add_Notes_Text(String gtext) throws InterruptedException {
 		Add_Notes_Text.sendKeys(gtext);
-		Thread.sleep(2000);
+		Thread.sleep(1500);
+
+	}
+
+	public void Notes_Add() throws InterruptedException {
 		Notes_Add.click();
-		// Thread.sleep(3800);
+		Thread.sleep(2500);
+
+	}
+
+	public void OK() throws InterruptedException {
 		OK.click();
-		Thread.sleep(2000);
-
-		Reporter.log("notes  added succssfully", true);
-
+		Thread.sleep(2800);
 
 	}
 
 	public void submit() throws InterruptedException {
 		Submit.click();
-		Thread.sleep(5000);
+		Thread.sleep(2500);
+
 	}
 
 	public void Document_Purpose() throws InterruptedException {
 		Other.click();
-		//// Thread.sleep(3800);
+		
+		Thread.sleep(2000);
+
 
 	}
 
 	public void Doc_Title(String Text) throws InterruptedException {
 		Title.sendKeys(Text);
-		//// Thread.sleep(3000);
+		Thread.sleep(3000);
+
 
 	}
 
-	public void Doc_subtype() throws InterruptedException {
+	public void Doc_subtype(int i) throws InterruptedException {
 		Select n = new Select(docsubtype);
-		n.selectByIndex(1);
-		Thread.sleep(2000);
+		n.selectByIndex(i);
+		Thread.sleep(1000);
 
 	}
+	
+	public void CR_Upload_document(String grp_id,String grpname,String eff,String gtx,int i,String text) throws InterruptedException, AWTException {
+		Chnagerequest_Link();
+		Create_Change_Request();
+		CR_Type();
+		grp_id(grp_id);
+		grp_name(grpname);
+		grp_effectivedate(eff);
+		grp_tax(gtx);
+		search_btn();
+		Search_result();
+		DocumentUploadUI();
+		copy();
+		Adit_DocumentType_Select(i);
+		Notes();
+		General_Note();
+		Add_Notes_Text(text);
+		Notes_Add();
+		OK();
+		
+			
+	}
+	public void CR_Upload_document_Other(String grp_id,String grpname,String eff,String gtx,int i,String text1 ,String text) throws InterruptedException, AWTException {
+		Chnagerequest_Link();
+		Create_Change_Request();
+		CR_Type();
+		grp_id(grp_id);
+		grp_name(grpname);
+		grp_effectivedate(eff);
+		grp_tax(gtx);
+		search_btn();
+		Search_result();
+		Document_Purpose();
+		DocumentUploadUI();
+		Other_DocumentType_Select(i, text1);
+		Notes();
+		General_Note();
+		Add_Notes_Text(text);
+		Notes_Add();
+		OK();
+		
+			
+	}
+	
 
 }
