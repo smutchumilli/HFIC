@@ -75,17 +75,13 @@ public class Baseclass {
 			test.info(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 
 		}
-		
-		
-
-
-
+		 extent.flush();
 
 	}
+	
 
 	 @AfterClass
 	 public void Application_Exit() {
-		 extent.flush();
 
 		 Browserfactory.Quit_Browser(driver);
 

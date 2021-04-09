@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="HFIC.Testcases.com.CR_HSAnew">
+      <class name="HFIC.Testcases.com.Enrollment_360_new">
         <methods>
-          <include name="CR_HSA_Group_update"/>
+          <include name="HFIC_Group_Number_Search"/>
+          <include name="HP_Group_Search"/>
+          <include name="MemberSearch"/>
           <include name="Tear_Down"/>
           <include name="Application_Start"/>
+          <include name="report"/>
           <include name="Application_Exit"/>
+          <include name="Member_Search_Otherinfo"/>
           <include name="Start_up"/>
         </methods>
-      </class> <!-- HFIC.Testcases.com.CR_HSAnew -->
+      </class> <!-- HFIC.Testcases.com.Enrollment_360_new -->
+      <class name="HFIC.Testcases.com.CR_UploadeDocuments">
+        <methods>
+          <include name="CR_Other_UploadeDocument"/>
+          <include name="Tear_Down"/>
+          <include name="Application_Start"/>
+          <include name="report"/>
+          <include name="Application_Exit"/>
+          <include name="CR_Audit_UploadeDocument"/>
+          <include name="Start_up"/>
+        </methods>
+      </class> <!-- HFIC.Testcases.com.CR_UploadeDocuments -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

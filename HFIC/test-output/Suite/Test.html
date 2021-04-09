@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/6</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 04 16:19:23 EDT 2021</td>
+<td>Started on:</td><td>Fri Apr 09 18:34:16 EDT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16896 ms)</td>
+<tr><td>Total time:</td><td>56 seconds (56507 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,26 +75,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='HFIC.Testcases.com.CR_UploadeDocuments.Tear_Down()'><b>Tear_Down</b><br>Test class: HFIC.Testcases.com.CR_UploadeDocuments<br>Parameters: [TestResult name=CR_UploadeDocument status=FAILURE method=CR_UploadeDocuments.CR_UploadeDocument()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@204f30ec] output={null}]</td>
-<td><div><pre>java.io.FileNotFoundException: C:\Users\smutchumilli\git\HFIC\HFICTestResults\04_04_2021_16_19_40.png (The system cannot find the path specified)
-	at java.io.FileOutputStream.open0(Native Method)
-	at java.io.FileOutputStream.open(Unknown Source)
-	at java.io.FileOutputStream.&lt;init&gt;(Unknown Source)
-	at java.io.FileOutputStream.&lt;init&gt;(Unknown Source)
-	at org.openqa.selenium.io.FileHandler.copyFile(FileHandler.java:138)
-	at org.openqa.selenium.io.FileHandler.copy(FileHandler.java:117)
-	at Utilities.com.Helper.Get_Screenshot(Helper.java:20)
-	at HFIC.Pages.com.Baseclass.Tear_Down(Baseclass.java:57)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace777813771", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace777813771'><pre>java.io.FileNotFoundException: C:\Users\smutchumilli\git\HFIC\HFICTestResults\04_04_2021_16_19_40.png (The system cannot find the path specified)
-	at java.io.FileOutputStream.open0(Native Method)
-	at java.io.FileOutputStream.open(Unknown Source)
-	at java.io.FileOutputStream.&lt;init&gt;(Unknown Source)
-	at java.io.FileOutputStream.&lt;init&gt;(Unknown Source)
-	at org.openqa.selenium.io.FileHandler.copyFile(FileHandler.java:138)
-	at org.openqa.selenium.io.FileHandler.copy(FileHandler.java:117)
-	at Utilities.com.Helper.Get_Screenshot(Helper.java:20)
-	at HFIC.Pages.com.Baseclass.Tear_Down(Baseclass.java:57)
+<td title='HFIC.Testcases.com.CR_UploadeDocuments.Application_Start()'><b>Application_Start</b><br>Test class: HFIC.Testcases.com.CR_UploadeDocuments</td>
+<td><div><pre>java.lang.NullPointerException
+	at HFIC.Pages.com.Baseclass.Application_Start(Baseclass.java:50)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace215632153", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace215632153'><pre>java.lang.NullPointerException
+	at HFIC.Pages.com.Baseclass.Application_Start(Baseclass.java:50)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -103,11 +89,9 @@ function toggleAllBoxes() {
 	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
@@ -125,36 +109,25 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>HFIC.Testcases.com.CR_UploadeDocuments@204f30ec</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>HFIC.Testcases.com.CR_UploadeDocuments@464bee09</td></tr>
 <tr>
-<td title='HFIC.Testcases.com.CR_UploadeDocuments.CR_UploadeDocument()'><b>CR_UploadeDocument</b><br>Test class: HFIC.Testcases.com.CR_UploadeDocuments</td>
-<td><div><pre>java.lang.UnsupportedOperationException: You may only deselect options of a multi-select
-	at org.openqa.selenium.support.ui.Select.deselectByIndex(Select.java:244)
-	at HFIC.Pages.com.ChangeRequest_Uplodedocuments.CR_Uplodedocument(ChangeRequest_Uplodedocuments.java:66)
-	at HFIC.Testcases.com.CR_UploadeDocuments.CR_UploadeDocument(CR_UploadeDocuments.java:16)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace793269462", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace793269462'><pre>java.lang.UnsupportedOperationException: You may only deselect options of a multi-select
-	at org.openqa.selenium.support.ui.Select.deselectByIndex(Select.java:244)
-	at HFIC.Pages.com.ChangeRequest_Uplodedocuments.CR_Uplodedocument(ChangeRequest_Uplodedocuments.java:66)
-	at HFIC.Testcases.com.CR_UploadeDocuments.CR_UploadeDocument(CR_UploadeDocuments.java:16)
+<td title='HFIC.Testcases.com.Enrollment_360_new.Application_Start()'><b>Application_Start</b><br>Test class: HFIC.Testcases.com.Enrollment_360_new</td>
+<td><div><pre>java.lang.NullPointerException
+	at HFIC.Pages.com.Baseclass.Application_Start(Baseclass.java:50)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1904609259", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1904609259'><pre>java.lang.NullPointerException
+	at HFIC.Pages.com.Baseclass.Application_Start(Baseclass.java:50)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
@@ -171,8 +144,298 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>9</td>
-<td>HFIC.Testcases.com.CR_UploadeDocuments@204f30ec</td></tr>
+<td>0</td>
+<td>HFIC.Testcases.com.Enrollment_360_new@f6c48ac</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HFIC.Testcases.com.CR_UploadeDocuments.Tear_Down()'><b>Tear_Down</b><br>Test class: HFIC.Testcases.com.CR_UploadeDocuments</td>
+<td></td>
+<td>0</td>
+<td>HFIC.Testcases.com.CR_UploadeDocuments@464bee09</td></tr>
+<tr>
+<td title='HFIC.Testcases.com.Enrollment_360_new.Tear_Down()'><b>Tear_Down</b><br>Test class: HFIC.Testcases.com.Enrollment_360_new</td>
+<td></td>
+<td>0</td>
+<td>HFIC.Testcases.com.Enrollment_360_new@f6c48ac</td></tr>
+<tr>
+<td title='HFIC.Testcases.com.CR_UploadeDocuments.Tear_Down()'><b>Tear_Down</b><br>Test class: HFIC.Testcases.com.CR_UploadeDocuments</td>
+<td></td>
+<td>0</td>
+<td>HFIC.Testcases.com.CR_UploadeDocuments@464bee09</td></tr>
+<tr>
+<td title='HFIC.Testcases.com.Enrollment_360_new.Tear_Down()'><b>Tear_Down</b><br>Test class: HFIC.Testcases.com.Enrollment_360_new</td>
+<td></td>
+<td>0</td>
+<td>HFIC.Testcases.com.Enrollment_360_new@f6c48ac</td></tr>
+<tr>
+<td title='HFIC.Testcases.com.Enrollment_360_new.Tear_Down()'><b>Tear_Down</b><br>Test class: HFIC.Testcases.com.Enrollment_360_new</td>
+<td></td>
+<td>0</td>
+<td>HFIC.Testcases.com.Enrollment_360_new@f6c48ac</td></tr>
+<tr>
+<td title='HFIC.Testcases.com.Enrollment_360_new.Tear_Down()'><b>Tear_Down</b><br>Test class: HFIC.Testcases.com.Enrollment_360_new</td>
+<td></td>
+<td>0</td>
+<td>HFIC.Testcases.com.Enrollment_360_new@f6c48ac</td></tr>
+<tr>
+<td title='HFIC.Testcases.com.CR_UploadeDocuments.Application_Exit()'><b>Application_Exit</b><br>Test class: HFIC.Testcases.com.CR_UploadeDocuments</td>
+<td></td>
+<td>0</td>
+<td>HFIC.Testcases.com.CR_UploadeDocuments@464bee09</td></tr>
+<tr>
+<td title='HFIC.Testcases.com.Enrollment_360_new.Application_Exit()'><b>Application_Exit</b><br>Test class: HFIC.Testcases.com.Enrollment_360_new</td>
+<td></td>
+<td>0</td>
+<td>HFIC.Testcases.com.Enrollment_360_new@f6c48ac</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HFIC.Testcases.com.CR_HSAnew.CR_HSA_Group_update()'><b>CR_HSA_Group_update</b><br>Test class: HFIC.Testcases.com.CR_HSAnew</td>
+<td></td>
+<td>24</td>
+<td>HFIC.Testcases.com.CR_HSAnew@6eebc39e</td></tr>
+<tr>
+<td title='HFIC.Testcases.com.CR_HSAnew.CR_HSA_Member_update()'><b>CR_HSA_Member_update</b><br>Test class: HFIC.Testcases.com.CR_HSAnew</td>
+<td></td>
+<td>23</td>
+<td>HFIC.Testcases.com.CR_HSAnew@6eebc39e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HFIC.Testcases.com.CR_UploadeDocuments.CR_Audit_UploadeDocument()'><b>CR_Audit_UploadeDocument</b><br>Test class: HFIC.Testcases.com.CR_UploadeDocuments</td>
+<td><div><pre>java.lang.NullPointerException
+	at HFIC.Pages.com.Baseclass.Application_Start(Baseclass.java:50)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace877363600", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace877363600'><pre>java.lang.NullPointerException
+	at HFIC.Pages.com.Baseclass.Application_Start(Baseclass.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>HFIC.Testcases.com.CR_UploadeDocuments@464bee09</td></tr>
+<tr>
+<td title='HFIC.Testcases.com.CR_UploadeDocuments.CR_Other_UploadeDocument()'><b>CR_Other_UploadeDocument</b><br>Test class: HFIC.Testcases.com.CR_UploadeDocuments</td>
+<td><div><pre>java.lang.NullPointerException
+	at HFIC.Pages.com.Baseclass.Application_Start(Baseclass.java:50)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace754707140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace754707140'><pre>java.lang.NullPointerException
+	at HFIC.Pages.com.Baseclass.Application_Start(Baseclass.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>HFIC.Testcases.com.CR_UploadeDocuments@464bee09</td></tr>
+<tr>
+<td title='HFIC.Testcases.com.Enrollment_360_new.HFIC_Group_Number_Search()'><b>HFIC_Group_Number_Search</b><br>Test class: HFIC.Testcases.com.Enrollment_360_new</td>
+<td><div><pre>java.lang.NullPointerException
+	at HFIC.Pages.com.Baseclass.Application_Start(Baseclass.java:50)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace670283478", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace670283478'><pre>java.lang.NullPointerException
+	at HFIC.Pages.com.Baseclass.Application_Start(Baseclass.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>HFIC.Testcases.com.Enrollment_360_new@f6c48ac</td></tr>
+<tr>
+<td title='HFIC.Testcases.com.Enrollment_360_new.HP_Group_Search()'><b>HP_Group_Search</b><br>Test class: HFIC.Testcases.com.Enrollment_360_new</td>
+<td><div><pre>java.lang.NullPointerException
+	at HFIC.Pages.com.Baseclass.Application_Start(Baseclass.java:50)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2040623756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2040623756'><pre>java.lang.NullPointerException
+	at HFIC.Pages.com.Baseclass.Application_Start(Baseclass.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>HFIC.Testcases.com.Enrollment_360_new@f6c48ac</td></tr>
+<tr>
+<td title='HFIC.Testcases.com.Enrollment_360_new.MemberSearch()'><b>MemberSearch</b><br>Test class: HFIC.Testcases.com.Enrollment_360_new</td>
+<td><div><pre>java.lang.NullPointerException
+	at HFIC.Pages.com.Baseclass.Application_Start(Baseclass.java:50)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1106468732", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1106468732'><pre>java.lang.NullPointerException
+	at HFIC.Pages.com.Baseclass.Application_Start(Baseclass.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>HFIC.Testcases.com.Enrollment_360_new@f6c48ac</td></tr>
+<tr>
+<td title='HFIC.Testcases.com.Enrollment_360_new.Member_Search_Otherinfo()'><b>Member_Search_Otherinfo</b><br>Test class: HFIC.Testcases.com.Enrollment_360_new</td>
+<td><div><pre>java.lang.NullPointerException
+	at HFIC.Pages.com.Baseclass.Application_Start(Baseclass.java:50)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace805690186", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace805690186'><pre>java.lang.NullPointerException
+	at HFIC.Pages.com.Baseclass.Application_Start(Baseclass.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>HFIC.Testcases.com.Enrollment_360_new@f6c48ac</td></tr>
 </table><p>
 </body>
 </html>
