@@ -7,6 +7,7 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -23,7 +24,7 @@ import Utilities.com.Helper;
 import Utilities.com.TestDataProvider;
 
 public class Baseclass {
-	public WebDriver driver;
+	public static WebDriver driver;
 	public Configuration config;
 	public TestDataProvider data;
 	public ExtentSparkReporter spark;
@@ -72,15 +73,18 @@ public class Baseclass {
 		
 		
 
-		 extent.flush();
+
 
 
 	}
 
 	 @AfterClass
 	 public void Application_Exit() {
+		 extent.flush();
 
 		 Browserfactory.Quit_Browser(driver);
+
+
 	 }
 
 }

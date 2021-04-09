@@ -1,15 +1,18 @@
 package HFIC.Pages.com;
 
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class Enrollment360 extends Baseclass {
 
-	public Enrollment360(WebDriver driver) {
-		this.driver = driver;
+	public Enrollment360(WebDriver ldriver) {
+		this.driver = ldriver;
 	}
 
 	@FindBy(xpath = "//a[contains(text(),'Enrollment 360')]")
@@ -24,8 +27,8 @@ public class Enrollment360 extends Baseclass {
 	WebElement taxid;
 	@FindBy(name = "HFIC360SearchGroup_pyDisplayHarness_1148")
 	WebElement Search;
-	@FindBy(name = "HFICGroup360SearchResults_Group360Search.pxResults(1)_151")
-	WebElement hficsearchresut;
+	@FindBy(xpath = "//*[@id='PEGA_GRID_CONTENT']//tr[2]//td[1]//a[1]")
+	WebElement Search_Result;
 	@FindBy(xpath = "//*[contains(text(),'Group was not found, try again using different search combination')]")
 	WebElement errormessage;
 	@FindBy(xpath = "//*[contains(text(),'VIEW MHS GROUP DETAILS')]")
@@ -50,8 +53,8 @@ public class Enrollment360 extends Baseclass {
 	WebElement SSN;
 	@FindBy(id = "3ae5aca3")
 	WebElement Gender;
-	@FindBy(name = "Member360SearchResults_Member360Search.pxResults(1)_36")
-	WebElement member_Search_Result;
+//	@FindBy(name = "Member360SearchResults_Member360Search.pxResults(1)_36")
+//	WebElement member_Search_Result;
 	@FindBy(xpath = "//*[contains(text(),'MEMBER DETAILS IN MHS')]")
 	WebElement MEMBER_DETAILS_IN_MHS;
 
@@ -66,8 +69,8 @@ public class Enrollment360 extends Baseclass {
 	WebElement hpassradiobutton;
 	@FindBy(id = "5c8ec601")
 	WebElement hp_grpid;
-	@FindBy(name = "HPGroup360SearchResults_HPGroup360Search.pxResults(1)_140")
-	WebElement HPsearchresut;
+//	@FindBy(name = "HPGroup360SearchResults_HPGroup360Search.pxResults(1)_140")
+//	WebElement HPsearchresut;
 
 	public void Rest_button() throws InterruptedException {
 		Rest_button.click();
@@ -87,11 +90,11 @@ public class Enrollment360 extends Baseclass {
 		Assert.assertTrue(MEMBER_DETAILS_IN_MHS.isDisplayed(), "Testpass");
 	}
 
-	public void member_Search_Result() throws InterruptedException {
-
-		member_Search_Result.click();
-		Thread.sleep(2500);
-	}
+//	public void member_Search_Result() throws InterruptedException {
+//
+//		member_Search_Result.click();
+//		Thread.sleep(2500);
+//	}
 
 	public void MHS_MEMBERID(String mid) {
 		MHS_MEMBERID.sendKeys(mid);
@@ -159,14 +162,39 @@ public class Enrollment360 extends Baseclass {
 	}
 
 	public void Search() throws InterruptedException {
-		Thread.sleep(1000);
 		Search.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	}
 
-	public void verification() {
-		Assert.assertTrue(errormessage.isDisplayed(), "Error mesage is displayed as expected");
-	}
+	public void verification() throws InterruptedException {
+
+		if (errormessage.isDisplayed()) 
+		{
+			System.out.println("Error message displayed succesfully");
+
+		} else if (merror.isDisplayed())
+		{
+			System.out.println("Error message displayed succesfully");
+
+		} else if (Search_Result.isDisplayed()) {
+
+			Actions act = new Actions(driver);
+			act.doubleClick(Search_Result).perform();
+		}
+		else if (Homepage.isDisplayed()) {
+				Thread.sleep(2000);
+				Homepage.click();
+				Thread.sleep(1000);
+
+
+			} else if (MEMBER_DETAILS_IN_MHS.isDisplayed()) {
+				System.out.println("Member details are displaying");
+				Thread.sleep(3000);
+			}
+
+		}
+
+	
 
 	public void Healthpass_Group_ID(String hp_grp) {
 
@@ -179,15 +207,15 @@ public class Enrollment360 extends Baseclass {
 
 	}
 
-	public void HP_Searchresult() throws InterruptedException {
-		HPsearchresut.click();
-		Thread.sleep(1000);
-		Homepage.isDisplayed();
+//	public void HP_Searchresult() throws InterruptedException {
+//		HPsearchresut.click();
+//		Thread.sleep(1000);
+//		Homepage.isDisplayed();
+//
+//	}
 
-	}
-
-	public void HFIC_Searchresult() throws InterruptedException {
-		hficsearchresut.click();
+	public void Searchresult() throws InterruptedException {
+		Search_Result.click();
 		Thread.sleep(1000);
 
 		Homepage.isDisplayed();
