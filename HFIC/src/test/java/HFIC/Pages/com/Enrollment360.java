@@ -136,7 +136,7 @@ public class Enrollment360 extends Baseclass {
 		fname.sendKeys(fname1);
 	}
 
-	public void Enrollment360_HFIC_GRP_Member_Search() throws InterruptedException {
+	public void enroll360() throws InterruptedException {
 		Thread.sleep(1000);
 		enroll360.click();
 		Thread.sleep(1000);
@@ -228,5 +228,48 @@ public class Enrollment360 extends Baseclass {
 		Thread.sleep(2000);
 
 	}
+	public void HFIC_Group_Search_Method(String Gnum,String gname,String effdt,String tax) throws InterruptedException {
+		enroll360();
+		
+		groupnum(Gnum);
+		Grpname(gname);
+		grp_eff(effdt);
+		Grptaxid(tax);
+		Search();
+		verification();
+		
+		
+	}
+public void Hp_Group_Search_Method(String Gnum,String hp_grp_id,String eff) throws InterruptedException {
+	enroll360();
+	hpassradiobutton();
+	groupnum(Gnum);
+	Healthpass_Group_ID(hp_grp_id);
+	grp_eff(eff);
+	Search();
+	verification();
+		
+	}
+public void HFIC_HP_Member_Search_Method(String mid,String Effdt) throws InterruptedException {
+	enroll360();
+	Member360_Search();
+	MHS_MEMBERID(mid);
+	MHS_Effectivedate(Effdt);
+	Member_Search();
+	verification();
+	
+}
+public void HFIC_HP_Member_Detail_Search_Method(String fname ,String lname,String dob,String ssn) throws InterruptedException {
+	enroll360();
+	Member360_Search();
+	Member_other_info();
+	MEM_fname(fname);
+	lanme(lname);
+	DOB(dob);
+	SSN(ssn);
+	Member_Search();
+	verification();
+	
+}
 
 }
