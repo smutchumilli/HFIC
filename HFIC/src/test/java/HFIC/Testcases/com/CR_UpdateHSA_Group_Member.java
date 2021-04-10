@@ -13,7 +13,7 @@ import HFIC.Pages.com.Baseclass;
 import HFIC.Pages.com.ChangeRequest_HSA;
 import Utilities.com.Helper;
 
-public class ChangeRequest_UpdateGroup_Member extends Baseclass {
+public class CR_UpdateHSA_Group_Member extends Baseclass {
 	@Test(priority=1)
 	public void CR_HSA_Member_update() throws InterruptedException, AWTException, IOException {
 

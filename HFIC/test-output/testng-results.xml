@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
     <line>
       <![CDATA[Project set up done]]>
@@ -8,30 +8,30 @@
       <![CDATA[Application up and running as expected]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="71223" started-at="2021-04-10T03:14:51Z" finished-at="2021-04-10T03:16:02Z">
+  <suite name="Default suite" duration-ms="194804" started-at="2021-04-10T03:26:58Z" finished-at="2021-04-10T03:30:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="71223" started-at="2021-04-10T03:14:51Z" finished-at="2021-04-10T03:16:02Z">
+    <test name="Default test" duration-ms="194804" started-at="2021-04-10T03:26:58Z" finished-at="2021-04-10T03:30:12Z">
       <class name="HFIC.Testcases.com.Enrollment_360_new">
-        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe]" name="Start_up" is-config="true" duration-ms="1041" started-at="2021-04-10T03:14:50Z" finished-at="2021-04-10T03:14:51Z">
+        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe]" name="Start_up" is-config="true" duration-ms="1194" started-at="2021-04-10T03:26:56Z" finished-at="2021-04-10T03:26:58Z">
           <reporter-output>
             <line>
               <![CDATA[Project set up done]]>
             </line>
           </reporter-output>
         </test-method> <!-- Start_up -->
-        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe]" name="Application_Start" is-config="true" duration-ms="7571" started-at="2021-04-10T03:14:51Z" finished-at="2021-04-10T03:14:59Z">
+        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe]" name="Application_Start" is-config="true" duration-ms="7873" started-at="2021-04-10T03:26:58Z" finished-at="2021-04-10T03:27:06Z">
           <reporter-output>
             <line>
               <![CDATA[Application up and running as expected]]>
             </line>
           </reporter-output>
         </test-method> <!-- Application_Start -->
-        <test-method status="PASS" signature="HFIC_Group_Number_Search()[pri:1, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe]" name="HFIC_Group_Number_Search" duration-ms="30247" started-at="2021-04-10T03:14:59Z" finished-at="2021-04-10T03:15:29Z">
+        <test-method status="PASS" signature="HFIC_Group_Number_Search()[pri:1, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe]" name="HFIC_Group_Number_Search" duration-ms="30166" started-at="2021-04-10T03:27:06Z" finished-at="2021-04-10T03:27:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HFIC_Group_Number_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="675" started-at="2021-04-10T03:15:29Z" finished-at="2021-04-10T03:15:29Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="783" started-at="2021-04-10T03:27:36Z" finished-at="2021-04-10T03:27:37Z">
           <params>
             <param index="0">
               <value>
@@ -42,11 +42,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="HP_Group_Search()[pri:2, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe]" name="HP_Group_Search" duration-ms="31741" started-at="2021-04-10T03:15:29Z" finished-at="2021-04-10T03:16:01Z">
+        <test-method status="PASS" signature="HP_Group_Search()[pri:2, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe]" name="HP_Group_Search" duration-ms="31699" started-at="2021-04-10T03:27:37Z" finished-at="2021-04-10T03:28:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HP_Group_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="293" started-at="2021-04-10T03:16:01Z" finished-at="2021-04-10T03:16:02Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="332" started-at="2021-04-10T03:28:08Z" finished-at="2021-04-10T03:28:09Z">
           <params>
             <param index="0">
               <value>
@@ -57,7 +57,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe]" name="Application_Exit" is-config="true" duration-ms="665" started-at="2021-04-10T03:16:02Z" finished-at="2021-04-10T03:16:02Z">
+        <test-method status="PASS" signature="MemberSearch()[pri:3, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe]" name="MemberSearch" duration-ms="44556" started-at="2021-04-10T03:28:09Z" finished-at="2021-04-10T03:28:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MemberSearch -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="299" started-at="2021-04-10T03:28:53Z" finished-at="2021-04-10T03:28:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MemberSearch status=SUCCESS method=Enrollment_360_new.MemberSearch()[pri:3, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="Member_Search_Otherinfo()[pri:4, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe]" name="Member_Search_Otherinfo" duration-ms="78066" started-at="2021-04-10T03:28:53Z" finished-at="2021-04-10T03:30:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Member_Search_Otherinfo -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="293" started-at="2021-04-10T03:30:12Z" finished-at="2021-04-10T03:30:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Member_Search_Otherinfo status=SUCCESS method=Enrollment_360_new.Member_Search_Otherinfo()[pri:4, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.Enrollment_360_new@e25b2fe]" name="Application_Exit" is-config="true" duration-ms="694" started-at="2021-04-10T03:30:12Z" finished-at="2021-04-10T03:30:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Exit -->

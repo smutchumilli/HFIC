@@ -12,7 +12,7 @@ import HFIC.Pages.com.Baseclass;
 import HFIC.Pages.com.Enrollment360;
 import Utilities.com.Helper;
 
-public class Enrollment_360_new extends Baseclass {
+public class Enrollment_360_Search extends Baseclass {
 	@Test(priority=1)
 	public void HFIC_Group_Number_Search() throws InterruptedException, IOException {
 		Enrollment360 Enrollment360 = PageFactory.initElements(driver,Enrollment360.class);
