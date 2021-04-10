@@ -29,7 +29,7 @@ public class Baseclass {
 	public TestDataProvider data;
 	public ExtentSparkReporter spark;
 	public ExtentReports extent;
-	public ExtentTest test;
+	public static ExtentTest test;
 
 	@BeforeSuite
 	public void Start_up() {

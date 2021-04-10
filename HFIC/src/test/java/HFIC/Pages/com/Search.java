@@ -1,9 +1,16 @@
 package HFIC.Pages.com;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
+
+import Utilities.com.Helper;
 
 public class Search extends Baseclass {
 
@@ -38,6 +45,9 @@ public class Search extends Baseclass {
 	}
 
 	// HFIC Application Search
+	@FindBy(xpath = "//*[contains(text(),'No matching data found')]")
+	WebElement error_message;
+
 	@FindBy(id = "60caa79c")
 	WebElement Requesttype;
 	@FindBy(id = "50d8717b")
@@ -60,9 +70,18 @@ public class Search extends Baseclass {
 	WebElement MHS_Subscriber_id;
 	@FindBy(name = "HFICSearchCriteria_pyDisplayHarness_63")
 	WebElement HFIC_APP_Search;
+	@FindBy(xpath = "//*[@id='PEGA_GRID_CONTENT']//tr[2]//td[1]//span[1]")
+	WebElement Search_Result;
 
-	public void HFIC_APP_Search() {
+	public void Search_Result1() throws InterruptedException {
+		Helper.actions_class(Search_Result);
+		Thread.sleep(1000);
+	}
+
+	public void HFIC_APP_Search() throws InterruptedException {
 		HFIC_APP_Search.click();
+		Thread.sleep(3000);
+
 	}
 
 	public void MHS_Subscriber_id(String MHSID) {
@@ -89,7 +108,6 @@ public class Search extends Baseclass {
 		Application_id.sendKeys(Aid);
 	}
 
-	
 	public void Broker_id(String Bid) {
 		Broker_id.sendKeys(Bid);
 	}
@@ -98,7 +116,6 @@ public class Search extends Baseclass {
 		Select reqtype = new Select(Requesttype);
 		reqtype.selectByIndex(i);
 	}
-	
 
 	public void Applicationtyp(int i) {
 		Select apptype = new Select(Applicationtyp);
@@ -209,8 +226,27 @@ public class Search extends Baseclass {
 		HPGroup_name.sendKeys(Gname);
 	}
 
+	public void Validation1() throws InterruptedException, IOException {
+
+		if (Search_Result.isDisplayed()) 
+		{
+			Search_Result1();
+			Helper.Handle_Window();
+		} 
+		System.out.println("Validating error message");
+	}
+		public void Validation2() {
+		 if ((error_message.getText()).equalsIgnoreCase("No matching data found"))
+		{
+
+			System.out.println("Error message validated successfully");
+		}
+
+	}
+
 	// Methods
-	public void HFIC_App_Search(int i,int j,int k, String bid,String appid,String transid,String grp_id,String taxid,String appname,String subid) {
+	public void HFIC_App_Search(int i, int j, int k, String bid, String appid, String transid, String grp_id,
+			String taxid, String appname, String subid) throws InterruptedException, IOException {
 		Search_Link();
 		HFIC_APPLICATION_SEARCH();
 		Requesttype(i);
@@ -224,6 +260,10 @@ public class Search extends Baseclass {
 		Group_OR_App_name(appname);
 		MHS_Subscriber_id(subid);
 		HFIC_APP_Search();
+		Validation1();
+		Validation2();
+
+
 	}
 
 }
