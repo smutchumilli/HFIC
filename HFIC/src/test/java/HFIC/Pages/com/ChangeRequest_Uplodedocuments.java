@@ -65,7 +65,7 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 	WebElement docsubtype;
 
 	public void Chnagerequest_Link() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(1500);
 		Chnagerequest_Link.click();
 		Thread.sleep(1500);
 
@@ -100,18 +100,18 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 	}
 
 	public void search_btn() throws InterruptedException {
-		Thread.sleep(1500);
+		Thread.sleep(1200);
 
 		search_btn.click();
-		Thread.sleep(1500);
+		Thread.sleep(1200);
 
 	}
 
 	public void Search_result() throws InterruptedException {
-		Thread.sleep(1500);
+		Thread.sleep(500);
 
 		Search_result.click();
-		Thread.sleep(1000);
+		Thread.sleep(800);
 
 	}
 
@@ -221,7 +221,7 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 			rb = new Robot();
 			rb.keyPress(KeyEvent.VK_ENTER);
 			rb.keyRelease(KeyEvent.VK_ENTER);
-			Thread.sleep(1800);
+			Thread.sleep(1300);
 			
 		}
 		public void Tab() throws AWTException, InterruptedException {
@@ -230,7 +230,7 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 
 			rb.keyPress(KeyEvent.VK_TAB);
 			rb.keyRelease(KeyEvent.VK_TAB);
-			Thread.sleep(1800);
+			Thread.sleep(1300);
 
 			
 		}
@@ -240,7 +240,7 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 		
 			rb.keyRelease(KeyEvent.VK_V);
 			rb.keyRelease(KeyEvent.VK_CONTROL);
-			Thread.sleep(1800);
+			Thread.sleep(1100);
 
 			}
 		public void control() throws AWTException, InterruptedException {
@@ -293,13 +293,13 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 
 	public void Notes_Add() throws InterruptedException {
 		Notes_Add.click();
-		//Thread.sleep(2500);
+		Thread.sleep(500);
 
 	}
 
 	public void OK() throws InterruptedException {
 		OK.click();
-		//Thread.sleep(2800);
+		Thread.sleep(1000);
 
 	}
 

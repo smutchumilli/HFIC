@@ -3,34 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HFIC.Testcases.com.CR_HSAnew">
-        <methods>
-          <include name="CR_HSA_Group_update"/>
-          <include name="CR_HSA_Member_update"/>
-          <include name="Tear_Down"/>
-          <include name="Application_Start"/>
-          <include name="Application_Exit"/>
-          <include name="Start_up"/>
-        </methods>
-      </class> <!-- HFIC.Testcases.com.CR_HSAnew -->
       <class name="HFIC.Testcases.com.CR_UploadeDocuments">
         <methods>
+          <include name="CR_Other_UploadeDocument"/>
           <include name="Tear_Down"/>
           <include name="Application_Start"/>
           <include name="Application_Exit"/>
-          <include name="CR_Audit_UploadeDocument"/>
           <include name="Start_up"/>
         </methods>
       </class> <!-- HFIC.Testcases.com.CR_UploadeDocuments -->
-      <class name="HFIC.Testcases.com.Enrollment_360_new">
-        <methods>
-          <include name="HFIC_Group_Number_Search"/>
-          <include name="Tear_Down"/>
-          <include name="Application_Start"/>
-          <include name="Application_Exit"/>
-          <include name="Start_up"/>
-        </methods>
-      </class> <!-- HFIC.Testcases.com.Enrollment_360_new -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
