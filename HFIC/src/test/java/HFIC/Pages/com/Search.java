@@ -59,18 +59,49 @@ public class Search extends Baseclass {
 	@FindBy(id = "cfdc9e7d")
 	WebElement Application_id;
 	@FindBy(xpath = "//select[@id='dc3086c6']//following::input[1]")
-	WebElement Transaction_id;
+	WebElement Transaction_ID_Task;
 	@FindBy(xpath = "//select[@id='dc3086c6']//following::input[2]")
-	WebElement HFIC_HP_Group_id;
+	WebElement Group_id_task;
+	
+	@FindBy(xpath = "//input[@id='cfdc9e7d']//following::input[1]")
+	WebElement Transaction_ID_Appl;
+	@FindBy(xpath = "//input[@id='cfdc9e7d']//following::input[2]")
+	WebElement Group_id_appli;
+	
+	public void Transaction_ID_Appl(String appl) throws InterruptedException {
+		Transaction_ID_Appl.sendKeys(appl);
+//		Thread.sleep(2000);
+
+	}
+	
+	public void Group_id_appli(String appl) throws InterruptedException {
+		Group_id_appli.sendKeys(appl);
+
+	}
+	
+	public void Group_id_task(String appl) throws InterruptedException {
+		Group_id_task.sendKeys(appl);
+	}public void Transaction_ID_Task(String appl) throws InterruptedException {
+		Transaction_ID_Task.sendKeys(appl);
+
+	}
+	
 	@FindBy(id = "d4000d46")
 	WebElement taxid;
 	@FindBy(id = "5bb2922d")
 	WebElement Group_OR_App_name;
-	@FindBy(xpath= "//*[@id='5a403f22']//following::input[1]")
+	@FindBy(id= "1f1bdbe")
 	WebElement MHS_Subscriber_id;
-	@FindBy(name = "HFICSearchCriteria_pyDisplayHarness_63")
+	@FindBy(xpath= "//select[@id='5a403f22']//following::input[1]")
+	WebElement MHS_Subscriber_id_Task;
+	
+	public void MHS_Subscriber_id_Task(String subid ){
+		MHS_Subscriber_id_Task.sendKeys(subid);
+	}
+	
+	@FindBy(xpath = "//input[@id='1f1bdbe']//following::button[1]")
 	WebElement HFIC_APP_Search;
-	@FindBy(xpath = "//*[@id='d9073ef5']//following::button[1]")
+	@FindBy(name = "HFICSearchCriteria_pyDisplayHarness_63")
 
 	WebElement Search_Result;
 
@@ -98,14 +129,7 @@ public class Search extends Baseclass {
 		taxid.sendKeys(TAX);
 	}
 
-	public void HFIC_HP_Group_id(String GRPid) throws InterruptedException {
-		//Thread.sleep(3000);
-		HFIC_HP_Group_id.sendKeys(GRPid);
-	}
-
-	public void Transaction_id(String Tid) {
-		Transaction_id.sendKeys(Tid);
-	}
+	
  
 	public void Application_id(String Aid) {
 		Application_id.sendKeys(Aid);
@@ -142,7 +166,7 @@ public class Search extends Baseclass {
 	WebElement elog_type;
 	@FindBy(id = "d9073ef5")
 	WebElement account_num;
-	@FindBy(xpath = "//*[@id='d9073ef5']//following::button[1]")
+	@FindBy(name = "TaskELogSearchCriteria_pyDisplayHarness_223")
 	WebElement TaskSearch;
 
 	public void Task_Search_Type(int i) throws InterruptedException {
@@ -259,11 +283,13 @@ public class Search extends Baseclass {
 		Application_status(k);
 		Broker_id(bid);
 		Application_id(appid);
-		Transaction_id(transid);
-		HFIC_HP_Group_id(grp_id);
+		Transaction_ID_Appl(transid);
+		Group_id_appli(grp_id);
 		taxid(taxid);
 		Group_OR_App_name(appname);
 		MHS_Subscriber_id(subid);
+		Thread.sleep(1000);
+
 		HFIC_APP_Search();
 		//validate();
 		}
@@ -275,8 +301,8 @@ public class Search extends Baseclass {
 		Task_CR_id(id);	
 		task_status(4);
 		elog_type(1);
-		Transaction_id(transid);
-		HFIC_HP_Group_id(grp_id);
+		Transaction_ID_Task(transid);
+		Group_id_task(grp_id);
 		account_num(num);
 		Thread.sleep(1000);
 		TaskSearch();
@@ -287,7 +313,7 @@ public class Search extends Baseclass {
 		HFIC_TASK_SEARCH();
 		Task_Search_Type(2);
 		Task_CR_id(task);	
-		MHS_Subscriber_id(id);
+		MHS_Subscriber_id_Task(id);
 		Application(app);
 		Thread.sleep(1000);
 		TaskSearch();
