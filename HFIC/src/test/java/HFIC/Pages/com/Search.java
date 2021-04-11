@@ -58,31 +58,31 @@ public class Search extends Baseclass {
 	WebElement Broker_id;
 	@FindBy(id = "cfdc9e7d")
 	WebElement Application_id;
-	@FindBy(id = "d1600a6")
+	@FindBy(xpath = "//select[@id='dc3086c6']//following::input[1]")
 	WebElement Transaction_id;
-	@FindBy(id = "874fdaa4")
+	@FindBy(xpath = "//select[@id='dc3086c6']//following::input[2]")
 	WebElement HFIC_HP_Group_id;
 	@FindBy(id = "d4000d46")
 	WebElement taxid;
 	@FindBy(id = "5bb2922d")
 	WebElement Group_OR_App_name;
-	@FindBy(id = "1f1bdbe")
+	@FindBy(xpath= "//*[@id='5a403f22']//following::input[1]")
 	WebElement MHS_Subscriber_id;
 	@FindBy(name = "HFICSearchCriteria_pyDisplayHarness_63")
 	WebElement HFIC_APP_Search;
-	@FindBy(xpath = "//*[@id='$PHFICSearchTasks$ppxResults$l1']/td[1]/div/span")
+	@FindBy(xpath = "//*[@id='d9073ef5']//following::button[1]")
 
 	WebElement Search_Result;
 
 	public void Search_Result1() throws InterruptedException, IOException {
 		Helper.actions_class(Search_Result);
 		Helper.Handle_Window();
-		//Thread.sleep(1000);
+		////Thread.sleep(1000);
 	}
 
 	public void HFIC_APP_Search() throws InterruptedException {
 		HFIC_APP_Search.click();
-		//Thread.sleep(7000);
+		Thread.sleep(3000);
 
 	}
 
@@ -98,14 +98,15 @@ public class Search extends Baseclass {
 		taxid.sendKeys(TAX);
 	}
 
-	public void HFIC_HP_Group_id(String GRPid) {
+	public void HFIC_HP_Group_id(String GRPid) throws InterruptedException {
+		//Thread.sleep(3000);
 		HFIC_HP_Group_id.sendKeys(GRPid);
 	}
 
 	public void Transaction_id(String Tid) {
 		Transaction_id.sendKeys(Tid);
 	}
-
+ 
 	public void Application_id(String Aid) {
 		Application_id.sendKeys(Aid);
 	}
@@ -141,34 +142,42 @@ public class Search extends Baseclass {
 	WebElement elog_type;
 	@FindBy(id = "d9073ef5")
 	WebElement account_num;
-	@FindBy(name = "TaskELogSearchCriteria_pyDisplayHarness_223")
+	@FindBy(xpath = "//*[@id='d9073ef5']//following::button[1]")
 	WebElement TaskSearch;
 
-	public void Task_Search_Type(int i) {
+	public void Task_Search_Type(int i) throws InterruptedException {
 		Select tastatus = new Select(Task_Search_Type);
 		tastatus.selectByIndex(i);
+		Thread.sleep(2000);
+
 	}
 
-	public void Task_CR_id(String id) {
+	public void Task_CR_id(String id) throws InterruptedException {
 		Task_CR_id.sendKeys(id);
+		Thread.sleep(1000);
+
 	}
 
-	public void task_status(int i) {
+	public void task_status(int i) throws InterruptedException {
 		Select tastatus = new Select(task_status);
 		tastatus.selectByIndex(i);
+		Thread.sleep(1000);
 	}
 
-	public void elog_type(int i) {
+	public void elog_type(int i) throws InterruptedException {
 		Select etype = new Select(elog_type);
 		etype.selectByIndex(i);
+		Thread.sleep(1000);
+
 	}
 
 	public void account_num(String accnum) {
 		account_num.sendKeys(accnum);
 	}
 
-	public void TaskSearch() {
+	public void TaskSearch() throws InterruptedException {
 		TaskSearch.click();
+		Thread.sleep(3000);
 	}
 
 	// Membership
@@ -257,7 +266,31 @@ public class Search extends Baseclass {
 		MHS_Subscriber_id(subid);
 		HFIC_APP_Search();
 		//validate();
-		
-
-	}
+		}
+	
+	public void HFIC_Task_Search(String id,String transid,  String grp_id, String num) throws InterruptedException, IOException {
+		Search_Link();
+		HFIC_TASK_SEARCH();
+		Task_Search_Type(1);
+		Task_CR_id(id);	
+		task_status(4);
+		elog_type(1);
+		Transaction_id(transid);
+		HFIC_HP_Group_id(grp_id);
+		account_num(num);
+		Thread.sleep(1000);
+		TaskSearch();
+		//validate();
+}
+	public void HFIC_MTask_Search(String task,String id,String app) throws InterruptedException, IOException {
+		Search_Link();
+		HFIC_TASK_SEARCH();
+		Task_Search_Type(2);
+		Task_CR_id(task);	
+		MHS_Subscriber_id(id);
+		Application(app);
+		Thread.sleep(1000);
+		TaskSearch();
+		//validate();
+}
 }
