@@ -30,5 +30,10 @@ public class TestDataProvider {
 		return wb.getSheetAt(sheetindex).getRow(row).getCell(col).getStringCellValue();
 
 	}
+	public double getintdata(int sheetindex, int row, int col) {
+		return wb.getSheetAt(sheetindex).getRow(row).getCell(col).getNumericCellValue();
+
+
+	}
 
 }

@@ -70,17 +70,19 @@ public class Search extends Baseclass {
 	WebElement MHS_Subscriber_id;
 	@FindBy(name = "HFICSearchCriteria_pyDisplayHarness_63")
 	WebElement HFIC_APP_Search;
-	@FindBy(xpath = "//*[@id='PEGA_GRID_CONTENT']//tr[2]//td[1]//span[1]")
+	@FindBy(xpath = "//*[@id='$PHFICSearchTasks$ppxResults$l1']/td[1]/div/span")
+
 	WebElement Search_Result;
 
-	public void Search_Result1() throws InterruptedException {
+	public void Search_Result1() throws InterruptedException, IOException {
 		Helper.actions_class(Search_Result);
-		Thread.sleep(1000);
+		Helper.Handle_Window();
+		//Thread.sleep(1000);
 	}
 
 	public void HFIC_APP_Search() throws InterruptedException {
 		HFIC_APP_Search.click();
-		Thread.sleep(3000);
+		//Thread.sleep(7000);
 
 	}
 
@@ -225,23 +227,17 @@ public class Search extends Baseclass {
 	public void HP_Group_name(String Gname) {
 		HPGroup_name.sendKeys(Gname);
 	}
-
-	public void Validation1() throws InterruptedException, IOException {
-
-		if (Search_Result.isDisplayed()) 
-		{
-			Search_Result1();
-			Helper.Handle_Window();
-		} 
-		System.out.println("Validating error message");
-	}
-		public void Validation2() {
-		 if ((error_message.getText()).equalsIgnoreCase("No matching data found"))
-		{
-
-			System.out.println("Error message validated successfully");
+	public void validate() throws InterruptedException, IOException {
+		
+		if (error_message.isDisplayed()){
+			//SoftAssert asrt= new SoftAssert();
+			Assert.assertEquals(error_message.getText(), "No matching data found");
+		
 		}
-
+		else if (Search_Result.isDisplayed()){
+			Helper.actions_class(Search_Result);
+			Helper.Handle_Window();
+		}
 	}
 
 	// Methods
@@ -260,10 +256,8 @@ public class Search extends Baseclass {
 		Group_OR_App_name(appname);
 		MHS_Subscriber_id(subid);
 		HFIC_APP_Search();
-		Validation1();
-		Validation2();
-
+		//validate();
+		
 
 	}
-
 }
