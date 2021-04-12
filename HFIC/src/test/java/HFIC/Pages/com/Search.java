@@ -117,7 +117,7 @@ public class Search extends Baseclass {
 
 	public void HFIC_APP_Search() throws InterruptedException {
 		HFIC_APP_Search.click();
-		Thread.sleep(3000);
+		Thread.sleep(1500);
 
 	}
 
