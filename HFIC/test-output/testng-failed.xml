@@ -5,10 +5,10 @@
     <classes>
       <class name="HFIC.Testcases.com.PEGA_Search">
         <methods>
+          <include name="Changerequest_Search"/>
           <include name="Tear_Down"/>
           <include name="Application_Start"/>
           <include name="Application_Exit"/>
-          <include name="Task_G_Search"/>
           <include name="Start_up"/>
         </methods>
       </class> <!-- HFIC.Testcases.com.PEGA_Search -->

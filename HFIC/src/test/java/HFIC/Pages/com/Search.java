@@ -60,7 +60,7 @@ public class Search extends Baseclass {
 	WebElement Application_id;
 	@FindBy(xpath = "//select[@id='dc3086c6']//following::input[1]")
 	WebElement Transaction_ID_Task;
-	@FindBy(xpath = "//input[@id='65bee56e']//following::input[1]")
+	@FindBy(xpath = "//input[@id='65bee56e']//following::input[2]")
 	WebElement Group_id_task;
 	
 	@FindBy(xpath = "//input[@id='cfdc9e7d']//following::input[1]")
@@ -70,7 +70,7 @@ public class Search extends Baseclass {
 	
 	public void Transaction_ID_Appl(String appl) throws InterruptedException {
 		Transaction_ID_Appl.sendKeys(appl);
-//		Thread.sleep(2000);
+//		Thread.sleep(1500);
 
 	}
 	
@@ -117,7 +117,7 @@ public class Search extends Baseclass {
 
 	public void HFIC_APP_Search() throws InterruptedException {
 		HFIC_APP_Search.click();
-		Thread.sleep(1500);
+		Thread.sleep(1000);
 
 	}
 
@@ -176,7 +176,7 @@ public class Search extends Baseclass {
 	public void Task_Search_Type(int i) throws InterruptedException {
 		Select tastatus = new Select(Task_Search_Type);
 		tastatus.selectByIndex(i);
-		Thread.sleep(2000);
+		Thread.sleep(1500);
 
 	}
 
@@ -376,5 +376,115 @@ public class Search extends Baseclass {
 		TaskSearch();
 		//validate();
 }
+	
+	public void HFIC_QLE_Tracking_Search(String task,String mhsmemid,String sub,String app) 
+			throws InterruptedException, IOException {
+		Search_Link();
+		HFIC_TASK_SEARCH();
+		Task_Search_Type(6);
+		Task_CR_id(task);
+		MHS_Member_id(mhsmemid);
+		mhs_subid(sub);
+		Application(app);
+		Thread.sleep(1000);
+		TaskSearch();
+		//validate();
+}
+	
+	public void HFIC_Presumptive_Search(String task,String grp,String appid,String appname) 
+			throws InterruptedException, IOException {
+		Search_Link();
+		HFIC_TASK_SEARCH();
+		Task_Search_Type(7);
+		Task_CR_id(task);
+		Grp_id_task(grp);
+		Application_ID_Task(appid);
+		Appname_ID_Task(appname);
+		Thread.sleep(1000);
+		TaskSearch();
+		//validate();
+}
+
+	@FindBy(xpath="//*[@id='65bee56e']//following::input[3]") WebElement GRPID_CR;
+	public void GRPID_CR(String grp) {
+		GRPID_CR.sendKeys(grp);
+	}
+	@FindBy(xpath="//*[@id='65bee56e']//following::input[1]") WebElement Created_On;
+	public void Created_On(String grp) {
+		Created_On.sendKeys(grp);
+	}
+	public void HFIC_ChangeRequest_Search(String task,String date,String grp) 
+		throws InterruptedException, IOException {
+		Search_Link();
+		HEALTHPASS_TASK_SEARCH();
+		Task_Search_Type(9);
+		Task_CR_id(task);
+		Created_On(date);
+		GRPID_CR(grp);
+		Thread.sleep(500);
+		TaskSearch();
+		//validate();
+}
+	@FindBy(xpath="//button[@name='TaskELogSearchCriteriaHP_pyDisplayHarness_61']") WebElement CR_Search;
+	public void CR_Search( ) {
+		CR_Search.click();
+	}
+	
+	public void HP_Reconciliation_Search(String task,String id,String id1,String id2,String id3) 
+			throws InterruptedException, IOException {
+			Search_Link();
+			HEALTHPASS_TASK_SEARCH();
+			Task_Search_Type(3);
+			Task_CR_id(task);
+			MHS_Subscriber_ID_recon(id);
+			Group_ID_Recon(id1);
+			HealthPass_Group_ID(id2);
+			HealthPass_Subscriber_ID(id3);
+			
+			Thread.sleep(500);
+			CR_Search();
+			//validate();
+	}
+	
+	@FindBy(xpath="//input[@id='a7962bc5']") WebElement HealthPass_Subscriber_ID;
+	public void HealthPass_Subscriber_ID(String id) {
+		HealthPass_Subscriber_ID.sendKeys(id);
+	}
+	@FindBy(xpath="//input[@id='a7962bc5']//preceding::input[1]") WebElement HealthPass_Group_ID;
+	public void HealthPass_Group_ID(String id) {
+		HealthPass_Group_ID.sendKeys(id);
+	}
+	@FindBy(xpath="//input[@id='a7962bc5']//preceding::input[2]") WebElement Group_ID_Recon;
+	public void Group_ID_Recon(String id) {
+		Group_ID_Recon.sendKeys(id);
+	}
+	@FindBy(xpath="//input[@id='a7962bc5']//preceding::input[3]") WebElement MHS_Subscriber_ID_recon;
+	public void MHS_Subscriber_ID_recon(String id) {
+		MHS_Subscriber_ID_recon.sendKeys(id);
+	}
+	
+	@FindBy(xpath="//*[@id='headerlabel3384']//preceding::input[2]") WebElement groupid;
+	public void groupid(String id) {
+		groupid.sendKeys(id);
+	}
+	@FindBy(xpath="//*[@id='headerlabel3384']//preceding::input[1]") WebElement groupname;
+	public void groupname(String id) {
+		groupname.sendKeys(id);
+	}
+	
+	public void HP_GroupTask_Search(String task,String grp,String name) 
+			throws InterruptedException, IOException {
+			Search_Link();
+			HEALTHPASS_TASK_SEARCH();
+			Task_Search_Type(1);
+			Task_CR_id(task);
+			groupid(grp);
+			groupname(name);
+			Thread.sleep(500);
+			CR_Search();
+			//validate();
+	}
+	
+	
 	
 }

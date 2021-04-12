@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
     <line>
       <![CDATA[Project set up done]]>
@@ -8,60 +8,180 @@
       <![CDATA[Application up and running as expected]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55305" started-at="2021-04-12T02:58:46Z" finished-at="2021-04-12T02:59:42Z">
+  <suite name="Default suite" duration-ms="419438" started-at="2021-04-12T17:16:38Z" finished-at="2021-04-12T17:23:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55305" started-at="2021-04-12T02:58:46Z" finished-at="2021-04-12T02:59:42Z">
-      <class name="HFIC.Testcases.com.CR_UpdateHSA_Group_Member">
-        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.CR_UpdateHSA_Group_Member@e25b2fe]" name="Start_up" is-config="true" duration-ms="987" started-at="2021-04-12T02:58:45Z" finished-at="2021-04-12T02:58:46Z">
+    <test name="Default test" duration-ms="419438" started-at="2021-04-12T17:16:38Z" finished-at="2021-04-12T17:23:38Z">
+      <class name="HFIC.Testcases.com.PEGA_Search">
+        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Start_up" is-config="true" duration-ms="1203" started-at="2021-04-12T17:16:37Z" finished-at="2021-04-12T17:16:38Z">
           <reporter-output>
             <line>
               <![CDATA[Project set up done]]>
             </line>
           </reporter-output>
         </test-method> <!-- Start_up -->
-        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.CR_UpdateHSA_Group_Member@e25b2fe]" name="Application_Start" is-config="true" duration-ms="7706" started-at="2021-04-12T02:58:46Z" finished-at="2021-04-12T02:58:54Z">
+        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Application_Start" is-config="true" duration-ms="7673" started-at="2021-04-12T17:16:38Z" finished-at="2021-04-12T17:16:46Z">
           <reporter-output>
             <line>
               <![CDATA[Application up and running as expected]]>
             </line>
           </reporter-output>
         </test-method> <!-- Application_Start -->
-        <test-method status="PASS" signature="CR_HSA_Member_update()[pri:1, instance:HFIC.Testcases.com.CR_UpdateHSA_Group_Member@e25b2fe]" name="CR_HSA_Member_update" duration-ms="21620" started-at="2021-04-12T02:58:54Z" finished-at="2021-04-12T02:59:16Z">
+        <test-method status="PASS" signature="Application_Search()[pri:1, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Application_Search" duration-ms="123397" started-at="2021-04-12T17:16:46Z" finished-at="2021-04-12T17:18:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CR_HSA_Member_update -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.CR_UpdateHSA_Group_Member@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="648" started-at="2021-04-12T02:59:16Z" finished-at="2021-04-12T02:59:16Z">
+        </test-method> <!-- Application_Search -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Tear_Down" is-config="true" duration-ms="854" started-at="2021-04-12T17:18:49Z" finished-at="2021-04-12T17:18:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CR_HSA_Member_update status=SUCCESS method=CR_UpdateHSA_Group_Member.CR_HSA_Member_update()[pri:1, instance:HFIC.Testcases.com.CR_UpdateHSA_Group_Member@e25b2fe] output={null}]]]>
+                <![CDATA[[TestResult name=Application_Search status=SUCCESS method=PEGA_Search.Application_Search()[pri:1, instance:HFIC.Testcases.com.PEGA_Search@754ba872] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="CR_HSA_Group_update()[pri:2, instance:HFIC.Testcases.com.CR_UpdateHSA_Group_Member@e25b2fe]" name="CR_HSA_Group_update" duration-ms="24237" started-at="2021-04-12T02:59:16Z" finished-at="2021-04-12T02:59:41Z">
+        <test-method status="PASS" signature="Task_B_Search()[pri:2, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Task_B_Search" duration-ms="48600" started-at="2021-04-12T17:18:50Z" finished-at="2021-04-12T17:19:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CR_HSA_Group_update -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.CR_UpdateHSA_Group_Member@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="419" started-at="2021-04-12T02:59:41Z" finished-at="2021-04-12T02:59:41Z">
+        </test-method> <!-- Task_B_Search -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Tear_Down" is-config="true" duration-ms="489" started-at="2021-04-12T17:19:39Z" finished-at="2021-04-12T17:19:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CR_HSA_Group_update status=SUCCESS method=CR_UpdateHSA_Group_Member.CR_HSA_Group_update()[pri:2, instance:HFIC.Testcases.com.CR_UpdateHSA_Group_Member@e25b2fe] output={null}]]]>
+                <![CDATA[[TestResult name=Task_B_Search status=SUCCESS method=PEGA_Search.Task_B_Search()[pri:2, instance:HFIC.Testcases.com.PEGA_Search@754ba872] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.CR_UpdateHSA_Group_Member@e25b2fe]" name="Application_Exit" is-config="true" duration-ms="654" started-at="2021-04-12T02:59:41Z" finished-at="2021-04-12T02:59:42Z">
+        <test-method status="PASS" signature="Task_M_Search()[pri:3, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Task_M_Search" duration-ms="28778" started-at="2021-04-12T17:19:39Z" finished-at="2021-04-12T17:20:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Task_M_Search -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Tear_Down" is-config="true" duration-ms="371" started-at="2021-04-12T17:20:08Z" finished-at="2021-04-12T17:20:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Task_M_Search status=SUCCESS method=PEGA_Search.Task_M_Search()[pri:3, instance:HFIC.Testcases.com.PEGA_Search@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="Task_G_Search()[pri:4, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Task_G_Search" duration-ms="18440" started-at="2021-04-12T17:20:08Z" finished-at="2021-04-12T17:20:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Task_G_Search -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Tear_Down" is-config="true" duration-ms="343" started-at="2021-04-12T17:20:27Z" finished-at="2021-04-12T17:20:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Task_G_Search status=SUCCESS method=PEGA_Search.Task_G_Search()[pri:4, instance:HFIC.Testcases.com.PEGA_Search@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="Task_Payment_Exception_Search()[pri:5, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Task_Payment_Exception_Search" duration-ms="21237" started-at="2021-04-12T17:20:27Z" finished-at="2021-04-12T17:20:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Task_Payment_Exception_Search -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Tear_Down" is-config="true" duration-ms="318" started-at="2021-04-12T17:20:48Z" finished-at="2021-04-12T17:20:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Task_Payment_Exception_Search status=SUCCESS method=PEGA_Search.Task_Payment_Exception_Search()[pri:5, instance:HFIC.Testcases.com.PEGA_Search@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="Task_COBTask_Search()[pri:6, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Task_COBTask_Search" duration-ms="36407" started-at="2021-04-12T17:20:49Z" finished-at="2021-04-12T17:21:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Task_COBTask_Search -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Tear_Down" is-config="true" duration-ms="337" started-at="2021-04-12T17:21:25Z" finished-at="2021-04-12T17:21:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Task_COBTask_Search status=SUCCESS method=PEGA_Search.Task_COBTask_Search()[pri:6, instance:HFIC.Testcases.com.PEGA_Search@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="Task_QLETrack_Search()[pri:7, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Task_QLETrack_Search" duration-ms="36220" started-at="2021-04-12T17:21:25Z" finished-at="2021-04-12T17:22:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Task_QLETrack_Search -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Tear_Down" is-config="true" duration-ms="369" started-at="2021-04-12T17:22:02Z" finished-at="2021-04-12T17:22:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Task_QLETrack_Search status=SUCCESS method=PEGA_Search.Task_QLETrack_Search()[pri:7, instance:HFIC.Testcases.com.PEGA_Search@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="Task_Presumptive_Search()[pri:8, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Task_Presumptive_Search" duration-ms="42786" started-at="2021-04-12T17:22:02Z" finished-at="2021-04-12T17:22:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Task_Presumptive_Search -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Tear_Down" is-config="true" duration-ms="346" started-at="2021-04-12T17:22:45Z" finished-at="2021-04-12T17:22:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Task_Presumptive_Search status=SUCCESS method=PEGA_Search.Task_Presumptive_Search()[pri:8, instance:HFIC.Testcases.com.PEGA_Search@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="Changerequest_Search()[pri:9, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Changerequest_Search" duration-ms="19831" started-at="2021-04-12T17:22:45Z" finished-at="2021-04-12T17:23:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Changerequest_Search -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Tear_Down" is-config="true" duration-ms="398" started-at="2021-04-12T17:23:05Z" finished-at="2021-04-12T17:23:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Changerequest_Search status=SUCCESS method=PEGA_Search.Changerequest_Search()[pri:9, instance:HFIC.Testcases.com.PEGA_Search@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="HP_Reco_Search()[pri:10, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="HP_Reco_Search" duration-ms="31093" started-at="2021-04-12T17:23:05Z" finished-at="2021-04-12T17:23:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HP_Reco_Search -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Tear_Down" is-config="true" duration-ms="318" started-at="2021-04-12T17:23:36Z" finished-at="2021-04-12T17:23:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HP_Reco_Search status=SUCCESS method=PEGA_Search.HP_Reco_Search()[pri:10, instance:HFIC.Testcases.com.PEGA_Search@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@754ba872]" name="Application_Exit" is-config="true" duration-ms="780" started-at="2021-04-12T17:23:37Z" finished-at="2021-04-12T17:23:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Exit -->
-      </class> <!-- HFIC.Testcases.com.CR_UpdateHSA_Group_Member -->
+      </class> <!-- HFIC.Testcases.com.PEGA_Search -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
