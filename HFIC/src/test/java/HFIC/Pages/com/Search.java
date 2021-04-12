@@ -205,7 +205,7 @@ public class Search extends Baseclass {
 
 	public void TaskSearch() throws InterruptedException {
 		TaskSearch.click();
-		Thread.sleep(3000);
+		Thread.sleep(1600);
 	}
 
 	// Membership
@@ -341,6 +341,18 @@ public class Search extends Baseclass {
 		Grp_id_task(grp);
 		Application_ID_Task(appid);
 		Appname_ID_Task(appname);
+		Thread.sleep(1000);
+		TaskSearch();
+		//validate();
+}
+	public void HFIC_Paymentexcetion_Task_Search(String task,String acnum) throws InterruptedException, IOException {
+		Search_Link();
+		HFIC_TASK_SEARCH();
+		Task_Search_Type(4);
+		Task_CR_id(task);
+		account_num(acnum);
+		//Account_name(accname);
+		
 		Thread.sleep(1000);
 		TaskSearch();
 		//validate();

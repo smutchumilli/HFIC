@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\smutchumilli\AppData\Local\Temp\2\testng-eclipse-1135959819\testng-customsuite.xml</span>
+                    <span>C:\Users\smutchumilli\AppData\Local\Temp\2\testng-eclipse--1608115309\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,6 +118,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="HFIC.Testcases.com.PEGA_Search" hash-for-method="Task_M_Search">Task_M_Search</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="HFIC.Testcases.com.PEGA_Search" hash-for-method="Task_Payment_Exception_Search">Task_Payment_Exception_Search</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -166,12 +171,19 @@
                   <span class="method-name">Task_M_Search</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Task_Payment_Exception_Search">
+                  </a> <!-- Task_Payment_Exception_Search -->
+                  <span class="method-name">Task_Payment_Exception_Search</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\smutchumilli\AppData\Local\Temp\2\testng-eclipse-1135959819\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\smutchumilli\AppData\Local\Temp\2\testng-eclipse--1608115309\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -220,23 +232,27 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Application_Search')
 data.setCell(0, 2, 'HFIC.Testcases.com.PEGA_Search')
-data.setCell(0, 3, 152973);
+data.setCell(0, 3, 152945);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Task_B_Search')
 data.setCell(1, 2, 'HFIC.Testcases.com.PEGA_Search')
-data.setCell(1, 3, 54503);
+data.setCell(1, 3, 47578);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'Task_M_Search')
 data.setCell(2, 2, 'HFIC.Testcases.com.PEGA_Search')
-data.setCell(2, 3, 34638);
+data.setCell(2, 3, 28826);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Task_G_Search')
+data.setCell(3, 1, 'Task_Payment_Exception_Search')
 data.setCell(3, 2, 'HFIC.Testcases.com.PEGA_Search')
-data.setCell(3, 3, 23013);
+data.setCell(3, 3, 21492);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Task_G_Search')
+data.setCell(4, 2, 'HFIC.Testcases.com.PEGA_Search')
+data.setCell(4, 3, 18913);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -274,43 +290,51 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">Application_Start</span>
-                <span class="method-start">885 ms</span>
+                <span class="method-start">853 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Application_Search</span>
-                <span class="method-start">8080 ms</span>
+                <span class="method-start">8000 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Tear_Down([TestResult name=Application_Search status=SUCCESS method=PEGA_Search.Application_Search()[pri:0, in...)</span>
-                <span class="method-start">161055 ms</span>
+                <span class="method-start">160946 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">Task_B_Search</span>
-                <span class="method-start">161633 ms</span>
+                <span class="method-start">161507 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Tear_Down([TestResult name=Task_B_Search status=SUCCESS method=PEGA_Search.Task_B_Search()[pri:0, instance:HFI...)</span>
-                <span class="method-start">216137 ms</span>
+                <span class="method-start">209086 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">Task_G_Search</span>
-                <span class="method-start">216432 ms</span>
+                <span class="method-start">209388 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Tear_Down([TestResult name=Task_G_Search status=SUCCESS method=PEGA_Search.Task_G_Search()[pri:0, instance:HFI...)</span>
-                <span class="method-start">239446 ms</span>
+                <span class="method-start">228302 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">Task_M_Search</span>
-                <span class="method-start">239733 ms</span>
+                <span class="method-start">228586 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Tear_Down([TestResult name=Task_M_Search status=SUCCESS method=PEGA_Search.Task_M_Search()[pri:0, instance:HFI...)</span>
-                <span class="method-start">274372 ms</span>
+                <span class="method-start">257413 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Task_Payment_Exception_Search</span>
+                <span class="method-start">257707 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Tear_Down([TestResult name=Task_Payment_Exception_Search status=SUCCESS method=PEGA_Search.Task_Payment_Except...)</span>
+                <span class="method-start">279200 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">Application_Exit</span>
-                <span class="method-start">274647 ms</span>
+                <span class="method-start">279478 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

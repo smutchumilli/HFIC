@@ -56,7 +56,7 @@ public class PEGA_Search  extends Baseclass {
 }
 	@Test
 	public void Task_B_Search() throws IOException, InterruptedException {
-		test=extent.createTest("HFIC Application Search");
+		test=extent.createTest("HFIC Billing Task Search");
 		Search Search=PageFactory.initElements(driver, Search.class);
 		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		for (int i=1;i<=5;i++) {
@@ -69,7 +69,7 @@ public class PEGA_Search  extends Baseclass {
 	}	
 	@Test
 	public void Task_M_Search() throws IOException, InterruptedException {
-		test=extent.createTest("HFIC Membership_Search");
+		test=extent.createTest("HFIC Membership Task Search");
 		Search Search=PageFactory.initElements(driver, Search.class);
 		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		for (int i=7;i<=10;i++) {
@@ -91,6 +91,18 @@ public void Task_G_Search() throws IOException, InterruptedException {
 			data.getstringdata("Task", i, 0),
 			data.getstringdata("Task", i, 1),
 			data.getstringdata("Task", i, 2));
+			
+	test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+	}
+}
+@Test
+public void Task_Payment_Exception_Search() throws IOException, InterruptedException {
+	test=extent.createTest("HFIC payment Exception Task Search");
+	Search Search=PageFactory.initElements(driver, Search.class);
+	test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+	for (int i=17;i<=19;i++) {
+	Search.HFIC_Paymentexcetion_Task_Search(data.getstringdata("Task", i, 0),data.getstringdata("Task", i, 1));
+		//	data.getstringdata("Task", i, 2));
 			
 	test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 	}
