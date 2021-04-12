@@ -107,4 +107,18 @@ public void Task_Payment_Exception_Search() throws IOException, InterruptedExcep
 	test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 	}
 }
+@Test
+public void Task_COBTask_Search() throws IOException, InterruptedException {
+	test=extent.createTest("HFIC COB  Task Search");
+	Search Search=PageFactory.initElements(driver, Search.class);
+	test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+	for (int i=21;i<=25;i++) {
+	Search.HFIC_COB_Task_Search(data.getstringdata("Task", i, 0),
+			data.getstringdata("Task", i, 1),
+			data.getstringdata("Task", i, 2),
+			data.getstringdata("Task", i, 3));
+			
+	test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+	}
+}
 }

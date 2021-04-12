@@ -357,5 +357,24 @@ public class Search extends Baseclass {
 		TaskSearch();
 		//validate();
 }
+	@FindBy(xpath="//input[@id='65bee56e']//following::input[2]")WebElement mhs_subid;
+	public void mhs_subid(String sub) {
+		mhs_subid.sendKeys(sub);
+	}
+	
+	
+	public void HFIC_COB_Task_Search(String task,String mhsmemid,String sub,String app) 
+			throws InterruptedException, IOException {
+		Search_Link();
+		HFIC_TASK_SEARCH();
+		Task_Search_Type(5);
+		Task_CR_id(task);
+		MHS_Member_id(mhsmemid);
+		mhs_subid(sub);
+		Application(app);
+		Thread.sleep(1000);
+		TaskSearch();
+		//validate();
+}
 	
 }
