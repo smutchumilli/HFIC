@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
     <line>
       <![CDATA[Project set up done]]>
@@ -8,30 +8,30 @@
       <![CDATA[Application up and running as expected]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="252173" started-at="2021-04-11T19:42:02Z" finished-at="2021-04-11T19:46:14Z">
+  <suite name="Default suite" duration-ms="274451" started-at="2021-04-12T01:12:42Z" finished-at="2021-04-12T01:17:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="252173" started-at="2021-04-11T19:42:02Z" finished-at="2021-04-11T19:46:14Z">
+    <test name="Default test" duration-ms="274451" started-at="2021-04-12T01:12:42Z" finished-at="2021-04-12T01:17:17Z">
       <class name="HFIC.Testcases.com.PEGA_Search">
-        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Start_up" is-config="true" duration-ms="892" started-at="2021-04-11T19:42:01Z" finished-at="2021-04-11T19:42:02Z">
+        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Start_up" is-config="true" duration-ms="878" started-at="2021-04-12T01:12:41Z" finished-at="2021-04-12T01:12:42Z">
           <reporter-output>
             <line>
               <![CDATA[Project set up done]]>
             </line>
           </reporter-output>
         </test-method> <!-- Start_up -->
-        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Application_Start" is-config="true" duration-ms="6580" started-at="2021-04-11T19:42:02Z" finished-at="2021-04-11T19:42:09Z">
+        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Application_Start" is-config="true" duration-ms="7187" started-at="2021-04-12T01:12:42Z" finished-at="2021-04-12T01:12:50Z">
           <reporter-output>
             <line>
               <![CDATA[Application up and running as expected]]>
             </line>
           </reporter-output>
         </test-method> <!-- Application_Start -->
-        <test-method status="PASS" signature="Application_Search()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Application_Search" duration-ms="154328" started-at="2021-04-11T19:42:09Z" finished-at="2021-04-11T19:44:43Z">
+        <test-method status="PASS" signature="Application_Search()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Application_Search" duration-ms="152973" started-at="2021-04-12T01:12:50Z" finished-at="2021-04-12T01:15:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="545" started-at="2021-04-11T19:44:43Z" finished-at="2021-04-11T19:44:44Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="578" started-at="2021-04-12T01:15:22Z" finished-at="2021-04-12T01:15:23Z">
           <params>
             <param index="0">
               <value>
@@ -42,11 +42,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Task_B_Search()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Task_B_Search" duration-ms="54806" started-at="2021-04-11T19:44:44Z" finished-at="2021-04-11T19:45:38Z">
+        <test-method status="PASS" signature="Task_B_Search()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Task_B_Search" duration-ms="54503" started-at="2021-04-12T01:15:23Z" finished-at="2021-04-12T01:16:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Task_B_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="289" started-at="2021-04-11T19:45:38Z" finished-at="2021-04-11T19:45:39Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="294" started-at="2021-04-12T01:16:18Z" finished-at="2021-04-12T01:16:18Z">
           <params>
             <param index="0">
               <value>
@@ -57,11 +57,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Task_M_Search()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Task_M_Search" duration-ms="34620" started-at="2021-04-11T19:45:39Z" finished-at="2021-04-11T19:46:13Z">
+        <test-method status="PASS" signature="Task_G_Search()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Task_G_Search" duration-ms="23013" started-at="2021-04-12T01:16:18Z" finished-at="2021-04-12T01:16:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Task_G_Search -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="286" started-at="2021-04-12T01:16:41Z" finished-at="2021-04-12T01:16:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Task_G_Search status=SUCCESS method=PEGA_Search.Task_G_Search()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method status="PASS" signature="Task_M_Search()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Task_M_Search" duration-ms="34638" started-at="2021-04-12T01:16:41Z" finished-at="2021-04-12T01:17:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Task_M_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="303" started-at="2021-04-11T19:46:13Z" finished-at="2021-04-11T19:46:14Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="275" started-at="2021-04-12T01:17:16Z" finished-at="2021-04-12T01:17:16Z">
           <params>
             <param index="0">
               <value>
@@ -72,7 +87,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Application_Exit" is-config="true" duration-ms="679" started-at="2021-04-11T19:46:14Z" finished-at="2021-04-11T19:46:14Z">
+        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Application_Exit" is-config="true" duration-ms="681" started-at="2021-04-12T01:17:16Z" finished-at="2021-04-12T01:17:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Exit -->

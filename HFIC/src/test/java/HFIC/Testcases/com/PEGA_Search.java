@@ -80,4 +80,19 @@ public class PEGA_Search  extends Baseclass {
 		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		}
 	}
+	
+@Test
+public void Task_G_Search() throws IOException, InterruptedException {
+	test=extent.createTest("HFIC Group Task Search");
+	Search Search=PageFactory.initElements(driver, Search.class);
+	test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+	for (int i=13;i<=15;i++) {
+	Search.HFIC_GTask_Search(
+			data.getstringdata("Task", i, 0),
+			data.getstringdata("Task", i, 1),
+			data.getstringdata("Task", i, 2));
+			
+	test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+	}
+}
 }

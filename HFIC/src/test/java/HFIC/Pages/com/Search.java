@@ -60,7 +60,7 @@ public class Search extends Baseclass {
 	WebElement Application_id;
 	@FindBy(xpath = "//select[@id='dc3086c6']//following::input[1]")
 	WebElement Transaction_ID_Task;
-	@FindBy(xpath = "//select[@id='dc3086c6']//following::input[2]")
+	@FindBy(xpath = "//input[@id='65bee56e']//following::input[1]")
 	WebElement Group_id_task;
 	
 	@FindBy(xpath = "//input[@id='cfdc9e7d']//following::input[1]")
@@ -84,6 +84,10 @@ public class Search extends Baseclass {
 	}public void Transaction_ID_Task(String appl) throws InterruptedException {
 		Transaction_ID_Task.sendKeys(appl);
 
+	}
+	@FindBy(xpath="//input[@id='65bee56e']//following::input[1]") WebElement Group_id_task1;
+	public void Grp_id_task(String grp) {
+		Group_id_task.sendKeys(grp);
 	}
 	
 	@FindBy(id = "d4000d46")
@@ -319,4 +323,27 @@ public class Search extends Baseclass {
 		TaskSearch();
 		//validate();
 }
+	//input[@id='65bee56e']//following::input[2]
+	@FindBy(xpath="//input[@id='65bee56e']//following::input[2]") WebElement Application_ID_Task;
+	public void Application_ID_Task(String app) {
+		Application_ID_Task.sendKeys(app);
+	}
+	@FindBy(xpath="//input[@id='65bee56e']//following::input[3]") WebElement Appname_ID_Task;
+	public void Appname_ID_Task(String appname) {
+		Appname_ID_Task.sendKeys(appname);
+	}
+	
+	public void HFIC_GTask_Search(String grp,String appid,String appname) throws InterruptedException, IOException {
+		Search_Link();
+		HFIC_TASK_SEARCH();
+		Task_Search_Type(3);
+		//Task_CR_id(task);	
+		Grp_id_task(grp);
+		Application_ID_Task(appid);
+		Appname_ID_Task(appname);
+		Thread.sleep(1000);
+		TaskSearch();
+		//validate();
+}
+	
 }
