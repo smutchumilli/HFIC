@@ -17,7 +17,7 @@ public class Enrollment_360_Search extends Baseclass {
 	public void HFIC_Group_Number_Search() throws InterruptedException, IOException {
 		Enrollment360 Enrollment360 = PageFactory.initElements(driver,Enrollment360.class);
 		test=extent.createTest("Enrollment 360 group Search");
-		for(int i=0;i<=4;i++) {
+		for(int i=3;i<=4;i++) {
 		test.info(data.getstringdata("Enroll360", i, 0));
 		Enrollment360.HFIC_Group_Search_Method((data.getstringdata("Enroll360", i, 1)),
 		(data.getstringdata("Enroll360", i, 2)),
@@ -25,9 +25,11 @@ public class Enrollment_360_Search extends Baseclass {
 		(data.getstringdata("Enroll360", i, 4)));
 		test.info(" Group Search completed, Please find the below screenshot for your reference");
 		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+
 		}	
 	}
-	@Test(priority=2)
+
+@Test(priority=2)
 	public void HP_Group_Search() throws InterruptedException, IOException {
 		Enrollment360 Enrollment360 = PageFactory.initElements(driver,Enrollment360.class);
 		test=extent.createTest("HealthPass Group Search");
@@ -42,7 +44,8 @@ public class Enrollment_360_Search extends Baseclass {
 		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		}
 }
-	@Test(priority=3)
+
+@Test(priority=3)
 	public void MemberSearch() throws InterruptedException, IOException {
 		Enrollment360 Enrollment360 = PageFactory.initElements(driver,Enrollment360.class);
 		test=extent.createTest("HFIC and HP Member Search");

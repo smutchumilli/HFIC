@@ -3,11 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HFIC.Testcases.com.tesrtt">
+      <class name="HFIC.Testcases.com.Enrollment_360_Search">
         <methods>
-          <include name="john"/>
+          <include name="Tear_Down"/>
+          <include name="Application_Start"/>
+          <include name="Application_Exit"/>
+          <include name="HFIC_Group_Number_Search"/>
+          <include name="Start_up"/>
         </methods>
-      </class> <!-- HFIC.Testcases.com.tesrtt -->
+      </class> <!-- HFIC.Testcases.com.Enrollment_360_Search -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

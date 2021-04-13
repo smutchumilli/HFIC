@@ -8,6 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 public class Enrollment360 extends Baseclass {
 
@@ -31,7 +32,7 @@ public class Enrollment360 extends Baseclass {
 	WebElement Search_Result;
 	@FindBy(xpath = "//*[contains(text(),'Group was not found, try again using different search combination')]")
 	WebElement errormessage;
-	@FindBy(xpath = "//*[contains(text(),'VIEW MHS GROUP DETAILS')]")
+	@FindBy(xpath = "//*[text()='VIEW MHS GROUP DETAILS']")
 	WebElement Homepage;
 	@FindBy(xpath = "//*[contains(text(),'MEMBER 360 SEARCH')]")
 	WebElement Member360;
@@ -82,7 +83,7 @@ public class Enrollment360 extends Baseclass {
 		s.selectByIndex(1);
 	}
 
-	public void merror() {
+	public void merror1() {
 		Assert.assertTrue(merror.isDisplayed(), "Testpass");
 	}
 
@@ -165,35 +166,92 @@ public class Enrollment360 extends Baseclass {
 		Search.click();
 		Thread.sleep(3000);
 	}
+	@FindBy(xpath="//span[text()='ME 1032']") WebElement ME1032;
+	public void ME1032() {
+		ME1032.click();
+	}
+	@FindBy(xpath="//span[text()='ME 1033']") WebElement ME1033;
+	public void ME1033() {
+		ME1033.click();
+	}@FindBy(xpath="//span[text()='ME 1034']") WebElement ME1034;
+	public void ME1034() {
+		ME1034.click();
+	}@FindBy(xpath="//span[text()='Active Members']") WebElement Active_members;
+	public void Active_members() {
+		Active_members.click();
+	}
+	@FindBy(xpath="//span[text()='Enrollment Info']") WebElement Enrollment_Info;
+	public void Enrollment_Info() {
+		Enrollment_Info.click();
+	}
+	@FindBy(xpath="//span[text()='PCP Info']") WebElement PCP_Info;
+	public void PCP_Info() {
+		PCP_Info.click();
+	}
 
-	public void verification() throws InterruptedException {
+	public void GRP_Verification() throws InterruptedException {
 
 		if (errormessage.isDisplayed()) 
 		{
-			System.out.println("Error message displayed succesfully");
-
-		} else if (merror.isDisplayed())
+			
+			Assert.assertEquals(errormessage.getText(), "Group was not found, try again using different search combination");
+			System.out.println(" Group Error message Validated Successfully");
+		} 
+		else 
 		{
-			System.out.println("Error message displayed succesfully");
-
-		} else if (Search_Result.isDisplayed()) {
 
 			Actions act = new Actions(driver);
 			act.doubleClick(Search_Result).perform();
-		}
-		else if (Homepage.isDisplayed()) {
-				Thread.sleep(2000);
-				Homepage.click();
-				Thread.sleep(1000);
-
-
-			} else if (MEMBER_DETAILS_IN_MHS.isDisplayed()) {
-				System.out.println("Member details are displaying");
+			Thread.sleep(4000);
+		
 				Thread.sleep(3000);
+				Homepage.click();
+				Thread.sleep(5000);
+				ME1032();
+				Thread.sleep(5000);
+				ME1033();
+				Thread.sleep(5000);
+				ME1034();
+				Thread.sleep(5000);
+				Active_members();
+				Thread.sleep(5000);
 			}
+		
+	
+	}	
+	
+	
+	
+	
 
+	public void MEM_Verification() throws InterruptedException {
+
+		 if (merror.isDisplayed())
+		{
+			SoftAssert asrt= new SoftAssert();
+			asrt.assertEquals(merror.getText(), "Member not found, try again using a different search combination");
+			System.out.println("Member Error message validated  succesfully");
+
+		}  else if (Search_Result.isDisplayed())
+		{
+
+			Actions act = new Actions(driver);
+			act.doubleClick(Search_Result).perform();
+			Thread.sleep(3000);
+				Enrollment_Info();
+				Thread.sleep(3000);
+				PCP_Info();
+				
+			}
+		else {
+			System.out.println("System error");
 		}
 
+		}
+	
+
+	
+	@FindBy(xpath="//*[text()='Personal Info']") WebElement personal_info;
 	
 
 	public void Healthpass_Group_ID(String hp_grp) {
@@ -236,7 +294,7 @@ public class Enrollment360 extends Baseclass {
 		grp_eff(effdt);
 		Grptaxid(tax);
 		Search();
-		verification();
+		GRP_Verification();
 		
 		
 	}
@@ -247,7 +305,7 @@ public void Hp_Group_Search_Method(String Gnum,String hp_grp_id,String eff) thro
 	Healthpass_Group_ID(hp_grp_id);
 	grp_eff(eff);
 	Search();
-	verification();
+	GRP_Verification();
 		
 	}
 public void HFIC_HP_Member_Search_Method(String mid,String Effdt) throws InterruptedException {
@@ -256,7 +314,7 @@ public void HFIC_HP_Member_Search_Method(String mid,String Effdt) throws Interru
 	MHS_MEMBERID(mid);
 	MHS_Effectivedate(Effdt);
 	Member_Search();
-	verification();
+	MEM_Verification();
 	
 }
 public void HFIC_HP_Member_Detail_Search_Method(String fname ,String lname,String dob,String ssn) throws InterruptedException {
@@ -268,7 +326,7 @@ public void HFIC_HP_Member_Detail_Search_Method(String fname ,String lname,Strin
 	DOB(dob);
 	SSN(ssn);
 	Member_Search();
-	verification();
+	MEM_Verification();
 	
 }
 
