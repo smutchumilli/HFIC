@@ -296,11 +296,11 @@ public class Search extends Baseclass {
 		SoftAssert asrt= new SoftAssert();
 
 		if (error_message.isDisplayed()==true) {
-			asrt.assertEquals(error_message.getText(), "No matching data found");
+			System.out.println( "Error message is displaying as expected");
 
 		} else {
-			System.out.println("Test failed Error message is not displayed");
-		}
+				Search_Result();	
+				}
 	}
 
 	// Methods
@@ -320,7 +320,7 @@ public class Search extends Baseclass {
 		MHS_Subscriber_id(subid);
 		Thread.sleep(800);
 		HFIC_APP_Search();
-	//	validate();
+		validate();
 		
 	}
 	public void HFIC_Task_Search(String id, String transid, String grp_id, String num)
