@@ -1,5 +1,6 @@
 package HFIC.Testcases.com;
 
+import java.awt.AWTException;
 import java.io.IOException;
 
 import org.openqa.selenium.support.PageFactory;
@@ -13,7 +14,7 @@ import Utilities.com.Helper;
 
 public class PEGA_Search extends Baseclass {
 	@Test(priority = 1)
-	public void HFIC_Initial_Application_Search() throws InterruptedException, IOException {
+	public void HFIC_Initial_Application_Search() throws InterruptedException, IOException, AWTException {
 		test = extent.createTest("HFIC Initial Application Search");
 		Search Search = PageFactory.initElements(driver, Search.class);
 		for (int i = 7; i <= 8; i++) {

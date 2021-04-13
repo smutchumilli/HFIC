@@ -1,5 +1,7 @@
 package HFIC.Pages.com;
 
+import java.awt.AWTException;
+import java.awt.Robot;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
@@ -292,20 +294,28 @@ public class Search extends Baseclass {
 		HPGroup_name.sendKeys(Gname);
 	}
 
-	public void validate() throws InterruptedException, IOException {
+	public void validate() throws InterruptedException, IOException, AWTException {
 		SoftAssert asrt= new SoftAssert();
 
-		if (error_message.isDisplayed()==true) {
-			System.out.println( "Error message is displaying as expected");
+		if (error_message.isDisplayed()==true)
+		{
+			SoftAssert asrt1= new SoftAssert();
+
+			asrt1.assertEquals(error_message.getText(), "No matching data found");
+			
+			System.out.println( "Error message succssfully Validated");
 
 		} else {
-				Search_Result();	
-				}
+			
+			
+			
+			
+		}
 	}
 
 	// Methods
 	public void HFIC_App_Search(int i, int j, int k, String bid, String appid, String transid, String grp_id,
-			String taxid, String appname, String subid) throws InterruptedException, IOException {
+			String taxid, String appname, String subid) throws InterruptedException, IOException, AWTException {
 		Search_Link();
 		HFIC_APPLICATION_SEARCH();
 		Requesttype(i);
