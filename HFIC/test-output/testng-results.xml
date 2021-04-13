@@ -1,75 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
-    <line>
-      <![CDATA[Project set up done]]>
-    </line>
-    <line>
-      <![CDATA[Application up and running as expected]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41075" started-at="2021-04-13T00:04:55Z" finished-at="2021-04-13T00:05:36Z">
+  <suite name="Default suite" duration-ms="20915" started-at="2021-04-13T01:02:11Z" finished-at="2021-04-13T01:02:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41075" started-at="2021-04-13T00:04:55Z" finished-at="2021-04-13T00:05:36Z">
-      <class name="HFIC.Testcases.com.PEGA_Search">
-        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Start_up" is-config="true" duration-ms="994" started-at="2021-04-13T00:04:54Z" finished-at="2021-04-13T00:04:55Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Project set up done]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Start_up -->
-        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Application_Start" is-config="true" duration-ms="14700" started-at="2021-04-13T00:04:55Z" finished-at="2021-04-13T00:05:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Application up and running as expected]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Application_Start -->
-        <test-method status="FAIL" signature="HFIC_Initial_Application_Search()[pri:1, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="HFIC_Initial_Application_Search" duration-ms="25068" started-at="2021-04-13T00:05:09Z" finished-at="2021-04-13T00:05:34Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+    <test name="Default test" duration-ms="20915" started-at="2021-04-13T01:02:11Z" finished-at="2021-04-13T01:02:32Z">
+      <class name="HFIC.Testcases.com.tesrtt">
+        <test-method status="FAIL" signature="john()[pri:0, instance:HFIC.Testcases.com.tesrtt@6a4f787b]" name="john" duration-ms="20888" started-at="2021-04-13T01:02:11Z" finished-at="2021-04-13T01:02:32Z">
+          <exception class="java.lang.IndexOutOfBoundsException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Search')]"}
-  (Session info: chrome=89.0.4389.114)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-39', ip: '10.200.189.37', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57896}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5c8be32dbd6595801a2859dd00c4a077
-*** Element info: {Using=xpath, value=//a[contains(text(),'Search')]}]]>
+              <![CDATA[Index: 2, Size: 2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Search')]"}
-  (Session info: chrome=89.0.4389.114)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-39', ip: '10.200.189.37', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57896}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5c8be32dbd6595801a2859dd00c4a077
-*** Element info: {Using=xpath, value=//a[contains(text(),'Search')]}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy13.click(Unknown Source)
-at HFIC.Pages.com.Search.Search_Link(Search.java:25)
-at HFIC.Pages.com.Search.HFIC_App_Search(Search.java:309)
-at HFIC.Testcases.com.PEGA_Search.HFIC_Initial_Application_Search(PEGA_Search.java:20)
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+at java.util.ArrayList.rangeCheck(Unknown Source)
+at java.util.ArrayList.get(Unknown Source)
+at HFIC.Testcases.com.tesrtt.john(tesrtt.java:48)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -97,26 +44,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HFIC_Initial_Application_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="629" started-at="2021-04-13T00:05:34Z" finished-at="2021-04-13T00:05:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=HFIC_Initial_Application_Search status=FAILURE method=PEGA_Search.HFIC_Initial_Application_Search()[pri:1, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Application_Exit" is-config="true" duration-ms="654" started-at="2021-04-13T00:05:35Z" finished-at="2021-04-13T00:05:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Application_Exit -->
-      </class> <!-- HFIC.Testcases.com.PEGA_Search -->
+        </test-method> <!-- john -->
+      </class> <!-- HFIC.Testcases.com.tesrtt -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
