@@ -70,11 +70,11 @@ public class Baseclass {
 			test.skip(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 
 		}
-		if (Result.getStatus() == ITestResult.STARTED) {
-
-			test.info(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
-
-		}
+//		if (Result.getStatus() == ITestResult.STARTED) {
+//
+//			test.info(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+//
+//		}
 		 extent.flush();
 
 	}
