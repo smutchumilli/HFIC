@@ -64,7 +64,7 @@ public static void actions_class(WebElement ele) throws InterruptedException {
 	
 	Actions act= new Actions(driver);
 	act.doubleClick(ele).perform();
-	Thread.sleep(5000);
+	Thread.sleep(4000);
 }
 public static boolean checkWebElementDisplayed(WebElement webElement) {
 	boolean elementDisplayed;

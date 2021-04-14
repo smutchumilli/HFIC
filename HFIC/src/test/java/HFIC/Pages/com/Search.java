@@ -317,7 +317,7 @@ public class Search extends Baseclass {
 			Helper.Handle_Window();
 		} else {
 			Helper.actions_class(HP_Reconcases_table);
-			Helper.Handle_Window();
+			Helper.Handle_Window() ;
 		}
 
 	}
