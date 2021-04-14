@@ -8,6 +8,7 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -46,7 +47,7 @@ public static void Handle_Window() throws InterruptedException, IOException {
 	{
 	driver.switchTo().window(child_window); 
 	driver.manage().window().maximize();
-	Thread.sleep(2000);
+	Thread.sleep(5000);
 	test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 	Thread.sleep(5000);
 
@@ -59,10 +60,22 @@ public static void Handle_Window() throws InterruptedException, IOException {
 
 //Actions class
 
-public static void actions_class(WebElement ele) {
+public static void actions_class(WebElement ele) throws InterruptedException {
 	
 	Actions act= new Actions(driver);
 	act.doubleClick(ele).perform();
+	Thread.sleep(5000);
+}
+public static boolean checkWebElementDisplayed(WebElement webElement) {
+	boolean elementDisplayed;
+	try {
+		webElement.isDisplayed();
+		elementDisplayed = true;
+	} catch (NoSuchElementException e) {
+		elementDisplayed = false;
+		System.out.println("Unable to find the WebElement: " + e.getMessage());
+	}
+	return elementDisplayed;
 }
 
 }

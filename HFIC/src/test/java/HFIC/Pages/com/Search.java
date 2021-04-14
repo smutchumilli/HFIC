@@ -4,6 +4,7 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.io.IOException;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -37,7 +38,7 @@ public class Search extends Baseclass {
 
 	public void HFIC_APPLICATION_SEARCH() {
 		HFIC_APPLICATION_SEARCH.click();
-		
+
 	}
 
 	public void HFIC_TASK_SEARCH() throws InterruptedException {
@@ -129,15 +130,8 @@ public class Search extends Baseclass {
 
 	public void HFIC_APP_Search() throws InterruptedException, IOException {
 		HFIC_APP_Search.click();
-//		if (error_message.isDisplayed()==true)
-//		{
-//			Assert.assertEquals(error_message.getText(), "No matching data found");
-//		}  else	if (Search_Result.isDisplayed()==true)
-//		{
-//			Search_Result();
-//		} 						
-			Thread.sleep(1000);
-		}
+		Thread.sleep(1000);
+	}
 
 	public void MHS_Subscriber_id(String MHSID) {
 		MHS_Subscriber_id.sendKeys(MHSID);
@@ -223,19 +217,9 @@ public class Search extends Baseclass {
 
 	public void TaskSearch() throws InterruptedException, IOException {
 		TaskSearch.click();
-//		 boolean i=Search_Result.isDisplayed();
-//			if (i=true)
-//		{
-//			Search_Result();
-//		} 		
-//			
-//		{
-//			Assert.assertEquals(error_message.getText(), "No matching data found");
-//		} 
-//			
-			Thread.sleep(1200);
-		}
-	
+
+		Thread.sleep(1200);
+	}
 
 	// Membership
 	@FindBy(id = "cc107979")
@@ -294,23 +278,48 @@ public class Search extends Baseclass {
 		HPGroup_name.sendKeys(Gname);
 	}
 
+	@FindBy(xpath = "//*[@id='$PHFICSearchTasks$ppxResults$l1']/td[1]/div/span")
+	WebElement HFIC_APP_Search_table;
+	@FindBy(xpath = "//*[@id='$PHFICElogSearchTasks$ppxResults$l1']/td[1]/div/span']/td[1]/div/span")
+	WebElement HFIC_TASK_Search_table;
+	@FindBy(xpath = "//*[@id='$PHFICGroupSearchTasks$ppxResults$l1']/td[1]/div/span")
+	WebElement HFIC_TASK_Search_grp_table;
+	@FindBy(xpath = "//*[@id='$PHFICExceptionSearchTasks$ppxResults$l1']/td[1]/div/span")
+	WebElement HFIC_TASK_Search_HPPaymentexception_table;
+	@FindBy(xpath = "//*[@id='$PHFICSearchCR$ppxResults$l1']/td[1]/div/span")
+	WebElement HFIC_TASK_Search_CR_table;
+	@FindBy(xpath = "//*[@id='$PHFICElogSearchTasksHP$ppxResults$l1']/td[1]/div/span")
+	WebElement HP_TASK_GRP_table;
+	@FindBy(xpath = "//*[@id='$PpgHPReconCaseSearch$ppxResults$l1']/td[1]/div/span")
+	WebElement HP_Reconcases_table;
+
+	
+
 	public void validate() throws InterruptedException, IOException, AWTException {
-		SoftAssert asrt= new SoftAssert();
 
-		if (error_message.isDisplayed()==true)
-		{
-			SoftAssert asrt1= new SoftAssert();
-
-			asrt1.assertEquals(error_message.getText(), "No matching data found");
-			
-			System.out.println( "Error message succssfully Validated");
-
+		if (Helper.checkWebElementDisplayed(error_message)) {
+			Assert.assertEquals(error_message.getText(), "No matching data found");
+			System.out.println("Error message succssfully Validated");
+		} else if (HFIC_APP_Search_table.isDisplayed()) {
+			Helper.actions_class(HFIC_APP_Search_table);
+			Helper.Handle_Window();
+		} else if (HFIC_TASK_Search_grp_table.isDisplayed()) {
+			Helper.actions_class(HFIC_TASK_Search_grp_table);
+			Helper.Handle_Window();
+		} else if (HFIC_TASK_Search_table.isDisplayed()) {
+			Helper.actions_class(HFIC_TASK_Search_table);
+			Helper.Handle_Window();
+		} else if (HFIC_TASK_Search_HPPaymentexception_table.isDisplayed()) {
+			Helper.actions_class(HFIC_TASK_Search_HPPaymentexception_table);
+			Helper.Handle_Window();
+		} else if (HP_TASK_GRP_table.isDisplayed()) {
+			Helper.actions_class(HP_TASK_GRP_table);
+			Helper.Handle_Window();
 		} else {
-			
-			
-			
-			
+			Helper.actions_class(HP_Reconcases_table);
+			Helper.Handle_Window();
 		}
+
 	}
 
 	// Methods
@@ -331,10 +340,11 @@ public class Search extends Baseclass {
 		Thread.sleep(800);
 		HFIC_APP_Search();
 		validate();
-		
+
 	}
+
 	public void HFIC_Task_Search(String id, String transid, String grp_id, String num)
-			throws InterruptedException, IOException {
+			throws InterruptedException, IOException, AWTException {
 		Search_Link();
 		HFIC_TASK_SEARCH();
 		Task_Search_Type(1);
@@ -346,10 +356,11 @@ public class Search extends Baseclass {
 		account_num(num);
 		Thread.sleep(800);
 		TaskSearch();
-		//validate();
+		validate();
 	}
 
-	public void HFIC_MTask_Search(String task, String id, String app) throws InterruptedException, IOException {
+	public void HFIC_MTask_Search(String task, String id, String app)
+			throws InterruptedException, IOException, AWTException {
 		Search_Link();
 		HFIC_TASK_SEARCH();
 		Task_Search_Type(2);
@@ -358,7 +369,7 @@ public class Search extends Baseclass {
 		Application(app);
 		Thread.sleep(800);
 		TaskSearch();
-		//validate();
+		validate();
 	}
 
 	// input[@id='65bee56e']//following::input[2]
@@ -376,7 +387,8 @@ public class Search extends Baseclass {
 		Appname_ID_Task.sendKeys(appname);
 	}
 
-	public void HFIC_GTask_Search(String grp, String appid, String appname) throws InterruptedException, IOException {
+	public void HFIC_GTask_Search(String grp, String appid, String appname)
+			throws InterruptedException, IOException, AWTException {
 		Search_Link();
 		HFIC_TASK_SEARCH();
 		Task_Search_Type(3);
@@ -386,10 +398,11 @@ public class Search extends Baseclass {
 		Appname_ID_Task(appname);
 		Thread.sleep(800);
 		TaskSearch();
-		//validate();
+		validate();
 	}
 
-	public void HFIC_Paymentexcetion_Task_Search(String task, String acnum) throws InterruptedException, IOException {
+	public void HFIC_Paymentexcetion_Task_Search(String task, String acnum)
+			throws InterruptedException, IOException, AWTException {
 		Search_Link();
 		HFIC_TASK_SEARCH();
 		Task_Search_Type(4);
@@ -399,7 +412,7 @@ public class Search extends Baseclass {
 
 		Thread.sleep(800);
 		TaskSearch();
-		//validate();
+		validate();
 	}
 
 	@FindBy(xpath = "//input[@id='65bee56e']//following::input[2]")
@@ -410,7 +423,7 @@ public class Search extends Baseclass {
 	}
 
 	public void HFIC_COB_Task_Search(String task, String mhsmemid, String sub, String app)
-			throws InterruptedException, IOException {
+			throws InterruptedException, IOException, AWTException {
 		Search_Link();
 		HFIC_TASK_SEARCH();
 		Task_Search_Type(5);
@@ -420,11 +433,11 @@ public class Search extends Baseclass {
 		Application(app);
 		Thread.sleep(800);
 		TaskSearch();
-	//	validate();
+		validate();
 	}
 
 	public void HFIC_QLE_Tracking_Search(String task, String mhsmemid, String sub, String app)
-			throws InterruptedException, IOException {
+			throws InterruptedException, IOException, AWTException {
 		Search_Link();
 		HFIC_TASK_SEARCH();
 		Task_Search_Type(6);
@@ -434,7 +447,7 @@ public class Search extends Baseclass {
 		Application(app);
 		Thread.sleep(800);
 		TaskSearch();
-		//validate();
+		validate();
 	}
 
 	public void HFIC_Presumptive_Search(String task, String grp, String appid, String appname)
@@ -448,7 +461,7 @@ public class Search extends Baseclass {
 		Appname_ID_Task(appname);
 		Thread.sleep(800);
 		TaskSearch();
-		//validate();
+		// validate();
 	}
 
 	@FindBy(xpath = "//*[@id='65bee56e']//following::input[3]")
@@ -475,7 +488,7 @@ public class Search extends Baseclass {
 		GRPID_CR(grp);
 		Thread.sleep(800);
 		TaskSearch();
-		//validate();
+		// validate();
 	}
 
 	@FindBy(xpath = "//button[@name='TaskELogSearchCriteriaHP_pyDisplayHarness_61']")
@@ -483,20 +496,21 @@ public class Search extends Baseclass {
 
 	public void CR_Search() throws InterruptedException, IOException {
 		CR_Search.click();
-//	 boolean i=Search_Result.isDisplayed();
-//		if (i=true)
-//	{
-//		Search_Result();
-//	} 		
-//		
-//	{
-//		Assert.assertEquals(error_message.getText(), "No matching data found");
-//	} 
-//		
+		// boolean i=Search_Result.isDisplayed();
+		// if (i=true)
+		// {
+		// Search_Result();
+		// }
+		//
+		// {
+		// Assert.assertEquals(error_message.getText(), "No matching data found");
+		// }
+		//
 		Thread.sleep(1200);
 	}
+
 	public void HP_Reconciliation_Search(String task, String id, String id1, String id2, String id3)
-			throws InterruptedException, IOException {
+			throws InterruptedException, IOException, AWTException {
 		Search_Link();
 		HEALTHPASS_TASK_SEARCH();
 		Task_Search_Type(3);
@@ -508,7 +522,7 @@ public class Search extends Baseclass {
 
 		Thread.sleep(800);
 		CR_Search();
-		//validate();
+		validate();
 	}
 
 	@FindBy(xpath = "//input[@id='a7962bc5']")
@@ -553,7 +567,8 @@ public class Search extends Baseclass {
 		groupname.sendKeys(id);
 	}
 
-	public void HP_GroupTask_Search(String task, String grp, String name) throws InterruptedException, IOException {
+	public void HP_GroupTask_Search(String task, String grp, String name)
+			throws InterruptedException, IOException, AWTException {
 		Search_Link();
 		HEALTHPASS_TASK_SEARCH();
 		Task_Search_Type(1);
@@ -562,7 +577,7 @@ public class Search extends Baseclass {
 		groupname(name);
 		Thread.sleep(800);
 		CR_Search();
-		//validate();
+		validate();
 	}
 
 }

@@ -8,45 +8,45 @@
       <![CDATA[Application up and running as expected]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="53230" started-at="2021-04-13T21:46:17Z" finished-at="2021-04-13T21:47:10Z">
+  <suite name="Default suite" duration-ms="61399" started-at="2021-04-14T14:47:07Z" finished-at="2021-04-14T14:48:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="53230" started-at="2021-04-13T21:46:17Z" finished-at="2021-04-13T21:47:10Z">
-      <class name="HFIC.Testcases.com.Enrollment_360_Search">
-        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.Enrollment_360_Search@e25b2fe]" name="Start_up" is-config="true" duration-ms="1075" started-at="2021-04-13T21:46:16Z" finished-at="2021-04-13T21:46:17Z">
+    <test name="Default test" duration-ms="61399" started-at="2021-04-14T14:47:07Z" finished-at="2021-04-14T14:48:09Z">
+      <class name="HFIC.Testcases.com.PEGA_Search">
+        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Start_up" is-config="true" duration-ms="1050" started-at="2021-04-14T14:47:06Z" finished-at="2021-04-14T14:47:07Z">
           <reporter-output>
             <line>
               <![CDATA[Project set up done]]>
             </line>
           </reporter-output>
         </test-method> <!-- Start_up -->
-        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.Enrollment_360_Search@e25b2fe]" name="Application_Start" is-config="true" duration-ms="7481" started-at="2021-04-13T21:46:17Z" finished-at="2021-04-13T21:46:24Z">
+        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Application_Start" is-config="true" duration-ms="9244" started-at="2021-04-14T14:47:08Z" finished-at="2021-04-14T14:47:17Z">
           <reporter-output>
             <line>
               <![CDATA[Application up and running as expected]]>
             </line>
           </reporter-output>
         </test-method> <!-- Application_Start -->
-        <test-method status="PASS" signature="HFIC_Group_Number_Search()[pri:1, instance:HFIC.Testcases.com.Enrollment_360_Search@e25b2fe]" name="HFIC_Group_Number_Search" duration-ms="44346" started-at="2021-04-13T21:46:24Z" finished-at="2021-04-13T21:47:09Z">
+        <test-method status="PASS" signature="HFIC_Initial_Application_Search()[pri:1, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="HFIC_Initial_Application_Search" duration-ms="50824" started-at="2021-04-14T14:47:17Z" finished-at="2021-04-14T14:48:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HFIC_Group_Number_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360_Search@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="688" started-at="2021-04-13T21:47:09Z" finished-at="2021-04-13T21:47:09Z">
+        </test-method> <!-- HFIC_Initial_Application_Search -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Tear_Down" is-config="true" duration-ms="627" started-at="2021-04-14T14:48:08Z" finished-at="2021-04-14T14:48:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=HFIC_Group_Number_Search status=SUCCESS method=Enrollment_360_Search.HFIC_Group_Number_Search()[pri:1, instance:HFIC.Testcases.com.Enrollment_360_Search@e25b2fe] output={null}]]]>
+                <![CDATA[[TestResult name=HFIC_Initial_Application_Search status=SUCCESS method=PEGA_Search.HFIC_Initial_Application_Search()[pri:1, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.Enrollment_360_Search@e25b2fe]" name="Application_Exit" is-config="true" duration-ms="689" started-at="2021-04-13T21:47:09Z" finished-at="2021-04-13T21:47:10Z">
+        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@e25b2fe]" name="Application_Exit" is-config="true" duration-ms="683" started-at="2021-04-14T14:48:08Z" finished-at="2021-04-14T14:48:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Exit -->
-      </class> <!-- HFIC.Testcases.com.Enrollment_360_Search -->
+      </class> <!-- HFIC.Testcases.com.PEGA_Search -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
