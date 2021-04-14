@@ -59,7 +59,7 @@ public static void Handle_Window() throws InterruptedException, IOException {
 	}
 
 
-//Actions class
+//Actions  class
 
 public static void actions_class(WebElement ele) throws InterruptedException {
 	
