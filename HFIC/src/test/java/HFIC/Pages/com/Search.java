@@ -125,7 +125,6 @@ public class Search extends Baseclass {
 	public void Search_Result() throws InterruptedException, IOException {
 		Helper.actions_class(Search_Result);
 		Helper.Handle_Window();
-		Thread.sleep(1200);
 	}
 
 	public void HFIC_APP_Search() throws InterruptedException, IOException {
@@ -315,9 +314,8 @@ public class Search extends Baseclass {
 			System.out.println("Error message succssfully Validated");
 		} else if (HFIC_APP_Search_table.isDisplayed()) {
 			Helper.actions_class(HFIC_APP_Search_table);
-		//	Thread.sleep(1000);
 			Helper.Handle_Window();
-		//	Thread.sleep(1000);
+			
 
 		}
 	}	

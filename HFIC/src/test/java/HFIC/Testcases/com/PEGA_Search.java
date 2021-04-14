@@ -22,6 +22,7 @@ public class PEGA_Search extends Baseclass {
 			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		}
 	}
+
 	@Test(priority = 2)
 	public void HFIC_Maintenance_Application_Search() throws InterruptedException, IOException, AWTException {
 		test = extent.createTest("HFIC Maintenance Application Search");

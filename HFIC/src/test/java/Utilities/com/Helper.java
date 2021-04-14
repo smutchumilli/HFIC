@@ -47,7 +47,7 @@ public static void Handle_Window() throws InterruptedException, IOException {
 	{
 	driver.switchTo().window(child_window); 
 	driver.manage().window().maximize();
-	Thread.sleep(1000);
+	Thread.sleep(2000);
 	test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 	Thread.sleep(2000);
 
@@ -55,7 +55,7 @@ public static void Handle_Window() throws InterruptedException, IOException {
 	}		 
 	}
 	driver.switchTo().window(parent);	
-	//driver.navigate().refresh();
+	Thread.sleep(2000);
 	}
 
 
@@ -65,6 +65,8 @@ public static void actions_class(WebElement ele) throws InterruptedException {
 	
 	Actions act= new Actions(driver);
 	act.doubleClick(ele).perform();
+	Thread.sleep(3000);
+
 }
 public static boolean checkWebElementDisplayed(WebElement webElement) {
 	boolean elementDisplayed;
