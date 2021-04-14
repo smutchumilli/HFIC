@@ -49,7 +49,7 @@ public static void Handle_Window() throws InterruptedException, IOException {
 	driver.manage().window().maximize();
 	Thread.sleep(5000);
 	test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
-	Thread.sleep(5000);
+	Thread.sleep(6000);
 
 	driver.close();
 	}		 
@@ -57,6 +57,7 @@ public static void Handle_Window() throws InterruptedException, IOException {
 	driver.switchTo().window(parent);	
 	//driver.navigate().refresh();
 	}
+//Actions class
 
 //Actions class
 
