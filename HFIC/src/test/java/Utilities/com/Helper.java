@@ -57,7 +57,7 @@ public static void Handle_Window() throws InterruptedException, IOException {
 	driver.switchTo().window(parent);	
 	//driver.navigate().refresh();
 	}
-//Actions class
+
 
 //Actions class
 
