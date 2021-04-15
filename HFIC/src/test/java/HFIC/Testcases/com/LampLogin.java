@@ -1,10 +1,12 @@
 package HFIC.Testcases.com;
 
 import java.awt.AWTException;
+import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.MediaEntityBuilder;
 
 import COM.HFIC.Pages.AddEmployee;
 import COM.HFIC.Pages.Agreement;
@@ -19,13 +21,16 @@ import COM.HFIC.Pages.Lamploginpage;
 import COM.HFIC.Pages.ReviewApplicationDetails;
 import COM.HFIC.Pages.Uploaddocument;
 import HFIC.Pages.com.Baseclass;
+import Utilities.com.Helper;
 
 	 
 public class LampLogin extends Baseclass  {
 	@Test(priority=1)
-	public void Lamp_Login() throws InterruptedException {
+	public void Lamp_Login() throws InterruptedException, IOException {
+		test = extent.createTest("HFIC SMG Enrollment");
 		Lamploginpage Lamploginpage= PageFactory.initElements(driver, Lamploginpage.class);
 		Lamploginpage.login_to_Lamp(data.getstringdata("Login",0,0),data.getstringdata("Login",1,0),data.getstringdata("Login",2,0));
+
 	}
 	@Test(priority=2)
 	public void Lamp_Homepage1() throws InterruptedException {

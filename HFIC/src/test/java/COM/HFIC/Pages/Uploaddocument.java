@@ -10,29 +10,35 @@ import java.awt.event.KeyEvent;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
+import org.testng.annotations.Test;
 public class Uploaddocument {
 	public WebDriver driver;
+	
 	public Uploaddocument(WebDriver driver){
 		this.driver= driver;
 	}
-	@FindBy(xpath="//*[@class='hf-browse-btn'][@file-type='Group_Application']") WebElement file1;
-	@FindBy(xpath="//*[@class='hf-browse-btn'][@file-type='NYS-45']") WebElement file2;
-	@FindBy(xpath="//*[@class='hf-browse-btn'][@file-type='Payment_Authorization_Form']") WebElement file3;
+	@FindBy(xpath="//*[@class='hf-browse-btn' and  @file-type='Group_Application']") WebElement file1;
+	@FindBy(xpath="//*[@class='hf-go-back-btn']//following::label[2]") WebElement file2;
+	@FindBy(xpath="//*[@class='hf-go-back-btn']//following::label[1]") WebElement file3;
 	//@FindBy(xpath="[name='selected_file_type'][value='Form-K-1']") WebElement nys45;
 	@FindBy(xpath="//*[@id='nysFileType']") WebElement nys45;
-
-	@FindBy(className="hf-continue-to-browse-btn") WebElement cnt;
-	@FindBy(className="hf-continue-btn") WebElement continu;
+	@FindBy(css="button.hf-continue-to-browse-btn") WebElement nyscnt;
+	@FindBy(xpath="//*[@class='hf-go-back-btn']//following::a[2]") WebElement Continue;
 
 	public void Document_Upload() throws InterruptedException, AWTException{
+	
 		try {
 			Robot robot= new Robot();
 			Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 			StringSelection stringSelection = new StringSelection("Q:\\Smutchumilli\\upload.docx");
 			clipboard.setContents(stringSelection, null);
 			JavascriptExecutor js= (JavascriptExecutor)driver;
-			js.executeScript("scroll(0,50)");
+			Thread.sleep(5000);
+			js.executeScript("scroll(0, 250);");
+
+			//js.executeScript("arguments[0].scrollIntoView(true);",file1);
 			Thread.sleep(2000);
 			file1.click();
 			Thread.sleep(6000);
@@ -44,11 +50,42 @@ public class Uploaddocument {
 			Thread.sleep(5000);
 			robot.keyPress(KeyEvent.VK_ENTER);
 			robot.keyRelease(KeyEvent.VK_ENTER);
-			js.executeScript("scroll(150,350)");
+			Thread.sleep(7000);
+			
+			//file 2
+			js.executeScript("scroll(0, 500);");
+			Thread.sleep(6000);
+			//js.executeScript("arguments[0].scrollIntoView(true);",file2);
+			file2.click();
+			Thread.sleep(6000);
+			nys45.click();
+			Thread.sleep(6000);
+
+			nyscnt.click();
+			Thread.sleep(2000);
+
+			//robot.mouseMove(5, 10);
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_V);
+			robot.keyRelease(KeyEvent.VK_V);
+			robot.keyRelease(KeyEvent.VK_CONTROL);
+			Thread.sleep(5000);
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(5000);
+			Continue.click();
+			Thread.sleep(3000);
+
+			
+		//File3	
+			js.executeScript("scroll(0, 5);");
+
+		//	js.executeScript("arguments[0].scrollIntoView(true);",file3);
 			Thread.sleep(2000);
 			file3.click();
-			Thread.sleep(6000);
-			robot.mouseMove(5, 10);
+			Thread.sleep(2000);
+
+			//robot.mouseMove(5, 10);
 			robot.keyPress(KeyEvent.VK_CONTROL);
 			robot.keyPress(KeyEvent.VK_V);
 			robot.keyRelease(KeyEvent.VK_V);
@@ -56,7 +93,7 @@ public class Uploaddocument {
 			Thread.sleep(5000);
 			robot.keyPress(KeyEvent.VK_ENTER);
 			robot.keyRelease(KeyEvent.VK_ENTER);	
-			Thread.sleep(32000);
+			Thread.sleep(3200);
 			} catch (HeadlessException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

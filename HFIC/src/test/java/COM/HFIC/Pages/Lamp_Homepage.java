@@ -15,7 +15,7 @@ public class Lamp_Homepage {
 		this.driver=driver;
 	}
 
-@FindBy(xpath="//*[contains(@class,'hf-route-btn active')]") WebElement App_tab;
+@FindBy(xpath="//a[contains(text(),'Applications')]") WebElement App_tab;
 @FindBy(xpath="//*[contains(@class,'hf-start-new-application-btn')]") WebElement Start_Application;
 
 public void LampHomepage(){

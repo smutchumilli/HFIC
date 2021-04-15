@@ -68,9 +68,9 @@ public 	void Group_Information_Page(
 	Select s= new Select(driver.findElement(By.name("businessTypeSelect")));
 	s.selectByIndex(5);
 	JavascriptExecutor js4= (JavascriptExecutor)driver;
-	WebElement affr= driver.findElement(By.xpath("//*[@id='applicationModalContainer']/div/div[2]/div[5]/div[2]/div[2]/div/label"));
+	WebElement affr= driver.findElement(By.xpath("//input[@name='nature_of_business']//following::input[2]"));
 	js4.executeScript("arguments[0].click();", affr);
-	WebElement cnt1=driver.findElement(By.xpath("//*[@id='applicationModalContainer']/div/div[2]/div[30]/div/button"));
+	WebElement cnt1=driver.findElement(By.xpath("//input[@name='billing_email_address']//following::button[1]"));
 	js4.executeScript("arguments[0].click();", cnt1);
 
 }

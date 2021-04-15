@@ -23,6 +23,7 @@ public class CR_UpdateHSA_Group_Member extends Baseclass {
 
 			test = extent.createTest(data.getstringdata("HSA",i,1));
 			test.info(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 
 		ChangeRequest_HSA.HSA_Member_Update(
 				data.getstringdata("HSA",i,2), 
