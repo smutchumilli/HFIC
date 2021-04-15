@@ -64,7 +64,7 @@ public 	void Group_Information_Page(
 	bfname1.sendKeys(bfname);
 	blastname1.sendKeys(blastname);
 	bemail1.sendKeys(bemail);
-	Thread.sleep(5000);
+	Thread.sleep(4000);
 	Select s= new Select(driver.findElement(By.name("businessTypeSelect")));
 	s.selectByIndex(5);
 	JavascriptExecutor js4= (JavascriptExecutor)driver;

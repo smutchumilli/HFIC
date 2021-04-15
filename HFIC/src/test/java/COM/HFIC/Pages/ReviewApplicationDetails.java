@@ -18,9 +18,9 @@ public class ReviewApplicationDetails {
 	public void Review_ApplicationDetails() throws InterruptedException {
 		
 	    ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", conti);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		conti.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 }

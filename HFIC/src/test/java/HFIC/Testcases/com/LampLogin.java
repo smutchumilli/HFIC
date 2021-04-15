@@ -72,7 +72,6 @@ public class LampLogin extends Baseclass  {
 	public void AddEmployee1() throws InterruptedException, AWTException {
 		AddEmployee AddEmployee=PageFactory.initElements(driver, AddEmployee.class);
 		AddEmployee.Add_Emp();
-		Thread.sleep(45000);
 	}
 	@Test(priority=10)
 	public void Uploaddocument13() throws Exception {
