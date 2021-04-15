@@ -3,18 +3,26 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HFIC.Testcases.com.PEGA_Search">
+      <class name="HFIC.Testcases.com.LampLogin">
         <methods>
-          <include name="Task_COBTask_Search"/>
-          <include name="Task_Presumptive_Search"/>
+          <include name="ReviewApplication_Details"/>
+          <include name="BrokerGeneral_AgentInformation1"/>
+          <include name="COBRA_Coverage1"/>
+          <include name="Get_Quotepage1"/>
+          <include name="Group_Administration1"/>
+          <include name="Lamp_Homepage1"/>
+          <include name="Agreement1"/>
+          <include name="Lamp_Login"/>
+          <include name="Start_up"/>
           <include name="Tear_Down"/>
           <include name="Application_Start"/>
+          <include name="AddEmployee1"/>
           <include name="Application_Exit"/>
-          <include name="Task_M_Search"/>
-          <include name="Task_QLETrack_Search"/>
-          <include name="Start_up"/>
+          <include name="HealthInsurencePlans1"/>
+          <include name="Uploaddocument13"/>
+          <include name="GroupInformationPage1"/>
         </methods>
-      </class> <!-- HFIC.Testcases.com.PEGA_Search -->
+      </class> <!-- HFIC.Testcases.com.LampLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

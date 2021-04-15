@@ -1,0 +1,72 @@
+package COM.HFIC.Pages;
+import java.awt.AWTException;
+import java.awt.HeadlessException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+public class Uploaddocument {
+	public WebDriver driver;
+	public Uploaddocument(WebDriver driver){
+		this.driver= driver;
+	}
+	@FindBy(xpath="//*[@class='hf-browse-btn'][@file-type='Group_Application']") WebElement file1;
+	@FindBy(xpath="//*[@class='hf-browse-btn'][@file-type='NYS-45']") WebElement file2;
+	@FindBy(xpath="//*[@class='hf-browse-btn'][@file-type='Payment_Authorization_Form']") WebElement file3;
+	//@FindBy(xpath="[name='selected_file_type'][value='Form-K-1']") WebElement nys45;
+	@FindBy(xpath="//*[@id='nysFileType']") WebElement nys45;
+
+	@FindBy(className="hf-continue-to-browse-btn") WebElement cnt;
+	@FindBy(className="hf-continue-btn") WebElement continu;
+
+	public void Document_Upload() throws InterruptedException, AWTException{
+		try {
+			Robot robot= new Robot();
+			Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+			StringSelection stringSelection = new StringSelection("Q:\\Smutchumilli\\upload.docx");
+			clipboard.setContents(stringSelection, null);
+			JavascriptExecutor js= (JavascriptExecutor)driver;
+			js.executeScript("scroll(0,50)");
+			Thread.sleep(2000);
+			file1.click();
+			Thread.sleep(6000);
+			robot.mouseMove(5, 10);
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_V);
+			robot.keyRelease(KeyEvent.VK_V);
+			robot.keyRelease(KeyEvent.VK_CONTROL);
+			Thread.sleep(5000);
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			js.executeScript("scroll(150,350)");
+			Thread.sleep(2000);
+			file3.click();
+			Thread.sleep(6000);
+			robot.mouseMove(5, 10);
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_V);
+			robot.keyRelease(KeyEvent.VK_V);
+			robot.keyRelease(KeyEvent.VK_CONTROL);
+			Thread.sleep(5000);
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);	
+			Thread.sleep(32000);
+			} catch (HeadlessException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				e.getCause();
+				e.getMessage();
+			}
+		
+	
+}}
+	
+
+
+

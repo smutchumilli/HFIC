@@ -21,8 +21,8 @@ public class Configuration {
 
 	}
 
-	public String getQAURL() {
-		return pro.getProperty("URL");
+	public String getHFICURL() {
+		return pro.getProperty("HFICURL");
 
 	}
 
