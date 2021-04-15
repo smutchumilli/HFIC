@@ -11,6 +11,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 public class Uploaddocument {
@@ -20,12 +21,14 @@ public class Uploaddocument {
 		this.driver= driver;
 	}
 	@FindBy(xpath="//*[@class='hf-browse-btn' and  @file-type='Group_Application']") WebElement file1;
-	@FindBy(xpath="//*[@class='hf-go-back-btn']//following::label[2]") WebElement file2;
-	@FindBy(xpath="//*[@class='hf-go-back-btn']//following::label[1]") WebElement file3;
+	@FindBy(xpath="//*[@class='hf-browse-btn' and  @file-type='NYS-45']") WebElement file2;
+	@FindBy(xpath="//label[@class='hf-browse-btn' and  @file-type='Payment_Authorization_Form']") WebElement file3;
 	//@FindBy(xpath="[name='selected_file_type'][value='Form-K-1']") WebElement nys45;
 	@FindBy(xpath="//*[@id='nysFileType']") WebElement nys45;
 	@FindBy(css="button.hf-continue-to-browse-btn") WebElement nyscnt;
 	@FindBy(xpath="//*[@class='hf-go-back-btn']//following::a[2]") WebElement Continue;
+
+	
 
 	public void Document_Upload() throws InterruptedException, AWTException{
 	
@@ -38,54 +41,46 @@ public class Uploaddocument {
 			Thread.sleep(5000);
 			js.executeScript("scroll(0, 250);");
 
-			//js.executeScript("arguments[0].scrollIntoView(true);",file1);
+//			js.executeScript("arguments[0].scrollIntoView(true);",file1);
 			Thread.sleep(2000);
 			file1.click();
-			Thread.sleep(6000);
-			robot.mouseMove(5, 10);
+			Thread.sleep(4000);
+			//robot.mouseMove(5, 10);
 			robot.keyPress(KeyEvent.VK_CONTROL);
 			robot.keyPress(KeyEvent.VK_V);
 			robot.keyRelease(KeyEvent.VK_V);
 			robot.keyRelease(KeyEvent.VK_CONTROL);
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 			robot.keyPress(KeyEvent.VK_ENTER);
 			robot.keyRelease(KeyEvent.VK_ENTER);
-			Thread.sleep(7000);
+			Thread.sleep(4000);
 			
 			//file 2
 			js.executeScript("scroll(0, 500);");
-			Thread.sleep(6000);
-			//js.executeScript("arguments[0].scrollIntoView(true);",file2);
+			Thread.sleep(3000);
+//			js.executeScript("arguments[0].scrollIntoView(true);",file2);
 			file2.click();
-			Thread.sleep(6000);
+			Thread.sleep(2000);
 			nys45.click();
-			Thread.sleep(6000);
-
+			Thread.sleep(2000);
 			nyscnt.click();
 			Thread.sleep(2000);
-
 			//robot.mouseMove(5, 10);
 			robot.keyPress(KeyEvent.VK_CONTROL);
 			robot.keyPress(KeyEvent.VK_V);
 			robot.keyRelease(KeyEvent.VK_V);
 			robot.keyRelease(KeyEvent.VK_CONTROL);
-			Thread.sleep(5000);
+			Thread.sleep(2000);
 			robot.keyPress(KeyEvent.VK_ENTER);
 			robot.keyRelease(KeyEvent.VK_ENTER);
-			Thread.sleep(5000);
-			Continue.click();
-			Thread.sleep(3000);
+			Thread.sleep(8000);
 
+//File3:	
 			
-		//File3	
-			js.executeScript("scroll(0, 5);");
-
-		//	js.executeScript("arguments[0].scrollIntoView(true);",file3);
-			Thread.sleep(2000);
-			file3.click();
-			Thread.sleep(2000);
-
-			//robot.mouseMove(5, 10);
+			js.executeScript("scroll(0, 630);");
+		   Thread.sleep(5000);
+		   file3.click();
+			Thread.sleep(3000);
 			robot.keyPress(KeyEvent.VK_CONTROL);
 			robot.keyPress(KeyEvent.VK_V);
 			robot.keyRelease(KeyEvent.VK_V);
@@ -100,9 +95,14 @@ public class Uploaddocument {
 				e.getCause();
 				e.getMessage();
 			}
-		
+	      ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", Continue);
+	      Thread.sleep(4000);
+		Continue.click();
+	      Thread.sleep(3000);
+
+}
 	
-}}
+	}
 	
 
 

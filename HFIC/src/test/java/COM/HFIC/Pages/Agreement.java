@@ -22,10 +22,14 @@ public class Agreement {
 	@FindBy(id="billing_address2") WebElement billing_address2;
 	@FindBy(name="city") WebElement city;
 	@FindBy(name="zip") WebElement zip;
-	@FindBy(className="hf-submit-payment-btn") WebElement Review_Payment;
+	@FindBy(xpath="//input[@name='zip']//following::button[1]") WebElement Review_Payment;
 	@FindBy(xpath="//*[contains(@class,'hf-save-review-payment-btn pull-right')]") WebElement Submit_Payment;
+	@FindBy(id="account_signature") WebElement sign;
+
+	
 	
 	public void Agreement1(String an,String aba,String accnum,String caccnum,String baddr,String city1,String zip1) throws InterruptedException{
+		sign.sendKeys("Srikanth");
 		JavascriptExecutor js= (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();", acknowledge);
 		Select s =new Select( accoun_type);
@@ -37,6 +41,7 @@ public class Agreement {
 		billing_address.sendKeys(baddr);
 		city.sendKeys(city1);
 		zip.sendKeys(zip1);
+		Thread.sleep(34000);
 		Review_Payment.click();
 		Thread.sleep(2000);
 		Submit_Payment.click();

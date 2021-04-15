@@ -80,7 +80,7 @@ public class LampLogin extends Baseclass  {
 	Uploaddocument.Document_Upload();
 }
 	@Test(priority=11)
-	public void ReviewApplication_Details()  {
+	public void ReviewApplication_Details() throws InterruptedException  {
 		ReviewApplicationDetails ReviewApplicationDetails=PageFactory.initElements(driver, ReviewApplicationDetails.class);
 		ReviewApplicationDetails.Review_ApplicationDetails();
 	}

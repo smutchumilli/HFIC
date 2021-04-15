@@ -66,14 +66,14 @@ public class AddEmployee {
 			cnt.click();
 			Thread.sleep(5000);
 
-			js.executeAsyncScript("arguments[0].click();", premiumPopupCloseBtn);
+			js.executeScript("arguments[0].click();", premiumPopupCloseBtn);
 
 			} catch (HeadlessException e) {
 			e.getCause();
 			e.printStackTrace();
 			e.getMessage();
 		}
-		//Thread.sleep(8000);
+		Thread.sleep(2000);
 
 
 	}

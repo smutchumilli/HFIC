@@ -5,13 +5,10 @@
     <classes>
       <class name="HFIC.Testcases.com.LampLogin">
         <methods>
-          <include name="ReviewApplication_Details"/>
           <include name="Tear_Down"/>
           <include name="Application_Start"/>
-          <include name="AddEmployee1"/>
           <include name="Application_Exit"/>
           <include name="Agreement1"/>
-          <include name="Uploaddocument13"/>
           <include name="Start_up"/>
         </methods>
       </class> <!-- HFIC.Testcases.com.LampLogin -->
