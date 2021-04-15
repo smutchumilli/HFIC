@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="12" passed="11">
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
   <reporter-output>
     <line>
       <![CDATA[Project set up done]]>
@@ -8,30 +8,30 @@
       <![CDATA[Application up and running as expected]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="209362" started-at="2021-04-15T21:37:48Z" finished-at="2021-04-15T21:41:17Z">
+  <suite name="Default suite" duration-ms="199082" started-at="2021-04-15T22:31:27Z" finished-at="2021-04-15T22:34:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="209362" started-at="2021-04-15T21:37:48Z" finished-at="2021-04-15T21:41:17Z">
+    <test name="Default test" duration-ms="199082" started-at="2021-04-15T22:31:27Z" finished-at="2021-04-15T22:34:46Z">
       <class name="HFIC.Testcases.com.LampLogin">
-        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Start_up" is-config="true" duration-ms="1180" started-at="2021-04-15T21:37:47Z" finished-at="2021-04-15T21:37:48Z">
+        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Start_up" is-config="true" duration-ms="1140" started-at="2021-04-15T22:31:26Z" finished-at="2021-04-15T22:31:27Z">
           <reporter-output>
             <line>
               <![CDATA[Project set up done]]>
             </line>
           </reporter-output>
         </test-method> <!-- Start_up -->
-        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Application_Start" is-config="true" duration-ms="4062" started-at="2021-04-15T21:37:48Z" finished-at="2021-04-15T21:37:52Z">
+        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Application_Start" is-config="true" duration-ms="5851" started-at="2021-04-15T22:31:27Z" finished-at="2021-04-15T22:31:33Z">
           <reporter-output>
             <line>
               <![CDATA[Application up and running as expected]]>
             </line>
           </reporter-output>
         </test-method> <!-- Application_Start -->
-        <test-method status="PASS" signature="Lamp_Login()[pri:1, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Lamp_Login" duration-ms="5368" started-at="2021-04-15T21:37:52Z" finished-at="2021-04-15T21:37:58Z">
+        <test-method status="PASS" signature="Lamp_Login()[pri:1, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Lamp_Login" duration-ms="5409" started-at="2021-04-15T22:31:33Z" finished-at="2021-04-15T22:31:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Lamp_Login -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="648" started-at="2021-04-15T21:37:58Z" finished-at="2021-04-15T21:37:58Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="691" started-at="2021-04-15T22:31:38Z" finished-at="2021-04-15T22:31:39Z">
           <params>
             <param index="0">
               <value>
@@ -42,11 +42,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Lamp_Homepage1()[pri:2, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Lamp_Homepage1" duration-ms="5627" started-at="2021-04-15T21:37:58Z" finished-at="2021-04-15T21:38:04Z">
+        <test-method status="PASS" signature="Lamp_Homepage1()[pri:2, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Lamp_Homepage1" duration-ms="5497" started-at="2021-04-15T22:31:39Z" finished-at="2021-04-15T22:31:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Lamp_Homepage1 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="313" started-at="2021-04-15T21:38:04Z" finished-at="2021-04-15T21:38:04Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="284" started-at="2021-04-15T22:31:44Z" finished-at="2021-04-15T22:31:45Z">
           <params>
             <param index="0">
               <value>
@@ -57,11 +57,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Get_Quotepage1()[pri:3, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Get_Quotepage1" duration-ms="9242" started-at="2021-04-15T21:38:04Z" finished-at="2021-04-15T21:38:13Z">
+        <test-method status="PASS" signature="Get_Quotepage1()[pri:3, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Get_Quotepage1" duration-ms="9150" started-at="2021-04-15T22:31:45Z" finished-at="2021-04-15T22:31:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Get_Quotepage1 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="264" started-at="2021-04-15T21:38:13Z" finished-at="2021-04-15T21:38:14Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="307" started-at="2021-04-15T22:31:54Z" finished-at="2021-04-15T22:31:54Z">
           <params>
             <param index="0">
               <value>
@@ -72,11 +72,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="HealthInsurencePlans1()[pri:4, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="HealthInsurencePlans1" duration-ms="706" started-at="2021-04-15T21:38:14Z" finished-at="2021-04-15T21:38:14Z">
+        <test-method status="PASS" signature="HealthInsurencePlans1()[pri:4, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="HealthInsurencePlans1" duration-ms="767" started-at="2021-04-15T22:31:54Z" finished-at="2021-04-15T22:31:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HealthInsurencePlans1 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="259" started-at="2021-04-15T21:38:14Z" finished-at="2021-04-15T21:38:15Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="257" started-at="2021-04-15T22:31:55Z" finished-at="2021-04-15T22:31:55Z">
           <params>
             <param index="0">
               <value>
@@ -87,11 +87,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="GroupInformationPage1()[pri:5, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="GroupInformationPage1" duration-ms="7710" started-at="2021-04-15T21:38:15Z" finished-at="2021-04-15T21:38:22Z">
+        <test-method status="PASS" signature="GroupInformationPage1()[pri:5, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="GroupInformationPage1" duration-ms="7534" started-at="2021-04-15T22:31:55Z" finished-at="2021-04-15T22:32:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GroupInformationPage1 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="944" started-at="2021-04-15T21:38:22Z" finished-at="2021-04-15T21:38:23Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="880" started-at="2021-04-15T22:32:03Z" finished-at="2021-04-15T22:32:03Z">
           <params>
             <param index="0">
               <value>
@@ -102,11 +102,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Group_Administration1()[pri:6, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Group_Administration1" duration-ms="1085" started-at="2021-04-15T21:38:23Z" finished-at="2021-04-15T21:38:24Z">
+        <test-method status="PASS" signature="Group_Administration1()[pri:6, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Group_Administration1" duration-ms="956" started-at="2021-04-15T22:32:03Z" finished-at="2021-04-15T22:32:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Group_Administration1 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="1006" started-at="2021-04-15T21:38:24Z" finished-at="2021-04-15T21:38:25Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="271" started-at="2021-04-15T22:32:04Z" finished-at="2021-04-15T22:32:05Z">
           <params>
             <param index="0">
               <value>
@@ -117,11 +117,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="COBRA_Coverage1()[pri:7, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="COBRA_Coverage1" duration-ms="124" started-at="2021-04-15T21:38:25Z" finished-at="2021-04-15T21:38:25Z">
+        <test-method status="PASS" signature="COBRA_Coverage1()[pri:7, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="COBRA_Coverage1" duration-ms="737" started-at="2021-04-15T22:32:05Z" finished-at="2021-04-15T22:32:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- COBRA_Coverage1 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="851" started-at="2021-04-15T21:38:25Z" finished-at="2021-04-15T21:38:26Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="283" started-at="2021-04-15T22:32:05Z" finished-at="2021-04-15T22:32:06Z">
           <params>
             <param index="0">
               <value>
@@ -132,11 +132,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="BrokerGeneral_AgentInformation1()[pri:8, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="BrokerGeneral_AgentInformation1" duration-ms="634" started-at="2021-04-15T21:38:26Z" finished-at="2021-04-15T21:38:27Z">
+        <test-method status="PASS" signature="BrokerGeneral_AgentInformation1()[pri:8, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="BrokerGeneral_AgentInformation1" duration-ms="1098" started-at="2021-04-15T22:32:06Z" finished-at="2021-04-15T22:32:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrokerGeneral_AgentInformation1 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="838" started-at="2021-04-15T21:38:27Z" finished-at="2021-04-15T21:38:28Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="962" started-at="2021-04-15T22:32:07Z" finished-at="2021-04-15T22:32:08Z">
           <params>
             <param index="0">
               <value>
@@ -147,11 +147,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="AddEmployee1()[pri:9, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="AddEmployee1" duration-ms="68690" started-at="2021-04-15T21:38:28Z" finished-at="2021-04-15T21:39:36Z">
+        <test-method status="PASS" signature="AddEmployee1()[pri:9, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="AddEmployee1" duration-ms="68801" started-at="2021-04-15T22:32:08Z" finished-at="2021-04-15T22:33:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddEmployee1 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="313" started-at="2021-04-15T21:39:36Z" finished-at="2021-04-15T21:39:37Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="288" started-at="2021-04-15T22:33:17Z" finished-at="2021-04-15T22:33:17Z">
           <params>
             <param index="0">
               <value>
@@ -162,11 +162,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Uploaddocument13()[pri:10, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Uploaddocument13" duration-ms="60832" started-at="2021-04-15T21:39:37Z" finished-at="2021-04-15T21:40:38Z">
+        <test-method status="PASS" signature="Uploaddocument13()[pri:10, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Uploaddocument13" duration-ms="65195" started-at="2021-04-15T22:33:17Z" finished-at="2021-04-15T22:34:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Uploaddocument13 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="298" started-at="2021-04-15T21:40:38Z" finished-at="2021-04-15T21:40:38Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="273" started-at="2021-04-15T22:34:22Z" finished-at="2021-04-15T22:34:22Z">
           <params>
             <param index="0">
               <value>
@@ -177,11 +177,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="ReviewApplication_Details()[pri:11, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="ReviewApplication_Details" duration-ms="2110" started-at="2021-04-15T21:40:38Z" finished-at="2021-04-15T21:40:40Z">
+        <test-method status="PASS" signature="ReviewApplication_Details()[pri:11, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="ReviewApplication_Details" duration-ms="4121" started-at="2021-04-15T22:34:22Z" finished-at="2021-04-15T22:34:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReviewApplication_Details -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="291" started-at="2021-04-15T21:40:40Z" finished-at="2021-04-15T21:40:40Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="261" started-at="2021-04-15T22:34:26Z" finished-at="2021-04-15T22:34:27Z">
           <params>
             <param index="0">
               <value>
@@ -192,88 +192,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="FAIL" signature="Agreement1()[pri:12, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Agreement1" duration-ms="36103" started-at="2021-04-15T21:40:40Z" finished-at="2021-04-15T21:41:16Z">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <button token="xNLB5izycBkKwXHh0smPITB9mYiTbZLAyHrVbpKi" route="/api/enrollment/applications/5681/payment" class="hf-submit-payment-btn">...</button> is not clickable at point (978, 484). Other element would receive the click: <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">...</div>
-  (Session info: chrome=89.0.4389.128)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-08', ip: '10.200.188.248', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53493}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2a114c5fc8f3a99e49e4e295860c578b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button token="xNLB5izycBkKwXHh0smPITB9mYiTbZLAyHrVbpKi" route="/api/enrollment/applications/5681/payment" class="hf-submit-payment-btn">...</button> is not clickable at point (978, 484). Other element would receive the click: <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">...</div>
-  (Session info: chrome=89.0.4389.128)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SVFL-XAADQAF-08', ip: '10.200.188.248', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SMUTCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53493}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2a114c5fc8f3a99e49e4e295860c578b
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy14.click(Unknown Source)
-at COM.HFIC.Pages.Agreement.Agreement1(Agreement.java:45)
-at HFIC.Testcases.com.LampLogin.Agreement1(LampLogin.java:91)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method status="PASS" signature="Agreement1()[pri:12, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Agreement1" duration-ms="18153" started-at="2021-04-15T22:34:27Z" finished-at="2021-04-15T22:34:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Agreement1 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="274" started-at="2021-04-15T21:41:16Z" finished-at="2021-04-15T21:41:17Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="285" started-at="2021-04-15T22:34:45Z" finished-at="2021-04-15T22:34:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Agreement1 status=FAILURE method=LampLogin.Agreement1()[pri:12, instance:HFIC.Testcases.com.LampLogin@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=Agreement1 status=SUCCESS method=LampLogin.Agreement1()[pri:12, instance:HFIC.Testcases.com.LampLogin@754ba872] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Application_Exit" is-config="true" duration-ms="721" started-at="2021-04-15T21:41:17Z" finished-at="2021-04-15T21:41:17Z">
+        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Application_Exit" is-config="true" duration-ms="722" started-at="2021-04-15T22:34:45Z" finished-at="2021-04-15T22:34:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Exit -->

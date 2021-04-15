@@ -42,7 +42,7 @@ public class Uploaddocument {
 			js.executeScript("scroll(0, 250);");
 
 //			js.executeScript("arguments[0].scrollIntoView(true);",file1);
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			file1.click();
 			Thread.sleep(4000);
 			//robot.mouseMove(5, 10);
@@ -57,12 +57,12 @@ public class Uploaddocument {
 			
 			//file 2
 			js.executeScript("scroll(0, 500);");
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 //			js.executeScript("arguments[0].scrollIntoView(true);",file2);
 			file2.click();
-			Thread.sleep(2000);
+			Thread.sleep(3500);
 			nys45.click();
-			Thread.sleep(2000);
+			Thread.sleep(3500);
 			nyscnt.click();
 			Thread.sleep(2000);
 			//robot.mouseMove(5, 10);
@@ -73,7 +73,7 @@ public class Uploaddocument {
 			Thread.sleep(2000);
 			robot.keyPress(KeyEvent.VK_ENTER);
 			robot.keyRelease(KeyEvent.VK_ENTER);
-			Thread.sleep(8000);
+			Thread.sleep(5000);
 
 //File3:	
 			

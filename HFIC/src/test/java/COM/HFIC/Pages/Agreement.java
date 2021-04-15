@@ -31,6 +31,8 @@ public class Agreement {
 	public void Agreement1(String an,String aba,String accnum,String caccnum,String baddr,String city1,String zip1) throws InterruptedException{
 		sign.sendKeys("Srikanth");
 		JavascriptExecutor js= (JavascriptExecutor)driver;
+		Thread.sleep(2000);
+
 		js.executeScript("arguments[0].click();", acknowledge);
 		Select s =new Select( accoun_type);
 		s.selectByIndex(1);
@@ -41,11 +43,11 @@ public class Agreement {
 		billing_address.sendKeys(baddr);
 		city.sendKeys(city1);
 		zip.sendKeys(zip1);
-		Thread.sleep(34000);
-		Review_Payment.click();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
+		js.executeScript("arguments[0].click();", Review_Payment);
+		Thread.sleep(5000);
 		Submit_Payment.click();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 	}
 	
 
