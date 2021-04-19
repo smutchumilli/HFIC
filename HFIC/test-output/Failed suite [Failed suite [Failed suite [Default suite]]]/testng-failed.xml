@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Failed suite [Failed suite [Default suite]]]]">
+  <test name="Default test(failed)(failed)(failed)(failed)">
+    <classes>
+      <class name="HFIC.Testcases.com.PEGA_Search">
+        <methods>
+          <include name="Task_Presumptive_Search"/>
+          <include name="Application_Start"/>
+          <include name="Tear_Down"/>
+          <include name="HP_Reconciliation_Task_Serach"/>
+          <include name="Application_Exit"/>
+          <include name="HP_Group_Task_Serach"/>
+          <include name="Start_up"/>
+        </methods>
+      </class> <!-- HFIC.Testcases.com.PEGA_Search -->
+    </classes>
+  </test> <!-- Default test(failed)(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Failed suite [Default suite]]]] -->

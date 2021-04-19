@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="HFIC.Testcases.com.CR_UpdateHSA_Group_Member">
+      <class name="HFIC.Testcases.com.PEGA_Search">
         <methods>
-          <include name="CR_HSA_Member_update"/>
           <include name="Application_Start"/>
-          <include name="CR_HSA_Group_update"/>
+          <include name="HP_Group_Task_Serach"/>
           <include name="Start_up"/>
         </methods>
-      </class> <!-- HFIC.Testcases.com.CR_UpdateHSA_Group_Member -->
+      </class> <!-- HFIC.Testcases.com.PEGA_Search -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

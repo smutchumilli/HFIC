@@ -19,7 +19,7 @@ public class PEGA_Search extends Baseclass {
 					data.getstringdata("Search", i, 4), data.getstringdata("Search", i, 5),
 					data.getstringdata("Search", i, 6));
 			test.info(data.getstringdata("Search", i, 7));
-			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+			test.info(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		}
 	}
 
@@ -36,7 +36,7 @@ public class PEGA_Search extends Baseclass {
 					data.getstringdata("Search", i, 6));
 			test.info(data.getstringdata("Search", i, 7));
 
-			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+			test.info(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		
 	}
 	}
@@ -54,7 +54,7 @@ public class PEGA_Search extends Baseclass {
 					data.getstringdata("Search", i, 6));
 			test.info(data.getstringdata("Search", i, 7));
 
-			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+			test.info(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 
 		}
 	}
@@ -66,12 +66,12 @@ public class PEGA_Search extends Baseclass {
 		test = extent.createTest("HFIC Billing Task Search");
 		Search Search = PageFactory.initElements(driver, Search.class);
 		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
-		for (int i = 1; i <= 4; i++) {
+		for (int i = 1; i <= 5; i++) {
 			Search.HFIC_BTask_Search(data.getstringdata("Task", i, 0), data.getstringdata("Task", i, 1),
 					data.getstringdata("Task", i, 2), data.getstringdata("Task", i, 3));
 			test.info(data.getstringdata("Task", i, 4));
 
-			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+			test.info(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		}
 	}
 
@@ -88,7 +88,7 @@ public class PEGA_Search extends Baseclass {
 			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		}
 	}
-
+//program not ran
 	@Test(priority = 6)
 	public void Task_G_Search() throws IOException, InterruptedException, AWTException {
 		test = extent.createTest("HFIC Group Task Search");
@@ -102,15 +102,16 @@ public class PEGA_Search extends Baseclass {
 			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		}
 	}
-
+//observation sent
 	@Test(priority = 7)
 	public void Task_Payment_Exception_Search() throws IOException, InterruptedException, AWTException {
 		test = extent.createTest("HFIC Payment Exception Task Search");
 		Search Search = PageFactory.initElements(driver, Search.class);
 		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		for (int i = 17; i <= 19; i++) {
-			Search.HFIC_Paymentexcetion_Task_Search(data.getstringdata("Task", i, 0), data.getstringdata("Task", i, 1));
-			test.info(data.getstringdata("Task", i, 2));
+			Search.HFIC_Paymentexcetion_Task_Search(data.getstringdata("Task", i, 0),
+					data.getstringdata("Task", i, 1),	data.getstringdata("Task", i, 2));
+			test.info(data.getstringdata("Task", i, 3));
 
 			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		}
@@ -143,44 +144,56 @@ public class PEGA_Search extends Baseclass {
 			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		}
 	}
-
+//working fine observation sent to chinthana
 	@Test(priority = 10)
 	public void Task_Presumptive_Search() throws IOException, InterruptedException, AWTException {
 		test = extent.createTest("HFIC Presumptive  Task Search");
 		Search Search = PageFactory.initElements(driver, Search.class);
-		for (int i = 35; i <= 40; i++) {
+		for (int i = 35; i <= 39; i++) {
 			Search.HFIC_Presumptive_Search(data.getstringdata("Task", i, 0), data.getstringdata("Task", i, 1),
-					data.getstringdata("Task", i, 2), data.getstringdata("Task", i, 3));
+					data.getstringdata("Task", i, 2), data.getstringdata("Task", i,3));
 			test.info(data.getstringdata("Task", i, 4));
 
 			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		}
 	}
-
+	
 	@Test(priority = 11)
-	public void HP_Group_Task_Serach() throws IOException, InterruptedException, AWTException {
-		test = extent.createTest("HP Group  Task Search");
-				Search Search = PageFactory.initElements(driver, Search.class);
-		for (int i = 48; i <= 51; i++) {
-			Search.HP_GroupTask_Search(data.getstringdata("Task", i, 0), data.getstringdata("Task", i, 1),
+	public void Task_CR_Search() throws IOException, InterruptedException, AWTException {
+		test = extent.createTest("HFIC Presumptive  Task Search");
+		Search Search = PageFactory.initElements(driver, Search.class);
+		for (int i = 43; i <= 46; i++) {
+			Search.HFIC_ChangeRequest_Search(data.getstringdata("Task", i, 0), data.getstringdata("Task", i, 1),
 					data.getstringdata("Task", i, 2));
 			test.info(data.getstringdata("Task", i, 3));
 
 			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		}
 	}
-		@Test(priority = 12)
+ //working fine
+	@Test(priority = 12)
+	public void HP_Group_Task_Serach() throws IOException, InterruptedException, AWTException {
+		test = extent.createTest("HP Group  Task Search");
+				Search Search = PageFactory.initElements(driver, Search.class);
+		for (int i = 48; i <= 51; i++) {
+			Search.HP_GroupTask_Search(data.getstringdata("Task", i, 0),
+					data.getstringdata("Task", i, 1),data.getstringdata("Task", i, 2));
+			test.info(data.getstringdata("Task", i, 3));
+
+			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+		}
+	}
+		@Test(priority = 13)
 		public void HP_Reconciliation_Task_Serach() throws IOException, InterruptedException, AWTException {
 			test = extent.createTest("HP Reconciliation  Task Search");
 			Search Search = PageFactory.initElements(driver, Search.class);	
-			for (int i = 54; i <= 59; i++) {
-
-			Search.HP_Reconciliation_Search(data.getstringdata("Task", i, 0), data.getstringdata("Task", i, 1),
-					data.getstringdata("Task", i, 2), data.getstringdata("Task", i, 3),
+			for (int i= 54; i<= 57; i++) {
+			Search.HP_Reconciliation_Search(data.getstringdata("Task", i, 0), 
+					data.getstringdata("Task", i, 1),data.getstringdata("Task", i, 2),
+					data.getstringdata("Task", i, 3),
 					data.getstringdata("Task", i, 4));
 			test.info(data.getstringdata("Task", i, 5));
-
-		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+		test.info(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		}
 
 	}
