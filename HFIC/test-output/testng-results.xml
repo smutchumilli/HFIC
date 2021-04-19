@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
+<testng-results skipped="0" failed="0" total="12" passed="12">
   <reporter-output>
     <line>
       <![CDATA[Project set up done]]>
@@ -8,206 +8,206 @@
       <![CDATA[Application up and running as expected]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="155116" started-at="2021-04-15T22:40:50Z" finished-at="2021-04-15T22:43:25Z">
+  <suite name="Default suite" duration-ms="163341" started-at="2021-04-19T15:15:01Z" finished-at="2021-04-19T15:17:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="155116" started-at="2021-04-15T22:40:50Z" finished-at="2021-04-15T22:43:25Z">
+    <test name="Default test" duration-ms="163341" started-at="2021-04-19T15:15:01Z" finished-at="2021-04-19T15:17:45Z">
       <class name="HFIC.Testcases.com.LampLogin">
-        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Start_up" is-config="true" duration-ms="1175" started-at="2021-04-15T22:40:49Z" finished-at="2021-04-15T22:40:50Z">
+        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Start_up" is-config="true" duration-ms="3700" started-at="2021-04-19T11:14:58Z" finished-at="2021-04-19T11:15:01Z">
           <reporter-output>
             <line>
               <![CDATA[Project set up done]]>
             </line>
           </reporter-output>
         </test-method> <!-- Start_up -->
-        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Application_Start" is-config="true" duration-ms="5799" started-at="2021-04-15T22:40:50Z" finished-at="2021-04-15T22:40:56Z">
+        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Application_Start" is-config="true" duration-ms="6158" started-at="2021-04-19T11:15:01Z" finished-at="2021-04-19T11:15:07Z">
           <reporter-output>
             <line>
               <![CDATA[Application up and running as expected]]>
             </line>
           </reporter-output>
         </test-method> <!-- Application_Start -->
-        <test-method status="PASS" signature="Lamp_Login()[pri:1, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Lamp_Login" duration-ms="5475" started-at="2021-04-15T22:40:56Z" finished-at="2021-04-15T22:41:01Z">
+        <test-method status="PASS" signature="Lamp_Login()[pri:1, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Lamp_Login" duration-ms="5687" started-at="2021-04-19T11:15:07Z" finished-at="2021-04-19T11:15:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Lamp_Login -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="799" started-at="2021-04-15T22:41:01Z" finished-at="2021-04-15T22:41:02Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Tear_Down" is-config="true" duration-ms="1102" started-at="2021-04-19T11:15:13Z" finished-at="2021-04-19T11:15:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Lamp_Login status=SUCCESS method=LampLogin.Lamp_Login()[pri:1, instance:HFIC.Testcases.com.LampLogin@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=Lamp_Login status=SUCCESS method=LampLogin.Lamp_Login()[pri:1, instance:HFIC.Testcases.com.LampLogin@39c0f4a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Lamp_Homepage1()[pri:2, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Lamp_Homepage1" duration-ms="5215" started-at="2021-04-15T22:41:02Z" finished-at="2021-04-15T22:41:07Z">
+        <test-method status="PASS" signature="Lamp_Homepage1()[pri:2, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Lamp_Homepage1" duration-ms="7205" started-at="2021-04-19T11:15:14Z" finished-at="2021-04-19T11:15:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Lamp_Homepage1 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="315" started-at="2021-04-15T22:41:07Z" finished-at="2021-04-15T22:41:08Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Tear_Down" is-config="true" duration-ms="337" started-at="2021-04-19T11:15:21Z" finished-at="2021-04-19T11:15:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Lamp_Homepage1 status=SUCCESS method=LampLogin.Lamp_Homepage1()[pri:2, instance:HFIC.Testcases.com.LampLogin@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=Lamp_Homepage1 status=SUCCESS method=LampLogin.Lamp_Homepage1()[pri:2, instance:HFIC.Testcases.com.LampLogin@39c0f4a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Get_Quotepage1()[pri:3, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Get_Quotepage1" duration-ms="9254" started-at="2021-04-15T22:41:08Z" finished-at="2021-04-15T22:41:17Z">
+        <test-method status="PASS" signature="Get_Quotepage1()[pri:3, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Get_Quotepage1" duration-ms="9481" started-at="2021-04-19T11:15:22Z" finished-at="2021-04-19T11:15:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Get_Quotepage1 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="288" started-at="2021-04-15T22:41:17Z" finished-at="2021-04-15T22:41:17Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Tear_Down" is-config="true" duration-ms="310" started-at="2021-04-19T11:15:31Z" finished-at="2021-04-19T11:15:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Get_Quotepage1 status=SUCCESS method=LampLogin.Get_Quotepage1()[pri:3, instance:HFIC.Testcases.com.LampLogin@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=Get_Quotepage1 status=SUCCESS method=LampLogin.Get_Quotepage1()[pri:3, instance:HFIC.Testcases.com.LampLogin@39c0f4a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="HealthInsurencePlans1()[pri:4, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="HealthInsurencePlans1" duration-ms="749" started-at="2021-04-15T22:41:17Z" finished-at="2021-04-15T22:41:18Z">
+        <test-method status="PASS" signature="HealthInsurencePlans1()[pri:4, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="HealthInsurencePlans1" duration-ms="1155" started-at="2021-04-19T11:15:32Z" finished-at="2021-04-19T11:15:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HealthInsurencePlans1 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="288" started-at="2021-04-15T22:41:18Z" finished-at="2021-04-15T22:41:18Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Tear_Down" is-config="true" duration-ms="294" started-at="2021-04-19T11:15:33Z" finished-at="2021-04-19T11:15:33Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=HealthInsurencePlans1 status=SUCCESS method=LampLogin.HealthInsurencePlans1()[pri:4, instance:HFIC.Testcases.com.LampLogin@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=HealthInsurencePlans1 status=SUCCESS method=LampLogin.HealthInsurencePlans1()[pri:4, instance:HFIC.Testcases.com.LampLogin@39c0f4a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="GroupInformationPage1()[pri:5, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="GroupInformationPage1" duration-ms="7699" started-at="2021-04-15T22:41:18Z" finished-at="2021-04-15T22:41:26Z">
+        <test-method status="PASS" signature="GroupInformationPage1()[pri:5, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="GroupInformationPage1" duration-ms="7788" started-at="2021-04-19T11:15:33Z" finished-at="2021-04-19T11:15:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GroupInformationPage1 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="863" started-at="2021-04-15T22:41:26Z" finished-at="2021-04-15T22:41:27Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Tear_Down" is-config="true" duration-ms="1030" started-at="2021-04-19T11:15:41Z" finished-at="2021-04-19T11:15:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GroupInformationPage1 status=SUCCESS method=LampLogin.GroupInformationPage1()[pri:5, instance:HFIC.Testcases.com.LampLogin@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=GroupInformationPage1 status=SUCCESS method=LampLogin.GroupInformationPage1()[pri:5, instance:HFIC.Testcases.com.LampLogin@39c0f4a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Group_Administration1()[pri:6, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Group_Administration1" duration-ms="1084" started-at="2021-04-15T22:41:27Z" finished-at="2021-04-15T22:41:28Z">
+        <test-method status="PASS" signature="Group_Administration1()[pri:6, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Group_Administration1" duration-ms="1369" started-at="2021-04-19T11:15:42Z" finished-at="2021-04-19T11:15:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Group_Administration1 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="894" started-at="2021-04-15T22:41:28Z" finished-at="2021-04-15T22:41:29Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Tear_Down" is-config="true" duration-ms="1048" started-at="2021-04-19T11:15:43Z" finished-at="2021-04-19T11:15:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Group_Administration1 status=SUCCESS method=LampLogin.Group_Administration1()[pri:6, instance:HFIC.Testcases.com.LampLogin@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=Group_Administration1 status=SUCCESS method=LampLogin.Group_Administration1()[pri:6, instance:HFIC.Testcases.com.LampLogin@39c0f4a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="COBRA_Coverage1()[pri:7, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="COBRA_Coverage1" duration-ms="133" started-at="2021-04-15T22:41:29Z" finished-at="2021-04-15T22:41:29Z">
+        <test-method status="PASS" signature="COBRA_Coverage1()[pri:7, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="COBRA_Coverage1" duration-ms="209" started-at="2021-04-19T11:15:44Z" finished-at="2021-04-19T11:15:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- COBRA_Coverage1 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="285" started-at="2021-04-15T22:41:29Z" finished-at="2021-04-15T22:41:29Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Tear_Down" is-config="true" duration-ms="920" started-at="2021-04-19T11:15:45Z" finished-at="2021-04-19T11:15:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=COBRA_Coverage1 status=SUCCESS method=LampLogin.COBRA_Coverage1()[pri:7, instance:HFIC.Testcases.com.LampLogin@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=COBRA_Coverage1 status=SUCCESS method=LampLogin.COBRA_Coverage1()[pri:7, instance:HFIC.Testcases.com.LampLogin@39c0f4a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="BrokerGeneral_AgentInformation1()[pri:8, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="BrokerGeneral_AgentInformation1" duration-ms="1216" started-at="2021-04-15T22:41:29Z" finished-at="2021-04-15T22:41:30Z">
+        <test-method status="PASS" signature="BrokerGeneral_AgentInformation1()[pri:8, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="BrokerGeneral_AgentInformation1" duration-ms="845" started-at="2021-04-19T11:15:45Z" finished-at="2021-04-19T11:15:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrokerGeneral_AgentInformation1 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="982" started-at="2021-04-15T22:41:30Z" finished-at="2021-04-15T22:41:31Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Tear_Down" is-config="true" duration-ms="1105" started-at="2021-04-19T11:15:46Z" finished-at="2021-04-19T11:15:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=BrokerGeneral_AgentInformation1 status=SUCCESS method=LampLogin.BrokerGeneral_AgentInformation1()[pri:8, instance:HFIC.Testcases.com.LampLogin@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=BrokerGeneral_AgentInformation1 status=SUCCESS method=LampLogin.BrokerGeneral_AgentInformation1()[pri:8, instance:HFIC.Testcases.com.LampLogin@39c0f4a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="AddEmployee1()[pri:9, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="AddEmployee1" duration-ms="23752" started-at="2021-04-15T22:41:31Z" finished-at="2021-04-15T22:41:55Z">
+        <test-method status="PASS" signature="AddEmployee1()[pri:9, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="AddEmployee1" duration-ms="24421" started-at="2021-04-19T11:15:47Z" finished-at="2021-04-19T11:16:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddEmployee1 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="269" started-at="2021-04-15T22:41:55Z" finished-at="2021-04-15T22:41:55Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Tear_Down" is-config="true" duration-ms="341" started-at="2021-04-19T11:16:12Z" finished-at="2021-04-19T11:16:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AddEmployee1 status=SUCCESS method=LampLogin.AddEmployee1()[pri:9, instance:HFIC.Testcases.com.LampLogin@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=AddEmployee1 status=SUCCESS method=LampLogin.AddEmployee1()[pri:9, instance:HFIC.Testcases.com.LampLogin@39c0f4a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Uploaddocument13()[pri:10, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Uploaddocument13" duration-ms="65836" started-at="2021-04-15T22:41:55Z" finished-at="2021-04-15T22:43:01Z">
+        <test-method status="PASS" signature="Uploaddocument13()[pri:10, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Uploaddocument13" duration-ms="66038" started-at="2021-04-19T11:16:12Z" finished-at="2021-04-19T11:17:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Uploaddocument13 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="310" started-at="2021-04-15T22:43:01Z" finished-at="2021-04-15T22:43:01Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Tear_Down" is-config="true" duration-ms="369" started-at="2021-04-19T11:17:18Z" finished-at="2021-04-19T11:17:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Uploaddocument13 status=SUCCESS method=LampLogin.Uploaddocument13()[pri:10, instance:HFIC.Testcases.com.LampLogin@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=Uploaddocument13 status=SUCCESS method=LampLogin.Uploaddocument13()[pri:10, instance:HFIC.Testcases.com.LampLogin@39c0f4a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="ReviewApplication_Details()[pri:11, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="ReviewApplication_Details" duration-ms="4110" started-at="2021-04-15T22:43:01Z" finished-at="2021-04-15T22:43:06Z">
+        <test-method status="PASS" signature="ReviewApplication_Details()[pri:11, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="ReviewApplication_Details" duration-ms="2165" started-at="2021-04-19T11:17:19Z" finished-at="2021-04-19T11:17:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReviewApplication_Details -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="259" started-at="2021-04-15T22:43:06Z" finished-at="2021-04-15T22:43:06Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Tear_Down" is-config="true" duration-ms="434" started-at="2021-04-19T11:17:21Z" finished-at="2021-04-19T11:17:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ReviewApplication_Details status=SUCCESS method=LampLogin.ReviewApplication_Details()[pri:11, instance:HFIC.Testcases.com.LampLogin@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=ReviewApplication_Details status=SUCCESS method=LampLogin.ReviewApplication_Details()[pri:11, instance:HFIC.Testcases.com.LampLogin@39c0f4a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Agreement1()[pri:12, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Agreement1" duration-ms="18146" started-at="2021-04-15T22:43:06Z" finished-at="2021-04-15T22:43:24Z">
+        <test-method status="PASS" signature="Agreement1()[pri:12, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Agreement1" duration-ms="18726" started-at="2021-04-19T11:17:21Z" finished-at="2021-04-19T11:17:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Agreement1 -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Tear_Down" is-config="true" duration-ms="295" started-at="2021-04-15T22:43:24Z" finished-at="2021-04-15T22:43:24Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Tear_Down" is-config="true" duration-ms="305" started-at="2021-04-19T11:17:40Z" finished-at="2021-04-19T11:17:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Agreement1 status=SUCCESS method=LampLogin.Agreement1()[pri:12, instance:HFIC.Testcases.com.LampLogin@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=Agreement1 status=SUCCESS method=LampLogin.Agreement1()[pri:12, instance:HFIC.Testcases.com.LampLogin@39c0f4a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.LampLogin@754ba872]" name="Application_Exit" is-config="true" duration-ms="755" started-at="2021-04-15T22:43:24Z" finished-at="2021-04-15T22:43:25Z">
+        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.LampLogin@39c0f4a]" name="Application_Exit" is-config="true" duration-ms="4428" started-at="2021-04-19T11:17:40Z" finished-at="2021-04-19T11:17:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Exit -->

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test name="Default test(failed)">
     <classes>
-      <class name="HFIC.Testcases.com.LampLogin">
+      <class name="HFIC.Testcases.com.CR_UpdateHSA_Group_Member">
         <methods>
-          <include name="Tear_Down"/>
+          <include name="CR_HSA_Member_update"/>
           <include name="Application_Start"/>
-          <include name="Agreement1"/>
+          <include name="CR_HSA_Group_update"/>
           <include name="Start_up"/>
         </methods>
-      </class> <!-- HFIC.Testcases.com.LampLogin -->
+      </class> <!-- HFIC.Testcases.com.CR_UpdateHSA_Group_Member -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
