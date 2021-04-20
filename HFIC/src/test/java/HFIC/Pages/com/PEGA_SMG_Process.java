@@ -25,7 +25,7 @@ public class PEGA_SMG_Process extends Baseclass {
 	@FindBy(xpath="//input[@id='156a3c55']") WebElement appid_search_text_suser;
 
 	@FindBy(xpath="//button[text()='Apply']") WebElement Apply_button;
-	@FindBy(xpath="//*[contains(text(),'LOW')]//preceding::input[1]") WebElement checkbox;
+	@FindBy(xpath="//*[text()='SMG']//preceding::input[1]") WebElement checkbox;
 	@FindBy(xpath="//button[text()='Assign Applications']") WebElement Assignbtton;
 	@FindBy(xpath="//input[@id='19c272f1']") WebElement assign_id;
 	@FindBy(xpath="//button[@name='HFICUnAssignedTask_pyDisplayHarness_41']") WebElement submit;
@@ -62,7 +62,19 @@ public class PEGA_SMG_Process extends Baseclass {
 	@FindBy(xpath="//img[@name='Approval_pyWorkPage.Application.ReviewApplication(Group).ReviewScreen(PG4)_430']") WebElement confirm4;
 	@FindBy(xpath="//a[@name='ActionButtons_pyWorkPage_7']") WebElement review_mship;;
 
+	@FindBy(xpath="//*[@id='PEGA_GRID_CONTENT']//tr[2]") WebElement row1;
+	@FindBy(xpath="//*[@id='PEGA_GRID_CONTENT']//tr[3]") WebElement row2;;
+	@FindBy(xpath="//*[@id='PEGA_GRID_CONTENT']//tr[4]") WebElement row3;;
+	@FindBy(xpath="//*[@id='PEGA_GRID_CONTENT']//tr[5]") WebElement row4;;
+
+	@FindBy(linkText="GO TO MEMBER LISTING") WebElement mem_listing;
+	@FindBy(linkText="Next") WebElement Next1;
+
+
 	
+	
+
+
 	
 public void HFIC_Superuser_login(String uid,String pwd,String app_id) throws InterruptedException {
 	
@@ -105,8 +117,130 @@ public void HFIC_Superuser_login(String uid,String pwd,String app_id) throws Int
 	 Thread.sleep(3000);
 
 	 review_mship.click();
+	 Thread.sleep(6000);
+
+	
+	 
+	 row1.click();
+	 confirm.click();
+	 mem_listing.click();
+	 
+	 Thread.sleep(3000);
+
+	
+	 row2.click();
+	 confirm.click();
+	 Thread.sleep(1000);
+
+	 Next1.click();
+	 Thread.sleep(1000);
+
+	 confirm.click();
+	 Thread.sleep(1000);
+
+	 mem_listing.click();
+	 Thread.sleep(1000);
+
+	 row3.click();
+	 Thread.sleep(1000);
+
+	 confirm.click();
+	 
+	 Thread.sleep(1000);
+
+	 Next1.click();
+	 Thread.sleep(1000);
+
+	 confirm.click();
+	 
+
+	 Thread.sleep(1000);
+
+	 mem_listing.click();
+	 
+	 Thread.sleep(3000);
+
+	 row3.click();
+	 Thread.sleep(1000);
+
+	 confirm.click();
+	 Thread.sleep(1000);
+
+	 Next1.click();
+	 Thread.sleep(3000);
+
+	 confirm.click();
+	 Thread.sleep(1000);
+
+	 mem_listing.click();
+	 Thread.sleep(3000);
+
+ 
+	 row4.click();
+	 Thread.sleep(1000);
+
+	 confirm.click();
+	 Thread.sleep(1000);
+
+	 Next1.click();
+	 Thread.sleep(3000);
+
+	 confirm.click();
+	 Thread.sleep(1000);
+
+	 Next1.click();
+	 Thread.sleep(3000);
+
+	 confirm.click();
+	 Thread.sleep(1000);
+
+	 Next1.click();
+	 Thread.sleep(3000);
+
+	 confirm.click();
+	 Thread.sleep(1000);
+
+	 mem_listing.click();
+	 Thread.sleep(3000);
+
+	 Review_PAYMENT.click();
+	 Thread.sleep(3000);
+
+	 Final_Review.click();
+}
 
 
+@FindBy(xpath="//*[text()='GO TO STEP:3 REVIEW PAYMENT']") WebElement Review_PAYMENT;
+
+@FindBy(xpath="//*[text()='GO TO STEP 4: FINAL REVIEW']") WebElement Final_Review;
+	
+@FindBy(xpath="//h2[@id='headerlabel1043']") WebElement NYS45;
+@FindBy(xpath="//input[@id='5c71a5e8']") WebElement NYS45_Approve;
+
+@FindBy(xpath="//h2[@id='headerlabel4359']") WebElement GRPAPPL;
+@FindBy(xpath="//input[@id='956ead57']") WebElement GRPAPPL_Approve;
+
+@FindBy(xpath="headerlabel2532") WebElement PAF;
+@FindBy(xpath="//input[@id='64b4a8fd']") WebElement PAF_Approve;
+
+
+public void Documents() throws InterruptedException {
+	 Thread.sleep(6000);
+	 driver.switchTo().frame(2);
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", GRPAPPL);
+
+	GRPAPPL.click();
+	GRPAPPL_Approve.click();
+	 Thread.sleep(3000);
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", NYS45);
+
+	NYS45.click();
+	NYS45_Approve.click();
+	 Thread.sleep(3000);
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", PAF);
+
+	PAF.click();
+	PAF_Approve.click();
 	
 }
 	

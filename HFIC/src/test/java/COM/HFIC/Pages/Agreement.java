@@ -25,6 +25,9 @@ public class Agreement {
 	@FindBy(xpath="//input[@name='zip']//following::button[1]") WebElement Review_Payment;
 	@FindBy(xpath="//*[contains(@class,'hf-save-review-payment-btn pull-right')]") WebElement Submit_Payment;
 	@FindBy(id="account_signature") WebElement sign;
+	@FindBy(xpath="//*[contains(text(),'HFA')]") WebElement Application_number;
+
+	
 
 	
 	
@@ -48,6 +51,8 @@ public class Agreement {
 		Thread.sleep(5000);
 		Submit_Payment.click();
 		Thread.sleep(5000);
+		
+System.out.println(Application_number.getText());		
 	}
 	
 

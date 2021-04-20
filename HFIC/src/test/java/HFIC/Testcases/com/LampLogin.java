@@ -6,7 +6,6 @@ import java.io.IOException;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.MediaEntityBuilder;
 
 import COM.HFIC.Pages.AddEmployee;
 import COM.HFIC.Pages.Agreement;
@@ -21,7 +20,6 @@ import COM.HFIC.Pages.Lamploginpage;
 import COM.HFIC.Pages.ReviewApplicationDetails;
 import COM.HFIC.Pages.Uploaddocument;
 import HFIC.Pages.com.Baseclass;
-import Utilities.com.Helper;
 
 	 
 public class LampLogin extends Baseclass  {

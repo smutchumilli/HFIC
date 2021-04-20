@@ -60,9 +60,9 @@ public class Uploaddocument {
 			Thread.sleep(5000);
 //			js.executeScript("arguments[0].scrollIntoView(true);",file2);
 			file2.click();
-			Thread.sleep(3500);
+			Thread.sleep(5000);
 			nys45.click();
-			Thread.sleep(3500);
+			Thread.sleep(5000);
 			nyscnt.click();
 			Thread.sleep(2000);
 			//robot.mouseMove(5, 10);
