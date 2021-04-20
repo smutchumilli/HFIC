@@ -8,41 +8,41 @@
       <![CDATA[Application up and running as expected]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="100952" started-at="2021-04-19T22:58:13Z" finished-at="2021-04-19T22:59:54Z">
+  <suite name="Default suite" duration-ms="99833" started-at="2021-04-20T13:38:43Z" finished-at="2021-04-20T13:40:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="100952" started-at="2021-04-19T22:58:13Z" finished-at="2021-04-19T22:59:54Z">
+    <test name="Default test" duration-ms="99833" started-at="2021-04-20T13:38:43Z" finished-at="2021-04-20T13:40:23Z">
       <class name="HFIC.Testcases.com.PEGA_Search">
-        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@7d9d1a19]" name="Start_up" is-config="true" duration-ms="1277" started-at="2021-04-19T18:58:12Z" finished-at="2021-04-19T18:58:13Z">
+        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@7d9d1a19]" name="Start_up" is-config="true" duration-ms="2809" started-at="2021-04-20T09:38:41Z" finished-at="2021-04-20T09:38:43Z">
           <reporter-output>
             <line>
               <![CDATA[Project set up done]]>
             </line>
           </reporter-output>
         </test-method> <!-- Start_up -->
-        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@7d9d1a19]" name="Application_Start" is-config="true" duration-ms="5372" started-at="2021-04-19T18:58:13Z" finished-at="2021-04-19T18:58:18Z">
+        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@7d9d1a19]" name="Application_Start" is-config="true" duration-ms="10502" started-at="2021-04-20T09:38:43Z" finished-at="2021-04-20T09:38:54Z">
           <reporter-output>
             <line>
               <![CDATA[Application up and running as expected]]>
             </line>
           </reporter-output>
         </test-method> <!-- Application_Start -->
-        <test-method status="PASS" signature="HP_Reconciliation_Task_Serach()[pri:13, instance:HFIC.Testcases.com.PEGA_Search@7d9d1a19]" name="HP_Reconciliation_Task_Serach" duration-ms="92745" started-at="2021-04-19T18:58:18Z" finished-at="2021-04-19T18:59:51Z">
+        <test-method status="PASS" signature="Task_G_Search()[pri:6, instance:HFIC.Testcases.com.PEGA_Search@7d9d1a19]" name="Task_G_Search" duration-ms="84803" started-at="2021-04-20T09:38:54Z" finished-at="2021-04-20T09:40:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HP_Reconciliation_Task_Serach -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@7d9d1a19]" name="Tear_Down" is-config="true" duration-ms="636" started-at="2021-04-19T18:59:51Z" finished-at="2021-04-19T18:59:52Z">
+        </test-method> <!-- Task_G_Search -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@7d9d1a19]" name="Tear_Down" is-config="true" duration-ms="882" started-at="2021-04-20T09:40:19Z" finished-at="2021-04-20T09:40:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=HP_Reconciliation_Task_Serach status=SUCCESS method=PEGA_Search.HP_Reconciliation_Task_Serach()[pri:13, instance:HFIC.Testcases.com.PEGA_Search@7d9d1a19] output={null}]]]>
+                <![CDATA[[TestResult name=Task_G_Search status=SUCCESS method=PEGA_Search.Task_G_Search()[pri:6, instance:HFIC.Testcases.com.PEGA_Search@7d9d1a19] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@7d9d1a19]" name="Application_Exit" is-config="true" duration-ms="2179" started-at="2021-04-19T18:59:52Z" finished-at="2021-04-19T18:59:54Z">
+        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@7d9d1a19]" name="Application_Exit" is-config="true" duration-ms="3607" started-at="2021-04-20T09:40:20Z" finished-at="2021-04-20T09:40:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Exit -->

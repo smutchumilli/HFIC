@@ -559,17 +559,40 @@ public class Search extends Baseclass {
 		TaskSearch();
 		validate2();
 	}
+//Group related method and elements
+		@FindBy(xpath="//input[@id='65bee56e']//following::input[1]") WebElement Groupid_grp;
+		@FindBy(xpath="//input[@id='65bee56e']//following::input[2]") WebElement appid_grp;
+		@FindBy(xpath="//input[@id='65bee56e']//following::input[3]") WebElement apname_grp;
+	public void Groupid_grp(String grpid) {
+		Groupid_grp.sendKeys(grpid);
+	}
+	public void appid_grp(String appid) {
+		appid_grp.sendKeys(appid);
+	}
+	public void apname_grp(String appname) {
+		apname_grp.sendKeys(appname);
+	}
 
+
+	
 	public void HFIC_GTask_Search(String grp, String appid, String appname)
 			throws InterruptedException, IOException, AWTException {
 		Search_Link();
 		HFIC_TASK_SEARCH();
 		Task_Search_Type(3);
-		// Task_CR_id(task);
-		Grp_id_task(grp);
-		Application_ID_Task(appid);
-		Appname_ID_Task(appname);
-		// Thread.sleep(800);
+		//Task_CR_id(task);
+		Groupid_grp(grp);
+		Thread.sleep(800);
+
+		appid_grp(appid);
+		Thread.sleep(800);
+		appid_grp(appid);
+		Thread.sleep(800);
+
+		apname_grp(appname);
+		Thread.sleep(800);
+		apname_grp(appname);
+
 		TaskSearch();
 		validate1();
 	}

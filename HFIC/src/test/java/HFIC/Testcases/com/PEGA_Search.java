@@ -87,14 +87,14 @@ public class PEGA_Search extends Baseclass {
 
 			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		}
-	}
+	}	
 //program not ran
 	@Test(priority = 6)
 	public void Task_G_Search() throws IOException, InterruptedException, AWTException {
 		test = extent.createTest("HFIC Group Task Search");
 		Search Search = PageFactory.initElements(driver, Search.class);
 		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
-		for (int i = 13; i <= 11; i++) {
+		for (int i = 12; i <= 15; i++) {
 			Search.HFIC_GTask_Search(data.getstringdata("Task", i, 0), data.getstringdata("Task", i, 1),
 					data.getstringdata("Task", i, 2));
 			test.info(data.getstringdata("Task", i, 3));
@@ -103,7 +103,7 @@ public class PEGA_Search extends Baseclass {
 		}
 	}
 //observation sent
-	@Test(priority = 7)
+@Test(priority = 7)
 	public void Task_Payment_Exception_Search() throws IOException, InterruptedException, AWTException {
 		test = extent.createTest("HFIC Payment Exception Task Search");
 		Search Search = PageFactory.initElements(driver, Search.class);
