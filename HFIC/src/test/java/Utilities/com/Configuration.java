@@ -34,5 +34,9 @@ public class Configuration {
 		return pro.getProperty("PEGAURL");
 
 	}
+	public String getPEGADURL() {
+		return pro.getProperty("PEGADURL");
+
+	}
 
 }
