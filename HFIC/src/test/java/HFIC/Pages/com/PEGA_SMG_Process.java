@@ -71,7 +71,9 @@ public class PEGA_SMG_Process extends Baseclass {
 	@FindBy(linkText="Next") WebElement Next1;
 
 
-	
+	 @FindBy(xpath="//*[text()='PaymentAuthorizationForm']//following::input[5]") WebElement PAF_Doc_Approval;
+	 @FindBy(xpath="//*[text()='NYS45']//following::input[5]") WebElement NYS45_Doc_Approval;
+	 @FindBy(xpath="//*[text()='GroupApplication']//following::input[5]") WebElement Grpappl_Doc_Approval;
 	
 
 
@@ -119,38 +121,47 @@ public void HFIC_Superuser_login(String uid,String pwd,String app_id) throws Int
 	 review_mship.click();
 	 Thread.sleep(6000);
 ///
+	
 	 
 	 GRPAPPL.click();
-	 reviewed.click();
+	 Thread.sleep(3000);
+
+	 Grpappl_Doc_Approval.click();
 		 Thread.sleep(3000);
 
 		NYS45.click();
-		reviewed.click();
+		 Thread.sleep(3000);
+
+		NYS45_Doc_Approval.click();
 		 Thread.sleep(3000);
 
 		PAF.click();
-		reviewed.click();
+		 Thread.sleep(3000);
+
+		PAF_Doc_Approval.click();
 	
 	 
 	 row1.click();
 	 confirm.click();
+	 Thread.sleep(2000);
+
 	 mem_listing.click();
 	 
-	 Thread.sleep(3000);
+	 Thread.sleep(4000);
 
 	
 	 row2.click();
 	 confirm.click();
-	 Thread.sleep(1000);
+	 Thread.sleep(2000);
 
 	 Next1.click();
-	 Thread.sleep(1000);
+	 Thread.sleep(2000);
 
 	 confirm.click();
-	 Thread.sleep(1000);
+	 Thread.sleep(2000);
 
 	 mem_listing.click();
-	 Thread.sleep(1000);
+	 Thread.sleep(2000);
 
 	 row3.click();
 	 Thread.sleep(1000);
@@ -218,23 +229,26 @@ public void HFIC_Superuser_login(String uid,String pwd,String app_id) throws Int
 	 Thread.sleep(3000);
 
 	 Final_Review.click();
+	 Thread.sleep(3000);
+
+	 confirm.click();
+	 Thread.sleep(3000);
+
+	 SUbmit.click();
 }
+
+@FindBy(name="FinalReviewActionButtons_pyWorkPage_1") WebElement SUbmit;
 
 
 @FindBy(xpath="//*[text()='GO TO STEP:3 REVIEW PAYMENT']") WebElement Review_PAYMENT;
-
 @FindBy(xpath="//*[text()='GO TO STEP 4: FINAL REVIEW']") WebElement Final_Review;
-	
+
 @FindBy(xpath="//*[text()='NYS45']") WebElement NYS45;
-@FindBy(xpath="//input[@id='bfed98c1']") WebElement NYS45_Approve;
-
 @FindBy(xpath="//*[text()='GroupApplication']") WebElement GRPAPPL;
-@FindBy(xpath="//input[@id='76f2907e']") WebElement GRPAPPL_Approve;
-
 @FindBy(xpath="//*[text()='PaymentAuthorizationForm']") WebElement PAF;
-@FindBy(xpath="//input[@id='4e379d6b']") WebElement PAF_Approve;
 
-@FindBy(linkText="Reviewed?") WebElement reviewed;
+
+
 
 
 	

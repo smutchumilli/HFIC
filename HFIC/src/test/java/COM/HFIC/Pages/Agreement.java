@@ -1,5 +1,11 @@
 package COM.HFIC.Pages;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -51,8 +57,27 @@ public class Agreement {
 		Thread.sleep(5000);
 		Submit_Payment.click();
 		Thread.sleep(5000);
+		String APPL_NUM=Application_number.getText().substring(16, 23);
 		
-System.out.println(Application_number.getText());		
+
+		
+	
+
+		FileInputStream fis = new FileInputStream("D:\\Test.xlsx");
+		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+		XSSFSheet sheet = workbook.getSheet("Pega");
+		
+          Row row = sheet.createRow(1);
+		Cell cell = row.createCell(1);
+		//Now we need to find out the type of the value we want to enter. 
+                //If it is a string, we need to set the cell type as string 
+                //if it is numeric, we need to set the cell type as number
+		cell.setCellType(cell.CELL_TYPE_STRING);
+		cell.setCellValue("SoftwareTestingMaterial.com");
+		FileOutputStream fos = new FileOutputStream("D:\\Test.xlsx");
+		workbook.write(fos);
+		fos.close();
+		System.out.println("END OF WRITING DATA IN EXCEL");
 	}
 	
 
