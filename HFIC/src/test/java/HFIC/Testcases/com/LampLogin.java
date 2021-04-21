@@ -83,7 +83,7 @@ public class LampLogin extends Baseclass  {
 	}
 		
 	@Test(priority=12)
-	public void Agreement1() throws InterruptedException  {
+	public void Agreement1() throws InterruptedException, IOException  {
 		Agreement Agreement=PageFactory.initElements(driver, Agreement.class);
 		Agreement.Agreement1(data.getstringdata("Login",20,0), data.getstringdata("Login",21,0), data.getstringdata("Login",22,0), data.getstringdata("Login",23,0), data.getstringdata("Login",24,0),  data.getstringdata("Login",25,0), data.getstringdata("Login",26,0));
 	}

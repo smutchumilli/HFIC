@@ -2,6 +2,8 @@ package Utilities.com;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -11,7 +13,7 @@ public class TestDataProvider {
 
 	public TestDataProvider() {
 
-		File Src = new File("./TestData/TestDATA.xlsx");
+		File Src = new File("./TestData/TestData.xlsx");
 		try {
 			FileInputStream fis = new FileInputStream(Src);
 			wb = new XSSFWorkbook(fis);
@@ -35,5 +37,14 @@ public class TestDataProvider {
 
 
 	}
+	public void writestringdata(String sheetname, int row, int col,String Value) throws IOException {
+		String Src1 = "C:\\Users\\smutchumilli\\git\\HFIC\\HFIC\\TestData\\TestData.xlsx";
+		wb.getSheet(sheetname).getRow(row).createCell(col).setCellValue(Value);
+		FileOutputStream fos = new FileOutputStream(Src1);
+		wb.write(fos);
+		fos.close();
+
+	}
+	
 
 }
