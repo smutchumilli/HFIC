@@ -118,7 +118,18 @@ public void HFIC_Superuser_login(String uid,String pwd,String app_id) throws Int
 
 	 review_mship.click();
 	 Thread.sleep(6000);
+///
+	 
+	 GRPAPPL.click();
+	 reviewed.click();
+		 Thread.sleep(3000);
 
+		NYS45.click();
+		reviewed.click();
+		 Thread.sleep(3000);
+
+		PAF.click();
+		reviewed.click();
 	
 	 
 	 row1.click();
@@ -214,34 +225,17 @@ public void HFIC_Superuser_login(String uid,String pwd,String app_id) throws Int
 
 @FindBy(xpath="//*[text()='GO TO STEP 4: FINAL REVIEW']") WebElement Final_Review;
 	
-@FindBy(xpath="//h2[@id='headerlabel1043']") WebElement NYS45;
-@FindBy(xpath="//input[@id='5c71a5e8']") WebElement NYS45_Approve;
+@FindBy(xpath="//*[text()='NYS45']") WebElement NYS45;
+@FindBy(xpath="//input[@id='bfed98c1']") WebElement NYS45_Approve;
 
-@FindBy(xpath="//h2[@id='headerlabel4359']") WebElement GRPAPPL;
-@FindBy(xpath="//input[@id='956ead57']") WebElement GRPAPPL_Approve;
+@FindBy(xpath="//*[text()='GroupApplication']") WebElement GRPAPPL;
+@FindBy(xpath="//input[@id='76f2907e']") WebElement GRPAPPL_Approve;
 
-@FindBy(xpath="headerlabel2532") WebElement PAF;
-@FindBy(xpath="//input[@id='64b4a8fd']") WebElement PAF_Approve;
+@FindBy(xpath="//*[text()='PaymentAuthorizationForm']") WebElement PAF;
+@FindBy(xpath="//input[@id='4e379d6b']") WebElement PAF_Approve;
+
+@FindBy(linkText="Reviewed?") WebElement reviewed;
 
 
-public void Documents() throws InterruptedException {
-	 Thread.sleep(6000);
-	 driver.switchTo().frame(2);
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", GRPAPPL);
-
-	GRPAPPL.click();
-	GRPAPPL_Approve.click();
-	 Thread.sleep(3000);
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", NYS45);
-
-	NYS45.click();
-	NYS45_Approve.click();
-	 Thread.sleep(3000);
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", PAF);
-
-	PAF.click();
-	PAF_Approve.click();
-	
-}
 	
 }

@@ -8,48 +8,52 @@
       <![CDATA[Application up and running as expected]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="114419" started-at="2021-04-20T21:29:31Z" finished-at="2021-04-20T21:31:25Z">
+  <suite name="Default suite" duration-ms="81133" started-at="2021-04-21T01:55:34Z" finished-at="2021-04-21T01:56:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="114419" started-at="2021-04-20T21:29:31Z" finished-at="2021-04-20T21:31:25Z">
+    <test name="Default test" duration-ms="81133" started-at="2021-04-21T01:55:34Z" finished-at="2021-04-21T01:56:55Z">
       <class name="HFIC.Testcases.com.PEGA_Application_process">
-        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.PEGA_Application_process@7d9d1a19]" name="Start_up" is-config="true" duration-ms="1562" started-at="2021-04-20T17:29:29Z" finished-at="2021-04-20T17:29:31Z">
+        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.PEGA_Application_process@7d9d1a19]" name="Start_up" is-config="true" duration-ms="1170" started-at="2021-04-20T21:55:32Z" finished-at="2021-04-20T21:55:34Z">
           <reporter-output>
             <line>
               <![CDATA[Project set up done]]>
             </line>
           </reporter-output>
         </test-method> <!-- Start_up -->
-        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.PEGA_Application_process@7d9d1a19]" name="Application_Start" is-config="true" duration-ms="3008" started-at="2021-04-20T17:29:31Z" finished-at="2021-04-20T17:29:34Z">
+        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.PEGA_Application_process@7d9d1a19]" name="Application_Start" is-config="true" duration-ms="4472" started-at="2021-04-20T21:55:34Z" finished-at="2021-04-20T21:55:38Z">
           <reporter-output>
             <line>
               <![CDATA[Application up and running as expected]]>
             </line>
           </reporter-output>
         </test-method> <!-- Application_Start -->
-        <test-method status="FAIL" signature="PEGA_App_process()[pri:0, instance:HFIC.Testcases.com.PEGA_Application_process@7d9d1a19]" name="PEGA_App_process" duration-ms="111051" started-at="2021-04-20T17:29:34Z" finished-at="2021-04-20T17:31:25Z">
-          <exception class="org.openqa.selenium.NoSuchFrameException">
+        <test-method status="FAIL" signature="PEGA_App_process()[pri:0, instance:HFIC.Testcases.com.PEGA_Application_process@7d9d1a19]" name="PEGA_App_process" duration-ms="76325" started-at="2021-04-20T21:55:38Z" finished-at="2021-04-20T21:56:54Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such frame
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Reviewed?"}
   (Session info: chrome=89.0.4389.128)
   (Driver info: chromedriver=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 14 milliseconds
+Command duration or timeout: 25.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
 System info: host: 'SVFL-XAAD-043', ip: '10.200.189.254', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57179}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\SMUTCH~1\AppData\Local\Temp\11\scoped_dir22236_850216425}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=89.0.4389.128, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
-Session ID: 89aa2f471643266d5662892aa59c6e66]]>
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54741}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\SMUTCH~1\AppData\Local\Temp\11\scoped_dir37672_893258328}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=89.0.4389.128, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 13576779f5998c9ce39957e3a2d0b42a
+*** Element info: {Using=link text, value=Reviewed?}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchFrameException: no such frame
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Reviewed?"}
   (Session info: chrome=89.0.4389.128)
   (Driver info: chromedriver=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 14 milliseconds
+Command duration or timeout: 25.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
 System info: host: 'SVFL-XAAD-043', ip: '10.200.189.254', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57179}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\SMUTCH~1\AppData\Local\Temp\11\scoped_dir22236_850216425}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=89.0.4389.128, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
-Session ID: 89aa2f471643266d5662892aa59c6e66
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54741}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\SMUTCH~1\AppData\Local\Temp\11\scoped_dir37672_893258328}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=89.0.4389.128, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 13576779f5998c9ce39957e3a2d0b42a
+*** Element info: {Using=link text, value=Reviewed?}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -57,9 +61,15 @@ Session ID: 89aa2f471643266d5662892aa59c6e66
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:984)
-	at HFIC.Pages.com.PEGA_SMG_Process.Documents(PEGA_SMG_Process.java:229)
-	at HFIC.Testcases.com.PEGA_Application_process.PEGA_App_process(PEGA_Application_process.java:22)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at HFIC.Pages.com.PEGA_SMG_Process.HFIC_Superuser_login(PEGA_SMG_Process.java:124)
+	at HFIC.Testcases.com.PEGA_Application_process.PEGA_App_process(PEGA_Application_process.java:19)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -87,11 +97,11 @@ Session ID: 89aa2f471643266d5662892aa59c6e66
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PEGA_App_process -->
-        <test-method status="FAIL" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Application_process@7d9d1a19]" name="Tear_Down" is-config="true" duration-ms="0" started-at="2021-04-20T17:31:25Z" finished-at="2021-04-20T17:31:25Z">
+        <test-method status="FAIL" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Application_process@7d9d1a19]" name="Tear_Down" is-config="true" duration-ms="0" started-at="2021-04-20T21:56:54Z" finished-at="2021-04-20T21:56:54Z">
           <params>
             <param index="0">
               <value>
@@ -136,7 +146,7 @@ Session ID: 89aa2f471643266d5662892aa59c6e66
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="SKIP" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.PEGA_Application_process@7d9d1a19]" name="Application_Exit" is-config="true" duration-ms="0" started-at="2021-04-20T17:31:25Z" finished-at="2021-04-20T17:31:25Z">
+        <test-method status="SKIP" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.PEGA_Application_process@7d9d1a19]" name="Application_Exit" is-config="true" duration-ms="0" started-at="2021-04-20T21:56:55Z" finished-at="2021-04-20T21:56:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Exit -->

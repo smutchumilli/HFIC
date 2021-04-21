@@ -19,7 +19,6 @@ public void PEGA_App_process() throws InterruptedException
 	PEGA_SMG_Process.HFIC_Superuser_login(data.getstringdata("Pega", 1, 0),
 			data.getstringdata("Pega", 1, 1), 
 			data.getstringdata("Pega", 1, 2));
-	PEGA_SMG_Process.Documents();
 
 }
 }
