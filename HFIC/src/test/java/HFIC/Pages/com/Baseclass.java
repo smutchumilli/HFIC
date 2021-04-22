@@ -12,6 +12,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -46,9 +47,8 @@ public class Baseclass {
 	@BeforeClass
 	
 	public void Application_Start() {
-
-		driver = Browserfactory.Start_Application(driver, config.getPEGAURL(), config.getBrowser());
-//		driver = Browserfactory.Start_Application(driver, config.getHFICURL(), config.getBrowser());
+//		driver = Browserfactory.Start_Application(driver, config.getPEGAURL(), config.getBrowser());
+		driver = Browserfactory.Start_Application(driver, config.getHFICURL(), config.getBrowser());
 //		driver = Browserfactory.Start_Application(driver, config.getPEGADURL(), config.getBrowser());
 
 		Reporter.log("Application up and running as expected", true);
@@ -73,11 +73,7 @@ public class Baseclass {
 			test.skip(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 
 		}
-//		if (Result.getStatus() == ITestResult.STARTED) {
-//
-//			test.info(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
-//
-//		}
+
 		 extent.flush();
 
 	}

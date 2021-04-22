@@ -34,17 +34,11 @@ public class TestDataProvider {
 	}
 	public double getintdata(int sheetindex, int row, int col) {
 		return wb.getSheetAt(sheetindex).getRow(row).getCell(col).getNumericCellValue();
-
-
 	}
-	public void writestringdata(String sheetname, int row, int col,String Value) throws IOException {
-		String Src1 = "C:\\Users\\smutchumilli\\git\\HFIC\\HFIC\\TestData\\TestData.xlsx";
-		wb.getSheet(sheetname).getRow(row).createCell(col).setCellValue(Value);
-		FileOutputStream fos = new FileOutputStream(Src1);
-		wb.write(fos);
-		fos.close();
 
-	}
+
+
+	
 	
 
 }

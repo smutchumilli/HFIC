@@ -7,13 +7,13 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.testng.annotations.Test;
 public class Uploaddocument {
 	public WebDriver driver;
 	
@@ -27,78 +27,54 @@ public class Uploaddocument {
 	@FindBy(xpath="//*[@id='nysFileType']") WebElement nys45;
 	@FindBy(css="button.hf-continue-to-browse-btn") WebElement nyscnt;
 	@FindBy(xpath="//*[@class='hf-go-back-btn']//following::a[2]") WebElement Continue;
+//
+	@FindBy(xpath="//input[@type='file']") WebElement File;
+	
 
 	
+
 
 	public void Document_Upload() throws InterruptedException, AWTException{
-	
-		try {
-			Robot robot= new Robot();
-			Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-			StringSelection stringSelection = new StringSelection("Q:\\Smutchumilli\\upload.docx");
-			clipboard.setContents(stringSelection, null);
-			JavascriptExecutor js= (JavascriptExecutor)driver;
-			Thread.sleep(5000);
-			js.executeScript("scroll(0, 250);");
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+		Thread.sleep(5000);
+		js.executeScript("scroll(0, 250);");
+		Thread.sleep(500);
+	    driver.findElement(By.xpath("//input[@type='file']")).sendKeys("Q:\\Smutchumilli\\upload.docx");
+		Thread.sleep(5000);
+		js.executeScript("scroll(0, 500);");
+		Thread.sleep(3000);
+		file2.click();
+		Thread.sleep(2000);
+		nys45.click();
+		Thread.sleep(1000);
+	  	nyscnt.click();
+		Thread.sleep(4000);
+		
+		Robot rb= new Robot();
+		rb.keyPress(KeyEvent.VK_TAB);
+		rb.keyRelease(KeyEvent.VK_TAB);
+		
+		rb.keyPress(KeyEvent.VK_TAB);
+		rb.keyRelease(KeyEvent.VK_TAB);
+		
+		rb.keyPress(KeyEvent.VK_TAB);
+		rb.keyRelease(KeyEvent.VK_TAB);
+		
+		rb.keyPress(KeyEvent.VK_ENTER);
+		rb.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(4000);
 
-//			js.executeScript("arguments[0].scrollIntoView(true);",file1);
-			Thread.sleep(4000);
-			file1.click();
-			Thread.sleep(4000);
-			//robot.mouseMove(5, 10);
-			robot.keyPress(KeyEvent.VK_CONTROL);
-			robot.keyPress(KeyEvent.VK_V);
-			robot.keyRelease(KeyEvent.VK_V);
-			robot.keyRelease(KeyEvent.VK_CONTROL);
-			Thread.sleep(3000);
-			robot.keyPress(KeyEvent.VK_ENTER);
-			robot.keyRelease(KeyEvent.VK_ENTER);
-			Thread.sleep(4000);
-			
-			//file 2
-			js.executeScript("scroll(0, 500);");
-			Thread.sleep(5000);
-//			js.executeScript("arguments[0].scrollIntoView(true);",file2);
-			file2.click();
-			Thread.sleep(5000);
-			nys45.click();
-			Thread.sleep(5000);
-			nyscnt.click();
-			Thread.sleep(2000);
-			//robot.mouseMove(5, 10);
-			robot.keyPress(KeyEvent.VK_CONTROL);
-			robot.keyPress(KeyEvent.VK_V);
-			robot.keyRelease(KeyEvent.VK_V);
-			robot.keyRelease(KeyEvent.VK_CONTROL);
-			Thread.sleep(2000);
-			robot.keyPress(KeyEvent.VK_ENTER);
-			robot.keyRelease(KeyEvent.VK_ENTER);
-			Thread.sleep(5000);
+	    driver.findElement(By.xpath("//input[@name='file1']")).sendKeys("Q:\\Smutchumilli\\upload.docx");
+	    Thread.sleep(2000);
+	    js.executeScript("scroll(0, 650);");
+	    Thread.sleep(5000);
 
-//File3:	
-			
-			js.executeScript("scroll(0, 630);");
-		   Thread.sleep(5000);
-		   file3.click();
-			Thread.sleep(3000);
-			robot.keyPress(KeyEvent.VK_CONTROL);
-			robot.keyPress(KeyEvent.VK_V);
-			robot.keyRelease(KeyEvent.VK_V);
-			robot.keyRelease(KeyEvent.VK_CONTROL);
-			Thread.sleep(5000);
-			robot.keyPress(KeyEvent.VK_ENTER);
-			robot.keyRelease(KeyEvent.VK_ENTER);	
-			Thread.sleep(3200);
-			} catch (HeadlessException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-				e.getCause();
-				e.getMessage();
-			}
-	      ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", Continue);
-	      Thread.sleep(4000);
-		Continue.click();
-	      Thread.sleep(3000);
+	    driver.findElement(By.xpath("//input[@name='file2']")).sendKeys("Q:\\Smutchumilli\\upload.docx");
+	   	Thread.sleep(3000);
+	   ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", Continue);
+	     Thread.sleep(3000);
+	     Continue.click();
+	     Thread.sleep(3000);
 
 }
 	

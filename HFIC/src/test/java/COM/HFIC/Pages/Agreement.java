@@ -2,6 +2,7 @@ package COM.HFIC.Pages;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -51,7 +52,7 @@ public class Agreement extends Baseclass {
 		billing_address.sendKeys(baddr);
 		city.sendKeys(city1);
 		zip.sendKeys(zip1);
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		js.executeScript("arguments[0].click();", Review_Payment);
 		Thread.sleep(5000);
 		Submit_Payment.click();
@@ -59,6 +60,9 @@ public class Agreement extends Baseclass {
 		String submission=Application_number.getText();
 		
 		System.out.println(submission.substring(16, 23));	
+		
+		driver.findElement(By.xpath("//*[text()='Log Out']")).click();
+		Thread.sleep(5000);
 		}
 	}
 	

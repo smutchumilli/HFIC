@@ -26,56 +26,27 @@ public class AddEmployee {
 	@FindBy(className="hf-application-roster-continue-btn") WebElement cnt;
 	@FindBy(id="premiumPopupCloseBtn") WebElement premiumPopupCloseBtn;
 	@FindBy(xpath="//*[@class='hf-go-back-btn']//following::a[1]") WebElement link;
+	@FindBy(xpath="//input[@type='file']") WebElement file;
 
-	//*[@class='hf-go-back-btn']//following::a[1]
+	
+
 	public void Add_Emp() throws InterruptedException, AWTException{
-		try {
-			
-			Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-			StringSelection stringSelection = new StringSelection("C:\\Users\\smutchumilli\\git\\HFIC\\HFIC\\TestData\\Emp.csv");
-		
-			
-			clipboard.setContents(stringSelection, null);
-			
-			JavascriptExecutor js=(JavascriptExecutor)driver; 
-			js.executeScript("scroll(0,400)");
-//		    js.executeScript("window.scrollTo(1000,1500);");
-//		    Actions act= new Actions(driver);
-//			act.moveToElement(dragdropzone).perform();
-			Robot robot= new Robot();
-			
-			
-//			Thread.sleep(5000);
-			//*[contains(text(),'Download Spreadsheet Template')]//following::label[1]
+		JavascriptExecutor js=(JavascriptExecutor)driver; 
+		js.executeScript("scroll(0,400)");
+		Thread.sleep(3000);
+		file.sendKeys("C:\\Users\\smutchumilli\\git\\HFIC\\HFIC\\TestData\\Emp.csv");
 
-			dragdropzone.click();
-			Thread.sleep(5000);
-			//robot.mouseMove(5, 10);
-			robot.keyPress(KeyEvent.VK_CONTROL);
-			robot.keyPress(KeyEvent.VK_V);
-			robot.keyRelease(KeyEvent.VK_V);
-			robot.keyRelease(KeyEvent.VK_CONTROL);
-			//Thread.sleep(5000);
-			robot.keyPress(KeyEvent.VK_ENTER);
-			robot.keyRelease(KeyEvent.VK_ENTER);
-			Thread.sleep(5000);
-
+			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView(true);",cnt);
-			Thread.sleep(5000);
-
+			Thread.sleep(3000);
 			cnt.click();
-			Thread.sleep(5000);
-
+			Thread.sleep(3000);
 			js.executeScript("arguments[0].click();", premiumPopupCloseBtn);
 
-			} catch (HeadlessException e) {
-			e.getCause();
-			e.printStackTrace();
-			e.getMessage();
-		}
-		Thread.sleep(2000);
+			} 
+		
 
 
-	}
+	
 
 }

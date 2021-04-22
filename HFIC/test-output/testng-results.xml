@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="13" passed="11">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
     <line>
       <![CDATA[Project set up done]]>
@@ -8,325 +8,75 @@
       <![CDATA[Application up and running as expected]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="884758" started-at="2021-04-21T19:34:07Z" finished-at="2021-04-21T19:48:52Z">
+  <suite name="Default suite" duration-ms="351744" started-at="2021-04-22T21:35:03Z" finished-at="2021-04-22T21:40:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="884758" started-at="2021-04-21T19:34:07Z" finished-at="2021-04-21T19:48:52Z">
-      <class name="HFIC.Testcases.com.PEGA_Search">
-        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Start_up" is-config="true" duration-ms="1368" started-at="2021-04-21T15:34:06Z" finished-at="2021-04-21T15:34:07Z">
+    <test name="Default test" duration-ms="351744" started-at="2021-04-22T21:35:03Z" finished-at="2021-04-22T21:40:54Z">
+      <class name="HFIC.Testcases.com.LampLogin">
+        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.LampLogin@2133c8f8]" name="Start_up" is-config="true" duration-ms="1524" started-at="2021-04-22T17:35:01Z" finished-at="2021-04-22T17:35:03Z">
           <reporter-output>
             <line>
               <![CDATA[Project set up done]]>
             </line>
           </reporter-output>
         </test-method> <!-- Start_up -->
-        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Application_Start" is-config="true" duration-ms="7936" started-at="2021-04-21T15:34:07Z" finished-at="2021-04-21T15:34:15Z">
+        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.LampLogin@2133c8f8]" name="Application_Start" is-config="true" duration-ms="5898" started-at="2021-04-22T17:35:03Z" finished-at="2021-04-22T17:35:09Z">
           <reporter-output>
             <line>
               <![CDATA[Application up and running as expected]]>
             </line>
           </reporter-output>
         </test-method> <!-- Application_Start -->
-        <test-method status="PASS" signature="HFIC_Initial_Application_Search()[pri:1, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="HFIC_Initial_Application_Search" duration-ms="78020" started-at="2021-04-21T15:34:15Z" finished-at="2021-04-21T15:35:33Z">
+        <test-method status="PASS" signature="Lamp_SMG_Application_Submissionn()[pri:0, instance:HFIC.Testcases.com.LampLogin@2133c8f8]" name="Lamp_SMG_Application_Submissionn" duration-ms="114249" started-at="2021-04-22T17:35:09Z" finished-at="2021-04-22T17:37:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HFIC_Initial_Application_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Tear_Down" is-config="true" duration-ms="763" started-at="2021-04-21T15:35:33Z" finished-at="2021-04-21T15:35:34Z">
+        </test-method> <!-- Lamp_SMG_Application_Submissionn -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@2133c8f8]" name="Tear_Down" is-config="true" duration-ms="748" started-at="2021-04-22T17:37:03Z" finished-at="2021-04-22T17:37:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=HFIC_Initial_Application_Search status=SUCCESS method=PEGA_Search.HFIC_Initial_Application_Search()[pri:1, instance:HFIC.Testcases.com.PEGA_Search@43a25848] output={null}]]]>
+                <![CDATA[[TestResult name=Lamp_SMG_Application_Submissionn status=SUCCESS method=LampLogin.Lamp_SMG_Application_Submissionn()[pri:0, instance:HFIC.Testcases.com.LampLogin@2133c8f8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="HFIC_Maintenance_Application_Search()[pri:2, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="HFIC_Maintenance_Application_Search" duration-ms="76691" started-at="2021-04-21T15:35:34Z" finished-at="2021-04-21T15:36:51Z">
+        <test-method status="PASS" signature="Lamp_SMG_Application_Submissionn()[pri:0, instance:HFIC.Testcases.com.LampLogin@2133c8f8]" name="Lamp_SMG_Application_Submissionn" duration-ms="112428" started-at="2021-04-22T17:37:04Z" finished-at="2021-04-22T17:38:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HFIC_Maintenance_Application_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Tear_Down" is-config="true" duration-ms="366" started-at="2021-04-21T15:36:51Z" finished-at="2021-04-21T15:36:51Z">
+        </test-method> <!-- Lamp_SMG_Application_Submissionn -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@2133c8f8]" name="Tear_Down" is-config="true" duration-ms="333" started-at="2021-04-22T17:38:56Z" finished-at="2021-04-22T17:38:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=HFIC_Maintenance_Application_Search status=SUCCESS method=PEGA_Search.HFIC_Maintenance_Application_Search()[pri:2, instance:HFIC.Testcases.com.PEGA_Search@43a25848] output={null}]]]>
+                <![CDATA[[TestResult name=Lamp_SMG_Application_Submissionn status=SUCCESS method=LampLogin.Lamp_SMG_Application_Submissionn()[pri:0, instance:HFIC.Testcases.com.LampLogin@2133c8f8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="HFIC_Renewal_Application_Search()[pri:3, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="HFIC_Renewal_Application_Search" duration-ms="76878" started-at="2021-04-21T15:36:51Z" finished-at="2021-04-21T15:38:08Z">
+        <test-method status="PASS" signature="Lamp_SMG_Application_Submissionn()[pri:0, instance:HFIC.Testcases.com.LampLogin@2133c8f8]" name="Lamp_SMG_Application_Submissionn" duration-ms="115211" started-at="2021-04-22T17:38:56Z" finished-at="2021-04-22T17:40:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HFIC_Renewal_Application_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Tear_Down" is-config="true" duration-ms="310" started-at="2021-04-21T15:38:08Z" finished-at="2021-04-21T15:38:08Z">
+        </test-method> <!-- Lamp_SMG_Application_Submissionn -->
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@2133c8f8]" name="Tear_Down" is-config="true" duration-ms="324" started-at="2021-04-22T17:40:52Z" finished-at="2021-04-22T17:40:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=HFIC_Renewal_Application_Search status=SUCCESS method=PEGA_Search.HFIC_Renewal_Application_Search()[pri:3, instance:HFIC.Testcases.com.PEGA_Search@43a25848] output={null}]]]>
+                <![CDATA[[TestResult name=Lamp_SMG_Application_Submissionn status=SUCCESS method=LampLogin.Lamp_SMG_Application_Submissionn()[pri:0, instance:HFIC.Testcases.com.LampLogin@2133c8f8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="FAIL" signature="Task_B_Search()[pri:4, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Task_B_Search" duration-ms="8983" started-at="2021-04-21T15:38:08Z" finished-at="2021-04-21T15:38:17Z">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=89.0.4389.128)
-  (Driver info: chromedriver=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 56 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'SVFL-XAAD-038', ip: '10.200.188.116', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:60156}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\SMUTCH~1\AppData\Local\Temp\15\scoped_dir46172_1518683293}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=89.0.4389.128, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
-Session ID: 8ce40c3a7886f2d16b7aead6bf591a5d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=89.0.4389.128)
-  (Driver info: chromedriver=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 56 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'SVFL-XAAD-038', ip: '10.200.188.116', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:60156}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\SMUTCH~1\AppData\Local\Temp\15\scoped_dir46172_1518683293}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=89.0.4389.128, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
-Session ID: 8ce40c3a7886f2d16b7aead6bf591a5d
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:122)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
-	at HFIC.Pages.com.Search.Group_id_task_billing(Search.java:521)
-	at HFIC.Pages.com.Search.HFIC_BTask_Search(Search.java:536)
-	at HFIC.Testcases.com.PEGA_Search.Task_B_Search(PEGA_Search.java:70)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Task_B_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Tear_Down" is-config="true" duration-ms="344" started-at="2021-04-21T15:38:17Z" finished-at="2021-04-21T15:38:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Task_B_Search status=FAILURE method=PEGA_Search.Task_B_Search()[pri:4, instance:HFIC.Testcases.com.PEGA_Search@43a25848] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Task_M_Search()[pri:5, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Task_M_Search" duration-ms="76839" started-at="2021-04-21T15:38:18Z" finished-at="2021-04-21T15:39:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Task_M_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Tear_Down" is-config="true" duration-ms="295" started-at="2021-04-21T15:39:34Z" finished-at="2021-04-21T15:39:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Task_M_Search status=SUCCESS method=PEGA_Search.Task_M_Search()[pri:5, instance:HFIC.Testcases.com.PEGA_Search@43a25848] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Task_G_Search()[pri:6, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Task_G_Search" duration-ms="78311" started-at="2021-04-21T15:39:35Z" finished-at="2021-04-21T15:40:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Task_G_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Tear_Down" is-config="true" duration-ms="307" started-at="2021-04-21T15:40:53Z" finished-at="2021-04-21T15:40:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Task_G_Search status=SUCCESS method=PEGA_Search.Task_G_Search()[pri:6, instance:HFIC.Testcases.com.PEGA_Search@43a25848] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method status="FAIL" signature="Task_Payment_Exception_Search()[pri:7, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Task_Payment_Exception_Search" duration-ms="8459" started-at="2021-04-21T15:40:53Z" finished-at="2021-04-21T15:41:02Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at Utilities.com.TestDataProvider.getstringdata(TestDataProvider.java:27)
-	at HFIC.Testcases.com.PEGA_Search.Task_Payment_Exception_Search(PEGA_Search.java:114)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Task_Payment_Exception_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Tear_Down" is-config="true" duration-ms="294" started-at="2021-04-21T15:41:02Z" finished-at="2021-04-21T15:41:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Task_Payment_Exception_Search status=FAILURE method=PEGA_Search.Task_Payment_Exception_Search()[pri:7, instance:HFIC.Testcases.com.PEGA_Search@43a25848] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Task_COBTask_Search()[pri:8, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Task_COBTask_Search" duration-ms="82482" started-at="2021-04-21T15:41:02Z" finished-at="2021-04-21T15:42:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Task_COBTask_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Tear_Down" is-config="true" duration-ms="326" started-at="2021-04-21T15:42:25Z" finished-at="2021-04-21T15:42:25Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Task_COBTask_Search status=SUCCESS method=PEGA_Search.Task_COBTask_Search()[pri:8, instance:HFIC.Testcases.com.PEGA_Search@43a25848] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Task_QLETrack_Search()[pri:9, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Task_QLETrack_Search" duration-ms="82917" started-at="2021-04-21T15:42:25Z" finished-at="2021-04-21T15:43:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Task_QLETrack_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Tear_Down" is-config="true" duration-ms="308" started-at="2021-04-21T15:43:48Z" finished-at="2021-04-21T15:43:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Task_QLETrack_Search status=SUCCESS method=PEGA_Search.Task_QLETrack_Search()[pri:9, instance:HFIC.Testcases.com.PEGA_Search@43a25848] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Task_Presumptive_Search()[pri:10, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Task_Presumptive_Search" duration-ms="58575" started-at="2021-04-21T15:43:48Z" finished-at="2021-04-21T15:44:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Task_Presumptive_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Tear_Down" is-config="true" duration-ms="295" started-at="2021-04-21T15:44:47Z" finished-at="2021-04-21T15:44:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Task_Presumptive_Search status=SUCCESS method=PEGA_Search.Task_Presumptive_Search()[pri:10, instance:HFIC.Testcases.com.PEGA_Search@43a25848] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Task_CR_Search()[pri:11, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Task_CR_Search" duration-ms="73198" started-at="2021-04-21T15:44:47Z" finished-at="2021-04-21T15:46:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Task_CR_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Tear_Down" is-config="true" duration-ms="286" started-at="2021-04-21T15:46:00Z" finished-at="2021-04-21T15:46:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Task_CR_Search status=SUCCESS method=PEGA_Search.Task_CR_Search()[pri:11, instance:HFIC.Testcases.com.PEGA_Search@43a25848] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="HP_Group_Task_Serach()[pri:12, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="HP_Group_Task_Serach" duration-ms="78086" started-at="2021-04-21T15:46:00Z" finished-at="2021-04-21T15:47:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HP_Group_Task_Serach -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Tear_Down" is-config="true" duration-ms="282" started-at="2021-04-21T15:47:19Z" finished-at="2021-04-21T15:47:19Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=HP_Group_Task_Serach status=SUCCESS method=PEGA_Search.HP_Group_Task_Serach()[pri:12, instance:HFIC.Testcases.com.PEGA_Search@43a25848] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="HP_Reconciliation_Task_Serach()[pri:13, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="HP_Reconciliation_Task_Serach" duration-ms="90351" started-at="2021-04-21T15:47:19Z" finished-at="2021-04-21T15:48:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HP_Reconciliation_Task_Serach -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Tear_Down" is-config="true" duration-ms="317" started-at="2021-04-21T15:48:49Z" finished-at="2021-04-21T15:48:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=HP_Reconciliation_Task_Serach status=SUCCESS method=PEGA_Search.HP_Reconciliation_Task_Serach()[pri:13, instance:HFIC.Testcases.com.PEGA_Search@43a25848] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.PEGA_Search@43a25848]" name="Application_Exit" is-config="true" duration-ms="2504" started-at="2021-04-21T15:48:50Z" finished-at="2021-04-21T15:48:52Z">
+        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.LampLogin@2133c8f8]" name="Application_Exit" is-config="true" duration-ms="2537" started-at="2021-04-22T17:40:52Z" finished-at="2021-04-22T17:40:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Exit -->
-      </class> <!-- HFIC.Testcases.com.PEGA_Search -->
+      </class> <!-- HFIC.Testcases.com.LampLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
