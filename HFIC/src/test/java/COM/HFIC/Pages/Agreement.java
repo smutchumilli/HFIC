@@ -1,7 +1,12 @@
 package COM.HFIC.Pages;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -57,13 +62,23 @@ public class Agreement extends Baseclass {
 		Thread.sleep(5000);
 		Submit_Payment.click();
 		Thread.sleep(5000);
-		String submission=Application_number.getText();
-		
-		System.out.println(submission.substring(16, 23));	
-		
+		String appnum=Application_number.getText().substring(16, 23);
+		System.out.println(appnum);
+		//write data
+		File src = new File("./TestData/TestData.xlsx");
+		FileInputStream fis = new FileInputStream(src);
+		XSSFWorkbook wb = new XSSFWorkbook(fis);
+		int lastrow=wb.getSheet("Pega").getLastRowNum()-wb.getSheet("Pega").getFirstRowNum();
+		System.out.println(lastrow);
+		wb.getSheet("Pega").createRow(lastrow+1).createCell(0).setCellValue(appnum);
+		FileOutputStream outputStream = new FileOutputStream(src);
+		wb.write(outputStream);
+		outputStream.close();
+		wb.close();		
 		driver.findElement(By.xpath("//*[text()='Log Out']")).click();
 		Thread.sleep(5000);
-		}
+		
+	}
 	}
 	
 

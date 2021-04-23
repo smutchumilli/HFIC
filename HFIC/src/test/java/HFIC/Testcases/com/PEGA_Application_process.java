@@ -14,11 +14,10 @@ public void PEGA_App_process() throws InterruptedException
 	PEGA_SMG_Process.HFIC_Manager_Login(data.getstringdata("Pega", 0, 0),
 			data.getstringdata("Pega", 0, 1),
 			data.getstringdata("Pega", 0, 2),
-			data.getstringdata("Pega", 0, 3));
+			data.getstringdata("Pega", 2, 0));
 	
 	PEGA_SMG_Process.HFIC_Superuser_login(data.getstringdata("Pega", 1, 0),
 			data.getstringdata("Pega", 1, 1), 
-			data.getstringdata("Pega", 1, 2));
-
+			data.getstringdata("Pega", 2, 0));
 }
 }
