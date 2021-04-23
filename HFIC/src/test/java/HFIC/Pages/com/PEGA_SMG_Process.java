@@ -57,7 +57,7 @@ public class PEGA_SMG_Process extends Baseclass {
 		appid_filter.click();
 		appid_search_text.sendKeys(app_id);
 		Apply_button.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		checkbox.click();
 		Assignbtton.click();
 		assign_id.sendKeys(user);
@@ -116,55 +116,56 @@ public class PEGA_SMG_Process extends Baseclass {
 		appid_search_text_suser.sendKeys(app_id);
 		Apply_button.click();
 		Results.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", confirm);
 		confirm.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		next.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", confirm2);
 
 		confirm.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		next.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", confirm3);
 
 		confirm.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		next.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", confirm4);
 
 		confirm.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		next.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		review_mship.click();
 		Thread.sleep(6000);
 		///
 
 		GRPAPPL.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		Grpappl_Doc_Approval.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		NYS45.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		NYS45_Doc_Approval.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		PAF.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		PAF_Doc_Approval.click();
+		Thread.sleep(3500);
 
 		row1.click();
 		confirm.click();
@@ -172,7 +173,7 @@ public class PEGA_SMG_Process extends Baseclass {
 
 		mem_listing.click();
 
-		Thread.sleep(4000);
+		Thread.sleep(3000);
 
 		row2.click();
 		confirm.click();
@@ -203,7 +204,7 @@ public class PEGA_SMG_Process extends Baseclass {
 
 		mem_listing.click();
 
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		row3.click();
 		Thread.sleep(1000);
@@ -212,13 +213,13 @@ public class PEGA_SMG_Process extends Baseclass {
 		Thread.sleep(1000);
 
 		Next1.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		confirm.click();
 		Thread.sleep(1000);
 
 		mem_listing.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		row4.click();
 		Thread.sleep(1000);
@@ -227,45 +228,50 @@ public class PEGA_SMG_Process extends Baseclass {
 		Thread.sleep(1000);
 
 		Next1.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		confirm.click();
 		Thread.sleep(1000);
 
 		Next1.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		confirm.click();
 		Thread.sleep(1000);
 
 		Next1.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		confirm.click();
 		Thread.sleep(1000);
 
 		mem_listing.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		Review_PAYMENT.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		Final_Review.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		confirm.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		SUbmit.click();
-		Thread.sleep(4000);
+		Thread.sleep(3000);
 
 		image.click();
+		Thread.sleep(3500);
 
-		logout.click();
+		Super_Logout.click();
+		Thread.sleep(3500);
 
-		
 	}
-
+	
+	
+	
+	@FindBy(xpath = "//*[@id='pyNavigation1615793410242']/li[3]/a")
+	WebElement Super_Logout;
 	@FindBy(name = "FinalReviewActionButtons_pyWorkPage_1")
 	WebElement SUbmit;
 

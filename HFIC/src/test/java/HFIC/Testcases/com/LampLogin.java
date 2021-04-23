@@ -21,7 +21,7 @@ import COM.HFIC.Pages.Uploaddocument;
 import HFIC.Pages.com.Baseclass;
 
 public class LampLogin extends Baseclass {
-	@Test(invocationCount=3)
+	@Test(invocationCount=6)
 	public void Lamp_SMG_Application_Submissionn() throws InterruptedException, IOException, AWTException {
 		test = extent.createTest("HFIC SMG Enrollment");
 		Lamploginpage Lamploginpage = PageFactory.initElements(driver, Lamploginpage.class);
