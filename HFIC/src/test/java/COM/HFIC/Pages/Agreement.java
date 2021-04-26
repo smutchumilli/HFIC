@@ -4,12 +4,14 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
@@ -67,16 +69,16 @@ public class Agreement extends Baseclass {
 		File src = new File("./TestData/TestData.xlsx");
 		FileInputStream fis = new FileInputStream(src);
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
-		int lastrow=wb.getSheet("Pega").getLastRowNum()-wb.getSheet("Pega").getFirstRowNum();
-		System.out.println(lastrow);
-		wb.getSheet("Pega").createRow(lastrow+1).createCell(0).setCellValue(appnum);
+//		int lastrow=wb.getSheet("Pega").getLastRowNum()-wb.getSheet("Pega").getFirstRowNum();
+//		System.out.println(lastrow);
+		wb.getSheet("Pega").createRow(2).createCell(0).setCellValue(appnum);
 		FileOutputStream outputStream = new FileOutputStream(src);
 		wb.write(outputStream);
 		outputStream.close();
 		wb.close();		
 		driver.findElement(By.xpath("//*[text()='Log Out']")).click();
-		Thread.sleep(5000);
-		
+		Thread.sleep(2000);
+			
 	}
 	}
 	

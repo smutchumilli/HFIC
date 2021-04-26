@@ -19,9 +19,10 @@ import COM.HFIC.Pages.Lamploginpage;
 import COM.HFIC.Pages.ReviewApplicationDetails;
 import COM.HFIC.Pages.Uploaddocument;
 import HFIC.Pages.com.Baseclass;
+import HFIC.Pages.com.PEGA_SMG_Process;
 
 public class LampLogin extends Baseclass {
-	@Test(invocationCount=6)
+	@Test(invocationCount=1)
 	public void Lamp_SMG_Application_Submissionn() throws InterruptedException, IOException, AWTException {
 		test = extent.createTest("HFIC SMG Enrollment");
 		Lamploginpage Lamploginpage = PageFactory.initElements(driver, Lamploginpage.class);
@@ -76,5 +77,17 @@ public class LampLogin extends Baseclass {
 				data.getstringdata("Login", 22, 0), data.getstringdata("Login", 23, 0),
 				data.getstringdata("Login", 24, 0), data.getstringdata("Login", 25, 0),
 				data.getstringdata("Login", 26, 0));
+		
+			
+			PEGA_SMG_Process PEGA_SMG_Process=PageFactory.initElements(driver, PEGA_SMG_Process.class);
+			PEGA_SMG_Process.HFIC_Manager_Login(data.getstringdata("Pega", 0, 0),
+					data.getstringdata("Pega", 0, 1),
+					data.getstringdata("Pega", 2, 0),
+					data.getstringdata("Pega", 0, 2));
+			
+			PEGA_SMG_Process.HFIC_Superuser_login(data.getstringdata("Pega", 1, 0),
+					data.getstringdata("Pega", 1, 1), 
+					data.getstringdata("Pega", 2, 0));
+		}
 	}
-}
+

@@ -29,11 +29,6 @@ public class Uploaddocument {
 	@FindBy(xpath="//*[@class='hf-go-back-btn']//following::a[2]") WebElement Continue;
 //
 	@FindBy(xpath="//input[@type='file']") WebElement File;
-	
-
-	
-
-
 	public void Document_Upload() throws InterruptedException, AWTException{
 		JavascriptExecutor js= (JavascriptExecutor)driver;
 		Thread.sleep(5000);

@@ -1,8 +1,11 @@
 package HFIC.Pages.com;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 
 import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
@@ -50,10 +53,11 @@ public class PEGA_SMG_Process extends Baseclass {
 	
 	
 	public void HFIC_Manager_Login(String uid, String pwd, String app_id, String user) throws InterruptedException {
-
+		Thread.sleep(5000);
+		driver.get("https://pegaenbst.healthfirst.org/prweb");	
 		userid.sendKeys(uid);
 		Password.sendKeys(pwd);
-		Login_Button.click();
+		Login_Button.click();;
 		appid_filter.click();
 		appid_search_text.sendKeys(app_id);
 		Apply_button.click();
@@ -286,5 +290,29 @@ public class PEGA_SMG_Process extends Baseclass {
 	WebElement GRPAPPL;
 	@FindBy(xpath = "//*[text()='PaymentAuthorizationForm']")
 	WebElement PAF;
+	
+	//Payment ByPass
+	
+	
+	@FindBy(xpath = "//span[text()='Switch Application']")
+	WebElement Switch_Application;
+	@FindBy(xpath = "//*[contains(text(),'HFIC Support')]")
+	WebElement HFIC_Support;
+	@FindBy(id = "24dbd519")
+	WebElement Search_input;
+	@FindBy(xpath = "//button[@name='pzStudioHeaderTools_pyDisplayHarness_2']")
+	WebElement Search_button;
+	
+	@FindBy(linkText = "HFICIntakeCaseList")
+	WebElement HFICIntakeCaseList;
+	@FindBy(xpath = "//button[@name='pzRuleFormToolbar_RH_2_15']")
+	WebElement Actions;
+	@FindBy(xpath = "//*[@id='pyNavigation1615670406787']/li[1]/a")
+	WebElement run;
+	
+	
+
+	
+	
 
 }

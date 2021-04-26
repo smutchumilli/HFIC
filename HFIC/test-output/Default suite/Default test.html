@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 23 15:00:13 EDT 2021</td>
+<td>Started on:</td><td>Mon Apr 26 16:08:50 EDT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>125 seconds (125390 ms)</td>
+<tr><td>Total time:</td><td>94 seconds (94034 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,25 +68,52 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='HFIC.Testcases.com.PEGA_Application_process.Tear_Down()'><b>Tear_Down</b><br>Test class: HFIC.Testcases.com.PEGA_Application_process</td>
-<td><div><pre>java.lang.IllegalArgumentException: wrong number of arguments
+<td title='HFIC.Testcases.com.LampLogin.Lamp_SMG_Application_Submissionn()'><b>Lamp_SMG_Application_Submissionn</b><br>Test class: HFIC.Testcases.com.LampLogin</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: element click intercepted: Element &lt;a token=&quot;0tRoZl4Gp2HLs8rthVjtYRBHvwoQ5NUcR5Jomedr&quot; route=&quot;/api/enrollment/applications/7621/document-upload/save-and-continue&quot; class=&quot;hf-continue-btn&quot;&gt;...&lt;/a&gt; is not clickable at point (1003, 508). Other element would receive the click: &lt;div class=&quot;wrapper&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=89.0.4389.128)
+  (Driver info: chromedriver=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.09 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SVFL-XAAD-014&apos;, ip: &apos;10.200.189.225&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:32285}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\SMUTCH~1\AppData\Local\Temp\11\scoped_dir39896_1181023408}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=89.0.4389.128, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 0486f883f754e7476fd47f2f5499ae82
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at COM.HFIC.Pages.Uploaddocument.Document_Upload(Uploaddocument.java:71)
+	at HFIC.Testcases.com.LampLogin.Lamp_SMG_Application_Submissionn(LampLogin.java:69)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.TestRunner.afterRun(TestRunner.java:1012)
-	at org.testng.TestRunner.run(TestRunner.java:636)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
@@ -99,18 +126,45 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1220806149", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1220806149'><pre>java.lang.IllegalArgumentException: wrong number of arguments
+</pre></div><a href='#' onClick='toggleBox("stack-trace37841489", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace37841489'><pre>org.openqa.selenium.WebDriverException: element click intercepted: Element &lt;a token=&quot;0tRoZl4Gp2HLs8rthVjtYRBHvwoQ5NUcR5Jomedr&quot; route=&quot;/api/enrollment/applications/7621/document-upload/save-and-continue&quot; class=&quot;hf-continue-btn&quot;&gt;...&lt;/a&gt; is not clickable at point (1003, 508). Other element would receive the click: &lt;div class=&quot;wrapper&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=89.0.4389.128)
+  (Driver info: chromedriver=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.09 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SVFL-XAAD-014&apos;, ip: &apos;10.200.189.225&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:32285}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\SMUTCH~1\AppData\Local\Temp\11\scoped_dir39896_1181023408}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=89.0.4389.128, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 0486f883f754e7476fd47f2f5499ae82
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at COM.HFIC.Pages.Uploaddocument.Document_Upload(Uploaddocument.java:71)
+	at HFIC.Testcases.com.LampLogin.Lamp_SMG_Application_Submissionn(LampLogin.java:69)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.TestRunner.afterRun(TestRunner.java:1012)
-	at org.testng.TestRunner.run(TestRunner.java:636)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
@@ -124,21 +178,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div></td>
-<td>0</td>
-<td>null</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='HFIC.Testcases.com.PEGA_Application_process.PEGA_App_process()'><b>PEGA_App_process</b><br>Test class: HFIC.Testcases.com.PEGA_Application_process</td>
-<td></td>
-<td>120</td>
-<td>HFIC.Testcases.com.PEGA_Application_process@2133c8f8</td></tr>
+<td>85</td>
+<td>HFIC.Testcases.com.LampLogin@2133c8f8</td></tr>
 </table><p>
 </body>
 </html>
