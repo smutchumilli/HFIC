@@ -20,21 +20,24 @@ public class Uploaddocument {
 	public Uploaddocument(WebDriver driver){
 		this.driver= driver;
 	}
-	@FindBy(xpath="//*[@class='hf-browse-btn' and  @file-type='Group_Application']") WebElement file1;
+	@FindBy(xpath="//input[@name='file']") WebElement file1;
 	@FindBy(xpath="//*[@class='hf-browse-btn' and  @file-type='NYS-45']") WebElement file2;
-	@FindBy(xpath="//label[@class='hf-browse-btn' and  @file-type='Payment_Authorization_Form']") WebElement file3;
-	//@FindBy(xpath="[name='selected_file_type'][value='Form-K-1']") WebElement nys45;
+
+	
+	
+	
 	@FindBy(xpath="//*[@id='nysFileType']") WebElement nys45;
 	@FindBy(css="button.hf-continue-to-browse-btn") WebElement nyscnt;
-	@FindBy(xpath="//*[@class='hf-go-back-btn']//following::a[2]") WebElement Continue;
+	
+	@FindBy(xpath="//a[text()='Continue']") WebElement Continue;
 //
-	@FindBy(xpath="//input[@type='file']") WebElement File;
+	
 	public void Document_Upload() throws InterruptedException, AWTException{
 		JavascriptExecutor js= (JavascriptExecutor)driver;
 		Thread.sleep(5000);
 		js.executeScript("scroll(0, 250);");
 		Thread.sleep(500);
-	    driver.findElement(By.xpath("//input[@type='file']")).sendKeys("Q:\\Smutchumilli\\upload.docx");
+		file1.sendKeys("Q:\\Smutchumilli\\upload.docx");
 		Thread.sleep(5000);
 		js.executeScript("scroll(0, 500);");
 		Thread.sleep(3000);
@@ -44,7 +47,7 @@ public class Uploaddocument {
 		Thread.sleep(1000);
 	  	nyscnt.click();
 		Thread.sleep(4000);
-		
+
 		Robot rb= new Robot();
 		rb.keyPress(KeyEvent.VK_TAB);
 		rb.keyRelease(KeyEvent.VK_TAB);
@@ -59,7 +62,7 @@ public class Uploaddocument {
 		rb.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(4000);
 
-	    driver.findElement(By.xpath("//input[@name='file1']")).sendKeys("Q:\\Smutchumilli\\upload.docx");
+		driver.findElement(By.xpath("//input[@name='file1']")).sendKeys("Q:\\Smutchumilli\\upload.docx");
 	    Thread.sleep(2000);
 	    js.executeScript("scroll(0, 650);");
 	    Thread.sleep(5000);

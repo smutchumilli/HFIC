@@ -24,10 +24,19 @@ public class HealthInsurencePlans {
 
 	public void Health_Insurence_Plans() throws InterruptedException {
 		JavascriptExecutor js= (JavascriptExecutor)driver;
+	 ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", P1);
 		js.executeScript("arguments[0].click();", P1);
+		 ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", P2);
+
 		js.executeScript("arguments[0].click();", P2);
+		 ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", P3);
+
 		js.executeScript("arguments[0].click();", P3);
+		 ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", P4);
+
 		js.executeScript("arguments[0].click();", P4);
+		 ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", continu);
+
 		js.executeScript("arguments[0].click();", continu);
 	}
 	

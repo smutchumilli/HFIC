@@ -37,7 +37,11 @@ public class Agreement extends Baseclass {
 	@FindBy(xpath="//input[@name='zip']//following::button[1]") WebElement Review_Payment;
 	@FindBy(xpath="//*[contains(@class,'hf-save-review-payment-btn pull-right')]") WebElement Submit_Payment;
 	@FindBy(id="account_signature") WebElement sign;
-	@FindBy(xpath="//*[contains(text(),'HFA')]") WebElement Application_number;
+	@FindBy(xpath="//*[contains(text(),'HFA')]")
+	WebElement Application_number;
+	public static String appnum;
+	public static String amount;
+
 
 	
 
@@ -63,23 +67,31 @@ public class Agreement extends Baseclass {
 		Thread.sleep(5000);
 		Submit_Payment.click();
 		Thread.sleep(5000);
-		String appnum=Application_number.getText().substring(16, 23);
+		appnum=Application_number.getText().substring(16, 23);
+		amount=Application_number.getText().substring(117,126).replaceAll("[$,]", "");
+
 		System.out.println(appnum);
-		//write data
-		File src = new File("./TestData/TestData.xlsx");
-		FileInputStream fis = new FileInputStream(src);
-		XSSFWorkbook wb = new XSSFWorkbook(fis);
-//		int lastrow=wb.getSheet("Pega").getLastRowNum()-wb.getSheet("Pega").getFirstRowNum();
-//		System.out.println(lastrow);
-		wb.getSheet("Pega").createRow(2).createCell(0).setCellValue(appnum);
-		FileOutputStream outputStream = new FileOutputStream(src);
-		wb.write(outputStream);
-		outputStream.close();
-		wb.close();		
+		System.out.println(amount);
+
+		
+		
+		
+//		//write data
+//		File src = new File("./TestData/TestData.xlsx");
+//		FileInputStream fis = new FileInputStream(src);
+//		XSSFWorkbook wb = new XSSFWorkbook(fis);
+////		int lastrow=wb.getSheet("Pega").getLastRowNum()-wb.getSheet("Pega").getFirstRowNum();
+////		System.out.println(lastrow);
+//		wb.getSheet("Pega").createRow(2).createCell(0).setCellValue(appnum);
+//		FileOutputStream outputStream = new FileOutputStream(src);
+//		wb.write(outputStream);
+//		outputStream.close();
+//		wb.close();		
 		driver.findElement(By.xpath("//*[text()='Log Out']")).click();
-		Thread.sleep(2000);
 			
 	}
+	
+	
 	}
 	
 

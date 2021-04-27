@@ -1,14 +1,22 @@
 package HFIC.Pages.com;
 
+import java.awt.AWTException;
+import java.awt.Robot;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
+import com.sun.glass.events.KeyEvent;
+
+import io.reactivex.rxjava3.functions.Action;
 
 public class PEGA_SMG_Process extends Baseclass {
 
@@ -57,11 +65,10 @@ public class PEGA_SMG_Process extends Baseclass {
 		driver.get("https://pegaenbst.healthfirst.org/prweb");	
 		userid.sendKeys(uid);
 		Password.sendKeys(pwd);
-		Login_Button.click();;
+		Login_Button.click();
 		appid_filter.click();
 		appid_search_text.sendKeys(app_id);
 		Apply_button.click();
-		Thread.sleep(2000);
 		checkbox.click();
 		Assignbtton.click();
 		assign_id.sendKeys(user);
@@ -292,25 +299,75 @@ public class PEGA_SMG_Process extends Baseclass {
 	WebElement PAF;
 	
 	//Payment ByPass
+	@FindBy(xpath = "//*[@id='$PpyNavigation1615791358304$ppyElements$l1$ppyElements$l1']/li[4]")
+	WebElement hfic_support;
+	
+	@FindBy(xpath = "//*[text()='Switch Application']")
+	WebElement Switch_application;
+	
+
+	@FindBy(xpath = "//*[@id='RULE_KEY']/div[2]/div/i")
+	WebElement SV;
+	
+	@FindBy(xpath = "//*[text()='My Favorites']")
+	WebElement Favorites;
+	
+	@FindBy(xpath = "//*[@id='$PpyNavigation1615668990878$ppyElements$l7']//li[12]")
+	WebElement intakecaselist ;
+	
+	@FindBy(xpath = "//*[@id='$PpyNavigation1615668990878$ppyElements$l7']//li[11]")
+	WebElement utility ;
+	
+	@FindBy(xpath = "//Button[text()='Actions']")
+	WebElement Actions ;
+	@FindBy(xpath = "(//*[text()='Run'])[2]")
+	WebElement Run ;
 	
 	
-	@FindBy(xpath = "//span[text()='Switch Application']")
-	WebElement Switch_Application;
-	@FindBy(xpath = "//*[contains(text(),'HFIC Support')]")
-	WebElement HFIC_Support;
-	@FindBy(id = "24dbd519")
-	WebElement Search_input;
-	@FindBy(xpath = "//button[@name='pzStudioHeaderTools_pyDisplayHarness_2']")
-	WebElement Search_button;
 	
-	@FindBy(linkText = "HFICIntakeCaseList")
-	WebElement HFICIntakeCaseList;
-	@FindBy(xpath = "//button[@name='pzRuleFormToolbar_RH_2_15']")
-	WebElement Actions;
-	@FindBy(xpath = "//*[@id='pyNavigation1615670406787']/li[1]/a")
-	WebElement run;
-	
-	
+	public void Payment_Bypass() throws InterruptedException, AWTException {
+		Thread.sleep(5000);
+		//driver.get("https://pegaenbst.healthfirst.org/prweb/sso");
+		image.click();
+		Thread.sleep(5000);
+		Actions act= new Actions(driver);
+		act.moveToElement(Switch_application).perform();
+
+		//Switch_application.click();
+		Thread.sleep(5000);
+		act.moveToElement(hfic_support).click().perform();
+		Thread.sleep(5000);
+
+		SV.click();
+		Thread.sleep(5000);
+
+		act.moveToElement(Favorites).perform();
+		Thread.sleep(5000);
+
+		act.moveToElement(intakecaselist).click().perform();
+		Thread.sleep(3000);
+		
+		Robot rt= new Robot();
+		rt.keyPress(KeyEvent.VK_LEFT);
+		Thread.sleep(1000);
+		rt.keyRelease(KeyEvent.VK_LEFT);
+
+		Thread.sleep(5000);
+
+
+
+		act.moveToElement(Actions).click().perform();
+
+		Thread.sleep(3000);
+		act.moveToElement(Run).click().perform();
+
+
+		
+		
+		
+		
+		
+	}
 
 	
 	
