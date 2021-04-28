@@ -77,7 +77,8 @@ public class LampLogin extends Baseclass {
 				data.getstringdata("Login", 22, 0), data.getstringdata("Login", 23, 0),
 				data.getstringdata("Login", 24, 0), data.getstringdata("Login", 25, 0),
 				data.getstringdata("Login", 26, 0));
-		Thread.sleep(40000);
+		
+		Thread.sleep(60000);
 			
 			PEGA_SMG_Process PEGA_SMG_Process=PageFactory.initElements(driver, PEGA_SMG_Process.class);
 			PEGA_SMG_Process.HFIC_Manager_Login(data.getstringdata("Pega", 0, 0),

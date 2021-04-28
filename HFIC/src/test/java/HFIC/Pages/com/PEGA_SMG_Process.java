@@ -2,8 +2,11 @@ package HFIC.Pages.com;
 
 import java.awt.AWTException;
 import java.awt.Robot;
+import java.util.Iterator;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,9 +16,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
 import com.sun.glass.events.KeyEvent;
 
+import Utilities.com.Helper;
 import io.reactivex.rxjava3.functions.Action;
 
 public class PEGA_SMG_Process extends Baseclass {
@@ -56,13 +61,11 @@ public class PEGA_SMG_Process extends Baseclass {
 	@FindBy(xpath = "//*[@id='pyNavigation1615791358304']/li[3]/a/span/span")
 	WebElement logout;
 
-	//PEGA Login:
-	
-	
-	
+	// PEGA Login:
+
 	public void HFIC_Manager_Login(String uid, String pwd, String app_id, String user) throws InterruptedException {
-		Thread.sleep(5000);
-		driver.get("https://pegaenbst.healthfirst.org/prweb");	
+		Thread.sleep(2500);
+		driver.get("https://pegaenbst.healthfirst.org/prweb");
 		userid.sendKeys(uid);
 		Password.sendKeys(pwd);
 		Login_Button.click();
@@ -278,10 +281,8 @@ public class PEGA_SMG_Process extends Baseclass {
 		Thread.sleep(3500);
 
 	}
-	
-	
-	
-	@FindBy(xpath = "//*[@id='pyNavigation1615793410242']/li[3]/a")
+
+	@FindBy(xpath = "//*[text()='Log off']")
 	WebElement Super_Logout;
 	@FindBy(name = "FinalReviewActionButtons_pyWorkPage_1")
 	WebElement SUbmit;
@@ -297,79 +298,120 @@ public class PEGA_SMG_Process extends Baseclass {
 	WebElement GRPAPPL;
 	@FindBy(xpath = "//*[text()='PaymentAuthorizationForm']")
 	WebElement PAF;
-	
-	//Payment ByPass
+
+	// Payment ByPass
 	@FindBy(xpath = "//*[@id='$PpyNavigation1615791358304$ppyElements$l1$ppyElements$l1']/li[4]")
 	WebElement hfic_support;
-	
+
 	@FindBy(xpath = "//*[text()='Switch Application']")
 	WebElement Switch_application;
-	
 
 	@FindBy(xpath = "//*[@id='RULE_KEY']/div[2]/div/i")
 	WebElement SV;
-	
+
 	@FindBy(xpath = "//*[text()='My Favorites']")
 	WebElement Favorites;
-	
+
 	@FindBy(xpath = "//*[@id='$PpyNavigation1615668990878$ppyElements$l7']//li[12]")
-	WebElement intakecaselist ;
+	WebElement intakecaselist;
 	
+
 	@FindBy(xpath = "//*[@id='$PpyNavigation1615668990878$ppyElements$l7']//li[11]")
-	WebElement utility ;
-	
-	@FindBy(xpath = "//Button[text()='Actions']")
-	WebElement Actions ;
+	WebElement payment_bypass;
+
+	@FindBy(xpath = "//button[contains(text(),'Actions')]")
+	WebElement Actions;
 	@FindBy(xpath = "(//*[text()='Run'])[2]")
-	WebElement Run ;
-	
-	
-	
-	public void Payment_Bypass() throws InterruptedException, AWTException {
-		Thread.sleep(5000);
-		//driver.get("https://pegaenbst.healthfirst.org/prweb/sso");
+	WebElement Run;
+	@FindBy(xpath = "(//*[@id='pui_colmenu'])[3]")
+	WebElement filter_icon;
+	@FindBy(xpath = "//*[text()='Filter']")
+	WebElement filter;
+
+	@FindBy(xpath = "//input[@id='f9b6bb99']")
+	WebElement input_Search;
+
+	@FindBy(xpath = "//button[text()='Apply']")
+	WebElement Search_text;
+	@FindBy(xpath = "//*[contains(text(),'ITK')]")
+	WebElement ITK_NUM;
+	public static String ITK;
+
+	public void Payment_Bypass(String app_num) throws InterruptedException, AWTException {
+
+		Thread.sleep(2500);
+		// driver.get("https://pegaenbst.healthfirst.org/prweb/sso");
 		image.click();
-		Thread.sleep(5000);
-		Actions act= new Actions(driver);
+		Thread.sleep(2500);
+		Actions act = new Actions(driver);
 		act.moveToElement(Switch_application).perform();
 
-		//Switch_application.click();
-		Thread.sleep(5000);
+		// Switch_application.click();
+		Thread.sleep(1000);
 		act.moveToElement(hfic_support).click().perform();
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 
 		SV.click();
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 
 		act.moveToElement(Favorites).perform();
-		Thread.sleep(5000);
-
-		act.moveToElement(intakecaselist).click().perform();
-		Thread.sleep(3000);
-		
-		Robot rt= new Robot();
-		rt.keyPress(KeyEvent.VK_LEFT);
 		Thread.sleep(1000);
-		rt.keyRelease(KeyEvent.VK_LEFT);
-
-		Thread.sleep(5000);
-
-
-
-		act.moveToElement(Actions).click().perform();
-
+		
+		act.moveToElement(payment_bypass).click().perform();
 		Thread.sleep(3000);
-		act.moveToElement(Run).click().perform();
+		driver.switchTo().frame("PegaGadget0Ifr");
+		
+//		act.moveToElement(intakecaselist).click().perform();
+//		Thread.sleep(3000);
+//		for (int i = 0; i <= 8; i++) {
+//			Robot rb = new Robot();
+//			rb.keyPress(KeyEvent.VK_RIGHT);
+//			rb.keyRelease(KeyEvent.VK_RIGHT);
+//		}
+//		Thread.sleep(5000);
+//		driver.switchTo().frame("PegaGadget0Ifr");
+//		Actions actions = new Actions(driver);
+//		actions.moveToElement(Actions).click().perform();
+//		Thread.sleep(3000);
+//		((JavascriptExecutor) driver).executeScript("arguments[0].click();", Run);
+//		Thread.sleep(4000);
+//		// Handlewindow
+//		String currentWindow = driver.getWindowHandle(); // will keep current window to switch back
+//		for (String winHandle : driver.getWindowHandles()) {
+//			if (driver.switchTo().window(winHandle).getTitle().equalsIgnoreCase("HFIC Intake CaseList")) {
+//				driver.switchTo().window(winHandle);
+//				driver.manage().window().maximize();
+//				Thread.sleep(3000);
+//				filter_icon.click();
+//				Thread.sleep(3000);
+//
+//				filter.click();
+//				Thread.sleep(3000);
+//
+//				input_Search.sendKeys(app_num);
+//				Thread.sleep(3000);
+//
+//				Search_text.click();
+//				Thread.sleep(3000);
+//				ITK = ITK_NUM.getText();
+//				driver.close();
+//
+//			} else {
+//				System.out.println("Window not found");
+//
+//			}
+//			driver.switchTo().window(currentWindow);
+//			act.moveToElement(Favorites).perform();
+//			Thread.sleep(1000);
+//			act.moveToElement(payment_bypass).click().perform();
+//			Thread.sleep(3000);
+//			for (int i = 0; i <= 8; i++) {
+//				Robot rb = new Robot();
+//				rb.keyPress(KeyEvent.VK_RIGHT);
+//				rb.keyRelease(KeyEvent.VK_RIGHT);
+//			}
+//
+//		}
 
-
-		
-		
-		
-		
-		
 	}
-
-	
-	
-
 }
