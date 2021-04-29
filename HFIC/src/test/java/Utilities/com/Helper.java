@@ -80,4 +80,6 @@ public static boolean checkWebElementDisplayed(WebElement webElement) {
 	return elementDisplayed;
 }
 
+//window handle by title
+
 }

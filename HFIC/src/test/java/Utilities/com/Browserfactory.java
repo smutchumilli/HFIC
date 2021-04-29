@@ -21,8 +21,8 @@ public class Browserfactory {
 		}
 		driver.get(URL);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 		return driver;
 	}
 	

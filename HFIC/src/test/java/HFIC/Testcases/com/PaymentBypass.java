@@ -13,7 +13,7 @@ public class PaymentBypass extends Baseclass {
 	public void Payment_Bypass() throws InterruptedException, AWTException {
 		
 		PEGA_SMG_Process PEGA_SMG_Process=PageFactory.initElements(driver, PEGA_SMG_Process.class);
-		PEGA_SMG_Process.Payment_Bypass();
+		PEGA_SMG_Process.Payment_Bypass("HFA7394","12345,12","123");
 	}
 
 }
