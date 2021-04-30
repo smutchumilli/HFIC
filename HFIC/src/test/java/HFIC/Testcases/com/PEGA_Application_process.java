@@ -3,8 +3,8 @@ package HFIC.Testcases.com;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-import HFIC.Pages.com.Baseclass;
-import HFIC.Pages.com.PEGA_SMG_Process;
+import Pages.com.Baseclass;
+import Pages.com.PEGA_SMG_Process;
 
 public class PEGA_Application_process  extends Baseclass{
 @Test

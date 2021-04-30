@@ -9,8 +9,8 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 
-import HFIC.Pages.com.Baseclass;
-import HFIC.Pages.com.ChangeRequest_HSA;
+import Pages.com.Baseclass;
+import Pages.com.ChangeRequest_HSA;
 import Utilities.com.Helper;
 
 public class CR_UpdateHSA_Group_Member extends Baseclass {

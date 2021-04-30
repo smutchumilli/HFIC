@@ -7,8 +7,9 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
-import HFIC.Pages.com.Baseclass;
-import HFIC.Pages.com.ChangeRequest_Uplodedocuments;
+
+import Pages.com.Baseclass;
+import Pages.com.ChangeRequest_Uplodedocuments;
 import Utilities.com.Helper;
 public class CR_UploadeDocuments extends Baseclass {
 	@Test(priority=1)

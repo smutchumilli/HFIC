@@ -1,4 +1,4 @@
-package COM.HFIC.Pages;
+package Pages.com;
 
 import java.io.File;
 import java.io.FileInputStream;

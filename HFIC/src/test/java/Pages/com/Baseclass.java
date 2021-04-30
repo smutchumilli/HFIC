@@ -1,4 +1,4 @@
-package HFIC.Pages.com;
+package Pages.com;
 
 import java.io.IOException;
 

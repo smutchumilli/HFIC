@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import HFIC.Pages.com.Baseclass;
+import Pages.com.Baseclass;
 
 public class tets extends Baseclass {
 	@Test

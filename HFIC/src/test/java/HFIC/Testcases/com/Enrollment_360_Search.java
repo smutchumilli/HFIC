@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 
-import HFIC.Pages.com.Baseclass;
-import HFIC.Pages.com.Enrollment360;
+import Pages.com.Baseclass;
+import Pages.com.Enrollment360;
 import Utilities.com.Helper;
 
 public class Enrollment_360_Search extends Baseclass {

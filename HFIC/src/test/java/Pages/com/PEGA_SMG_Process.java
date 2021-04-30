@@ -1,4 +1,4 @@
-package HFIC.Pages.com;
+package Pages.com;
 
 import java.awt.AWTException;
 import java.awt.Robot;

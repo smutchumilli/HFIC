@@ -6,8 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-import HFIC.Pages.com.Baseclass;
-import HFIC.Pages.com.PEGA_SMG_Process;
+import Pages.com.Baseclass;
+import Pages.com.PEGA_SMG_Process;
 @Test
 public class PaymentBypass extends Baseclass {
 	public void Payment_Bypass() throws InterruptedException, AWTException {

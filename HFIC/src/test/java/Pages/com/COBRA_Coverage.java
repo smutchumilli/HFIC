@@ -1,4 +1,4 @@
-package COM.HFIC.Pages;
+package Pages.com;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

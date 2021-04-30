@@ -4,8 +4,9 @@ import java.io.IOException;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import com.aventstack.extentreports.MediaEntityBuilder;
-import HFIC.Pages.com.Baseclass;
-import HFIC.Pages.com.Search;
+
+import Pages.com.Baseclass;
+import Pages.com.Search;
 import Utilities.com.Helper;
 
 public class PEGA_Search extends Baseclass {

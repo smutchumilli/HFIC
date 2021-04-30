@@ -18,7 +18,7 @@ import org.openqa.selenium.io.FileHandler;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
 
-import HFIC.Pages.com.Baseclass;
+import Pages.com.Baseclass;
 
 public class Helper extends Baseclass {
 public static String  Get_Screenshot(WebDriver driver) throws IOException  {

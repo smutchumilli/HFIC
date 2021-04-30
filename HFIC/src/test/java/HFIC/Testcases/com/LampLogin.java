@@ -18,8 +18,8 @@ import COM.HFIC.Pages.Lamp_Homepage;
 import COM.HFIC.Pages.Lamploginpage;
 import COM.HFIC.Pages.ReviewApplicationDetails;
 import COM.HFIC.Pages.Uploaddocument;
-import HFIC.Pages.com.Baseclass;
-import HFIC.Pages.com.PEGA_SMG_Process;
+import Pages.com.Baseclass;
+import Pages.com.PEGA_SMG_Process;
 
 public class LampLogin extends Baseclass {
 	@Test(invocationCount=3)
@@ -54,7 +54,7 @@ public class LampLogin extends Baseclass {
 				data.getstringdata("Login", 1, 1), data.getstringdata("Login", 1, 1));
 
 		COBRA_Coverage COBRA_Coverage = PageFactory.initElements(driver, COBRA_Coverage.class);
-		COBRA_Coverage.COBRACoverage(data.getstringdata("Login", 0, 1));
+		COBRA_Coverage.COBRACoverage();
 		BrokerGeneralAgentInformation BrokerGeneral_AgentInformation = PageFactory.initElements(driver,
 				BrokerGeneralAgentInformation.class);
 		BrokerGeneral_AgentInformation.BrokerGeneral_AgentInformation(data.getstringdata("Login", 0, 2),
