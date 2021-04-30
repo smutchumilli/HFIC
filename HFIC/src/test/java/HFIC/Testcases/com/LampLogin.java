@@ -22,7 +22,7 @@ import HFIC.Pages.com.Baseclass;
 import HFIC.Pages.com.PEGA_SMG_Process;
 
 public class LampLogin extends Baseclass {
-	@Test(invocationCount=1)
+	@Test(invocationCount=3)
 	public void Lamp_SMG_Application_Submissionn() throws InterruptedException, IOException, AWTException {
 		test = extent.createTest("HFIC SMG Enrollment");
 		Lamploginpage Lamploginpage = PageFactory.initElements(driver, Lamploginpage.class);
@@ -54,8 +54,7 @@ public class LampLogin extends Baseclass {
 				data.getstringdata("Login", 1, 1), data.getstringdata("Login", 1, 1));
 
 		COBRA_Coverage COBRA_Coverage = PageFactory.initElements(driver, COBRA_Coverage.class);
-		COBRA_Coverage.COBRACoverage();
-
+		COBRA_Coverage.COBRACoverage(data.getstringdata("Login", 0, 1));
 		BrokerGeneralAgentInformation BrokerGeneral_AgentInformation = PageFactory.initElements(driver,
 				BrokerGeneralAgentInformation.class);
 		BrokerGeneral_AgentInformation.BrokerGeneral_AgentInformation(data.getstringdata("Login", 0, 2),
@@ -77,23 +76,23 @@ public class LampLogin extends Baseclass {
 				data.getstringdata("Login", 22, 0), data.getstringdata("Login", 23, 0),
 				data.getstringdata("Login", 24, 0), data.getstringdata("Login", 25, 0),
 				data.getstringdata("Login", 26, 0));
-		
-//payment bypass
-		Thread.sleep(5000);
-		PEGA_SMG_Process PEGA_SMG_Process=PageFactory.initElements(driver, PEGA_SMG_Process.class);
-		PEGA_SMG_Process.Payment_Bypass();
-		
-	//PEGA Submission
-		Thread.sleep(5000);
-
-			PEGA_SMG_Process.HFIC_Manager_Login(data.getstringdata("Pega", 0, 0),
-					data.getstringdata("Pega", 0, 1),
-					Agreement.appnum,
-					data.getstringdata("Pega", 0, 2));
-			
-			PEGA_SMG_Process.HFIC_Superuser_login(data.getstringdata("Pega", 1, 0),
-					data.getstringdata("Pega", 1, 1), 
-					Agreement.appnum);
+//		
+////payment bypass
+//		Thread.sleep(5000);
+//		PEGA_SMG_Process PEGA_SMG_Process=PageFactory.initElements(driver, PEGA_SMG_Process.class);
+//		PEGA_SMG_Process.Payment_Bypass();
+//		
+//	//PEGA Submission
+//		Thread.sleep(5000);
+//
+//			PEGA_SMG_Process.HFIC_Manager_Login(data.getstringdata("Pega", 0, 0),
+//					data.getstringdata("Pega", 0, 1),
+//					Agreement.appnum,
+//					data.getstringdata("Pega", 0, 2));
+//			
+//			PEGA_SMG_Process.HFIC_Superuser_login(data.getstringdata("Pega", 1, 0),
+//					data.getstringdata("Pega", 1, 1), 
+//					Agreement.appnum);
 		}
 	}
 
