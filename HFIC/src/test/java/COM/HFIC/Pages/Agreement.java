@@ -41,6 +41,8 @@ public class Agreement extends Baseclass {
 	WebElement Application_number;
 	public static String appnum;
 	public static String amount;
+	public static double amount1;
+
 
 
 	
@@ -69,9 +71,9 @@ public class Agreement extends Baseclass {
 		Thread.sleep(5000);
 		appnum=Application_number.getText().substring(16, 23);
 		String amount=Application_number.getText().substring(117,126).replaceAll("[$,]", "");
-		//amount = Double.parseDouble(amount1);
+		amount1 = Double.parseDouble(amount);
 		System.out.println(appnum);
-		System.out.println(amount);
+		System.out.println(amount1);
 
 		
 		

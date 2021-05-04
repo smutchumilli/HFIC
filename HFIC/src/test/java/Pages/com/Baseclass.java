@@ -55,7 +55,7 @@ public class Baseclass {
 
 	}
 
-	@AfterMethod
+	@AfterTest
 	public void Tear_Down(ITestResult Result) throws IOException {
 
 		if (Result.getStatus() == ITestResult.SUCCESS) {
@@ -75,16 +75,17 @@ public class Baseclass {
 		}
 
 		 extent.flush();
+		 Browserfactory.Quit_Browser(driver);
+
 
 	}
 	
 
-	 @AfterClass
-	 public void Application_Exit() {
+//	 @AfterClass
+//	 public void Application_Exit() {
+//
+//
 
-		 Browserfactory.Quit_Browser(driver);
-
-
-	 }
+//	 }
 
 }

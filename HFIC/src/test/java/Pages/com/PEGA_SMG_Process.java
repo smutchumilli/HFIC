@@ -72,11 +72,13 @@ public class PEGA_SMG_Process extends Baseclass {
 	// PEGA Login:
 
 	public void HFIC_Manager_Login(String uid, String pwd, String app_id, String user) throws InterruptedException {
-		Thread.sleep(2500);
+		Thread.sleep(5000);
 		driver.get("https://pegaenbst.healthfirst.org/prweb");
 		userid.sendKeys(uid);
 		Password.sendKeys(pwd);
 		Login_Button.click();
+		Thread.sleep(20000);
+
 		appid_filter.click();
 		appid_search_text.sendKeys(app_id);
 		Apply_button.click();
@@ -304,6 +306,7 @@ public class PEGA_SMG_Process extends Baseclass {
 
 		Super_Logout.click();
 		Thread.sleep(3500);
+		driver.quit();
 
 	}
 
@@ -394,8 +397,7 @@ public class PEGA_SMG_Process extends Baseclass {
 		// Handlewindow
 		String currentWindow = driver.getWindowHandle(); // will keep current window to switch back
 		for (String winHandle : driver.getWindowHandles()) {
-			if (driver.switchTo().window(winHandle).getTitle().equalsIgnoreCase("HFIC Intake CaseList"))
-			{
+			if (driver.switchTo().window(winHandle).getTitle().equalsIgnoreCase("HFIC Intake CaseList")) {
 				driver.switchTo().window(winHandle);
 				Thread.sleep(4000);
 				driver.manage().window().maximize();
@@ -403,9 +405,9 @@ public class PEGA_SMG_Process extends Baseclass {
 				filter_icon.click();
 				Thread.sleep(2000);
 				filter.click();
-				Thread.sleep(4000);
+				Thread.sleep(14000);
 				input_Search.sendKeys(Agreement.appnum);
-				Thread.sleep(5000);
+				Thread.sleep(15000);
 				Search_text.click();
 				Thread.sleep(20000);
 				ITK = ITK_NUM.getText();
@@ -413,66 +415,56 @@ public class PEGA_SMG_Process extends Baseclass {
 				driver.close();
 				Thread.sleep(3000);
 
-
-			} 
-				}	
-
-// PaymentBypass
-			driver.switchTo().window(currentWindow);
-			Thread.sleep(5000);
-
-			SV.click();
-			Thread.sleep(3000);
-			act.moveToElement(Favorites).perform();
-			Thread.sleep(3000);
-			act.moveToElement(payment_bypass).click().perform();
-			Thread.sleep(3000);
-			driver.switchTo().frame("PegaGadget1Ifr");
-			Thread.sleep(3000);
-			act.moveToElement(Actions).click().perform();
-			Thread.sleep(3000);
-			((JavascriptExecutor) driver).executeScript("arguments[0].click();", Run);
-			Thread.sleep(3000);
-			String currentWindow_p = driver.getWindowHandle(); // will keep current window to switch back
-			for (String winHandle_p : driver.getWindowHandles()) {
-				if (driver.switchTo().window(winHandle_p).getTitle().equalsIgnoreCase("Run")) {
-					driver.switchTo().window(winHandle_p);
-					driver.manage().window().maximize();
-					driver.findElement(By.xpath("(//input[@id='pyValue'])[1]")).sendKeys(ITK);
-					Thread.sleep(3000);
-					driver.findElement(By.xpath("(//input[@id='pyValue'])[5]")).clear();
-					Thread.sleep(3000);
-					driver.findElement(By.xpath("(//input[@id='pyValue'])[5]")).sendKeys(Agreement.amount);
-					driver.findElement(By.xpath("//input[@id='gridCheckBox']")).click();
-					Thread.sleep(3000);
-
-					driver.findElement(By.xpath("(//input[@id='pyValue'])[6]")).clear();
-					DateFormat format = new SimpleDateFormat("yyyyMMdd");
-					Date dt = new Date();
-					String mydate = format.format(dt);
-					driver.findElement(By.xpath("(//input[@id='pyValue'])[6]")).sendKeys(mydate);
-					Thread.sleep(3000);
-
-					driver.findElement(By.xpath("(//*[text()='Run'])[3]")).click();
-					Thread.sleep(3000);
-//					String currentWindow1 = driver.getWindowHandle(); // will keep current window to switch back
-//					for (String winHandle1 : driver.getWindowHandles()) {
-						driver.switchTo().window(winHandle_p).getTitle().equalsIgnoreCase("Status Page");
-							driver.close();
-							Thread.sleep(5000);
-							driver.switchTo().window(currentWindow_p);
-							Thread.sleep(5000);
-
-							driver.close();
-							Thread.sleep(4000);
-
-							driver.quit();
-						}
-					}
-				}
 			}
+		}
 
-		
-	
+		// PaymentBypass
+		driver.switchTo().window(currentWindow);
+		Thread.sleep(5000);
 
+		SV.click();
+		Thread.sleep(3000);
+		act.moveToElement(Favorites).perform();
+		Thread.sleep(3000);
+		act.moveToElement(payment_bypass).click().perform();
+		Thread.sleep(3000);
+		driver.switchTo().frame("PegaGadget1Ifr");
+		Thread.sleep(3000);
+		act.moveToElement(Actions).click().perform();
+		Thread.sleep(3000);
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", Run);
+		Thread.sleep(3000);
+		String currentWindow_p = driver.getWindowHandle(); // will keep current window to switch back
+		for (String winHandle_p : driver.getWindowHandles()) {
+			if (driver.switchTo().window(winHandle_p).getTitle().equalsIgnoreCase("Run")) {
+				driver.switchTo().window(winHandle_p);
+				driver.manage().window().maximize();
+				driver.findElement(By.xpath("(//input[@id='pyValue'])[1]")).sendKeys(ITK);
+				Thread.sleep(3000);
+				driver.findElement(By.xpath("(//input[@id='pyValue'])[5]")).clear();
+				Thread.sleep(3000);
+				driver.findElement(By.xpath("(//input[@id='pyValue'])[5]")).sendKeys(String.valueOf(Agreement.amount1));
+				driver.findElement(By.xpath("//input[@id='gridCheckBox']")).click();
+				Thread.sleep(3000);
 
+				driver.findElement(By.xpath("(//input[@id='pyValue'])[6]")).clear();
+				DateFormat format = new SimpleDateFormat("yyyyMMdd");
+				Date dt = new Date();
+				String mydate = format.format(dt);
+				driver.findElement(By.xpath("(//input[@id='pyValue'])[6]")).sendKeys(mydate);
+				Thread.sleep(3000);
+
+				driver.findElement(By.xpath("(//*[text()='Run'])[3]")).click();
+				Thread.sleep(3000);
+				// String currentWindow1 = driver.getWindowHandle(); // will keep current window
+				// to switch back
+				// for (String winHandle1 : driver.getWindowHandles()) {
+				driver.switchTo().window(winHandle_p).getTitle().equalsIgnoreCase("Status Page");
+				driver.close();
+				Thread.sleep(5000);
+				driver.switchTo().window(currentWindow_p);
+
+			}
+		}
+	}
+}
