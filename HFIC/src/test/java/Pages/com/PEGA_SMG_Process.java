@@ -77,30 +77,26 @@ public class PEGA_SMG_Process extends Baseclass {
 		userid.sendKeys(uid);
 		Password.sendKeys(pwd);
 		Login_Button.click();
-		Thread.sleep(20000);
-
+		Thread.sleep(8000);
 		appid_filter.click();
 		appid_search_text.sendKeys(app_id);
-		Apply_button.click();
 		Thread.sleep(2500);
-
-		if (checkbox.isDisplayed() == false) {
-			Refresh.click();
-
-			appid_filter.click();
-
-			appid_search_text.sendKeys(app_id);
-
-			Apply_button.click();
-		} else {
-			checkbox.click();
-		}
+		Apply_button.click();
+		checkbox.click();
+		Thread.sleep(1000);
 		Assignbtton.click();
-		assign_id.sendKeys(user);
-		submit.click();
-		image.click();
-		logout.click();
+		Thread.sleep(1000);
 
+		assign_id.sendKeys(user);
+		Thread.sleep(1000);
+
+		submit.click();
+		Thread.sleep(1000);
+
+		image.click();
+		Thread.sleep(1000);
+
+		logout.click();
 	}
 
 	@FindBy(xpath = "//button[text()='Refresh']")

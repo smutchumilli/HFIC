@@ -39,27 +39,53 @@ public class LampLogin extends Baseclass {
 		HealthInsurencePlans.Health_Insurence_Plans();
 
 		GroupInformationPage GroupInformationPage = PageFactory.initElements(driver, GroupInformationPage.class);
-		GroupInformationPage.Group_Information_Page(data.getstringdata("Login", 5, 0),
-				data.getstringdata("Login", 6, 0), data.getstringdata("Login", 7, 0), data.getstringdata("Login", 8, 0),
-				data.getstringdata("Login", 9, 0), data.getstringdata("Login", 10, 0),
-				data.getstringdata("Login", 11, 0), data.getstringdata("Login", 12, 0),
-				data.getstringdata("Login", 13, 0), data.getstringdata("Login", 14, 0),
-				data.getstringdata("Login", 15, 0), data.getstringdata("Login", 16, 0),
-				data.getstringdata("Login", 17, 0), data.getstringdata("Login", 18, 0),
-				data.getstringdata("Login", 19, 0));
+		GroupInformationPage.Group_Information_Page(data.getstringdata("Login", 1, 6),
+				data.getstringdata("Login", 2,6), data.getstringdata("Login", 3, 6), 
+				data.getstringdata("Login", 4, 6),data.getstringdata("Login", 5, 6),
+				data.getstringdata("Login", 6, 6),
+				data.getstringdata("Login", 7, 6), data.getstringdata("Login", 8, 6),
+				data.getstringdata("Login", 9, 6), data.getstringdata("Login", 10, 6),
+				data.getstringdata("Login", 11, 6), data.getstringdata("Login", 12, 6),
+				data.getstringdata("Login", 13, 6), data.getstringdata("Login", 14, 6),
+				data.getstringdata("Login", 15, 6),		
+				data.getstringdata("Login", 16, 6),data.getstringdata("Login", 17, 6),
+				data.getstringdata("Login", 18, 6),data.getstringdata("Login", 19, 6),
+				data.getstringdata("Login", 20, 6),data.getstringdata("Login", 21, 6),
+				data.getstringdata("Login", 22, 6),data.getstringdata("Login", 23, 6),
+				data.getstringdata("Login", 24, 6),data.getstringdata("Login", 25, 6),
+				data.getstringdata("Login", 26, 6),data.getstringdata("Login", 27, 6),
+				
+				data.getstringdata("Login", 28, 6),data.getstringdata("Login", 29, 6),
+				data.getstringdata("Login", 30, 6),data.getstringdata("Login", 31, 6));
 
 		Group_Administration Group_Administration = PageFactory.initElements(driver, Group_Administration.class);
-		Group_Administration.GroupAdministration(data.getstringdata("Login", 0, 1), data.getstringdata("Login", 0, 1),
-				data.getstringdata("Login", 0, 1), data.getstringdata("Login", 1, 1), data.getstringdata("Login", 0, 1),
-				data.getstringdata("Login", 1, 1), data.getstringdata("Login", 1, 1));
+		Group_Administration.GroupAdministration(data.getstringdata("Login", 1, 4), data.getstringdata("Login", 2, 4),
+				data.getstringdata("Login", 3, 4), data.getstringdata("Login", 4, 4), data.getstringdata("Login", 5, 4),
+				data.getstringdata("Login", 6, 4), data.getstringdata("Login", 7, 4),
+				data.getstringdata("Login", 8 ,4),
+				data.getstringdata("Login", 9 ,4),
+				data.getstringdata("Login", 10 ,4),
+				data.getstringdata("Login", 11 ,4),
+				data.getstringdata("Login", 12 ,4),
+				data.getstringdata("Login", 13 ,4),
+				data.getstringdata("Login", 14 ,4),
+				data.getstringdata("Login", 15 ,4),
+				data.getstringdata("Login", 16 ,4),
+				data.getstringdata("Login", 17 ,4));
+				
+				
+				
 
 		COBRA_Coverage COBRA_Coverage = PageFactory.initElements(driver, COBRA_Coverage.class);
 		COBRA_Coverage.COBRA_Coverage1(data.getstringdata("Login", 0, 1),data.getstringdata("Login", 0, 1));
 		BrokerGeneralAgentInformation BrokerGeneral_AgentInformation = PageFactory.initElements(driver,
 				BrokerGeneralAgentInformation.class);
-		BrokerGeneral_AgentInformation.BrokerGeneral_AgentInformation(data.getstringdata("Login", 0, 2),
-				data.getstringdata("Login", 1, 2), data.getstringdata("Login", 2, 2), data.getstringdata("Login", 3, 2),
-				data.getstringdata("Login", 4, 2));
+		BrokerGeneral_AgentInformation.BrokerGeneral_AgentInformation(data.getstringdata("Login", 1, 5),
+				data.getstringdata("Login", 2, 5), data.getstringdata("Login", 3, 5), 
+				data.getstringdata("Login", 4, 5),
+				data.getstringdata("Login", 5, 5),
+				data.getstringdata("Login", 6, 5),
+				data.getstringdata("Login", 7, 5));
 
 		AddEmployee AddEmployee = PageFactory.initElements(driver, AddEmployee.class);
 		AddEmployee.Add_Emp();
