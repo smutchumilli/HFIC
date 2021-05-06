@@ -68,9 +68,9 @@ public class Uploaddocument {
 	    Thread.sleep(5000);
 
 	    driver.findElement(By.xpath("//input[@name='file2']")).sendKeys("Q:\\Smutchumilli\\upload.docx");
-	   	Thread.sleep(3000);
+	   	Thread.sleep(5000);
 	   ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", Continue);
-	     Thread.sleep(3000);
+	     Thread.sleep(5000);
 	     Continue.click();
 	     Thread.sleep(3000);
 

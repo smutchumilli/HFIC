@@ -16,9 +16,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 import Pages.com.Baseclass;
+import Utilities.com.TestDataProvider;
 
 
-public class Agreement extends Baseclass {
+public class Agreement  {
 	WebDriver driver;
 	public Agreement(WebDriver driver){
 		this.driver=driver;
@@ -49,22 +50,22 @@ public class Agreement extends Baseclass {
 
 	
 	
-	public void Agreement1(String an,String aba,String accnum,String caccnum,String baddr,String city1,String zip1) throws InterruptedException, IOException{
+	public void Agreement1() throws InterruptedException, IOException{
+		
+		TestDataProvider data= new TestDataProvider();
 		sign.sendKeys("Srikanth");
 		JavascriptExecutor js= (JavascriptExecutor)driver;
-		Thread.sleep(2000);
-
 		js.executeScript("arguments[0].click();", acknowledge);
 		Select s =new Select( accoun_type);
 		s.selectByIndex(1);
-		account_name.sendKeys(an);
-		routing_aba.sendKeys(aba);
-		account_number.sendKeys(accnum);
-		confirm_account_number.sendKeys(caccnum);
-		billing_address.sendKeys(baddr);
-		city.sendKeys(city1);
-		zip.sendKeys(zip1);
-		Thread.sleep(3000);
+		account_name.sendKeys(data.getstringdata("Login", 20, 0));
+		routing_aba.sendKeys(data.getstringdata("Login", 21, 0));
+		account_number.sendKeys(data.getstringdata("Login", 22, 0));
+		confirm_account_number.sendKeys(data.getstringdata("Login", 23, 0));
+		billing_address.sendKeys(data.getstringdata("Login", 24, 0));
+		city.sendKeys(data.getstringdata("Login", 25, 0));
+		zip.sendKeys(data.getstringdata("Login", 26, 0));
+		Thread.sleep(2000);
 		js.executeScript("arguments[0].click();", Review_Payment);
 		Thread.sleep(5000);
 		Submit_Payment.click();
@@ -89,7 +90,7 @@ public class Agreement extends Baseclass {
 //		wb.write(outputStream);
 //		outputStream.close();
 //		wb.close();		
-		driver.findElement(By.xpath("//*[text()='Log Out']")).click();
+		//driver.findElement(By.xpath("//*[text()='Log Out']")).click();
 			
 	}
 	

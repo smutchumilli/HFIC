@@ -6,16 +6,4 @@
       <class name="HFIC.Testcases.com.LampLogin"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="HFIC.Testcases.com.LampLogin">
-        <methods>
-          <include name="Start_up"/>
-          <include name="Tear_Down"/>
-          <include name="Lamp_SMG_Application_Submissionn"/>
-          <include name="Application_Start"/>
-        </methods>
-      </class> <!-- HFIC.Testcases.com.LampLogin -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

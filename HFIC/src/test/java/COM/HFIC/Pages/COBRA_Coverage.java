@@ -9,12 +9,12 @@ import org.openqa.selenium.support.FindBy;
 import Pages.com.Baseclass;
 import Utilities.com.TestDataProvider;
 
-public class COBRA_Coverage extends Baseclass {
-//WebDriver driver;
+public class COBRA_Coverage  {
+WebDriver driver;
 	public COBRA_Coverage(WebDriver driver) {
 		this.driver = driver;
 	}
-	//public TestDataProvider data;
+	public TestDataProvider data;
 
 	@FindBy(id = "isCoveredByCobraYes")
 	WebElement RDO_isCoveredByCobraYes;
@@ -27,14 +27,14 @@ public class COBRA_Coverage extends Baseclass {
 	@FindBy(xpath = "//input[@name='benefits_period']//following::button[1]")
 	WebElement Btn_cnt;
 
-	public void COBRA_Coverage1(String a,String b) throws InterruptedException
+	public void COBRA_Coverage1() throws InterruptedException
 	{
-		//data= new TestDataProvider();
+		
+		data= new TestDataProvider();
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", RDO_isCoveredByCobraYes);
-		Thread.sleep(5000);
-		Txt_individuals_currently_covered.sendKeys(a);
+		Txt_individuals_currently_covered.sendKeys(data.getstringdata("Login", 0, 1));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", RDO_isDisabledInHospitalYes);
-		Text_benefits_period.sendKeys(b);
+		Text_benefits_period.sendKeys(data.getstringdata("Login", 0, 1));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", Btn_cnt);
 
 	}

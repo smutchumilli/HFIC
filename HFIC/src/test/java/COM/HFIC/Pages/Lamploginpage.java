@@ -7,16 +7,22 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 
-public class Lamploginpage {
-	WebDriver driver;
+import Pages.com.Baseclass;
+import Utilities.com.TestDataProvider;
+
+public class Lamploginpage extends Baseclass{
+	//WebDriver driver;
 	public Lamploginpage(WebDriver driver){
 		this.driver= driver;
 	}
+	
+	public TestDataProvider data ;
+
 	@FindBy(name="username")@CacheLookup  WebElement username;
 	@FindBy(name="npn-tax-id")@CacheLookup  WebElement npn;
 	@FindBy(name="password")@CacheLookup  WebElement password;
 
-public void login_to_Lamp(String user_name,String NPN,String pass_word ){
+public void login_to_Lamp( ){
 	try {
 		Thread.sleep(5000);
 	} catch (InterruptedException e) {
@@ -24,10 +30,11 @@ public void login_to_Lamp(String user_name,String NPN,String pass_word ){
 		
 	}
 	
+	data= new TestDataProvider();
 	JavascriptExecutor js= (JavascriptExecutor)driver;
-	username.sendKeys(user_name);
-	npn.sendKeys(NPN);
-	password.sendKeys(pass_word);
+	username.sendKeys(data.getstringdata("Login", 0, 0));
+	npn.sendKeys(data.getstringdata("Login", 1, 0));
+	password.sendKeys(data.getstringdata("Login", 2, 0));
 	WebElement SignIn= driver.findElement(By.xpath("//*[@id='login-wrapper']/div[7]/div[1]/div/div/div[5]/button"));
 	js.executeScript("arguments[0].click();", SignIn);
 }

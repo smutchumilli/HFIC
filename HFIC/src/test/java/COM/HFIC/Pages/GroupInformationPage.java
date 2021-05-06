@@ -7,9 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+import Utilities.com.TestDataProvider;
+
 public class GroupInformationPage {
 	public WebDriver driver;
-
+public TestDataProvider data;
 	public GroupInformationPage(WebDriver driver) {
 		this.driver = driver;
 	}
@@ -90,28 +92,40 @@ public class GroupInformationPage {
 	@FindBy(id = "billing_fax_number")
 	WebElement billing_fax_number;
 
-	public void Group_Information_Page(String Tax, String paddress, String pcity1, String pzip, String pphone,
-			String bafname, String balastname, String baemail, String baphonenumber, String bastreetaddress,
-			String bacity, String bazip, String bfname, String blastname, String bemail, String dba1, String CEO1,
-			String nob1, String paddr21, String pfax1, String industry_type1, String naics1, String baaddr21,
-			String baacnt1, String abapn1, String billing_street_address21, String billing_street_address1,
-			String billingCityInput1, String billingZipInput1, String billing_phone_number1, String billing_fax_number1)
+	public void Group_Information_Page()
 			throws InterruptedException {
-		Tax1.sendKeys(Tax);
-		paddress11.sendKeys(paddress);
-		pcity.sendKeys(pcity1);
-		pzip1.sendKeys(pzip);
-		pphone1.sendKeys(pphone);
-		bafname1.sendKeys(bafname);
-		balastname1.sendKeys(balastname);
-		baemail1.sendKeys(baemail);
-		baphonenumber1.sendKeys(baphonenumber);
-		bastreetaddress1.sendKeys(bastreetaddress);
-		bacity1.sendKeys(bacity);
-		bazip1.sendKeys(bazip);
-		bfname1.sendKeys(bfname);
-		blastname1.sendKeys(blastname);
-		bemail1.sendKeys(bemail);
+		
+		
+		data= new TestDataProvider();
+		DBA.sendKeys(data.getstringdata("Login", 1, 6));
+		Tax1.sendKeys(data.getstringdata("Login", 2, 6));
+		CEO.sendKeys(data.getstringdata("Login", 3, 6));
+		nob.sendKeys(data.getstringdata("Login", 4, 6));
+		paddress11.sendKeys(data.getstringdata("Login", 5, 6));
+		paddr2.sendKeys(data.getstringdata("Login", 6, 6));
+		pcity.sendKeys(data.getstringdata("Login", 7, 6));
+		pzip1.sendKeys(data.getstringdata("Login", 8, 6));
+		pphone1.sendKeys(data.getstringdata("Login", 9, 6));
+		pfax.sendKeys(data.getstringdata("Login", 10, 6));
+		industry_type.sendKeys(data.getstringdata("Login", 11, 6));
+		naics.sendKeys(data.getstringdata("Login", 12, 6));	
+		
+		
+		bafname1.sendKeys(data.getstringdata("Login", 13, 6));
+		balastname1.sendKeys(data.getstringdata("Login", 14, 6));
+		baemail1.sendKeys(data.getstringdata("Login", 15, 6));
+		baphonenumber1.sendKeys(data.getstringdata("Login", 16, 6));
+		bastreetaddress1.sendKeys(data.getstringdata("Login", 17, 6));
+		baaddr2.sendKeys(data.getstringdata("Login", 18, 6));
+		bacity1.sendKeys(data.getstringdata("Login", 19, 6));
+		bazip1.sendKeys(data.getstringdata("Login", 20, 6));
+		baacnt.sendKeys(data.getstringdata("Login", 21, 6));
+		abapn.sendKeys(data.getstringdata("Login", 22, 6));
+	//	
+		bfname1.sendKeys(data.getstringdata("Login", 23, 6));
+		blastname1.sendKeys(data.getstringdata("Login", 24, 6));
+		bemail1.sendKeys(data.getstringdata("Login", 25, 6));
+		
 		Thread.sleep(4000);
 		Select s = new Select(driver.findElement(By.name("businessTypeSelect")));
 		s.selectByIndex(5);
@@ -119,25 +133,18 @@ public class GroupInformationPage {
 		WebElement affr = driver.findElement(By.xpath("//input[@name='nature_of_business']//following::input[2]"));
 		js4.executeScript("arguments[0].click();", affr);
 		WebElement cnt1 = driver.findElement(By.xpath("//input[@name='billing_email_address']//following::button[1]"));
-		DBA.sendKeys(dba1);
-		CEO.sendKeys(CEO1);
-		nob.sendKeys(nob1);
-		paddr2.sendKeys(paddr21);
-		pfax.sendKeys(pfax1);
-		industry_type.sendKeys(industry_type1);
-		naics.sendKeys(naics1);
-		baaddr2.sendKeys(baaddr21);
-		baacnt.sendKeys(baacnt1);
-		abapn.sendKeys(abapn1);
+		
+		
+	//	
 		billinginformation.click();
-		billing_street_address.sendKeys(billing_street_address1);
-		billingCityInput.sendKeys(billingCityInput1);
+		billing_street_address.sendKeys(data.getstringdata("Login", 26, 6));
+		billing_street_address2.sendKeys(data.getstringdata("Login", 27, 6));
+		billingCityInput.sendKeys(data.getstringdata("Login", 28, 6));
 		Select s2 = new Select(billingStateSelect);
 		s2.selectByVisibleText("NY");
-		billingZipInput.sendKeys(billingZipInput1);
-		billing_phone_number.sendKeys(billing_phone_number1);
-		billing_street_address2.sendKeys(billing_street_address21);
-		billing_fax_number.sendKeys(billing_fax_number1);
+		billingZipInput.sendKeys(data.getstringdata("Login", 29, 6));
+		billing_phone_number.sendKeys(data.getstringdata("Login", 30, 6));
+		billing_fax_number.sendKeys(data.getstringdata("Login", 31, 6));
 		js4.executeScript("arguments[0].click();", cnt1);
 
 	}

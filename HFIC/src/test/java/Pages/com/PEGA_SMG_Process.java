@@ -29,14 +29,17 @@ import com.sun.glass.events.KeyEvent;
 
 import COM.HFIC.Pages.Agreement;
 import Utilities.com.Helper;
+import Utilities.com.TestDataProvider;
 import io.reactivex.rxjava3.functions.Action;
 
-public class PEGA_SMG_Process extends Baseclass {
+public class PEGA_SMG_Process {
+	WebDriver driver;
 
 	public PEGA_SMG_Process(WebDriver driver) {
 		this.driver = driver;
 	}
 
+	public TestDataProvider data;
 	// input[@id='txtUserID']
 	@FindBy(xpath = "//input[@id='txtUserID']")
 	WebElement userid;
@@ -68,37 +71,62 @@ public class PEGA_SMG_Process extends Baseclass {
 	WebElement image;
 	@FindBy(xpath = "//*[@id='pyNavigation1615791358304']/li[3]/a/span/span")
 	WebElement logout;
+	
+	@FindBy(xpath = "//*[text()='Log off']")
+	WebElement Super_Logout;
+	@FindBy(name = "FinalReviewActionButtons_pyWorkPage_1")
+	WebElement SUbmit;
 
-	// PEGA Login:
+	@FindBy(xpath = "//*[text()='GO TO STEP:3 REVIEW PAYMENT']")
+	WebElement Review_PAYMENT;
+	@FindBy(xpath = "//*[text()='GO TO STEP 4: FINAL REVIEW']")
+	WebElement Final_Review;
 
-	public void HFIC_Manager_Login(String uid, String pwd, String app_id, String user) throws InterruptedException {
-		Thread.sleep(5000);
-		driver.get("https://pegaenbst.healthfirst.org/prweb");
-		userid.sendKeys(uid);
-		Password.sendKeys(pwd);
-		Login_Button.click();
-		Thread.sleep(8000);
-		appid_filter.click();
-		appid_search_text.sendKeys(app_id);
-		Thread.sleep(2500);
-		Apply_button.click();
-		checkbox.click();
-		Thread.sleep(1000);
-		Assignbtton.click();
-		Thread.sleep(1000);
+	@FindBy(xpath = "//*[text()='NYS45']")
+	WebElement NYS45;
+	@FindBy(xpath = "//*[text()='GroupApplication']")
+	WebElement GRPAPPL;
+	@FindBy(xpath = "//*[text()='PaymentAuthorizationForm']")
+	WebElement PAF;
 
-		assign_id.sendKeys(user);
-		Thread.sleep(1000);
+	// Payment ByPass
+	@FindBy(xpath = "//*[@id='$PpyNavigation1615791358304$ppyElements$l1$ppyElements$l1']/li[4]")
+	WebElement hfic_support;
 
-		submit.click();
-		Thread.sleep(1000);
+	@FindBy(xpath = "//*[text()='Switch Application']")
+	WebElement Switch_application;
 
-		image.click();
-		Thread.sleep(1000);
+	@FindBy(xpath = "//*[@id='RULE_KEY']/div[2]/div/i")
+	WebElement SV;
 
-		logout.click();
-	}
+	@FindBy(xpath = "//*[text()='My Favorites']")
+	WebElement Favorites;
 
+	@FindBy(xpath = "//*[@id='$PpyNavigation1615668990878$ppyElements$l7']//li[12]")
+	WebElement intakecaselist;
+
+	@FindBy(xpath = "//*[@id='$PpyNavigation1615668990878$ppyElements$l7']//li[11]")
+	WebElement payment_bypass;
+
+	@FindBy(xpath = "//button[contains(text(),'Actions')]")
+	WebElement Actions;
+	@FindBy(xpath = "(//*[text()='Run'])[2]")
+	WebElement Run;
+	@FindBy(xpath = "(//*[@id='pui_colmenu'])[3]")
+	WebElement filter_icon;
+	@FindBy(xpath = "//*[text()='Filter']")
+	WebElement filter;
+
+	@FindBy(xpath = "//input[@id='f9b6bb99']")
+	WebElement input_Search;
+
+	@FindBy(xpath = "//button[text()='Apply']")
+	WebElement Search_text;
+	@FindBy(xpath = "//*[contains(text(),'ITK')]")
+	WebElement ITK_NUM;
+	public static String ITK;
+	public static String mydate;
+	
 	@FindBy(xpath = "//button[text()='Refresh']")
 	WebElement Refresh;
 
@@ -142,13 +170,141 @@ public class PEGA_SMG_Process extends Baseclass {
 	@FindBy(xpath = "//*[text()='GroupApplication']//following::input[5]")
 	WebElement Grpappl_Doc_Approval;
 
-	public void HFIC_Superuser_login(String uid, String pwd, String app_id) throws InterruptedException {
+	// PEGA Login:
 
-		userid.sendKeys(uid);
-		Password.sendKeys(pwd);
+	
+	public void PEGA_process() throws InterruptedException, AWTException {
+		data= new TestDataProvider();
+		Thread.sleep(2500);
+		driver.get("https://pegaenbst.healthfirst.org/prweb/sso");
+		Thread.sleep(2500);
+		image.click();
+		Thread.sleep(2500);
+		Actions act = new Actions(driver);
+		act.moveToElement(Switch_application).perform();
+
+		// Switch_application.click();
+		Thread.sleep(1000);
+		act.moveToElement(hfic_support).click().perform();
+		Thread.sleep(1000);
+		SV.click();
+		Thread.sleep(1000);
+		act.moveToElement(Favorites).perform();
+		Thread.sleep(1000);
+
+		// HFIC Intake case list
+		act.moveToElement(intakecaselist).click().perform();
+		Thread.sleep(3000);
+		driver.switchTo().frame("PegaGadget0Ifr");
+		Thread.sleep(5000);
+
+		act.moveToElement(Actions).click().perform();
+		Thread.sleep(1000);
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", Run);
+		Thread.sleep(7000);
+		// Handlewindow
+		String currentWindow = driver.getWindowHandle(); // will keep current window to switch back
+		for (String winHandle : driver.getWindowHandles()) {
+			if (driver.switchTo().window(winHandle).getTitle().equalsIgnoreCase("HFIC Intake CaseList")) {
+				driver.switchTo().window(winHandle);
+				Thread.sleep(4000);
+				driver.manage().window().maximize();
+				Thread.sleep(4000);
+				filter_icon.click();
+				Thread.sleep(2000);
+				filter.click();
+				Thread.sleep(14000);
+				input_Search.sendKeys(Agreement.appnum);
+				Thread.sleep(15000);
+				Search_text.click();
+				Thread.sleep(20000);
+				ITK = ITK_NUM.getText();
+				System.out.println(ITK);
+				driver.close();
+				Thread.sleep(3000);
+
+			}
+		}
+
+		// PaymentBypass
+		driver.switchTo().window(currentWindow);
+		Thread.sleep(5000);
+
+		SV.click();
+		Thread.sleep(3000);
+		act.moveToElement(Favorites).perform();
+		Thread.sleep(3000);
+		act.moveToElement(payment_bypass).click().perform();
+		Thread.sleep(3000);
+		driver.switchTo().frame("PegaGadget1Ifr");
+		Thread.sleep(3000);
+		act.moveToElement(Actions).click().perform();
+		Thread.sleep(3000);
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", Run);
+		Thread.sleep(3000);
+		String currentWindow_p = driver.getWindowHandle(); // will keep current window to switch back
+		for (String winHandle_p : driver.getWindowHandles()) {
+			if (driver.switchTo().window(winHandle_p).getTitle().equalsIgnoreCase("Run")) {
+				driver.switchTo().window(winHandle_p);
+				driver.manage().window().maximize();
+				Thread.sleep(3000);
+
+				driver.findElement(By.xpath("(//input[@id='pyValue'])[1]")).sendKeys(ITK);
+				driver.findElement(By.xpath("(//input[@id='pyValue'])[5]")).clear();
+				Thread.sleep(1000);
+				driver.findElement(By.xpath("(//input[@id='pyValue'])[5]")).sendKeys(String.valueOf(Agreement.amount1));
+				driver.findElement(By.xpath("//input[@id='gridCheckBox']")).click();
+				Thread.sleep(1000);
+				driver.findElement(By.xpath("(//input[@id='pyValue'])[6]")).clear();
+				DateFormat format = new SimpleDateFormat("yyyyMMdd");
+				Date dt = new Date();
+				mydate = format.format(dt);
+				driver.findElement(By.xpath("(//input[@id='pyValue'])[6]")).sendKeys(mydate);
+				Thread.sleep(1000);
+				driver.findElement(By.xpath("(//*[text()='Run'])[3]")).click();
+				Thread.sleep(3000);
+				// String currentWindow1 = driver.getWindowHandle(); // will keep current window
+				// to switch back
+				// for (String winHandle1 : driver.getWindowHandles()) {
+				driver.switchTo().window(winHandle_p).getTitle().equalsIgnoreCase("Status Page");
+				driver.close();
+				Thread.sleep(5000);
+				driver.switchTo().window(currentWindow_p);
+
+			}
+		}
+		
+		Thread.sleep(5000);
+		driver.get("https://pegaenbst.healthfirst.org/prweb");
+		userid.sendKeys(data.getstringdata("Pega", 0, 0));
+		Password.sendKeys(data.getstringdata("Pega", 0, 1));
+		Login_Button.click();
+		Thread.sleep(8000);
+		appid_filter.click();
+		appid_search_text.sendKeys(Agreement.appnum);
+		Thread.sleep(2500);
+		Apply_button.click();
+		checkbox.click();
+		Thread.sleep(1000);
+		Assignbtton.click();
+		Thread.sleep(1000);
+
+		assign_id.sendKeys(data.getstringdata("Pega", 0, 2));
+		Thread.sleep(1000);
+
+		submit.click();
+		Thread.sleep(1000);
+
+		image.click();
+		Thread.sleep(1000);
+
+		logout.click();
+		
+		userid.sendKeys(data.getstringdata("Pega", 1, 0));
+		Password.sendKeys(data.getstringdata("Pega", 1, 1));
 		Login_Button.click();
 		appid_filter_Suser.click();
-		appid_search_text_suser.sendKeys(app_id);
+		appid_search_text_suser.sendKeys(Agreement.appnum);
 		Apply_button.click();
 		Thread.sleep(5000);
 		Results.click();
@@ -226,18 +382,18 @@ public class PEGA_SMG_Process extends Baseclass {
 		Thread.sleep(2000);
 
 		row3.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 
 		confirm.click();
 
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 
 		Next1.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 
 		confirm.click();
 
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 
 		mem_listing.click();
 
@@ -303,164 +459,5 @@ public class PEGA_SMG_Process extends Baseclass {
 		Super_Logout.click();
 		Thread.sleep(3500);
 		driver.quit();
-
-	}
-
-	@FindBy(xpath = "//*[text()='Log off']")
-	WebElement Super_Logout;
-	@FindBy(name = "FinalReviewActionButtons_pyWorkPage_1")
-	WebElement SUbmit;
-
-	@FindBy(xpath = "//*[text()='GO TO STEP:3 REVIEW PAYMENT']")
-	WebElement Review_PAYMENT;
-	@FindBy(xpath = "//*[text()='GO TO STEP 4: FINAL REVIEW']")
-	WebElement Final_Review;
-
-	@FindBy(xpath = "//*[text()='NYS45']")
-	WebElement NYS45;
-	@FindBy(xpath = "//*[text()='GroupApplication']")
-	WebElement GRPAPPL;
-	@FindBy(xpath = "//*[text()='PaymentAuthorizationForm']")
-	WebElement PAF;
-
-	// Payment ByPass
-	@FindBy(xpath = "//*[@id='$PpyNavigation1615791358304$ppyElements$l1$ppyElements$l1']/li[4]")
-	WebElement hfic_support;
-
-	@FindBy(xpath = "//*[text()='Switch Application']")
-	WebElement Switch_application;
-
-	@FindBy(xpath = "//*[@id='RULE_KEY']/div[2]/div/i")
-	WebElement SV;
-
-	@FindBy(xpath = "//*[text()='My Favorites']")
-	WebElement Favorites;
-
-	@FindBy(xpath = "//*[@id='$PpyNavigation1615668990878$ppyElements$l7']//li[12]")
-	WebElement intakecaselist;
-
-	@FindBy(xpath = "//*[@id='$PpyNavigation1615668990878$ppyElements$l7']//li[11]")
-	WebElement payment_bypass;
-
-	@FindBy(xpath = "//button[contains(text(),'Actions')]")
-	WebElement Actions;
-	@FindBy(xpath = "(//*[text()='Run'])[2]")
-	WebElement Run;
-	@FindBy(xpath = "(//*[@id='pui_colmenu'])[3]")
-	WebElement filter_icon;
-	@FindBy(xpath = "//*[text()='Filter']")
-	WebElement filter;
-
-	@FindBy(xpath = "//input[@id='f9b6bb99']")
-	WebElement input_Search;
-
-	@FindBy(xpath = "//button[text()='Apply']")
-	WebElement Search_text;
-	@FindBy(xpath = "//*[contains(text(),'ITK')]")
-	WebElement ITK_NUM;
-	public static String ITK;
-
-	public void Payment_Bypass() throws InterruptedException, AWTException {
-
-		Thread.sleep(2500);
-		driver.get("https://pegaenbst.healthfirst.org/prweb/sso");
-		Thread.sleep(2500);
-
-		image.click();
-		Thread.sleep(2500);
-		Actions act = new Actions(driver);
-		act.moveToElement(Switch_application).perform();
-
-		// Switch_application.click();
-		Thread.sleep(1000);
-		act.moveToElement(hfic_support).click().perform();
-		Thread.sleep(1000);
-		SV.click();
-		Thread.sleep(1000);
-		act.moveToElement(Favorites).perform();
-		Thread.sleep(1000);
-
-		// HFIC Intake case list
-		act.moveToElement(intakecaselist).click().perform();
-		Thread.sleep(3000);
-		driver.switchTo().frame("PegaGadget0Ifr");
-		Thread.sleep(5000);
-
-		act.moveToElement(Actions).click().perform();
-		Thread.sleep(1000);
-		((JavascriptExecutor) driver).executeScript("arguments[0].click();", Run);
-		Thread.sleep(7000);
-		// Handlewindow
-		String currentWindow = driver.getWindowHandle(); // will keep current window to switch back
-		for (String winHandle : driver.getWindowHandles()) {
-			if (driver.switchTo().window(winHandle).getTitle().equalsIgnoreCase("HFIC Intake CaseList")) {
-				driver.switchTo().window(winHandle);
-				Thread.sleep(4000);
-				driver.manage().window().maximize();
-				Thread.sleep(4000);
-				filter_icon.click();
-				Thread.sleep(2000);
-				filter.click();
-				Thread.sleep(14000);
-				input_Search.sendKeys(Agreement.appnum);
-				Thread.sleep(15000);
-				Search_text.click();
-				Thread.sleep(20000);
-				ITK = ITK_NUM.getText();
-				System.out.println(ITK);
-				driver.close();
-				Thread.sleep(3000);
-
-			}
-		}
-
-		// PaymentBypass
-		driver.switchTo().window(currentWindow);
-		Thread.sleep(5000);
-
-		SV.click();
-		Thread.sleep(3000);
-		act.moveToElement(Favorites).perform();
-		Thread.sleep(3000);
-		act.moveToElement(payment_bypass).click().perform();
-		Thread.sleep(3000);
-		driver.switchTo().frame("PegaGadget1Ifr");
-		Thread.sleep(3000);
-		act.moveToElement(Actions).click().perform();
-		Thread.sleep(3000);
-		((JavascriptExecutor) driver).executeScript("arguments[0].click();", Run);
-		Thread.sleep(3000);
-		String currentWindow_p = driver.getWindowHandle(); // will keep current window to switch back
-		for (String winHandle_p : driver.getWindowHandles()) {
-			if (driver.switchTo().window(winHandle_p).getTitle().equalsIgnoreCase("Run")) {
-				driver.switchTo().window(winHandle_p);
-				driver.manage().window().maximize();
-				driver.findElement(By.xpath("(//input[@id='pyValue'])[1]")).sendKeys(ITK);
-				Thread.sleep(3000);
-				driver.findElement(By.xpath("(//input[@id='pyValue'])[5]")).clear();
-				Thread.sleep(3000);
-				driver.findElement(By.xpath("(//input[@id='pyValue'])[5]")).sendKeys(String.valueOf(Agreement.amount1));
-				driver.findElement(By.xpath("//input[@id='gridCheckBox']")).click();
-				Thread.sleep(3000);
-
-				driver.findElement(By.xpath("(//input[@id='pyValue'])[6]")).clear();
-				DateFormat format = new SimpleDateFormat("yyyyMMdd");
-				Date dt = new Date();
-				String mydate = format.format(dt);
-				driver.findElement(By.xpath("(//input[@id='pyValue'])[6]")).sendKeys(mydate);
-				Thread.sleep(3000);
-
-				driver.findElement(By.xpath("(//*[text()='Run'])[3]")).click();
-				Thread.sleep(3000);
-				// String currentWindow1 = driver.getWindowHandle(); // will keep current window
-				// to switch back
-				// for (String winHandle1 : driver.getWindowHandles()) {
-				driver.switchTo().window(winHandle_p).getTitle().equalsIgnoreCase("Status Page");
-				driver.close();
-				Thread.sleep(5000);
-				driver.switchTo().window(currentWindow_p);
-
-			}
-		}
 	}
 }

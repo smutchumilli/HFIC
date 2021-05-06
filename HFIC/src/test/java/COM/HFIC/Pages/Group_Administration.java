@@ -5,11 +5,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import Utilities.com.TestDataProvider;
+
 public class Group_Administration {
 	WebDriver driver;
 	public Group_Administration(WebDriver driver){
 	this.driver=driver;
 	}
+	public TestDataProvider data;
 	@FindBy(name="total_number_of_fte")WebElement FTE;
 	@FindBy(name="total_number_of_employees_in_service_area")WebElement SERVICEAEA;
 	@FindBy(name="total_number_of_active_employees_enrolling")WebElement ACTIVEEMPLOYEES;
@@ -48,43 +51,28 @@ public class Group_Administration {
 
 	
 	
-	public void GroupAdministration(
-			String FTE1,
-			String SERVICEAEA1,
-			String ACTIVEEMPLOYEES1,
-			String COBRA1,
-			String COVERAGE1,
-			String valid_waviers1,
-			String class1Def1,
-			String class2def,
-			String insnsame1,
-			String coveragetype1,
-			String streetaddress1,
-			String straddr21,
-			String city1,
-			String zip1,
-			String polocyeffdate1,
-			String polocytermdate1,
-			String pastgrpcoverage)
+	public void GroupAdministration()
+			
 	{
+		data= new TestDataProvider();
 		JavascriptExecutor js= (JavascriptExecutor)driver;
-		FTE.sendKeys(FTE1);
-		SERVICEAEA.sendKeys(SERVICEAEA1);
-		ACTIVEEMPLOYEES.sendKeys(ACTIVEEMPLOYEES1);
-		COBRA.sendKeys(COBRA1);
-		COVERAGE.sendKeys(COVERAGE1);
-		valid_waviers.sendKeys(valid_waviers1);
+		FTE.sendKeys(data.getstringdata("Login", 1, 4));
+		SERVICEAEA.sendKeys(data.getstringdata("Login", 2, 4));
+		ACTIVEEMPLOYEES.sendKeys(data.getstringdata("Login", 3, 4));
+		COBRA.sendKeys(data.getstringdata("Login", 4, 4));
+		COVERAGE.sendKeys(data.getstringdata("Login", 5, 4));
+		valid_waviers.sendKeys(data.getstringdata("Login", 6, 4));
 		js.executeScript("arguments[0].click();", isSubjectToCobraOrStateYes);
 		js.executeScript("arguments[0].click();", isShopEligibilityRadioBtnNo);
 		js.executeScript("arguments[0].click();", isShopNeededRadioBtnNo);
 		js.executeScript("arguments[0].click();", class1EffectiveDateOfCoverageAndTermination);
-		class1Def.sendKeys(class1Def1);
+		class1Def.sendKeys(data.getstringdata("Login", 7, 4));
 		js.executeScript("arguments[0].click();", class1AsOfDate0Days);
 		js.executeScript("arguments[0].click();", class1WaivedIfRehiredWithinYes);
 		js.executeScript("arguments[0].click();", class1WaivedIfRehiredWithin60Days);
 
 		js.executeScript("arguments[0].click();", class2EligibilityOptionYes);
-		class2.sendKeys(class2def);
+		class2.sendKeys(data.getstringdata("Login", 8, 4));
 		js.executeScript("arguments[0].click();", class2AsOfDate);
 		js.executeScript("arguments[0].click();", class2NewHire0Days);
 		js.executeScript("arguments[0].click();", class2RehireWaitingPeriodYes);
@@ -99,18 +87,18 @@ public class Group_Administration {
 		js.executeScript("arguments[0].click();", class2RehireWaitingPeriod30Days);
 	
 		js.executeScript("arguments[0].click();", isCoverageActiveOrTerminatedYes);
-		insnsame.sendKeys(insnsame1);
-		coveragetype.sendKeys(coveragetype1);
-		streetaddress.sendKeys(streetaddress1);
-		straddr2.sendKeys(straddr21);
-		city.sendKeys(city1);
-		zip.sendKeys(zip1);
-		polocyeffdate.sendKeys(polocyeffdate1);
-		polocytermdate.sendKeys(polocytermdate1);
+		insnsame.sendKeys(data.getstringdata("Login", 9, 4));
+		coveragetype.sendKeys(data.getstringdata("Login", 10, 4));
+		streetaddress.sendKeys(data.getstringdata("Login", 11, 4));
+		straddr2.sendKeys(data.getstringdata("Login", 12, 4));
+		city.sendKeys(data.getstringdata("Login", 13, 4));
+		zip.sendKeys(data.getstringdata("Login", 14, 4));
+		polocyeffdate.sendKeys(data.getstringdata("Login", 15, 4));
+		polocytermdate.sendKeys(data.getstringdata("Login", 16, 4));
 		
 		
 		js.executeScript("arguments[0].click();", isEmployerOfferingMedicalRadioBtnYes);
-		current_past_group_coverage.sendKeys(pastgrpcoverage);
+		current_past_group_coverage.sendKeys(data.getstringdata("Login", 17, 4));
 		js.executeScript("arguments[0].click();", Continu);
 	}
 }
