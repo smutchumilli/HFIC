@@ -9,8 +9,12 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
-public class HealthInsurencePlans {
-	WebDriver driver;
+import com.aventstack.extentreports.Status;
+
+import Pages.com.Baseclass;
+
+public class HealthInsurencePlans extends Baseclass {
+	//WebDriver driver;
 	public HealthInsurencePlans(WebDriver driver){
 		this.driver= driver;
 	}
@@ -38,6 +42,8 @@ public class HealthInsurencePlans {
 		 ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", continu);
 
 		js.executeScript("arguments[0].click();", continu);
+		test.log( Status.INFO," Health insurense plans selected");
+
 	}
 	
 }

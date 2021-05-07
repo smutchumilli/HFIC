@@ -73,8 +73,9 @@ public class Baseclass {
 			test.skip(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 
 		}
-
 		 extent.flush();
+
+
 
 	}
 	
@@ -82,7 +83,7 @@ public class Baseclass {
 	 @AfterClass
 	 public void Application_Exit() {
 		 Browserfactory.Quit_Browser(driver);
-	
+
 	 }
 
 }

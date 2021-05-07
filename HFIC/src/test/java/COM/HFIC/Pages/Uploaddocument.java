@@ -14,8 +14,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-public class Uploaddocument {
-	public WebDriver driver;
+
+import com.aventstack.extentreports.Status;
+
+import Pages.com.Baseclass;
+public class Uploaddocument extends Baseclass {
+	//public WebDriver driver;
 	
 	public Uploaddocument(WebDriver driver){
 		this.driver= driver;
@@ -73,6 +77,7 @@ public class Uploaddocument {
 	     Thread.sleep(5000);
 	     Continue.click();
 	     Thread.sleep(3000);
+	 	test.log( Status.INFO," Required documents are uploded succssfully");
 
 }
 	

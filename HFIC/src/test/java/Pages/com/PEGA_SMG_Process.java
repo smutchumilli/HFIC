@@ -2,6 +2,7 @@ package Pages.com;
 
 import java.awt.AWTException;
 import java.awt.Robot;
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -24,6 +25,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
 import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
 import com.sun.glass.events.KeyEvent;
 
@@ -32,8 +34,8 @@ import Utilities.com.Helper;
 import Utilities.com.TestDataProvider;
 import io.reactivex.rxjava3.functions.Action;
 
-public class PEGA_SMG_Process {
-	WebDriver driver;
+public class PEGA_SMG_Process extends Baseclass {
+	//WebDriver driver;
 
 	public PEGA_SMG_Process(WebDriver driver) {
 		this.driver = driver;
@@ -169,37 +171,61 @@ public class PEGA_SMG_Process {
 	WebElement NYS45_Doc_Approval;
 	@FindBy(xpath = "//*[text()='GroupApplication']//following::input[5]")
 	WebElement Grpappl_Doc_Approval;
+	
+	@FindBy(id = "24dbd519")WebElement inputsearch;
+	@FindBy(name = "pzStudioHeaderTools_pyDisplayHarness_2")WebElement search;
+	@FindBy(linkText = "HFICIntakeCaseList")WebElement HFICIntakeCaseList;
+	@FindBy(xpath = "(//*[text()='Activity']//following::a[1])[2]")WebElement paymentbypass;
 
+	
+	
 	// PEGA Login:
 
 	
-	public void PEGA_process() throws InterruptedException, AWTException {
+	public void PEGA_process() throws InterruptedException, AWTException, IOException {
 		data= new TestDataProvider();
 		Thread.sleep(2500);
+		test.log( Status.INFO," Login to PEGA SSO for Bypass the payment");
+
 		driver.get("https://pegaenbst.healthfirst.org/prweb/sso");
 		Thread.sleep(2500);
+		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+
 		image.click();
 		Thread.sleep(2500);
 		Actions act = new Actions(driver);
 		act.moveToElement(Switch_application).perform();
 
 		// Switch_application.click();
-		Thread.sleep(1000);
+		Thread.sleep(1700);
 		act.moveToElement(hfic_support).click().perform();
-		Thread.sleep(1000);
-		SV.click();
-		Thread.sleep(1000);
-		act.moveToElement(Favorites).perform();
-		Thread.sleep(1000);
+		Thread.sleep(1700);
+		
+		inputsearch.sendKeys("HFICIntakeCaseList");
+		Thread.sleep(1700);
 
-		// HFIC Intake case list
-		act.moveToElement(intakecaselist).click().perform();
+		search.click();
+		Thread.sleep(1700);
+
+		HFICIntakeCaseList.click();
+		Thread.sleep(1700);
+		
+		
+
+		
+//		SV.click();
+//		Thread.sleep(1700);
+//		act.moveToElement(Favorites).perform();
+//		Thread.sleep(1700);
+//
+//		// HFIC Intake case list
+//		act.moveToElement(intakecaselist).click().perform();
 		Thread.sleep(3000);
 		driver.switchTo().frame("PegaGadget0Ifr");
 		Thread.sleep(5000);
 
 		act.moveToElement(Actions).click().perform();
-		Thread.sleep(1000);
+		Thread.sleep(1700);
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", Run);
 		Thread.sleep(7000);
 		// Handlewindow
@@ -218,10 +244,16 @@ public class PEGA_SMG_Process {
 				Thread.sleep(15000);
 				Search_text.click();
 				Thread.sleep(20000);
+				test.log( Status.INFO,"ITK number captured for the Application");
+				test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+				Thread.sleep(3000);
 				ITK = ITK_NUM.getText();
 				System.out.println(ITK);
+				
 				driver.close();
 				Thread.sleep(3000);
+				
+				
 
 			}
 		}
@@ -230,11 +262,22 @@ public class PEGA_SMG_Process {
 		driver.switchTo().window(currentWindow);
 		Thread.sleep(5000);
 
-		SV.click();
-		Thread.sleep(3000);
-		act.moveToElement(Favorites).perform();
-		Thread.sleep(3000);
-		act.moveToElement(payment_bypass).click().perform();
+//		SV.click();
+//		Thread.sleep(3000);
+//		act.moveToElement(Favorites).perform();
+//		Thread.sleep(3000);
+//		act.moveToElement(payment_bypass).click().perform();
+		inputsearch.clear();
+		Thread.sleep(1700);
+		test.log( Status.INFO," Navigate to HFICPaymentVerificationUtility");
+
+		inputsearch.sendKeys("HFICPaymentVerificationUtility");
+		Thread.sleep(1700);
+
+		search.click();
+		Thread.sleep(1700);
+
+		paymentbypass.click();
 		Thread.sleep(3000);
 		driver.switchTo().frame("PegaGadget1Ifr");
 		Thread.sleep(3000);
@@ -251,31 +294,41 @@ public class PEGA_SMG_Process {
 
 				driver.findElement(By.xpath("(//input[@id='pyValue'])[1]")).sendKeys(ITK);
 				driver.findElement(By.xpath("(//input[@id='pyValue'])[5]")).clear();
-				Thread.sleep(1000);
+				Thread.sleep(1700);
 				driver.findElement(By.xpath("(//input[@id='pyValue'])[5]")).sendKeys(String.valueOf(Agreement.amount1));
 				driver.findElement(By.xpath("//input[@id='gridCheckBox']")).click();
-				Thread.sleep(1000);
+				Thread.sleep(1700);
 				driver.findElement(By.xpath("(//input[@id='pyValue'])[6]")).clear();
 				DateFormat format = new SimpleDateFormat("yyyyMMdd");
 				Date dt = new Date();
 				mydate = format.format(dt);
 				driver.findElement(By.xpath("(//input[@id='pyValue'])[6]")).sendKeys(mydate);
-				Thread.sleep(1000);
+				Thread.sleep(1700);
 				driver.findElement(By.xpath("(//*[text()='Run'])[3]")).click();
 				Thread.sleep(3000);
 				// String currentWindow1 = driver.getWindowHandle(); // will keep current window
 				// to switch back
 				// for (String winHandle1 : driver.getWindowHandles()) {
 				driver.switchTo().window(winHandle_p).getTitle().equalsIgnoreCase("Status Page");
+				test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+				Thread.sleep(3000);
+
 				driver.close();
 				Thread.sleep(5000);
 				driver.switchTo().window(currentWindow_p);
+				test.log( Status.INFO,"Payment bypass completed");
+
 
 			}
 		}
 		
 		Thread.sleep(5000);
+		test.log( Status.INFO,"Login as HFIC Manager");
+
+		
 		driver.get("https://pegaenbst.healthfirst.org/prweb");
+		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+
 		userid.sendKeys(data.getstringdata("Pega", 0, 0));
 		Password.sendKeys(data.getstringdata("Pega", 0, 1));
 		Login_Button.click();
@@ -284,22 +337,29 @@ public class PEGA_SMG_Process {
 		appid_search_text.sendKeys(Agreement.appnum);
 		Thread.sleep(2500);
 		Apply_button.click();
+		Thread.sleep(5000);
+		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+		Thread.sleep(2000);
+
 		checkbox.click();
-		Thread.sleep(1000);
+		Thread.sleep(1700);
 		Assignbtton.click();
-		Thread.sleep(1000);
+		Thread.sleep(1700);
 
 		assign_id.sendKeys(data.getstringdata("Pega", 0, 2));
-		Thread.sleep(1000);
+		Thread.sleep(1700);
 
 		submit.click();
-		Thread.sleep(1000);
+		Thread.sleep(1700);
+		test.log( Status.INFO,"Application assigned to HFIC super user");
 
 		image.click();
-		Thread.sleep(1000);
+		Thread.sleep(1700);
 
 		logout.click();
-		
+		test.log( Status.INFO,"HFIC Manager logout");
+		test.log( Status.INFO,"HFIC super user login to approve the application");
+
 		userid.sendKeys(data.getstringdata("Pega", 1, 0));
 		Password.sendKeys(data.getstringdata("Pega", 1, 1));
 		Login_Button.click();
@@ -307,12 +367,16 @@ public class PEGA_SMG_Process {
 		appid_search_text_suser.sendKeys(Agreement.appnum);
 		Apply_button.click();
 		Thread.sleep(5000);
+		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+		Thread.sleep(2000);
+
 		Results.click();
 
 		Thread.sleep(2000);
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", confirm);
 		confirm.click();
 		Thread.sleep(2000);
+		test.log( Status.INFO,"GROUP INFORMATION (Sec 1, 2) reviewed and successfully");
 
 		next.click();
 		Thread.sleep(2000);
@@ -320,6 +384,7 @@ public class PEGA_SMG_Process {
 
 		confirm.click();
 		Thread.sleep(2000);
+		test.log( Status.INFO,"PG.2 GROUP ADMINISTRATION (Sec 3) reviewed and successfully");
 
 		next.click();
 		Thread.sleep(2000);
@@ -327,6 +392,7 @@ public class PEGA_SMG_Process {
 
 		confirm.click();
 		Thread.sleep(2000);
+		test.log( Status.INFO,"PG.3 PLAN INFORMATION (Sec 4, 5, 6) reviewed and successfully");
 
 		next.click();
 		Thread.sleep(2000);
@@ -337,13 +403,14 @@ public class PEGA_SMG_Process {
 
 		next.click();
 		Thread.sleep(2000);
+		test.log( Status.INFO,"PG.4 BROKER / GA INFORMATION (Sec 7) reviewed and successfully");
 
-		review_mship.click();
-		Thread.sleep(6000);
+		
 		///
 
 		GRPAPPL.click();
 		Thread.sleep(2000);
+		
 
 		Grpappl_Doc_Approval.click();
 		Thread.sleep(2000);
@@ -359,6 +426,10 @@ public class PEGA_SMG_Process {
 
 		PAF_Doc_Approval.click();
 		Thread.sleep(3500);
+		test.log( Status.INFO,"Documents are reviewed and successfully");
+	
+		review_mship.click();
+		Thread.sleep(6000);
 
 		row1.click();
 		confirm.click();
@@ -400,49 +471,53 @@ public class PEGA_SMG_Process {
 		Thread.sleep(2000);
 
 		row3.click();
-		Thread.sleep(1000);
+		Thread.sleep(1700);
 
 		confirm.click();
-		Thread.sleep(1000);
+		Thread.sleep(1700);
 
 		Next1.click();
 		Thread.sleep(2000);
 
 		confirm.click();
-		Thread.sleep(1000);
+		Thread.sleep(1700);
 
 		mem_listing.click();
 		Thread.sleep(2000);
 
 		row4.click();
-		Thread.sleep(1000);
+		Thread.sleep(1700);
 
 		confirm.click();
-		Thread.sleep(1000);
+		Thread.sleep(1700);
 
 		Next1.click();
 		Thread.sleep(2000);
 
 		confirm.click();
-		Thread.sleep(1000);
+		Thread.sleep(1700);
 
 		Next1.click();
 		Thread.sleep(2000);
 
 		confirm.click();
-		Thread.sleep(1000);
+		Thread.sleep(1700);
 
 		Next1.click();
 		Thread.sleep(2000);
 
 		confirm.click();
-		Thread.sleep(1000);
+		Thread.sleep(1700);
 
 		mem_listing.click();
 		Thread.sleep(2000);
+		test.log( Status.INFO,"Members are reviewed and successfully");
+
 
 		Review_PAYMENT.click();
 		Thread.sleep(2000);
+		test.log( Status.INFO,"Payment details are reviewed and successfully");
+
 
 		Final_Review.click();
 		Thread.sleep(2000);
@@ -452,12 +527,16 @@ public class PEGA_SMG_Process {
 
 		SUbmit.click();
 		Thread.sleep(3000);
+		test.log( Status.INFO,"Application review completd and submitted");
+
 
 		image.click();
 		Thread.sleep(3500);
 
 		Super_Logout.click();
+		test.log( Status.INFO,"Logout button clicked");
+
 		Thread.sleep(3500);
-		driver.quit();
+
 	}
 }

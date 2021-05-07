@@ -5,8 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class ReviewApplicationDetails {
-	public WebDriver driver;
+import com.aventstack.extentreports.Status;
+
+import Pages.com.Baseclass;
+
+public class ReviewApplicationDetails extends Baseclass {
+	//public WebDriver driver;
 
 	public ReviewApplicationDetails(WebDriver driver) {
 		this.driver = driver;
@@ -22,5 +26,7 @@ public class ReviewApplicationDetails {
 
 		conti.click();
 		Thread.sleep(1000);
+		test.log( Status.INFO,"Aplication review completed");
+
 	}
 }

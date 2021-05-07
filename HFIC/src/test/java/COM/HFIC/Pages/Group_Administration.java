@@ -5,10 +5,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import com.aventstack.extentreports.Status;
+
+import Pages.com.Baseclass;
 import Utilities.com.TestDataProvider;
 
-public class Group_Administration {
-	WebDriver driver;
+public class Group_Administration extends Baseclass{
+	//WebDriver driver;
 	public Group_Administration(WebDriver driver){
 	this.driver=driver;
 	}
@@ -78,6 +81,8 @@ public class Group_Administration {
 		js.executeScript("arguments[0].click();", class2RehireWaitingPeriodYes);
 
 		js.executeScript("arguments[0].click();", class2RehireWaitingPeriod30Days);
+		test.log( Status.INFO,"Group administration details are entered succssfully");
+
 
 		
 		

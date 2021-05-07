@@ -15,12 +15,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+import com.aventstack.extentreports.Status;
+
 import Pages.com.Baseclass;
 import Utilities.com.TestDataProvider;
 
 
-public class Agreement  {
-	WebDriver driver;
+public class Agreement extends Baseclass {
+//	WebDriver driver;
 	public Agreement(WebDriver driver){
 		this.driver=driver;
 	}
@@ -75,6 +77,7 @@ public class Agreement  {
 		amount1 = Double.parseDouble(amount);
 		System.out.println(appnum);
 		System.out.println(amount1);
+		test.log( Status.INFO,"Application succsfully submitted and details captured");
 
 		
 		

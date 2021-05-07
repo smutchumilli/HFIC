@@ -5,10 +5,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import com.aventstack.extentreports.Status;
+
+import Pages.com.Baseclass;
 import Utilities.com.TestDataProvider;
 
-public class BrokerGeneralAgentInformation {
-	WebDriver driver;
+public class BrokerGeneralAgentInformation extends Baseclass{
+	//WebDriver driver;
 	public BrokerGeneralAgentInformation(WebDriver driver){
 		this.driver=driver;
 	}
@@ -51,7 +54,8 @@ public class BrokerGeneralAgentInformation {
 		cobrokercommision.sendKeys("20");
 		js.executeScript("arguments[0].click();",policy);
 		js.executeScript("arguments[0].click();",Continue1);
-			
+		test.log( Status.INFO,"Broker and General agent information entered succssfully");
+	
 	}
 
 }

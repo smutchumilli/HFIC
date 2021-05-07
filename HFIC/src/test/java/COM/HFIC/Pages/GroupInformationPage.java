@@ -7,10 +7,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+import com.aventstack.extentreports.Status;
+
+import Pages.com.Baseclass;
 import Utilities.com.TestDataProvider;
 
-public class GroupInformationPage {
-	public WebDriver driver;
+public class GroupInformationPage extends Baseclass{
+//	public WebDriver driver;
 public TestDataProvider data;
 	public GroupInformationPage(WebDriver driver) {
 		this.driver = driver;
@@ -146,6 +149,8 @@ public TestDataProvider data;
 		billing_phone_number.sendKeys(data.getstringdata("Login", 30, 6));
 		billing_fax_number.sendKeys(data.getstringdata("Login", 31, 6));
 		js4.executeScript("arguments[0].click();", cnt1);
+		test.log( Status.INFO,"Group information is entered successfully");
+
 
 	}
 

@@ -6,11 +6,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import com.aventstack.extentreports.Status;
+
 import Pages.com.Baseclass;
 import Utilities.com.TestDataProvider;
 
-public class COBRA_Coverage  {
-WebDriver driver;
+public class COBRA_Coverage extends Baseclass {
+//WebDriver driver;
 	public COBRA_Coverage(WebDriver driver) {
 		this.driver = driver;
 	}
@@ -36,6 +38,8 @@ WebDriver driver;
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", RDO_isDisabledInHospitalYes);
 		Text_benefits_period.sendKeys(data.getstringdata("Login", 0, 1));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", Btn_cnt);
+		test.log( Status.INFO,"Cobra coverage details entered succssfully");
+
 
 	}
 

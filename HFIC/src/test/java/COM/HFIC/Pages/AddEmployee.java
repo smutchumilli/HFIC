@@ -14,8 +14,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
+import com.aventstack.extentreports.Status;
 
-public class AddEmployee {
+import Pages.com.Baseclass;
+
+
+public class AddEmployee extends Baseclass{
 	WebDriver driver;
 	public AddEmployee(WebDriver driver){
 		this.driver=driver;
@@ -42,6 +46,8 @@ public class AddEmployee {
 			cnt.click();
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].click();", premiumPopupCloseBtn);
+			test.log( Status.INFO,"Employee Roster fail is uploded sucssfully");
+
 
 			} 
 		

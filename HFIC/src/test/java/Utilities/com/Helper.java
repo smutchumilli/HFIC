@@ -39,7 +39,7 @@ public static String Get_CurrentTime() {
 
 public static String Get_CurrentdateandTime() {
 	
-	DateFormat format= new SimpleDateFormat("MMHHmm");
+	DateFormat format= new SimpleDateFormat("MMdHHmm");
 	Date dt= new Date();
 	return format.format(dt);
 	

@@ -8,11 +8,14 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+import com.aventstack.extentreports.Status;
+
+import Pages.com.Baseclass;
 import Utilities.com.Helper;
 import Utilities.com.TestDataProvider;
 
-public class Get_Quotepage {
-	WebDriver driver;
+public class Get_Quotepage extends Baseclass{
+	//WebDriver driver;
 	
 	public Get_Quotepage(WebDriver driver){
 		this.driver= driver;
@@ -36,6 +39,8 @@ public void GetQuotepage() throws InterruptedException{
 	s.selectByIndex(10);
 	continu.click();
 	Thread.sleep(5000);
+	test.log( Status.INFO,"click on Application tab and then click on start aplication button");
+
 
 	
 }
