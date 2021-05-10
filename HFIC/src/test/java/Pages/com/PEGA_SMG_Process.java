@@ -305,14 +305,16 @@ public class PEGA_SMG_Process extends Baseclass {
 				driver.findElement(By.xpath("(//input[@id='pyValue'])[6]")).sendKeys(mydate);
 				Thread.sleep(1700);
 				driver.findElement(By.xpath("(//*[text()='Run'])[3]")).click();
+				test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+
 				Thread.sleep(3000);
 				// String currentWindow1 = driver.getWindowHandle(); // will keep current window
 				// to switch back
 				// for (String winHandle1 : driver.getWindowHandles()) {
 				driver.switchTo().window(winHandle_p).getTitle().equalsIgnoreCase("Status Page");
 				test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
-				Thread.sleep(3000);
 
+				Thread.sleep(3000);
 				driver.close();
 				Thread.sleep(5000);
 				driver.switchTo().window(currentWindow_p);
@@ -327,10 +329,11 @@ public class PEGA_SMG_Process extends Baseclass {
 
 		
 		driver.get("https://pegaenbst.healthfirst.org/prweb");
-		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 
 		userid.sendKeys(data.getstringdata("Pega", 0, 0));
 		Password.sendKeys(data.getstringdata("Pega", 0, 1));
+		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+
 		Login_Button.click();
 		Thread.sleep(8000);
 		appid_filter.click();
@@ -345,14 +348,16 @@ public class PEGA_SMG_Process extends Baseclass {
 		Thread.sleep(1700);
 		Assignbtton.click();
 		Thread.sleep(1700);
+		test.log( Status.INFO,"Application assigned to HFIC super user");
 
 		assign_id.sendKeys(data.getstringdata("Pega", 0, 2));
+		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+
 		Thread.sleep(1700);
 
 		submit.click();
 		Thread.sleep(1700);
-		test.log( Status.INFO,"Application assigned to HFIC super user");
-
+		
 		image.click();
 		Thread.sleep(1700);
 
@@ -523,7 +528,8 @@ public class PEGA_SMG_Process extends Baseclass {
 		Thread.sleep(2000);
 
 		confirm.click();
-		Thread.sleep(2000);
+		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+		Thread.sleep(3000);
 
 		SUbmit.click();
 		Thread.sleep(3000);

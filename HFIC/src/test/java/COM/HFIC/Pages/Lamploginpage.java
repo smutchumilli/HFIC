@@ -29,16 +29,10 @@ public class Lamploginpage extends Baseclass{
 	@FindBy(name="npn-tax-id")@CacheLookup  WebElement npn;
 	@FindBy(name="password")@CacheLookup  WebElement password;
 
-public void login_to_Lamp( ) throws IOException{
+public void login_to_Lamp( ) throws IOException, InterruptedException{
 	
 
 
-	try {
-		Thread.sleep(5000);
-	} catch (InterruptedException e) {
-		System.out.println(e.getMessage());
-		
-	}
 	
 	data= new TestDataProvider();
 	JavascriptExecutor js= (JavascriptExecutor)driver;
@@ -49,6 +43,8 @@ public void login_to_Lamp( ) throws IOException{
 	js.executeScript("arguments[0].click();", SignIn);
 	test.log( Status.INFO," Entered Valid GA user id and password and NPN and clicked on signin button");
 	test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+	Thread.sleep(2000);
+	
 
 }
 }
