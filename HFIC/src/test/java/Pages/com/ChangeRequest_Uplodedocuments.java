@@ -6,10 +6,17 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.io.IOException;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
+
+import com.aventstack.extentreports.MediaEntityBuilder;
+
+import Utilities.com.Helper;
 
 
 public class ChangeRequest_Uplodedocuments extends Baseclass {
@@ -45,7 +52,7 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 	WebElement DocumentUploadUI;
 	@FindBy(id = "253bc4da")
 	WebElement DOCtype;
-	@FindBy(name = "HFICCaseHeader_pyWorkPage_16")
+	@FindBy(name = "HFICCaseHeader_pyWorkPage_17")
 	WebElement Notes;
 	@FindBy(name = "$PpyAttachmentPage$ppxAttachName")
 	WebElement Chosefile;
@@ -116,198 +123,164 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 	}
 
 	public void Adit_DocumentType_Select(int i) throws InterruptedException, AWTException {
-		//Thread.sleep(1500);
+		Thread.sleep(1000);
+
+		DocumentUploadUI.click();
+		Thread.sleep(1500);
 
 		Select s1 = new Select(DOCtype);
 		s1.selectByIndex(i);
-		if (i != 3) {
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@type='file']")).sendKeys("Q:\\Myfile.docx");
+		Thread.sleep(1000);
 
-			Tab();
-			Enter();	
+		driver.findElement(By.xpath("//button[@id='ModalButtonSubmit']")).click();
+		
+		Thread.sleep(1000);
+		Notes.click();
+		Thread.sleep(1000);
 
-			control();
-			V();
-			
-			Tab();
-			Tab();
-			Enter();
+		General_Note.getText();
+		driver.findElement(By.id("2bc4e467")).sendKeys("This is General notes");
+		Thread.sleep(1000);
 
-			Tab();
-			Enter();
+		driver.findElement(By.xpath("//*[@id='2bc4e467']//following::button[1]")).click();
+		Thread.sleep(1000);
 
+		driver.findElement(By.xpath("//*[@id='2bc4e467']//following::button[3]")).click();
+		Thread.sleep(1000);
 
-		} else {
+		Submit.click();
 
-			// Robert class for Upload documents
-			//Thread.sleep(4000);
-			Tab();
-			Tab();
-			Enter();	
-
-			control();
-			V();
-			
-			Tab();
-			Tab();
-			Enter();
-
-			Tab();
-			Enter();
-
-			//Thread.sleep(3500);
-		}
+		
+		
+//		if (i != 3) {
+//
+//			Tab();
+//			Enter();	
+//
+//			control();
+//			V();
+//			
+//			Tab();
+//			Tab();
+//			Enter();
+//
+//			Tab();
+//			Enter();
+//
+//
+//		} else {
+//
+//			// Robert class for Upload documents
+//			//Thread.sleep(4000);
+//			Tab();
+//			Tab();
+//			Enter();	
+//
+//			control();
+//			V();
+//			
+//			Tab();
+//			Tab();
+//			Enter();
+//
+//			Tab();
+//			Enter();
+//
+//			//Thread.sleep(3500);
+//		}
 	}
 	public void Other_DocumentType_Select(int i, String s) throws InterruptedException, AWTException {
+		DocumentUploadUI.click();
 
-		//Thread.sleep(2000);
+		Thread.sleep(2000);
 
 		Select s1 = new Select(DOCtype);
 		s1.selectByIndex(i);
-		//Thread.sleep(2000);
+		Thread.sleep(2000);
+		
+		driver.findElement(By.xpath("//input[@type='file']")).sendKeys("Q:\\Myfile.docx");
+		Thread.sleep(1000);
 
-		if (i == 5)
-{			Tab();
-			Doc_Title(s);
-			Tab();
-			Enter();
+		driver.findElement(By.xpath("//button[@id='ModalButtonSubmit']")).click();
+		
+		Thread.sleep(1000);
+		Notes.click();
+		Thread.sleep(1000);
 
-			control();
-			V();
-			Tab();
-			Tab();
-			Enter();
+		General_Note.getText();
+		driver.findElement(By.id("2bc4e467")).sendKeys("This is General notes");
+		Thread.sleep(1000);
 
-			Tab();
-			Enter();
+		driver.findElement(By.xpath("//*[@id='2bc4e467']//following::button[1]")).click();
+		Thread.sleep(1000);
 
-}	else if (i==4){
-	Tab();
+		driver.findElement(By.xpath("//*[@id='2bc4e467']//following::button[3]")).click();
+		Thread.sleep(1000);
 
-	Doc_subtype(1);
-	Tab();
-	Tab();
-	Enter();
-	control();
-	V();
-	Tab();
-	Tab();
-	Enter();
+		Submit.click();
 
-	Tab();
-	Enter();
 
-	
-}else  {
-	Tab();
-	Tab();
-	Enter();	
+//		if (i == 5)
+//{			Tab();
+//			Doc_Title(s);
+//			Tab();
+//			Enter();
+//
+//			control();
+//			V();
+//			Tab();
+//			Tab();
+//			Enter();
+//
+//			Tab();
+//			Enter();
+//
+//}	else if (i==4){
+//	Tab();
+//
+//	Doc_subtype(1);
+//	Tab();
+//	Tab();
+//	Enter();
+//	control();
+//	V();
+//	Tab();
+//	Tab();
+//	Enter();
+//
+//	Tab();
+//	Enter();
+//
+//	
+//}else  {
+//	Tab();
+//	Tab();
+//	Enter();	
+//
+//	control();
+//	V();
+//	
+//	Tab();
+//	Tab();
+//	Enter();
+//
+//	Tab();
+//	Enter();
 
-	control();
-	V();
-	
-	Tab();
-	Tab();
-	Enter();
-
-	Tab();
-	Enter();
-
-}
+//}
 
 		
 	}		
-	public void Enter() throws AWTException, InterruptedException {
-		Thread.sleep(1000);
-			rb = new Robot();
-			rb.keyPress(KeyEvent.VK_ENTER);
-			rb.keyRelease(KeyEvent.VK_ENTER);
-			Thread.sleep(1300);
-			
-		}
-		public void Tab() throws AWTException, InterruptedException {
-			rb = new Robot();
-			Thread.sleep(500);
-
-			rb.keyPress(KeyEvent.VK_TAB);
-			rb.keyRelease(KeyEvent.VK_TAB);
-			Thread.sleep(1300);
-
-			
-		}
-		public void V() throws AWTException, InterruptedException {
-			rb = new Robot();
-
 		
-			rb.keyRelease(KeyEvent.VK_V);
-			rb.keyRelease(KeyEvent.VK_CONTROL);
-			Thread.sleep(1100);
-
-			}
-		public void control() throws AWTException, InterruptedException {
-			rb = new Robot();
-
-			rb.keyPress(KeyEvent.VK_CONTROL);		
-			rb.keyPress(KeyEvent.VK_V);
-			Thread.sleep(1800);
-
-		}		
 		
-			
-		
-	public void DocumentUploadUI() throws InterruptedException {
-
-		DocumentUploadUI.click();
-		Thread.sleep(1000);
-
-	}
-
-	public void copy() {
-		String myString = "Q:\\Myfile.docx";
-		StringSelection stringSelection = new StringSelection(myString);
-		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-		clipboard.setContents(stringSelection, null);
-	}
+	
+	
 
 
 
-	public void Notes() throws InterruptedException   {
-		Thread.sleep(500);
-
-		Notes.click();
-		Thread.sleep(500);
-
-
-	}
-
-	public void General_Note() throws InterruptedException {
-		General_Note.click();
-		//Thread.sleep(2000);
-
-	}
-
-	public void Add_Notes_Text(String gtext) throws InterruptedException {
-		Add_Notes_Text.sendKeys(gtext);
-		//Thread.sleep(1500);
-
-	}
-
-	public void Notes_Add() throws InterruptedException {
-		Notes_Add.click();
-		Thread.sleep(500);
-
-	}
-
-	public void OK() throws InterruptedException {
-		OK.click();
-		Thread.sleep(1000);
-
-	}
-
-	public void submit() throws InterruptedException {
-		Submit.click();
-		Thread.sleep(1000);
-
-	}
+	
 
 	public void Document_Purpose() throws InterruptedException {
 		Other.click();
@@ -333,7 +306,7 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 
 	}
 	
-	public void CR_Upload_document(String grp_id,String grpname,String eff,String gtx,int i,String text) throws InterruptedException, AWTException {
+	public void CR_Upload_document(String grp_id,String grpname,String eff,String gtx,int i,String text) throws InterruptedException, AWTException, IOException {
 		Chnagerequest_Link();
 		Create_Change_Request();
 		CR_Type();
@@ -341,41 +314,34 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 		grp_name(grpname);
 		grp_effectivedate(eff);
 		grp_tax(gtx);
-		search_btn();
-		Search_result();
-		DocumentUploadUI();
-		copy();
+		grp_tax(gtx);
+		search_btn.click();
+		Search_result.click();
 		Adit_DocumentType_Select(i);
-		Notes();
-		General_Note();
-		Add_Notes_Text(text);
-		Notes_Add();
-		OK();
-		
-			
+		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 	}
-	public void CR_Upload_document_Other(String grp_id,String grpname,String eff,String gtx,int i,String text1 ,String text) throws InterruptedException, AWTException {
-		Chnagerequest_Link();
-		Create_Change_Request();
-		CR_Type();
-		grp_id(grp_id);
-		grp_name(grpname);
-		grp_effectivedate(eff);
-		grp_tax(gtx);
-		search_btn();
-		Search_result();
-		Document_Purpose();
-		DocumentUploadUI();
-		copy();
-		Other_DocumentType_Select(i, text1);
-		Notes();
-		General_Note();
-		Add_Notes_Text(text);
-		Notes_Add();
-		OK();
-		
-			
-	}
+//	public void CR_Upload_document_Other(String grp_id,String grpname,String eff,String gtx,int i,String text1 ,String text) throws InterruptedException, AWTException {
+//		Chnagerequest_Link();
+//		Create_Change_Request();
+//		CR_Type();
+//		grp_id(grp_id);
+//		grp_name(grpname);
+//		grp_effectivedate(eff);
+//		grp_tax(gtx);
+//		search_btn();
+//		Search_result();
+//		Document_Purpose();
+//		DocumentUploadUI();
+//		copy();
+//		Other_DocumentType_Select(i, text1);
+//		Notes();
+//		General_Note();
+//		Add_Notes_Text(text);
+//		Notes_Add();
+//		OK();
+//		
+//			
+//	}
 	
 
 }
