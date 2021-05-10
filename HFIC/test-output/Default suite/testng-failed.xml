@@ -10,10 +10,8 @@
     <classes>
       <class name="HFIC.Testcases.com.CR_UploadeDocuments">
         <methods>
+          <include name="CR_Other_UploadeDocument"/>
           <include name="Start_up"/>
-          <include name="Tear_Down"/>
-          <include name="Application_Exit"/>
-          <include name="CR_Audit_UploadeDocument"/>
           <include name="Application_Start"/>
         </methods>
       </class> <!-- HFIC.Testcases.com.CR_UploadeDocuments -->

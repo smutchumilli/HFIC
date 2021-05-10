@@ -1,59 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
     <line>
       <![CDATA[Project set up done]]>
     </line>
-    <line>
-      <![CDATA[Application up and running as expected]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50619" started-at="2021-05-10T15:53:02Z" finished-at="2021-05-10T15:53:53Z">
+  <suite name="Default suite" duration-ms="122152" started-at="2021-05-10T20:08:21Z" finished-at="2021-05-10T20:10:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50619" started-at="2021-05-10T15:53:02Z" finished-at="2021-05-10T15:53:53Z">
+    <test name="Default test" duration-ms="122152" started-at="2021-05-10T20:08:21Z" finished-at="2021-05-10T20:10:23Z">
       <class name="HFIC.Testcases.com.CR_UploadeDocuments">
-        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@2133c8f8]" name="Start_up" is-config="true" duration-ms="2022" started-at="2021-05-10T11:53:00Z" finished-at="2021-05-10T11:53:02Z">
+        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@2133c8f8]" name="Start_up" is-config="true" duration-ms="1441" started-at="2021-05-10T16:08:20Z" finished-at="2021-05-10T16:08:21Z">
           <reporter-output>
             <line>
               <![CDATA[Project set up done]]>
             </line>
           </reporter-output>
         </test-method> <!-- Start_up -->
-        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@2133c8f8]" name="Application_Start" is-config="true" duration-ms="10025" started-at="2021-05-10T11:53:02Z" finished-at="2021-05-10T11:53:12Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Application up and running as expected]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Application_Start -->
-        <test-method status="FAIL" signature="CR_Audit_UploadeDocument()[pri:1, instance:HFIC.Testcases.com.CR_UploadeDocuments@2133c8f8]" name="CR_Audit_UploadeDocument" duration-ms="36171" started-at="2021-05-10T11:53:12Z" finished-at="2021-05-10T11:53:48Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@2133c8f8]" name="Application_Start" is-config="true" duration-ms="0" started-at="2021-05-10T16:08:21Z" finished-at="2021-05-10T16:08:21Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"id","selector":"253bc4da"}
+              <![CDATA[chrome not reachable
   (Session info: chrome=89.0.4389.128)
   (Driver info: chromedriver=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 25.15 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 2.04 seconds
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
 System info: host: 'SVFL-XAAD-035', ip: '10.200.188.246', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:1866}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\SMUTCH~1\AppData\Local\Temp\7\scoped_dir61924_1424436253}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=89.0.4389.128, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
-Session ID: 4c226d7fe2f994303577043b5c28983c
-*** Element info: {Using=id, value=253bc4da}]]>
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:36748}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\SMUTCH~1\AppData\Local\Temp\7\scoped_dir32316_849625432}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=89.0.4389.128, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: ad02d9f9b70e7284d61b37b9c3cb1288]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"253bc4da"}
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=89.0.4389.128)
   (Driver info: chromedriver=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 25.15 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 2.04 seconds
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
 System info: host: 'SVFL-XAAD-035', ip: '10.200.188.246', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:1866}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\SMUTCH~1\AppData\Local\Temp\7\scoped_dir61924_1424436253}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=89.0.4389.128, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
-Session ID: 4c226d7fe2f994303577043b5c28983c
-*** Element info: {Using=id, value=253bc4da}
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:36748}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\SMUTCH~1\AppData\Local\Temp\7\scoped_dir32316_849625432}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=89.0.4389.128, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: ad02d9f9b70e7284d61b37b9c3cb1288
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -61,27 +47,19 @@ Session ID: 4c226d7fe2f994303577043b5c28983c
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.getTagName(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.<init>(Select.java:44)
-	at Pages.com.ChangeRequest_Uplodedocuments.Adit_DocumentType_Select(ChangeRequest_Uplodedocuments.java:128)
-	at Pages.com.ChangeRequest_Uplodedocuments.CR_Upload_document(ChangeRequest_Uplodedocuments.java:317)
-	at HFIC.Testcases.com.CR_UploadeDocuments.CR_Audit_UploadeDocument(CR_UploadeDocuments.java:21)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at Utilities.com.Browserfactory.Start_Application(Browserfactory.java:23)
+	at Pages.com.Baseclass.Application_Start(Baseclass.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
 	at org.testng.TestRunner.privateRun(TestRunner.java:782)
 	at org.testng.TestRunner.run(TestRunner.java:632)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
@@ -98,22 +76,19 @@ Session ID: 4c226d7fe2f994303577043b5c28983c
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CR_Audit_UploadeDocument -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@2133c8f8]" name="Tear_Down" is-config="true" duration-ms="933" started-at="2021-05-10T11:53:48Z" finished-at="2021-05-10T11:53:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CR_Audit_UploadeDocument status=FAILURE method=CR_UploadeDocuments.CR_Audit_UploadeDocument()[pri:1, instance:HFIC.Testcases.com.CR_UploadeDocuments@2133c8f8] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Application_Start -->
+        <test-method status="SKIP" signature="CR_Other_UploadeDocument()[pri:2, instance:HFIC.Testcases.com.CR_UploadeDocuments@2133c8f8]" name="CR_Other_UploadeDocument" duration-ms="1" started-at="2021-05-10T16:10:23Z" finished-at="2021-05-10T16:10:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CR_Other_UploadeDocument -->
+        <test-method status="SKIP" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@2133c8f8]" name="Tear_Down" is-config="true" duration-ms="0" started-at="2021-05-10T16:10:23Z" finished-at="2021-05-10T16:10:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@2133c8f8]" name="Application_Exit" is-config="true" duration-ms="3453" started-at="2021-05-10T11:53:49Z" finished-at="2021-05-10T11:53:53Z">
+        <test-method status="SKIP" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.CR_UploadeDocuments@2133c8f8]" name="Application_Exit" is-config="true" duration-ms="0" started-at="2021-05-10T16:10:23Z" finished-at="2021-05-10T16:10:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Exit -->
