@@ -17,16 +17,17 @@ import org.openqa.selenium.support.ui.Select;
 import com.aventstack.extentreports.MediaEntityBuilder;
 
 import Utilities.com.Helper;
+import Utilities.com.TestDataProvider;
 
 
 public class ChangeRequest_Uplodedocuments extends Baseclass {
-	WebDriver driver;
-	public Robot rb;
 
 	public ChangeRequest_Uplodedocuments(WebDriver ldriver) {
 		this.driver = ldriver;
 
 	}
+	
+	TestDataProvider data= new TestDataProvider();
 
 	@FindBy(id = "555e7955")
 	WebElement Title;
@@ -79,7 +80,9 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 
 
 
-	public void Adit_Document_Upload(String grpid,String grpname,String effdate,String gtax,int i,String text) throws InterruptedException, AWTException {
+	public void Adit_Document_Upload() throws InterruptedException, AWTException, IOException {
+		for(int i=1;i<=3;i++) 
+		{
 		Thread.sleep(1500);
 		Chnagerequest_Link.click();
 		Thread.sleep(1000);
@@ -87,13 +90,13 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 		Thread.sleep(500);
 		Select s = new Select(CR_Type);
 		s.selectByIndex(7);
-		grp_id.sendKeys(grpid);
+		grp_id.sendKeys(data.getstringdata("CR", i, 1));
 		Thread.sleep(500);
-		grp_name.sendKeys(grpname);
+		grp_name.sendKeys(data.getstringdata("CR", i, 2));
 		Thread.sleep(500);
-		grp_effectivedate.sendKeys(effdate);
+		grp_effectivedate.sendKeys(data.getstringdata("CR", i, 3));
 		Thread.sleep(500);
-		grp_tax.sendKeys(gtax);
+		grp_tax.sendKeys(data.getstringdata("CR", i, 4));
 		Thread.sleep(1200);
 		search_btn.click();
 		Thread.sleep(1200);
@@ -112,19 +115,23 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 		Thread.sleep(1000);
 		General_Note.click();
 		Thread.sleep(1000);
-		textarea.sendKeys(text);
+		textarea.sendKeys(data.getstringdata("CR", i, 5));
 		Thread.sleep(1000);
 		add.click();
 		Thread.sleep(1000);
 		ok1.click();
 		Thread.sleep(2000);
+		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+		Thread.sleep(2000);
 
 		Submit.click();
-
+		}
 		
 	}
 
-	public void Other_Document_Upload(String grpid,String grpname,String effdate,String gtax,int i,String text) throws InterruptedException, AWTException {
+	public void Other_Document_Upload() throws InterruptedException, AWTException, IOException {
+		for(int j=1;j<=5;j++) {
+
 		Thread.sleep(1500);
 		Chnagerequest_Link.click();
 		Thread.sleep(1000);
@@ -132,13 +139,13 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 		Thread.sleep(500);
 		Select s = new Select(CR_Type);
 		s.selectByIndex(7);
-		grp_id.sendKeys(grpid);
+		grp_id.sendKeys(data.getstringdata("CR", j, 8));
 		Thread.sleep(500);
-		grp_name.sendKeys(grpname);
+		grp_name.sendKeys(data.getstringdata("CR", j, 9));
 		Thread.sleep(500);
-		grp_effectivedate.sendKeys(effdate);
+		grp_effectivedate.sendKeys(data.getstringdata("CR", j, 10));
 		Thread.sleep(500);
-		grp_tax.sendKeys(gtax);
+		grp_tax.sendKeys(data.getstringdata("CR", j, 11));
 		Thread.sleep(1200);
 		search_btn.click();
 		Thread.sleep(1200);
@@ -149,17 +156,17 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 		DocumentUploadUI.click();
 		Thread.sleep(1500);
 		Select s1 = new Select(DOCtype);
-		s1.selectByIndex(i);
+		s1.selectByIndex(j);
 
-		if (i==4) 
+		if (j==4) 
 		{
 		Select n = new Select(docsubtype);
-		n.selectByIndex(i);
+		n.selectByIndex(j);
 		Thread.sleep(2000);
 		File.sendKeys("Q:\\Myfile.docx");
 
 		}
-		else if (i==5)
+		else if (j==5)
 		{
 			Thread.sleep(2000);
 			Title.sendKeys("Other Documents");
@@ -167,6 +174,10 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 			File.sendKeys("Q:\\Myfile.docx");
 
 		}
+		Thread.sleep(2000);
+
+		File.sendKeys("Q:\\Myfile.docx");
+
 		Thread.sleep(1000);
 		ok.click();
 		Thread.sleep(1000);
@@ -174,15 +185,19 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 		Thread.sleep(1000);
 		General_Note.click();
 		Thread.sleep(1000);
-		textarea.sendKeys(text);
+		textarea.sendKeys(data.getstringdata("CR", j, 12));
 		Thread.sleep(1000);
 		add.click();
 		Thread.sleep(1000);
 		ok1.click();
+		Thread.sleep(1000);
+
+		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		Thread.sleep(2000);
+
 		Submit.click();
 		
 	}
 
-
+	}
 }
