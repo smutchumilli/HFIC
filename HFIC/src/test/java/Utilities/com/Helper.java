@@ -45,6 +45,14 @@ public static String Get_CurrentdateandTime() {
 	
 	
 }
+public static String Get_CurrentdateandTimesec() {
+	
+	DateFormat format= new SimpleDateFormat("mmss");
+	Date dt= new Date();
+	return format.format(dt);
+	
+	
+}
 //Handle window
 public static void Handle_Window() throws InterruptedException, IOException {	 
 	String parent=driver.getWindowHandle();	 

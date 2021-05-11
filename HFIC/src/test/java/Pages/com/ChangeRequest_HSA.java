@@ -1,16 +1,24 @@
 package Pages.com;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
+
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
+
+import Utilities.com.Helper;
+import Utilities.com.TestDataProvider;
 
 public class ChangeRequest_HSA extends Baseclass {
 
 	public ChangeRequest_HSA(WebDriver driver) {
 		this.driver = driver;
 	}
-
+TestDataProvider data= new TestDataProvider();
 	@FindBy(xpath = "//a[contains(text(),'Change Requests')]")
 	WebElement Chnagerequest_Link;
 	@FindBy(xpath = "//button[contains(text(),'Create Change Request')]")
@@ -54,7 +62,7 @@ public class ChangeRequest_HSA extends Baseclass {
 
 	// Notes
 
-	@FindBy(name = "HFICCaseHeader_pyWorkPage_16")
+	@FindBy(name = "HFICCaseHeader_pyWorkPage_17")
 	WebElement Notes;
 	@FindBy(xpath = "//*[contains(text(),'ADD A GENERAL NOTE?')]")
 	WebElement General_Note;
@@ -95,150 +103,104 @@ public class ChangeRequest_HSA extends Baseclass {
 	@FindBy(id = "4849689b")
 	WebElement email;
 
-	public void Chnagerequest_Link() throws InterruptedException {
+	
+
+	public void HSA_Member_Update() throws InterruptedException, IOException {
+
 		Chnagerequest_Link.click();
-		Thread.sleep(2000);
-
-	}
-
-	public void Create_Change_Request() throws InterruptedException {
-		Thread.sleep(2000);
 		Create_Change_Request.click();
 		Select s = new Select(CR_Type);
 		s.selectByIndex(8);
-	}
-
-	public void search() {
+		Memberid.sendKeys(data.getstringdata("HSA",0,0));
+		fname.sendKeys(data.getstringdata("HSA",0,1));
+		lname.sendKeys(data.getstringdata("HSA",0,2));
 		search.click();
-	}
+		test.log( Status.INFO," Searching for HSA member");
 
-	public void searchresult() {
 		searchresult.click();
-	}
-
-	public void edit() {
 		edit.click();
-	}
+		dob.clear();
+		ssn.clear();
+		addr1.clear();
+		city.clear();
+		zip.clear();
+		addr2.clear();
+		dob.sendKeys(data.getstringdata("HSA",0,4));
+		ssn.sendKeys(data.getstringdata("HSA",1,4));
+		addr1.sendKeys(data.getstringdata("HSA",2,4)+Helper.Get_CurrentdateandTimesec());
+		city.sendKeys(data.getstringdata("HSA",3,4));
+		zip.sendKeys(data.getstringdata("HSA",4,4));
+		addr2.sendKeys(data.getstringdata("HSA",5,4));	
+		save.click();
+		test.log( Status.INFO," group details  Updated succssfully and clicked on save");
 
-	public void Notes(String gtext) throws InterruptedException {
+		Thread.sleep(1000);
 		Notes.click();
 		Thread.sleep(1000);
 		General_Note.click();
 		Thread.sleep(1000);
-		Add_Notes_Text.sendKeys(gtext);
+		Add_Notes_Text.sendKeys("HSA Member details has been updated succssfully");
 		Thread.sleep(1000);
 		Notes_Add.click();
 		Thread.sleep(1000);
 		OK.click();
+		test.log( Status.INFO," Notes Updated succssfully");
+
 		Thread.sleep(2000);
+		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+		submit.click();	
 	}
 
-	public void save() throws InterruptedException {
-		save.click();
-		Thread.sleep(3000);
-	}
+	public void HSA_Group_Update() throws InterruptedException, IOException {
+		test.log( Status.INFO," HSA Group details Update");
 
-	public void submit() throws InterruptedException {
-		
-		submit.click();
-		Thread.sleep(1000);
-
-	}
-
-	public void Memberid(String mid) {
-
-		Memberid.sendKeys(mid);
-
-	}
-
-	public void HSA_MemberDetails(String dob1, String ssn1, String addrs1, String city1, String zip1, String aAddrs)
-			throws InterruptedException {
-		Thread.sleep(2000);
-		// fname.sendKeys(fnam);
-		// lname.sendKeys(lnam);
-		// mfname.clear();
-		// mlname.clear();
-//		dob.clear();
-//		ssn.clear();
-//		addr1.clear();
-//		city.clear();
-//		zip.clear();
-//		addr2.clear();
-		// mfname.sendKeys(fna);
-		// mlname.sendKeys(lna);
-		dob.sendKeys(dob1);
-		ssn.sendKeys(ssn1);
-		addr1.sendKeys(addrs1);
-		city.sendKeys(city1);
-		zip.sendKeys(zip1);
-		addr2.sendKeys(aAddrs);
-	}
-
-	public void grpdetails() {
+		Chnagerequest_Link.click();
+		Create_Change_Request.click();
+		Select s = new Select(CR_Type);
+		s.selectByIndex(8);		
 		grpdetails.click();
-	}
+		test.log( Status.INFO," Searching for HSA group");
 
-	public void GRP_Searchresults() {
+		grpid.sendKeys(data.getstringdata("HSA",6,0));
+		gname.sendKeys(data.getstringdata("HSA",6,1));
+		taxid.sendKeys(data.getstringdata("HSA",6,2));
+		search.click();
 		GRP_Searchresults.click();
-	}
 
-	public void HSA_GrpSearch(String grp_id)  {
-		grpid.sendKeys(grp_id);
-//		gname.sendKeys(grp_name);
-//		taxid.sendKeys(Grp_tax);
-	}
+		edit.click();
+		cnt_person.clear();
+		addrl1.clear();
+		city1.clear();
+		zip1.clear();
+		addrl2.clear();
+		pnum.clear();
+		email.clear();
+		email.clear();
+		test.log( Status.INFO," Updating HSA group details");
 
-	public void HSA_Grpdetails(String c_person, String G_addr1, String G_city1, String grp_zip, String grp_Addr2,
-			String grp_pnum, String grp_email) throws InterruptedException {
-		Thread.sleep(5000);
+		cnt_person.sendKeys(data.getstringdata("HSA",6,4)+Helper.Get_CurrentdateandTimesec());
+		addrl1.sendKeys(data.getstringdata("HSA",7,4));
+		city1.sendKeys(data.getstringdata("HSA",8,4));
+		zip1.sendKeys(data.getstringdata("HSA",9,4));
+		addrl2.sendKeys(data.getstringdata("HSA",10,4));
+		pnum.sendKeys(data.getstringdata("HSA",11,4));
+		email.sendKeys(data.getstringdata("HSA",12,4));
+		save.click();
 
-//		cnt_person.clear();
-//		addrl1.clear();
-//		city1.clear();
-//		zip1.clear();
-//		addrl2.clear();
-//		pnum.clear();
-//		email.clear();
+		Notes.click();
+		Thread.sleep(1000);
+		General_Note.click();
+		Thread.sleep(1000);
+		Add_Notes_Text.sendKeys("HSA Group details has been updated succssfully");
+		Thread.sleep(1000);
+		Notes_Add.click();
+		test.log( Status.INFO," Notes Updated succssfully");
 
-		cnt_person.sendKeys(c_person);
-		addrl1.sendKeys(G_addr1);
-		city1.sendKeys(G_city1);
-		zip1.sendKeys(grp_zip);
-		addrl2.sendKeys(grp_Addr2);
-		pnum.sendKeys(grp_pnum);
-		email.sendKeys(grp_email);
-	}
-
-	public void HSA_Member_Update(String mem, String dob1, String ssn1, String addrs1, String city1, String zip1,
-			String aAddrs, String text) throws InterruptedException {
-		Chnagerequest_Link();
-		Create_Change_Request();
-		Memberid(mem);
-		search();
-		searchresult();
-		edit();
-		HSA_MemberDetails(dob1, ssn1, addrs1, city1, zip1, aAddrs);
-		save();
-		Notes(text);
-	
-
-	}
-
-	public void HSA_Group_Update(String grp_id,  String c_person, String G_addr1,
-			String G_city1, String grp_zip, String grp_Addr2, String grp_pnum, String grp_email, String txt)
-			throws InterruptedException {
-		Chnagerequest_Link();
-		Create_Change_Request();
-		grpdetails();
-		HSA_GrpSearch(grp_id);
-		search();
-		searchresult();
-		edit();
-		HSA_Grpdetails(c_person, G_addr1, G_city1, grp_zip, grp_Addr2, grp_pnum, grp_email);
-		save();
-		Notes(txt);
-	
-
+		Thread.sleep(1000);
+		OK.click();
+		Thread.sleep(2000);	
+		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+		submit.click();	
 	}
 
 }
