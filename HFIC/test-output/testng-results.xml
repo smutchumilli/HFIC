@@ -8,30 +8,30 @@
       <![CDATA[Application up and running as expected]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="393116" started-at="2021-05-12T16:25:33Z" finished-at="2021-05-12T16:32:06Z">
+  <suite name="Default suite" duration-ms="371701" started-at="2021-05-12T17:24:45Z" finished-at="2021-05-12T17:30:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="393116" started-at="2021-05-12T16:25:33Z" finished-at="2021-05-12T16:32:06Z">
+    <test name="Default test" duration-ms="371701" started-at="2021-05-12T17:24:45Z" finished-at="2021-05-12T17:30:56Z">
       <class name="HFIC.Testcases.com.Enrollment_360_Search">
-        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.Enrollment_360_Search@2133c8f8]" name="Start_up" is-config="true" duration-ms="1769" started-at="2021-05-12T12:25:31Z" finished-at="2021-05-12T12:25:33Z">
+        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.Enrollment_360_Search@2133c8f8]" name="Start_up" is-config="true" duration-ms="1784" started-at="2021-05-12T13:24:43Z" finished-at="2021-05-12T13:24:45Z">
           <reporter-output>
             <line>
               <![CDATA[Project set up done]]>
             </line>
           </reporter-output>
         </test-method> <!-- Start_up -->
-        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.Enrollment_360_Search@2133c8f8]" name="Application_Start" is-config="true" duration-ms="14241" started-at="2021-05-12T12:25:33Z" finished-at="2021-05-12T12:25:47Z">
+        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.Enrollment_360_Search@2133c8f8]" name="Application_Start" is-config="true" duration-ms="17367" started-at="2021-05-12T13:24:45Z" finished-at="2021-05-12T13:25:02Z">
           <reporter-output>
             <line>
               <![CDATA[Application up and running as expected]]>
             </line>
           </reporter-output>
         </test-method> <!-- Application_Start -->
-        <test-method status="PASS" signature="HFIC_Group_Number_Search()[pri:0, instance:HFIC.Testcases.com.Enrollment_360_Search@2133c8f8]" name="HFIC_Group_Number_Search" duration-ms="373006" started-at="2021-05-12T12:25:47Z" finished-at="2021-05-12T12:32:00Z">
+        <test-method status="PASS" signature="HFIC_Group_Number_Search()[pri:0, instance:HFIC.Testcases.com.Enrollment_360_Search@2133c8f8]" name="HFIC_Group_Number_Search" duration-ms="348906" started-at="2021-05-12T13:25:02Z" finished-at="2021-05-12T13:30:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HFIC_Group_Number_Search -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360_Search@2133c8f8]" name="Tear_Down" is-config="true" duration-ms="2798" started-at="2021-05-12T12:32:00Z" finished-at="2021-05-12T12:32:03Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.Enrollment_360_Search@2133c8f8]" name="Tear_Down" is-config="true" duration-ms="2749" started-at="2021-05-12T13:30:51Z" finished-at="2021-05-12T13:30:54Z">
           <params>
             <param index="0">
               <value>
@@ -42,7 +42,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.Enrollment_360_Search@2133c8f8]" name="Application_Exit" is-config="true" duration-ms="3054" started-at="2021-05-12T12:32:03Z" finished-at="2021-05-12T12:32:06Z">
+        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.Enrollment_360_Search@2133c8f8]" name="Application_Exit" is-config="true" duration-ms="2663" started-at="2021-05-12T13:30:54Z" finished-at="2021-05-12T13:30:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Exit -->

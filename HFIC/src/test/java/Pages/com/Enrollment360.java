@@ -1,7 +1,5 @@
 package Pages.com;
 
-import static org.testng.Assert.assertTrue;
-
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
@@ -98,147 +96,14 @@ TestDataProvider data= new TestDataProvider();
 		Assert.assertTrue(MEMBER_DETAILS_IN_MHS.isDisplayed(), "Testpass");
 	}
 
-//	public void member_Search_Result() throws InterruptedException {
-//
-//		member_Search_Result.click();
-//		Thread.sleep(2500);
-//	}
-
-	public void MHS_MEMBERID(String mid) {
-	}
-
-	public void MHS_Effectivedate(String date) {
-	}
-
-	public void Member_Search() throws InterruptedException {
-		Thread.sleep(2500);
-	}
-
-	public void Member360_Search() throws InterruptedException {
-		Thread.sleep(2000);
-	}
-
-	public void Member_other_info() throws InterruptedException {
-		Thread.sleep(2000);
-
-	}
-
-	public void SSN(String SSN1) {
-	}
-
-	public void DOB(String DOB1) {
-	}
-
-	public void lanme(String lanme1) {
-	}
-
-	public void MEM_fname(String fname1) {
-	}
-
-	public void enroll360() throws InterruptedException {
-		
-	}
-
-		
-	
-
-	public void Search() throws InterruptedException {
-		Search.click();
-		Thread.sleep(3000);
-	}
 	@FindBy(xpath="//span[text()='ME 1032']") WebElement ME1032;
-	public void ME1032() {
-		ME1032.click();
-	}
 	@FindBy(xpath="//span[text()='ME 1033']") WebElement ME1033;
-	public void ME1033() {
-		ME1033.click();
-	}@FindBy(xpath="//span[text()='ME 1034']") WebElement ME1034;
-	public void ME1034() {
-		ME1034.click();
-	}@FindBy(xpath="//span[text()='Active Members']") WebElement Active_members;
-	public void Active_members() {
-		Active_members.click();
-	}
+	@FindBy(xpath="//span[text()='ME 1034']") WebElement ME1034;
+	@FindBy(xpath="//span[text()='Active Members']") WebElement Active_members;
 	@FindBy(xpath="//span[text()='Enrollment Info']") WebElement Enrollment_Info;
-	public void Enrollment_Info() {
-		Enrollment_Info.click();
-	}
 	@FindBy(xpath="//span[text()='PCP Info']") WebElement PCP_Info;
-	
-	
-	public void PCP_Info() {
-		
-	}
-
-	public void GRP_Verification() throws InterruptedException {
-
-
-	}	
-	
-	
-	
-	
-
-	public void MEM_Verification() throws InterruptedException {
-
-		 if (merror.isDisplayed())
-		{
-			SoftAssert asrt= new SoftAssert();
-			asrt.assertEquals(merror.getText(), "Member not found, try again using a different search combination");
-			System.out.println("Member Error message validated  succesfully");
-
-		}  else if (Search_Result.isDisplayed())
-		{
-
-			Actions act = new Actions(driver);
-			act.doubleClick(Search_Result).perform();
-			Thread.sleep(3000);
-				Enrollment_Info.click();
-				Thread.sleep(3000);
-				PCP_Info();
-				
-			}
-		else {
-			System.out.println("System error");
-		}
-
-		}
-	
-
-	
 	@FindBy(xpath="//*[text()='Personal Info']") WebElement personal_info;
-	
 
-	
-
-	public void hpassradiobutton() throws InterruptedException {
-		hpassradiobutton.click();
-		Thread.sleep(2000);
-
-	}
-
-//	public void HP_Searchresult() throws InterruptedException {
-//		HPsearchresut.click();
-//		Thread.sleep(1000);
-//		Homepage.isDisplayed();
-//
-//	}
-
-	public void Searchresult() throws InterruptedException {
-		Search_Result.click();
-		Thread.sleep(1000);
-
-		Homepage.isDisplayed();
-
-	}
-
-	public void Homepage() throws InterruptedException {
-
-		Homepage.click();
-		Thread.sleep(2000);
-
-	}
 	public void HFIC_Group_Search_Method() throws InterruptedException, IOException {
 		for(int i=0;i<=4;i++) {
 		test.info(data.getstringdata("Enroll360", i, 0));
