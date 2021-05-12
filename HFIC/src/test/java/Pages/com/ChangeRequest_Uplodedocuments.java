@@ -121,6 +121,7 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 		Thread.sleep(1000);
 		ok1.click();
 		Thread.sleep(2000);
+		test.info(data.getstringdata("CR", i, 0));
 		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		Thread.sleep(2000);
 
@@ -191,7 +192,7 @@ public class ChangeRequest_Uplodedocuments extends Baseclass {
 		Thread.sleep(1000);
 		ok1.click();
 		Thread.sleep(1000);
-
+		test.info(data.getstringdata("CR", j, 7));
 		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		Thread.sleep(2000);
 

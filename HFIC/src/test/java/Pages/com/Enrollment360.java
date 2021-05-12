@@ -2,6 +2,8 @@ package Pages.com;
 
 import static org.testng.Assert.assertTrue;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -10,12 +12,17 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
+
+import Utilities.com.Helper;
+import Utilities.com.TestDataProvider;
+
 public class Enrollment360 extends Baseclass {
 
 	public Enrollment360(WebDriver ldriver) {
 		this.driver = ldriver;
 	}
-
+TestDataProvider data= new TestDataProvider();
 	@FindBy(xpath = "//a[contains(text(),'Enrollment 360')]")
 	WebElement enroll360;
 	@FindBy(id = "874fdaa4")
@@ -98,69 +105,42 @@ public class Enrollment360 extends Baseclass {
 //	}
 
 	public void MHS_MEMBERID(String mid) {
-		MHS_MEMBERID.sendKeys(mid);
 	}
 
 	public void MHS_Effectivedate(String date) {
-		MHS_Effectivedate.sendKeys(date);
 	}
 
 	public void Member_Search() throws InterruptedException {
-		Member_Search.click();
 		Thread.sleep(2500);
 	}
 
 	public void Member360_Search() throws InterruptedException {
-		Member360.click();
 		Thread.sleep(2000);
 	}
 
 	public void Member_other_info() throws InterruptedException {
-		other_mem_info.click();
 		Thread.sleep(2000);
 
 	}
 
 	public void SSN(String SSN1) {
-		SSN.sendKeys(SSN1);
 	}
 
 	public void DOB(String DOB1) {
-		DOB.sendKeys(DOB1);
 	}
 
 	public void lanme(String lanme1) {
-		lanme.sendKeys(lanme1);
 	}
 
 	public void MEM_fname(String fname1) {
-		fname.sendKeys(fname1);
 	}
 
 	public void enroll360() throws InterruptedException {
-		Thread.sleep(1000);
-		enroll360.click();
-		Thread.sleep(1000);
+		
 	}
 
-	public void groupnum(String grpnum) {
-		grpid.sendKeys(grpnum);
-	}
-
-	public void Grpname(String GRP_name) {
-
-		grpname.sendKeys(GRP_name);
-	}
-
-	public void grp_eff(String grp_eff) {
-
-		effdate.sendKeys(grp_eff);
-	}
-
-	public void Grptaxid(String grp_taxid) {
-
-		taxid.sendKeys(grp_taxid);
-	}
+		
+	
 
 	public void Search() throws InterruptedException {
 		Search.click();
@@ -185,39 +165,15 @@ public class Enrollment360 extends Baseclass {
 		Enrollment_Info.click();
 	}
 	@FindBy(xpath="//span[text()='PCP Info']") WebElement PCP_Info;
+	
+	
 	public void PCP_Info() {
-		PCP_Info.click();
+		
 	}
 
 	public void GRP_Verification() throws InterruptedException {
 
-		if (errormessage.isDisplayed()) 
-		{
-			
-			Assert.assertEquals(errormessage.getText(), "Group was not found, try again using different search combination");
-			System.out.println(" Group Error message Validated Successfully");
-		} 
-		else 
-		{
 
-			Actions act = new Actions(driver);
-			act.doubleClick(Search_Result).perform();
-			Thread.sleep(4000);
-		
-				Thread.sleep(3000);
-				Homepage.click();
-				Thread.sleep(5000);
-				ME1032();
-				Thread.sleep(5000);
-				ME1033();
-				Thread.sleep(5000);
-				ME1034();
-				Thread.sleep(5000);
-				Active_members();
-				Thread.sleep(5000);
-			}
-		
-	
 	}	
 	
 	
@@ -238,7 +194,7 @@ public class Enrollment360 extends Baseclass {
 			Actions act = new Actions(driver);
 			act.doubleClick(Search_Result).perform();
 			Thread.sleep(3000);
-				Enrollment_Info();
+				Enrollment_Info.click();
 				Thread.sleep(3000);
 				PCP_Info();
 				
@@ -254,10 +210,7 @@ public class Enrollment360 extends Baseclass {
 	@FindBy(xpath="//*[text()='Personal Info']") WebElement personal_info;
 	
 
-	public void Healthpass_Group_ID(String hp_grp) {
-
-		hp_grpid.sendKeys(hp_grp);
-	}
+	
 
 	public void hpassradiobutton() throws InterruptedException {
 		hpassradiobutton.click();
@@ -286,48 +239,210 @@ public class Enrollment360 extends Baseclass {
 		Thread.sleep(2000);
 
 	}
-	public void HFIC_Group_Search_Method(String Gnum,String gname,String effdt,String tax) throws InterruptedException {
-		enroll360();
+	public void HFIC_Group_Search_Method() throws InterruptedException, IOException {
+		for(int i=0;i<=4;i++) {
+		test.info(data.getstringdata("Enroll360", i, 0));
+		Thread.sleep(1000);
+		enroll360.click();
+		Thread.sleep(1000);		
+		grpid.sendKeys(data.getstringdata("Enroll360", i, 1));
+		grpname.sendKeys(data.getstringdata("Enroll360", i, 2));
+		effdate.sendKeys(data.getstringdata("Enroll360", i, 3));
+		taxid.sendKeys(data.getstringdata("Enroll360", i, 4));
+		Search.click();
+		Thread.sleep(3000);
+		if (errormessage.isDisplayed()) 
+		{
+			Assert.assertEquals(errormessage.getText(), "Group was not found, try again using different search combination");
+			System.out.println(" Group Error message Validated Successfully");
+		} 
+		else 
+		{
+
+			Actions act = new Actions(driver);
+			act.doubleClick(Search_Result).perform();
+			Thread.sleep(5000);
+				Thread.sleep(3000);
+				Homepage.click();
+				Thread.sleep(5000);
+				test.info(" ME1032 Details");
+				ME1032.click();
+				Thread.sleep(5000);
+				test.info(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+				test.info(" ME1033 Details");
+				ME1033.click();
+				Thread.sleep(5000);
+				test.info(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+				Thread.sleep(5000);
+				test.info(" ME1034 Details");
+				ME1034.click();
+				Thread.sleep(5000);
+				test.info(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+				test.info(" List of Active Members in the group");
+				Active_members.click();
+				Thread.sleep(5000);
+			}
+		test.info(" Group Search completed, Please find the below screenshot for your reference");
+		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+
 		
-		groupnum(Gnum);
-		Grpname(gname);
-		grp_eff(effdt);
-		Grptaxid(tax);
-		Search();
-		GRP_Verification();
+		}
+	}		
 		
+	
+public void Hp_Group_Search_Method() throws InterruptedException, IOException {
+for(int i=0;i<=3;i++) {
+	test.info(data.getstringdata("Enroll360", i, 5));
+	enroll360.click();
+	Thread.sleep(1500);
+	hpassradiobutton.click();
+	Thread.sleep(1500);
+
+	grpid.sendKeys(data.getstringdata("Enroll360", i, 6));
+	hp_grpid.sendKeys(data.getstringdata("Enroll360", i, 7));
+	effdate.sendKeys(data.getstringdata("Enroll360", i, 8));
+	Search.click();
+	Thread.sleep(3000);
+	if (errormessage.isDisplayed()) 
+	{
+		Assert.assertEquals(errormessage.getText(), "Group was not found, try again using different search combination");
+		System.out.println(" Group Error message Validated Successfully");
+	} 
+	else 
+	{
+
+		Actions act = new Actions(driver);
+		act.doubleClick(Search_Result).perform();
+		Thread.sleep(5000);
+			Thread.sleep(3000);
+			Homepage.click();
+			Thread.sleep(5000);
+			test.info(" ME1032 Details");
+			ME1032.click();
+			Thread.sleep(5000);
+			test.info(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+			test.info(" ME1033 Details");
+			ME1033.click();
+			Thread.sleep(5000);
+			test.info(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+			Thread.sleep(5000);
+			test.info(" ME1034 Details");
+			ME1034.click();
+			Thread.sleep(5000);
+			test.info(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+			test.info(" List of Active Members in the group");
+			Active_members.click();
+			Thread.sleep(5000);
+		}
+	test.info(" Group Search completed, Please find the below screenshot for your reference");
+	test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+
+	
 		
 	}
-public void Hp_Group_Search_Method(String Gnum,String hp_grp_id,String eff) throws InterruptedException {
-	enroll360();
-	hpassradiobutton();
-	groupnum(Gnum);
-	Healthpass_Group_ID(hp_grp_id);
-	grp_eff(eff);
-	Search();
-	GRP_Verification();
-		
-	}
-public void HFIC_HP_Member_Search_Method(String mid,String Effdt) throws InterruptedException {
-	enroll360();
-	Member360_Search();
-	MHS_MEMBERID(mid);
-	MHS_Effectivedate(Effdt);
-	Member_Search();
-	MEM_Verification();
-	
 }
-public void HFIC_HP_Member_Detail_Search_Method(String fname ,String lname,String dob,String ssn) throws InterruptedException {
-	enroll360();
-	Member360_Search();
-	Member_other_info();
-	MEM_fname(fname);
-	lanme(lname);
-	DOB(dob);
-	SSN(ssn);
-	Member_Search();
-	MEM_Verification();
-	
+public void HFIC_HP_Member_Search_Method() throws InterruptedException, IOException {
+	for(int i=0;i<=5;i++) {
+	test.info(data.getstringdata("Enroll360", i, 9));
+	enroll360.click();
+	Thread.sleep(2000);
+	Member360.click();
+	Thread.sleep(2000);
+
+	MHS_MEMBERID.sendKeys(data.getstringdata("Enroll360", i, 10));
+	MHS_Effectivedate.sendKeys(data.getstringdata("Enroll360", i, 11));
+	Thread.sleep(2000);
+
+	Member_Search.click();
+	Thread.sleep(4000);
+
+
+	 if (merror.isDisplayed())
+		{
+			SoftAssert asrt= new SoftAssert();
+			asrt.assertEquals(merror.getText(), "Member not found, try again using a different search combination");
+			System.out.println("Member Error message validated  succesfully");
+
+		}  else if (Search_Result.isDisplayed())
+		{
+
+			Actions act = new Actions(driver);
+			act.doubleClick(Search_Result).perform();
+			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+
+			Thread.sleep(3000);
+			test.info("Member Enrollment details");
+
+				Enrollment_Info.click();
+				test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+
+				Thread.sleep(3000);
+				test.info("Member PCP details");
+				PCP_Info.click();
+				Thread.sleep(3000);
+
+				test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+
+			}
+		else {
+			System.out.println("System error");
+		}
+		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+
 }
+}
+
+public void HFIC_HP_Member_Detail_Search_Method() throws InterruptedException, IOException {
+	
+	for(int i=0;i<=7;i++) {
+	test.info(data.getstringdata("Enroll360",i, 12));
+	enroll360.click();
+	Thread.sleep(2000);
+	Member360.click();
+	Thread.sleep(2000);
+
+	other_mem_info.click();
+	Thread.sleep(2000);
+
+	fname.sendKeys(data.getstringdata("Enroll360", i, 13));
+	lanme.sendKeys(data.getstringdata("Enroll360", i, 14));
+	DOB.sendKeys(data.getstringdata("Enroll360", i, 15));
+	SSN.sendKeys(data.getstringdata("Enroll360", i, 16));
+	Member_Search.click();
+	Thread.sleep(5000);
+	 if (merror.isDisplayed())
+		{
+			SoftAssert asrt= new SoftAssert();
+			asrt.assertEquals(merror.getText(), "Member not found, try again using a different search combination");
+			System.out.println("Member Error message validated  succesfully");
+
+		}  else if (Search_Result.isDisplayed())
+		{
+
+			Actions act = new Actions(driver);
+			act.doubleClick(Search_Result).perform();
+			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+
+			Thread.sleep(3000);
+			test.info("Member Enrollment details");
+
+				Enrollment_Info.click();
+				test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+
+				Thread.sleep(3000);
+				test.info("Member PCP details");
+				PCP_Info.click();
+				Thread.sleep(3000);
+
+				test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+
+			}
+		else {
+			System.out.println("System error");
+		}
+		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+
+}
+}	
 
 }
