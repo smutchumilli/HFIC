@@ -19,12 +19,11 @@ public class ChangeRequest_HSA extends Baseclass {
 		this.driver = driver;
 	}
 TestDataProvider data= new TestDataProvider();
-	@FindBy(xpath = "//a[contains(text(),'Change Requests')]")
-	WebElement Chnagerequest_Link;
+	@FindBy(xpath = "//a[contains(text(),'Change Requests')]")public static WebElement Chnagerequest_Link;
 	@FindBy(xpath = "//button[contains(text(),'Create Change Request')]")
-	WebElement Create_Change_Request;
+	public static WebElement Create_Change_Request;
 	@FindBy(id = "5c58224c")
-	WebElement CR_Type;
+	public static WebElement CR_Type;
 
 	// -----
 	@FindBy(id = "13679d3a")
