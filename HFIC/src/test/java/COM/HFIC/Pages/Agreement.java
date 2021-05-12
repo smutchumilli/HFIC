@@ -69,9 +69,9 @@ public class Agreement extends Baseclass {
 		zip.sendKeys(data.getstringdata("Login", 26, 0));
 		Thread.sleep(2000);
 		js.executeScript("arguments[0].click();", Review_Payment);
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		Submit_Payment.click();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		appnum=Application_number.getText().substring(16, 23);
 		String amount=Application_number.getText().substring(117,126).replaceAll("[$,]", "");
 		amount1 = Double.parseDouble(amount);
@@ -93,7 +93,7 @@ public class Agreement extends Baseclass {
 //		wb.write(outputStream);
 //		outputStream.close();
 //		wb.close();		
-		//driver.findElement(By.xpath("//*[text()='Log Out']")).click();
+		driver.findElement(By.xpath("//*[text()='Log Out']")).click();
 			
 	}
 	

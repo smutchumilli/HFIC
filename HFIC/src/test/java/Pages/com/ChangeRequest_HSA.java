@@ -142,10 +142,9 @@ TestDataProvider data= new TestDataProvider();
 		Add_Notes_Text.sendKeys("HSA Member details has been updated succssfully");
 		Thread.sleep(1000);
 		Notes_Add.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		OK.click();
 		test.log( Status.INFO," Notes Updated succssfully");
-
 		Thread.sleep(2000);
 		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		submit.click();	
@@ -186,17 +185,17 @@ TestDataProvider data= new TestDataProvider();
 		pnum.sendKeys(data.getstringdata("HSA",11,4));
 		email.sendKeys(data.getstringdata("HSA",12,4));
 		save.click();
-
+		Thread.sleep(2000);
 		Notes.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		General_Note.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		Add_Notes_Text.sendKeys("HSA Group details has been updated succssfully");
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		Notes_Add.click();
 		test.log( Status.INFO," Notes Updated succssfully");
 
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		OK.click();
 		Thread.sleep(2000);	
 		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());

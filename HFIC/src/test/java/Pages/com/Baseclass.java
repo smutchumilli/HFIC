@@ -56,9 +56,10 @@ public class Baseclass {
 	}
 
 	@AfterMethod
-	public void Tear_Down(ITestResult Result) throws IOException {
+	public void Tear_Down(ITestResult Result) throws IOException, InterruptedException {
 
 		if (Result.getStatus() == ITestResult.SUCCESS) {
+			Thread.sleep(2000);
 
 			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 

@@ -25,7 +25,7 @@ import Pages.com.PEGA_SMG_Process;
 import Utilities.com.Helper;
 
 public class LampLogin extends Baseclass {
-	@Test
+	@Test(invocationCount=10)
 	public void Lamp_SMG_Application_Submissionn() throws InterruptedException, IOException, AWTException {
 		test = extent.createTest("HFIC SMG Enrollment");
 		Lamploginpage Lamploginpage = PageFactory.initElements(driver, Lamploginpage.class);
@@ -52,8 +52,8 @@ public class LampLogin extends Baseclass {
 		ReviewApplicationDetails.Review_ApplicationDetails();
 		Agreement Agreement = PageFactory.initElements(driver, Agreement.class);
 		Agreement.Agreement1();
-		Thread.sleep(13000);
-		PEGA_SMG_Process PEGA_SMG_Process = PageFactory.initElements(driver, PEGA_SMG_Process.class);
-		PEGA_SMG_Process.PEGA_process();	
+//		Thread.sleep(13000);
+//		PEGA_SMG_Process PEGA_SMG_Process = PageFactory.initElements(driver, PEGA_SMG_Process.class);
+//		PEGA_SMG_Process.PEGA_process();	
 	}
 }

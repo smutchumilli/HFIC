@@ -20,6 +20,7 @@ public class CR_UpdateHSA_Group_Member extends Baseclass {
 		ChangeRequest_HSA ChangeRequest_HSA = PageFactory.initElements(driver,ChangeRequest_HSA.class);
 		ChangeRequest_HSA.HSA_Member_Update();
 		ChangeRequest_HSA.HSA_Group_Update(); 
-			}			
+			
+	}			
 	}
 	
