@@ -2,13 +2,16 @@ package Pages.com;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
+import com.sun.corba.se.spi.orbutil.fsm.Action;
 
 import Utilities.com.Helper;
 import Utilities.com.TestDataProvider;
@@ -72,39 +75,84 @@ public class CR_Mem_add extends Baseclass {
 	WebElement Langproficiency;
 	@FindBy(xpath = "//select[@id='3333af98']//following::button[3]")
 	WebElement next;
+	@FindBy(xpath = "//button[@name='AddMemberEnrollInfo_pyWorkPage.AddMember_4']")	WebElement planselect;
+	@FindBy(xpath = "(//input[@id='$PGroupPlans$ppxResults$l$ppySelected'])[4]")	WebElement single_radio;
+	@FindBy(xpath = "(//input[@id='$PGroupPlans$ppxResults$l$ppySelected'])[4]//following::button[2]")	WebElement Review;
+	@FindBy(xpath = "//button[@name='ListGroupPlansCR_pyWorkPage.Application.EmployerGroup_61']]")	WebElement submit;
+	@FindBy(id = "b71896b6")	WebElement hiredate;
+	@FindBy(id = "7caa91f6")	WebElement hsa;
+	@FindBy(id = "2c2bc081")	WebElement eclass;
+	@FindBy(id = "90c8467f")	WebElement ttype;
+	@FindBy(id = "e9271363")	WebElement life_event;
+	@FindBy(xpath = "//select[@id='e9271363']//following::button[3]")	WebElement next1;
 
+	@FindBy(id = "7417589f")	WebElement other_ins;
+	@FindBy(xpath = "//select[@id='7417589f']//following::button[1]")	WebElement save;
+
+
+	
 	public void Add_Member() throws IOException, InterruptedException {
+		
+		
 		Thread.sleep(5000);
 		// test.log( Status.INFO," Add new member to the group");
 		Change_Requests.click();
-		Add_Change_Requests.click();
-		Select s = new Select(Change_Request_Type);
-		s.selectByIndex(4);
-		fname.sendKeys(data.getstringdata("CR_AddMem", 0, 0));
-		lname.sendKeys(data.getstringdata("CR_AddMem", 0, 1));
-		dob.sendKeys(data.getstringdata("CR_AddMem", 0, 2));
-		ssn.sendKeys(data.getstringdata("CR_AddMem", 0, 3));
-		Select gen = new Select(gnender);
-		gen.selectByIndex(1);
-		grpid.sendKeys(data.getstringdata("CR_AddMem", 0, 4));
-		Search.click();
 		Thread.sleep(2000);
-		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
-		Thread.sleep(3000);
-		Add_New_Faily.click();
-		Thread.sleep(2000);
+		driver.findElement(By.linkText("HCR-30117")).click();
+//		Add_Change_Requests.click();
+//		Select s = new Select(Change_Request_Type);
+//		s.selectByIndex(4);
+//		fname.sendKeys(data.getstringdata("CR_AddMem", 0, 0));
+//		lname.sendKeys(data.getstringdata("CR_AddMem", 0, 1));
+//		dob.sendKeys(data.getstringdata("CR_AddMem", 0, 2));
+//		ssn.sendKeys(data.getstringdata("CR_AddMem", 0, 3));
+//		Select gen = new Select(gnender);
+//		gen.selectByIndex(1);
+//		grpid.sendKeys(data.getstringdata("CR_AddMem", 0, 4));
+//		Search.click();
+//		Thread.sleep(2000);
+//		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+//		Thread.sleep(3000);
+//		Add_New_Faily.click();
+		Thread.sleep(6000);
 
 		email.sendKeys(data.getstringdata("CR_AddMem", 0, 5));
+		Thread.sleep(1000);
+
 		phone.sendKeys(data.getstringdata("CR_AddMem", 0, 6));
+		Thread.sleep(1000);
 		phone.sendKeys(data.getstringdata("CR_AddMem", 0, 6));
-		otherphone.sendKeys(data.getstringdata("CR_AddMem", 0, 6));
+		Thread.sleep(1000);
+
+		wphone.sendKeys(data.getstringdata("CR_AddMem", 0, 13));
+		Thread.sleep(1000);
+		wphone.sendKeys(data.getstringdata("CR_AddMem", 0, 13));
+		Thread.sleep(1000);
+
+		otherphone.sendKeys(data.getstringdata("CR_AddMem", 0, 14));
+		Thread.sleep(1000);
+
 		efdate.sendKeys(data.getstringdata("CR_AddMem", 0, 7));
+		Thread.sleep(1000);
+
 		addr1.sendKeys(data.getstringdata("CR_AddMem", 0, 8));
+		Thread.sleep(1000);
+
 		addr2.sendKeys(data.getstringdata("CR_AddMem", 0, 9));
+		Thread.sleep(1000);
+
 		city.sendKeys(data.getstringdata("CR_AddMem", 0, 10));
+		Thread.sleep(1000);
+
 		zip.sendKeys(data.getstringdata("CR_AddMem", 0, 11));
+		Thread.sleep(1000);
+		zip.sendKeys(data.getstringdata("CR_AddMem", 0, 11));
+		Thread.sleep(1000);
+
 		Select st = new Select(state);
 		st.selectByVisibleText("NY");
+		Thread.sleep(1000);
+
 		radiono.click();
 		Thread.sleep(2000);
 
@@ -114,6 +162,52 @@ public class CR_Mem_add extends Baseclass {
 		Thread.sleep(2000);
 
 		next.click();
+		Thread.sleep(5000);
+		
+		planselect.click();
+		Thread.sleep(2000);
+
+		single_radio.click();
+		Thread.sleep(2000);
+
+		Review.click();
+		Thread.sleep(5000);
+		driver.switchTo().window("RULE_KEY");
+		Actions act= new Actions(driver);
+		act.moveToElement(submit).click().perform();
+		Thread.sleep(2000);
+
+		Thread.sleep(2000);
+
+		hiredate.sendKeys("01/01/2021");
+		Thread.sleep(2000);
+
+		Select hs= new Select(hsa);
+		hs.selectByIndex(1);
+		Thread.sleep(2000);
+
+		Select ec= new Select(eclass);
+		ec.selectByIndex(1);
+		Thread.sleep(2000);
+
+		Select tt= new Select(ttype);
+		tt.selectByIndex(1);
+		Thread.sleep(2000);
+
+		Select le= new Select(life_event);
+		le.selectByIndex(1);
+		Thread.sleep(2000);
+
+		next1.click();
+		Thread.sleep(2000);
+
+		Select oi= new Select(other_ins);
+		oi.selectByVisibleText("No");
+		Thread.sleep(2000);
+
+		save.click();
+
+		
 		
 	}
 
