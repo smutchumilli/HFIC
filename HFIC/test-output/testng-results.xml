@@ -8,30 +8,30 @@
       <![CDATA[Application up and running as expected]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="459793" started-at="2021-07-30T19:30:04Z" finished-at="2021-07-30T19:37:44Z">
+  <suite name="Default suite" duration-ms="469717" started-at="2021-07-30T21:15:16Z" finished-at="2021-07-30T21:23:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="459793" started-at="2021-07-30T19:30:04Z" finished-at="2021-07-30T19:37:44Z">
+    <test name="Default test" duration-ms="469717" started-at="2021-07-30T21:15:16Z" finished-at="2021-07-30T21:23:06Z">
       <class name="HFIC.Testcases.com.LampLogin">
-        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.LampLogin@34ce8af7]" name="Start_up" is-config="true" duration-ms="1695" started-at="2021-07-30T15:30:02Z" finished-at="2021-07-30T15:30:04Z">
+        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.LampLogin@34ce8af7]" name="Start_up" is-config="true" duration-ms="1515" started-at="2021-07-30T17:15:15Z" finished-at="2021-07-30T17:15:16Z">
           <reporter-output>
             <line>
               <![CDATA[Project set up done]]>
             </line>
           </reporter-output>
         </test-method> <!-- Start_up -->
-        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.LampLogin@34ce8af7]" name="Application_Start" is-config="true" duration-ms="4033" started-at="2021-07-30T15:30:04Z" finished-at="2021-07-30T15:30:08Z">
+        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.LampLogin@34ce8af7]" name="Application_Start" is-config="true" duration-ms="3647" started-at="2021-07-30T17:15:16Z" finished-at="2021-07-30T17:15:20Z">
           <reporter-output>
             <line>
               <![CDATA[Application up and running as expected]]>
             </line>
           </reporter-output>
         </test-method> <!-- Application_Start -->
-        <test-method status="PASS" signature="Lamp_SMG_Application_Submissionn()[pri:0, instance:HFIC.Testcases.com.LampLogin@34ce8af7]" name="Lamp_SMG_Application_Submissionn" duration-ms="450529" started-at="2021-07-30T15:30:08Z" finished-at="2021-07-30T15:37:39Z">
+        <test-method status="PASS" signature="Lamp_SMG_Application_Submissionn()[pri:0, instance:HFIC.Testcases.com.LampLogin@34ce8af7]" name="Lamp_SMG_Application_Submissionn" duration-ms="461305" started-at="2021-07-30T17:15:20Z" finished-at="2021-07-30T17:23:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Lamp_SMG_Application_Submissionn -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@34ce8af7]" name="Tear_Down" is-config="true" duration-ms="2539" started-at="2021-07-30T15:37:39Z" finished-at="2021-07-30T15:37:41Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@34ce8af7]" name="Tear_Down" is-config="true" duration-ms="2471" started-at="2021-07-30T17:23:01Z" finished-at="2021-07-30T17:23:04Z">
           <params>
             <param index="0">
               <value>
@@ -42,7 +42,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.LampLogin@34ce8af7]" name="Application_Exit" is-config="true" duration-ms="2676" started-at="2021-07-30T15:37:41Z" finished-at="2021-07-30T15:37:44Z">
+        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.LampLogin@34ce8af7]" name="Application_Exit" is-config="true" duration-ms="2281" started-at="2021-07-30T17:23:04Z" finished-at="2021-07-30T17:23:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Exit -->

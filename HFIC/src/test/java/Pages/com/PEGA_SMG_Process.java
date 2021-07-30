@@ -22,6 +22,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -149,8 +150,7 @@ public class PEGA_SMG_Process extends Baseclass {
 	WebElement confirm3;
 	@FindBy(xpath = "//img[@name='Approval_pyWorkPage.Application.ReviewApplication(Group).ReviewScreen(PG4)_430']")
 	WebElement confirm4;
-	@FindBy(xpath = "//a[@name='ActionButtons_pyWorkPage_7']")
-	WebElement review_mship;;
+	@FindBy(linkText = "GO TO STEP:2 REVIEW MEMBERSHIP") WebElement review_mship;;
 
 	@FindBy(xpath = "//*[@id='PEGA_GRID_CONTENT']//tr[2]")
 	WebElement row1;
@@ -186,16 +186,19 @@ public class PEGA_SMG_Process extends Baseclass {
 	@FindBy(xpath = "//button[@name='HFICProdStatusCheckWrapper_pyDisplayHarness_1671']")WebElement Start_processbutton;
 
 
-	
-	
+	@FindBy(linkText = "UPLOAD DOCUMENT")WebElement UPLOAD_DOCUMENT;
+	@FindBy(xpath = "//select[@id='253bc4da']")WebElement Docuemttype;
+	@FindBy(xpath = "//button[@id='ModalButtonSubmit']")WebElement ok;
+	@FindBy(xpath="//input[@name='$PpyAttachmentPage$ppxAttachName']") WebElement file1;
 
-	
-	
 	
 	// PEGA Login:
 
 	
 	public void PEGA_process() throws InterruptedException, AWTException, IOException {
+		
+
+		
 		data= new TestDataProvider();
 		Thread.sleep(2500);
 		test.log( Status.INFO," Login to PEGA SSO for Bypass the payment");
@@ -239,11 +242,11 @@ public class PEGA_SMG_Process extends Baseclass {
 				filter_icon.click();
 				Thread.sleep(2000);
 				filter.click();
-				Thread.sleep(14000);
+				Thread.sleep(10000);
 				input_Search.sendKeys(Agreement.appnum);
 				Thread.sleep(15000);
 				Search_text.click();
-				Thread.sleep(20000);
+				Thread.sleep(10000);
 				test.log( Status.INFO,"ITK number captured for the Application");
 				test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 				Thread.sleep(3000);
@@ -277,6 +280,8 @@ public class PEGA_SMG_Process extends Baseclass {
 		Start_processbutton.click();
 		Thread.sleep(3000);
 		driver.close();
+		Thread.sleep(2000);
+
 	    driver.switchTo().window(tabs2.get(0));
 	    test.log( Status.INFO,"Payment bypass completed");
 
@@ -450,6 +455,9 @@ public class PEGA_SMG_Process extends Baseclass {
 		PAF_Doc_Approval.click();
 		Thread.sleep(3500);
 		test.log( Status.INFO,"Documents are reviewed and successfully");
+		
+		
+		
 	
 		review_mship.click();
 		Thread.sleep(6000);
@@ -544,10 +552,23 @@ public class PEGA_SMG_Process extends Baseclass {
 
 		Final_Review.click();
 		Thread.sleep(2000);
+		
+		//upload docuemnts from PEGA
+				UPLOAD_DOCUMENT.click();
+				Thread.sleep(3000);
+				Select doctype= new Select(Docuemttype);
+				doctype.selectByIndex(1);
+				Thread.sleep(3000);
+				file1.sendKeys("Q:\\Smutchumilli\\pegaupload.docx");
+				ok.click();
+				Thread.sleep(5000);
 
 		confirm.click();
 		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		Thread.sleep(3000);
+		
+		
+
 
 		SUbmit.click();
 		Thread.sleep(3000);

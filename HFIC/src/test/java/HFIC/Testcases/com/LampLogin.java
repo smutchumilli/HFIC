@@ -52,7 +52,7 @@ public class LampLogin extends Baseclass {
 		ReviewApplicationDetails.Review_ApplicationDetails();
 		Agreement Agreement = PageFactory.initElements(driver, Agreement.class);
 		Agreement.Agreement1();
-		Thread.sleep(13000);
+		Thread.sleep(10000);
 		PEGA_SMG_Process PEGA_SMG_Process = PageFactory.initElements(driver, PEGA_SMG_Process.class);
 		PEGA_SMG_Process.PEGA_process();	
 	}
