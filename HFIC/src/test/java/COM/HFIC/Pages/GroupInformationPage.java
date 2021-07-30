@@ -107,7 +107,7 @@ public TestDataProvider data;
 		paddress11.sendKeys(data.getstringdata("Login", 5, 6));
 		paddr2.sendKeys(data.getstringdata("Login", 6, 6));
 		pcity.sendKeys(data.getstringdata("Login", 7, 6));
-		pzip1.sendKeys(data.getstringdata("Login", 8, 6));
+	//	pzip1.sendKeys(data.getstringdata("Login", 8, 6));
 		pphone1.sendKeys(data.getstringdata("Login", 9, 6));
 		pfax.sendKeys(data.getstringdata("Login", 10, 6));
 		industry_type.sendKeys(data.getstringdata("Login", 11, 6));

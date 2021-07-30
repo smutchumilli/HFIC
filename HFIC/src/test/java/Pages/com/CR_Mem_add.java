@@ -78,42 +78,53 @@ public class CR_Mem_add extends Baseclass {
 	@FindBy(xpath = "//button[@name='AddMemberEnrollInfo_pyWorkPage.AddMember_4']")	WebElement planselect;
 	@FindBy(xpath = "(//input[@id='$PGroupPlans$ppxResults$l$ppySelected'])[4]")	WebElement single_radio;
 	@FindBy(xpath = "(//input[@id='$PGroupPlans$ppxResults$l$ppySelected'])[4]//following::button[2]")	WebElement Review;
-	@FindBy(xpath = "//button[@name='ListGroupPlansCR_pyWorkPage.Application.EmployerGroup_61']]")	WebElement submit;
+	@FindBy(name = "ListGroupPlansCR_pyWorkPage.Application.EmployerGroup_61")	WebElement submit;
 	@FindBy(id = "b71896b6")	WebElement hiredate;
 	@FindBy(id = "7caa91f6")	WebElement hsa;
 	@FindBy(id = "2c2bc081")	WebElement eclass;
 	@FindBy(id = "90c8467f")	WebElement ttype;
 	@FindBy(id = "e9271363")	WebElement life_event;
 	@FindBy(xpath = "//select[@id='e9271363']//following::button[3]")	WebElement next1;
-
-	@FindBy(id = "7417589f")	WebElement other_ins;
-	@FindBy(xpath = "//select[@id='7417589f']//following::button[1]")	WebElement save;
-
+	@FindBy(name = "AddMemberDetails_pyWorkPage.AddMember_7")	WebElement next2;
 
 	
+
+	@FindBy(id = "7417589f")	WebElement other_ins;
+	@FindBy(name = "HFICCaseHeader_pyWorkPage_17") WebElement Notes;
+	@FindBy(xpath = "//*[contains(text(),'ADD A GENERAL NOTE?')]")WebElement gtext;
+	@FindBy(id = "2bc4e467")WebElement Add_Notes_Text;
+	@FindBy(css = "div.pzbtn-mid")WebElement Notes_Add;
+	@FindBy(xpath = "//*[contains(text(),'OK')]")WebElement OK;
+	@FindBy(xpath = "//select[@id='7417589f']//following::button[1]")	WebElement save;	
+	@FindBy(name = "AddMemberUI_pyWorkPage_47")	WebElement update_family;	
+
+	
+	
 	public void Add_Member() throws IOException, InterruptedException {
+		
+		
 		
 		
 		Thread.sleep(5000);
 		// test.log( Status.INFO," Add new member to the group");
 		Change_Requests.click();
 		Thread.sleep(2000);
-		driver.findElement(By.linkText("HCR-30117")).click();
-//		Add_Change_Requests.click();
-//		Select s = new Select(Change_Request_Type);
-//		s.selectByIndex(4);
-//		fname.sendKeys(data.getstringdata("CR_AddMem", 0, 0));
-//		lname.sendKeys(data.getstringdata("CR_AddMem", 0, 1));
-//		dob.sendKeys(data.getstringdata("CR_AddMem", 0, 2));
-//		ssn.sendKeys(data.getstringdata("CR_AddMem", 0, 3));
-//		Select gen = new Select(gnender);
-//		gen.selectByIndex(1);
-//		grpid.sendKeys(data.getstringdata("CR_AddMem", 0, 4));
-//		Search.click();
-//		Thread.sleep(2000);
-//		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
-//		Thread.sleep(3000);
-//		Add_New_Faily.click();
+		//driver.findElement(By.linkText("HCR-30117")).click();
+		Add_Change_Requests.click();
+		Select s = new Select(Change_Request_Type);
+		s.selectByIndex(4);
+		fname.sendKeys(data.getstringdata("CR_AddMem", 0, 0));
+		lname.sendKeys(data.getstringdata("CR_AddMem", 0, 1));
+		dob.sendKeys(data.getstringdata("CR_AddMem", 0, 2));
+		ssn.sendKeys(data.getstringdata("CR_AddMem", 0, 3));
+		Select gen = new Select(gnender);
+		gen.selectByIndex(1);
+		grpid.sendKeys(data.getstringdata("CR_AddMem", 0, 4));
+		Search.click();
+		Thread.sleep(2000);
+		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+		Thread.sleep(3000);
+		Add_New_Faily.click();
 		Thread.sleep(6000);
 
 		email.sendKeys(data.getstringdata("CR_AddMem", 0, 5));
@@ -151,7 +162,7 @@ public class CR_Mem_add extends Baseclass {
 
 		Select st = new Select(state);
 		st.selectByVisibleText("NY");
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 
 		radiono.click();
 		Thread.sleep(2000);
@@ -172,20 +183,21 @@ public class CR_Mem_add extends Baseclass {
 
 		Review.click();
 		Thread.sleep(5000);
-		driver.switchTo().window("RULE_KEY");
-		Actions act= new Actions(driver);
-		act.moveToElement(submit).click().perform();
-		Thread.sleep(2000);
 
+		submit.click();
 		Thread.sleep(2000);
 
 		hiredate.sendKeys("01/01/2021");
 		Thread.sleep(2000);
+		
+	if (driver.findElements(By.id("7caa91f6")).size()!=0) {
 
 		Select hs= new Select(hsa);
 		hs.selectByIndex(1);
 		Thread.sleep(2000);
-
+		}
+		
+		
 		Select ec= new Select(eclass);
 		ec.selectByIndex(1);
 		Thread.sleep(2000);
@@ -201,14 +213,34 @@ public class CR_Mem_add extends Baseclass {
 		next1.click();
 		Thread.sleep(2000);
 
+		next2.click();
+		Thread.sleep(2000);
+
 		Select oi= new Select(other_ins);
 		oi.selectByVisibleText("No");
 		Thread.sleep(2000);
+		Notes.click();
+		Thread.sleep(2000);
+
+		gtext.click();
+		Thread.sleep(2000);
+
+		Add_Notes_Text.sendKeys("Member succssfully Added");
+		Thread.sleep(2000);
+
+		Notes_Add.click();
+		Thread.sleep(2000);
+
+		OK.click();
+		Thread.sleep(2000);
 
 		save.click();
+		Thread.sleep(2000);
 
+		update_family.click();
+
+		}	
 		
-		
-	}
+	
 
 }

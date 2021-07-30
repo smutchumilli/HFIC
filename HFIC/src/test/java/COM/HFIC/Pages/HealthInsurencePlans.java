@@ -23,6 +23,12 @@ public class HealthInsurencePlans extends Baseclass {
 	@FindBy(xpath="//*[@id='quotePlanSlection']//*[@planname='Healthfirst Gold 25/50/0 Pro EPO']") WebElement P2;
 	@FindBy(xpath="//*[@id='quotePlanSlection']//*[@planname='Healthfirst Platinum Pro Plus EPO']") WebElement P3;
 	@FindBy(xpath="//*[@id='quotePlanSlection']//*[@planname='Healthfirst Silver Pro EPO']") WebElement P4;
+	@FindBy(xpath="//*[@id='quotePlanSlection']//*[@planname='Healthfirst Bronze 8150 Pro EPO']") WebElement P5;
+
+
+
+	
+	
 	@FindBy(className="begin-application-btn") WebElement continu;
 	
 
@@ -39,6 +45,11 @@ public class HealthInsurencePlans extends Baseclass {
 		 ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", P4);
 
 		js.executeScript("arguments[0].click();", P4);
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", P5);
+
+		js.executeScript("arguments[0].click();", P5);
+//		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", P6);
+//		js.executeScript("arguments[0].click();", P6);
 		 ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", continu);
 
 		js.executeScript("arguments[0].click();", continu);
