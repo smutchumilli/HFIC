@@ -556,7 +556,7 @@ public class PEGA_SMG_Process extends Baseclass {
 
 		confirm.click();
 		Thread.sleep(1700);
-
+//
 		Next1.click();
 		// Add_insurance();
 		Thread.sleep(2000);
