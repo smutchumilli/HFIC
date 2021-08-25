@@ -23,7 +23,9 @@ public class Get_Quotepage extends Baseclass{
 	public TestDataProvider data;
 @FindBy(id="employerName")@CacheLookup WebElement employerName;
 @FindBy(id="employerZipInput") @CacheLookup WebElement employerZip;
-@FindBy(id="extendCoverageNo")  WebElement extendcoverage;
+@FindBy(id="extendCoverageNo")  WebElement extendCoverageNo;
+@FindBy(id="extendCoverageYes")  WebElement extendCoverageYes;
+
 @FindBy(id="requestedEffectiveDateSelect")@CacheLookup  WebElement requestedEffectiveDateSelect;
 @FindBy(css="button.hf-continue-btn")@CacheLookup  WebElement continu;
 
@@ -34,9 +36,15 @@ public void GetQuotepage() throws InterruptedException{
 	JavascriptExecutor js= (JavascriptExecutor)driver;
 	employerName.sendKeys(data.getstringdata("Login", 3, 0) + Helper.Get_CurrentdateandTime());
 	employerZip.sendKeys(data.getstringdata("Login", 4, 0));
-	js.executeScript("arguments[0].click();", extendcoverage);
+	//js.executeScript("arguments[0].click();", extendCoverageNo);
+	js.executeScript("arguments[0].click();", extendCoverageYes);
+
 	Select s = new Select(driver.findElement(By.id("requestedEffectiveDateSelect")));
-	s.selectByVisibleText("01/01/2020");
+	s.selectByVisibleText("01/01/2022");
+//	s.selectByVisibleText("01/01/2022");
+//	s.selectByVisibleText("01/01/2022");
+//	s.selectByVisibleText("01/01/2022");
+
 	Thread.sleep(3000);
 	js.executeScript("arguments[0].click();", continu);
 
