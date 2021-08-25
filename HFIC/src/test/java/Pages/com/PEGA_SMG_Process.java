@@ -569,7 +569,7 @@ public class PEGA_SMG_Process extends Baseclass {
 		Thread.sleep(2000);
 
 		confirm.click();
-		Thread.sleep(2000);
+		Thread.sleep(1900);
 
 		
 
