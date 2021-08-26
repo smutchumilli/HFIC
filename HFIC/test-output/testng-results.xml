@@ -8,45 +8,45 @@
       <![CDATA[Application up and running as expected]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="476970" started-at="2021-08-25T20:12:28Z" finished-at="2021-08-25T20:20:25Z">
+  <suite name="Default suite" duration-ms="515473" started-at="2021-08-26T21:35:36Z" finished-at="2021-08-26T21:44:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="476970" started-at="2021-08-25T20:12:28Z" finished-at="2021-08-25T20:20:25Z">
-      <class name="HFIC.Testcases.com.LampLogin">
-        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.LampLogin@34ce8af7]" name="Start_up" is-config="true" duration-ms="1917" started-at="2021-08-25T16:12:27Z" finished-at="2021-08-25T16:12:28Z">
+    <test name="Default test" duration-ms="515473" started-at="2021-08-26T21:35:36Z" finished-at="2021-08-26T21:44:11Z">
+      <class name="HFIC.Testcases.com.SMG_Enrollment_AGE_26_Rider">
+        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.SMG_Enrollment_AGE_26_Rider@34ce8af7]" name="Start_up" is-config="true" duration-ms="1331" started-at="2021-08-26T17:35:34Z" finished-at="2021-08-26T17:35:36Z">
           <reporter-output>
             <line>
               <![CDATA[Project set up done]]>
             </line>
           </reporter-output>
         </test-method> <!-- Start_up -->
-        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.LampLogin@34ce8af7]" name="Application_Start" is-config="true" duration-ms="4838" started-at="2021-08-25T16:12:28Z" finished-at="2021-08-25T16:12:33Z">
+        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.SMG_Enrollment_AGE_26_Rider@34ce8af7]" name="Application_Start" is-config="true" duration-ms="3632" started-at="2021-08-26T17:35:36Z" finished-at="2021-08-26T17:35:39Z">
           <reporter-output>
             <line>
               <![CDATA[Application up and running as expected]]>
             </line>
           </reporter-output>
         </test-method> <!-- Application_Start -->
-        <test-method status="PASS" signature="Lamp_SMG_Application_Submissionn()[pri:0, instance:HFIC.Testcases.com.LampLogin@34ce8af7]" name="Lamp_SMG_Application_Submissionn" duration-ms="466402" started-at="2021-08-25T16:12:33Z" finished-at="2021-08-25T16:20:20Z">
+        <test-method status="PASS" signature="Lamp_SMG_Application_Submissionn()[pri:0, instance:HFIC.Testcases.com.SMG_Enrollment_AGE_26_Rider@34ce8af7]" name="Lamp_SMG_Application_Submissionn" duration-ms="507143" started-at="2021-08-26T17:35:39Z" finished-at="2021-08-26T17:44:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Lamp_SMG_Application_Submissionn -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.LampLogin@34ce8af7]" name="Tear_Down" is-config="true" duration-ms="2577" started-at="2021-08-25T16:20:20Z" finished-at="2021-08-25T16:20:22Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.SMG_Enrollment_AGE_26_Rider@34ce8af7]" name="Tear_Down" is-config="true" duration-ms="2536" started-at="2021-08-26T17:44:06Z" finished-at="2021-08-26T17:44:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Lamp_SMG_Application_Submissionn status=SUCCESS method=LampLogin.Lamp_SMG_Application_Submissionn()[pri:0, instance:HFIC.Testcases.com.LampLogin@34ce8af7] output={null}]]]>
+                <![CDATA[[TestResult name=Lamp_SMG_Application_Submissionn status=SUCCESS method=SMG_Enrollment_AGE_26_Rider.Lamp_SMG_Application_Submissionn()[pri:0, instance:HFIC.Testcases.com.SMG_Enrollment_AGE_26_Rider@34ce8af7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.LampLogin@34ce8af7]" name="Application_Exit" is-config="true" duration-ms="3133" started-at="2021-08-25T16:20:22Z" finished-at="2021-08-25T16:20:25Z">
+        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.SMG_Enrollment_AGE_26_Rider@34ce8af7]" name="Application_Exit" is-config="true" duration-ms="2149" started-at="2021-08-26T17:44:09Z" finished-at="2021-08-26T17:44:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Exit -->
-      </class> <!-- HFIC.Testcases.com.LampLogin -->
+      </class> <!-- HFIC.Testcases.com.SMG_Enrollment_AGE_26_Rider -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

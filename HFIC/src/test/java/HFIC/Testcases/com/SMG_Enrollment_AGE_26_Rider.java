@@ -24,7 +24,7 @@ import Pages.com.Baseclass;
 import Pages.com.PEGA_SMG_Process;
 import Utilities.com.Helper;
 
-public class LampLogin extends Baseclass { 
+public class SMG_Enrollment_AGE_26_Rider extends Baseclass { 
 	@Test(invocationCount=1)
 	public void Lamp_SMG_Application_Submissionn() throws InterruptedException, IOException, AWTException {
 		test = extent.createTest("HFIC SMG Enrollment");
