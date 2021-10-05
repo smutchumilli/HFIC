@@ -8,30 +8,30 @@
       <![CDATA[Application up and running as expected]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="448832" started-at="2021-10-05T18:21:51Z" finished-at="2021-10-05T18:29:19Z">
+  <suite name="Default suite" duration-ms="432842" started-at="2021-10-05T21:06:22Z" finished-at="2021-10-05T21:13:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="448832" started-at="2021-10-05T18:21:51Z" finished-at="2021-10-05T18:29:19Z">
+    <test name="Default test" duration-ms="432842" started-at="2021-10-05T21:06:22Z" finished-at="2021-10-05T21:13:35Z">
       <class name="HFIC.Testcases.com.SMG_Enrollment_AGE_26_Rider">
-        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.SMG_Enrollment_AGE_26_Rider@34ce8af7]" name="Start_up" is-config="true" duration-ms="2062" started-at="2021-10-05T14:21:49Z" finished-at="2021-10-05T14:21:51Z">
+        <test-method status="PASS" signature="Start_up()[pri:0, instance:HFIC.Testcases.com.SMG_Enrollment_AGE_26_Rider@34ce8af7]" name="Start_up" is-config="true" duration-ms="1751" started-at="2021-10-05T17:06:20Z" finished-at="2021-10-05T17:06:22Z">
           <reporter-output>
             <line>
               <![CDATA[Project set up done]]>
             </line>
           </reporter-output>
         </test-method> <!-- Start_up -->
-        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.SMG_Enrollment_AGE_26_Rider@34ce8af7]" name="Application_Start" is-config="true" duration-ms="5107" started-at="2021-10-05T14:21:51Z" finished-at="2021-10-05T14:21:56Z">
+        <test-method status="PASS" signature="Application_Start()[pri:0, instance:HFIC.Testcases.com.SMG_Enrollment_AGE_26_Rider@34ce8af7]" name="Application_Start" is-config="true" duration-ms="4493" started-at="2021-10-05T17:06:22Z" finished-at="2021-10-05T17:06:27Z">
           <reporter-output>
             <line>
               <![CDATA[Application up and running as expected]]>
             </line>
           </reporter-output>
         </test-method> <!-- Application_Start -->
-        <test-method status="PASS" signature="Lamp_SMG_Application_Submissionn()[pri:0, instance:HFIC.Testcases.com.SMG_Enrollment_AGE_26_Rider@34ce8af7]" name="Lamp_SMG_Application_Submissionn" duration-ms="437558" started-at="2021-10-05T14:21:56Z" finished-at="2021-10-05T14:29:13Z">
+        <test-method status="PASS" signature="Lamp_SMG_Application_Submissionn()[pri:0, instance:HFIC.Testcases.com.SMG_Enrollment_AGE_26_Rider@34ce8af7]" name="Lamp_SMG_Application_Submissionn" duration-ms="422889" started-at="2021-10-05T17:06:27Z" finished-at="2021-10-05T17:13:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Lamp_SMG_Application_Submissionn -->
-        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.SMG_Enrollment_AGE_26_Rider@34ce8af7]" name="Tear_Down" is-config="true" duration-ms="2599" started-at="2021-10-05T14:29:13Z" finished-at="2021-10-05T14:29:16Z">
+        <test-method status="PASS" signature="Tear_Down(org.testng.ITestResult)[pri:0, instance:HFIC.Testcases.com.SMG_Enrollment_AGE_26_Rider@34ce8af7]" name="Tear_Down" is-config="true" duration-ms="2683" started-at="2021-10-05T17:13:30Z" finished-at="2021-10-05T17:13:32Z">
           <params>
             <param index="0">
               <value>
@@ -42,7 +42,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.SMG_Enrollment_AGE_26_Rider@34ce8af7]" name="Application_Exit" is-config="true" duration-ms="3531" started-at="2021-10-05T14:29:16Z" finished-at="2021-10-05T14:29:19Z">
+        <test-method status="PASS" signature="Application_Exit()[pri:0, instance:HFIC.Testcases.com.SMG_Enrollment_AGE_26_Rider@34ce8af7]" name="Application_Exit" is-config="true" duration-ms="2763" started-at="2021-10-05T17:13:32Z" finished-at="2021-10-05T17:13:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Exit -->
