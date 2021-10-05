@@ -32,7 +32,7 @@ public class Lamp_Homepage extends Baseclass {
 		js1.executeScript("arguments[0].click();", App_tab);
 		js1.executeScript("arguments[0].click();", Start_Application);
 
-		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+		//test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		Thread.sleep(2000);
 
 	}

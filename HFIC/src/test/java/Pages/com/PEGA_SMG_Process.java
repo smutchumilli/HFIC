@@ -238,11 +238,23 @@ public class PEGA_SMG_Process extends Baseclass {
 	WebElement enddate;
 	@FindBy(xpath = "//button[@name='SubscriberMemberDetails_pyWorkPage_15']//following::button[2]")
 	WebElement save;
+	@FindBy(xpath = "//button[@name='GroupInfo_pyWorkPage_6']")
+	WebElement edit1;
+	@FindBy(xpath = "//select[@id='73d3bffd']")
+	WebElement busnessorg;
+	
+	@FindBy(xpath = "//button[@name='GroupSaveCancel_pyWorkPage.Application_3']")
+	WebElement save1;
+	
+	
+	
+		
 
 	// PEGA Login:
 
 	public void PEGA_process() throws InterruptedException, AWTException, IOException {
-
+		
+		
 		data = new TestDataProvider();
 		Thread.sleep(2500);
 		test.log(Status.INFO, " Login to PEGA SSO for Bypass the payment");
@@ -275,11 +287,11 @@ public class PEGA_SMG_Process extends Baseclass {
 		for (String winHandle : driver.getWindowHandles()) {
 			if (driver.switchTo().window(winHandle).getTitle().equalsIgnoreCase("HFIC Intake CaseList")) {
 				driver.switchTo().window(winHandle);
-				Thread.sleep(4000);
+				Thread.sleep(7000);
 				driver.manage().window().maximize();
-				Thread.sleep(4000);
+				Thread.sleep(7000);
 				filter_icon.click();
-				Thread.sleep(2000);
+				Thread.sleep(7000);
 				filter.click();
 				Thread.sleep(8000);
 				input_Search.sendKeys(Agreement.appnum);
@@ -314,7 +326,7 @@ public class PEGA_SMG_Process extends Baseclass {
 		intakecaseid.sendKeys(ITK);
 		Payment_Amount.clear();
 		Payment_Amount.sendKeys(String.valueOf(Agreement.amount1));
-		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+	//	test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		Start_processbutton.click();
 		Thread.sleep(3000);
 		driver.close();
@@ -387,7 +399,7 @@ public class PEGA_SMG_Process extends Baseclass {
 
 		userid.sendKeys(data.getstringdata("Pega", 0, 0));
 		Password.sendKeys(data.getstringdata("Pega", 0, 1));
-		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+	//	test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 
 		Login_Button.click();
 		Thread.sleep(8000);
@@ -396,7 +408,7 @@ public class PEGA_SMG_Process extends Baseclass {
 		Thread.sleep(2500);
 		Apply_button.click();
 		Thread.sleep(5000);
-		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+		//test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		Thread.sleep(2000);
 
 		checkbox.click();
@@ -406,7 +418,7 @@ public class PEGA_SMG_Process extends Baseclass {
 		test.log(Status.INFO, "Application assigned to HFIC super user");
 
 		assign_id.sendKeys(data.getstringdata("Pega", 0, 2));
-		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+		//test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 
 		Thread.sleep(1700);
 
@@ -432,14 +444,31 @@ public class PEGA_SMG_Process extends Baseclass {
 
 		Apply_button.click();
 		Thread.sleep(5000);
-		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+	//	test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		Thread.sleep(2000);
 
 		Results.click();
 
+//		Thread.sleep(2000);
+		
+//		edit1.click();
+//		Thread.sleep(2000);
+//		Select bselect= new Select(busnessorg);
+//		
+//		bselect.selectByIndex(10);
+		
+		
+	//	Thread.sleep(2000);
+	//	save1.click();
+		
 		Thread.sleep(2000);
+		
+		
+		
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", confirm);
 		confirm.click();
+		Thread.sleep(2000);
+		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		Thread.sleep(2000);
 		test.log(Status.INFO, "GROUP INFORMATION (Sec 1, 2) reviewed and successfully");
 
@@ -503,129 +532,129 @@ public class PEGA_SMG_Process extends Baseclass {
 
 		Thread.sleep(3000);
 
-		row2.click();
-		confirm.click();
-		Thread.sleep(2000);
-
-		Next1.click();
-		// Add_insurance();
-		Thread.sleep(2000);
-
-		confirm.click();
-		Thread.sleep(2000);
-
-		mem_listing.click();
-		Thread.sleep(2000);
-
-		row3.click();
-		Thread.sleep(2000);
-		// Add_insurance();
-		confirm.click();
-
-		Thread.sleep(2000);
-
-		Next1.click();
-		// Add_insurance();
-		Thread.sleep(2000);
-
-		confirm.click();
-
-		Thread.sleep(2000);
-
-		mem_listing.click();
-
-		Thread.sleep(2000);
-
-		row3.click();
-		Thread.sleep(1700);
-
-		confirm.click();
-		Thread.sleep(1700);
-
-		Next1.click();
-		Thread.sleep(2000);
-
-		confirm.click();
-		Thread.sleep(1700);
-
-		mem_listing.click();
-		Thread.sleep(2000);
-
-		row4.click();
-		Thread.sleep(1800);
-
-		confirm.click();
-		Thread.sleep(1700);
-		Next1.click();
-		// Add_insurance();
-		Thread.sleep(2000);
-
-		confirm.click();
-		Thread.sleep(1700);
-
-		Next1.click();
-		// Add_insurance();
-		Thread.sleep(2000);
-
-		confirm.click();
-		Thread.sleep(1900);
-
-	
-
-		mem_listing.click();
-		Thread.sleep(2000);
-
-		row5.click();
-
-		confirm.click();
-		Thread.sleep(2000);
-
-		mem_listing.click();
-
-		Thread.sleep(3000);
-
-		row6.click();
-
-		confirm.click();
-		Thread.sleep(2000);
-
-		mem_listing.click();
-
-		Thread.sleep(3000);
-
-		row7.click();
-
-		confirm.click();
-		Thread.sleep(2000);
-
-		mem_listing.click();
-
-		Thread.sleep(3000);
-
-		row8.click();
-
-		confirm.click();
-		Thread.sleep(2000);
-
-		mem_listing.click();
-
-		Thread.sleep(3000);
-
-		row9.click();
-
-		confirm.click();
-		Thread.sleep(2000);
-
-		mem_listing.click();
-
-		Thread.sleep(3000);
-
-		row10.click();
-
-		confirm.click();
-		Thread.sleep(2000);
-
-		mem_listing.click();
+//		row2.click();
+//		confirm.click();
+//		Thread.sleep(2000);
+//
+//		Next1.click();
+//		// Add_insurance();
+//		Thread.sleep(2000);
+//
+//		confirm.click();
+//		Thread.sleep(2000);
+//
+//		mem_listing.click();
+//		Thread.sleep(2000);
+//
+//		row3.click();
+//		Thread.sleep(2000);
+//		// Add_insurance();
+//		confirm.click();
+//
+//		Thread.sleep(2000);
+//
+//		Next1.click();
+//		// Add_insurance();
+//		Thread.sleep(2000);
+//
+//		confirm.click();
+//
+//		Thread.sleep(2000);
+//
+//		mem_listing.click();
+//
+//		Thread.sleep(2000);
+//
+//		row3.click();
+//		Thread.sleep(1700);
+//
+//		confirm.click();
+//		Thread.sleep(1700);
+//
+//		Next1.click();
+//		Thread.sleep(2000);
+//
+//		confirm.click();
+//		Thread.sleep(1700);
+//
+//		mem_listing.click();
+//		Thread.sleep(2000);
+//
+//		row4.click();
+//		Thread.sleep(1800);
+//
+//		confirm.click();
+//		Thread.sleep(1700);
+//		Next1.click();
+//		// Add_insurance();
+//		Thread.sleep(2000);
+//
+//		confirm.click();
+//		Thread.sleep(1700);
+//
+//		Next1.click();
+//		// Add_insurance();
+//		Thread.sleep(2000);
+//
+//		confirm.click();
+//		Thread.sleep(1900);
+//
+//	
+//
+//		mem_listing.click();
+//		Thread.sleep(2000);
+//
+//		row5.click();
+//
+//		confirm.click();
+//		Thread.sleep(2000);
+//
+//		mem_listing.click();
+//
+//		Thread.sleep(3000);
+//
+//		row6.click();
+//
+//		confirm.click();
+//		Thread.sleep(2000);
+//
+//		mem_listing.click();
+//
+//		Thread.sleep(3000);
+//
+//		row7.click();
+//
+//		confirm.click();
+//		Thread.sleep(2000);
+//
+//		mem_listing.click();
+//
+//		Thread.sleep(3000);
+//
+//		row8.click();
+//
+//		confirm.click();
+//		Thread.sleep(2000);
+//
+//		mem_listing.click();
+//
+//		Thread.sleep(3000);
+//
+//		row9.click();
+//
+//		confirm.click();
+//		Thread.sleep(2000);
+//
+//		mem_listing.click();
+//
+//		Thread.sleep(3000);
+//
+//		row10.click();
+//
+//		confirm.click();
+//		Thread.sleep(2000);
+//
+//		mem_listing.click();
 
 		Thread.sleep(3000);
 
@@ -637,23 +666,23 @@ public class PEGA_SMG_Process extends Baseclass {
 		test.log(Status.INFO, "Payment details are reviewed and successfully");
 
 		Final_Review.click();
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 
 		// Add other insurance
 
 		// upload docuemnts from PEGA
-		UPLOAD_DOCUMENT.click();
-		Thread.sleep(3000);
-		Select doctype = new Select(Docuemttype);
-		doctype.selectByIndex(1);
-		Thread.sleep(3000);
-		file1.sendKeys("Q:\\Smutchumilli\\pegaupload.docx");
-		ok.click();
-		Thread.sleep(5000);
+//		UPLOAD_DOCUMENT.click();
+//		Thread.sleep(3000);
+//		Select doctype = new Select(Docuemttype);
+//		doctype.selectByIndex(1);
+//		Thread.sleep(3000);
+//		file1.sendKeys("Q:\\Smutchumilli\\pegaupload.docx");
+//		ok.click();
+		Thread.sleep(7000);
 
 		confirm.click();
 		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
-		Thread.sleep(3000);
+		Thread.sleep(7000);
 
 		SUbmit.click();
 		Thread.sleep(3000);

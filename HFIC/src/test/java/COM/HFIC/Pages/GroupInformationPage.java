@@ -1,5 +1,7 @@
 package COM.HFIC.Pages;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -7,9 +9,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 
 import Pages.com.Baseclass;
+import Utilities.com.Helper;
 import Utilities.com.TestDataProvider;
 
 public class GroupInformationPage extends Baseclass{
@@ -96,7 +100,7 @@ public TestDataProvider data;
 	WebElement billing_fax_number;
 
 	public void Group_Information_Page()
-			throws InterruptedException {
+			throws InterruptedException, IOException {
 		
 		
 		data= new TestDataProvider();
@@ -129,9 +133,14 @@ public TestDataProvider data;
 		blastname1.sendKeys(data.getstringdata("Login", 24, 6));
 		bemail1.sendKeys(data.getstringdata("Login", 25, 6));
 		
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", CEO);
 		Thread.sleep(4000);
+
 		Select s = new Select(driver.findElement(By.name("businessTypeSelect")));
-		s.selectByIndex(5);
+		Thread.sleep(5000);
+		s.selectByIndex(1);
+		Thread.sleep(5000);
+		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 		JavascriptExecutor js4 = (JavascriptExecutor) driver;
 		WebElement affr = driver.findElement(By.xpath("//input[@name='nature_of_business']//following::input[2]"));
 		js4.executeScript("arguments[0].click();", affr);

@@ -42,7 +42,7 @@ public void login_to_Lamp( ) throws IOException, InterruptedException{
 	WebElement SignIn= driver.findElement(By.xpath("//*[@id='login-wrapper']/div[7]/div[1]/div/div/div[5]/button"));
 	js.executeScript("arguments[0].click();", SignIn);
 	test.log( Status.INFO," Entered Valid GA user id and password and NPN and clicked on signin button");
-	test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
+	//test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Helper.Get_Screenshot(driver)).build());
 	Thread.sleep(2000);
 	
 

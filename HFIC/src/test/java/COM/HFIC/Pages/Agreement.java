@@ -73,7 +73,7 @@ public class Agreement extends Baseclass {
 		Submit_Payment.click();
 		Thread.sleep(3000);
 		appnum=Application_number.getText().substring(16, 23);
-		String amount=Application_number.getText().substring(117,126).replaceAll("[$,]", "");
+		String amount=Application_number.getText().substring(117,122).replaceAll("[$,]", "");
 		amount1 = Double.parseDouble(amount);
 		System.out.println(appnum);
 		System.out.println(amount1);
